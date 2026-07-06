@@ -17,6 +17,7 @@ import QuitTiming from "@/components/machine/QuitTiming";
 import ReferenceVideoSection from "@/components/machine/ReferenceVideoSection";
 import PracticeRecordSection from "@/components/machine/PracticeRecordSection";
 import RelatedMachinesSection from "@/components/machine/RelatedMachinesSection";
+import ReferenceSources from "@/components/machine/ReferenceSources";
 
 export async function generateStaticParams() {
   const slugs = await getAllMachineSlugs();
@@ -110,6 +111,7 @@ export default async function MachinePage({
         maker={machine.spec.maker}
         series={machine.spec.series}
       />
+      <ReferenceSources />
     </article>
   );
 }

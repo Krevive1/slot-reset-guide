@@ -307,6 +307,15 @@ footer {
   font-size: 14px;
 }
 
+.reference-sources ul {
+  margin: 0 0 8px;
+  padding-left: 20px;
+}
+
+.reference-sources a {
+  color: #2b5cad;
+}
+
 /* Reference video (third-party citation) */
 .reference-video {
   border-left: 6px solid #8a94a6;
