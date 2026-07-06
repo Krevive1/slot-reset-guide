@@ -6,8 +6,8 @@ import AdSlot from "@/components/ads/AdSlot";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "ワンチャンくん｜パチスロ朝一リセット学習サイト",
-  description: "朝一リセット・リセット恩恵・注意点を初心者向けにやさしく学べる教育サイトです。",
+  title: "ワンチャンくん｜パチスロ朝一リセットまとめサイト",
+  description: "朝一リセット・リセット恩恵・注意点を初心者向けにやさしくまとめた情報サイトです。",
   alternates: { canonical: SITE_URL },
 };
 
@@ -17,7 +17,7 @@ export default async function HomePage() {
   return (
     <>
       <AdSlot slot="home-top" />
-      <h1 className="page-title">初心者向け パチスロ朝一リセット学習ガイド</h1>
+      <h1 className="page-title">初心者向けパチスロ朝一リセットまとめサイト</h1>
 
       <section className="card warning" aria-label="注意喚起">
         <h2>はじめに（重要）</h2>

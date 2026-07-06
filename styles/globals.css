@@ -282,6 +282,18 @@ footer {
   margin-bottom: 4px;
 }
 
+.hot-badge {
+  display: inline-block;
+  color: #fff;
+  background: #e02424;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
 .new-badge {
   display: inline-block;
   color: #e02424;

@@ -90,6 +90,8 @@ export const MachineSchema = z.object({
   // Manual popularity/hall-contribution ranking (lower = more popular).
   // Drives display order on machine listing pages; omitted machines sort last.
   popularityRank: z.number().optional(),
+  // Manual "熱" (hot/trending) flag, editorially assigned rather than computed.
+  hot: z.boolean().optional(),
   updatedAt: z.string(),
   publishedAt: z.string(),
   spec: SpecSchema,

@@ -8,6 +8,7 @@ import Breadcrumbs from "@/components/site/Breadcrumbs";
 import AdSlot from "@/components/ads/AdSlot";
 import MachineThumbnail from "@/components/machine/MachineThumbnail";
 import NewBadge from "@/components/machine/NewBadge";
+import HotBadge from "@/components/machine/HotBadge";
 import MachineSpec from "@/components/machine/MachineSpec";
 import ResetInfo from "@/components/machine/ResetInfo";
 import DetectionMethod from "@/components/machine/DetectionMethod";
@@ -93,6 +94,7 @@ export default async function MachinePage({
       <h1>
         {machine.name}
         <NewBadge releaseDate={machine.spec.releaseDate} />
+        <HotBadge hot={machine.hot} />
       </h1>
       <p className="updated-at">更新日：{machine.updatedAt.slice(0, 10)}</p>
       <MachineThumbnail heroImage={machine.heroImage} name={machine.name} />
