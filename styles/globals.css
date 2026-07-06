@@ -20,8 +20,10 @@ a {
 }
 
 .site-header {
-  background: linear-gradient(180deg, #241407 0%, #3d2712 50%, #6b4a26 100%);
-  color: #fff;
+  /* #fbf7ed matches the banner image's own edge color exactly, so there's
+     no visible seam where the image meets the header background. */
+  background: linear-gradient(180deg, #fbf7ed 0%, #f3e6c8 100%);
+  color: #3d2712;
   padding: 32px 0;
 }
 
@@ -29,6 +31,11 @@ a {
   display: block;
   width: 100%;
   margin-bottom: 20px;
+}
+
+.site-header nav a {
+  color: #3d2712;
+  background: rgba(61, 39, 18, 0.1);
 }
 
 .page-title {
