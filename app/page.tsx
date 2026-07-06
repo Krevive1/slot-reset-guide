@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllMachines } from "@/lib/content/machines";
+import MachineCard from "@/components/machine/MachineCard";
 
 export const metadata: Metadata = {
   title: "初心者向け｜パチスロ朝一リセット学習サイト",
@@ -32,18 +33,16 @@ export default async function HomePage() {
       </section>
 
       {machines.length > 0 && (
-        <section className="card">
-          <h2>機種ページの例</h2>
+        <section>
+          <h2>機種一覧</h2>
           <p className="section-note">
             機種ごとのリセット恩恵・判別方法・実践データをまとめたページの例です（現在はテンプレート確認用のサンプルデータです）。
           </p>
-          <ul>
+          <div className="cards">
             {machines.map((machine) => (
-              <li key={machine.slug}>
-                <Link href={`/machines/${machine.slug}`}>{machine.name}</Link>
-              </li>
+              <MachineCard key={machine.slug} machine={machine} />
             ))}
-          </ul>
+          </div>
         </section>
       )}
     </>
