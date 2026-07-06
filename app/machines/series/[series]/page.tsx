@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getMachinesBySeries } from "@/lib/content/machines";
+import { getMachinesBySeries, sortMachinesByPopularity } from "@/lib/content/machines";
 import { getAllSeries, getSeriesBySlug } from "@/lib/content/refs";
 import MachineCard from "@/components/machine/MachineCard";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
@@ -35,7 +35,7 @@ export default async function SeriesPage({
   const series = await getSeriesBySlug(seriesSlug);
   if (!series) notFound();
 
-  const machines = await getMachinesBySeries(seriesSlug);
+  const machines = sortMachinesByPopularity(await getMachinesBySeries(seriesSlug));
 
   return (
     <>

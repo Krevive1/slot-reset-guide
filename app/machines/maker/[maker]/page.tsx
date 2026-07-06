@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getMachinesByMaker } from "@/lib/content/machines";
+import { getMachinesByMaker, sortMachinesByPopularity } from "@/lib/content/machines";
 import { getAllMakers, getMakerBySlug } from "@/lib/content/refs";
 import MachineCard from "@/components/machine/MachineCard";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
@@ -35,7 +35,7 @@ export default async function MakerPage({
   const maker = await getMakerBySlug(makerSlug);
   if (!maker) notFound();
 
-  const machines = await getMachinesByMaker(makerSlug);
+  const machines = sortMachinesByPopularity(await getMachinesByMaker(makerSlug));
 
   return (
     <>

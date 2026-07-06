@@ -87,6 +87,9 @@ export const MachineSchema = z.object({
   name: z.string(),
   nameKana: z.string().optional(),
   heroImage: z.string().optional(),
+  // Manual popularity/hall-contribution ranking (lower = more popular).
+  // Drives display order on machine listing pages; omitted machines sort last.
+  popularityRank: z.number().optional(),
   updatedAt: z.string(),
   publishedAt: z.string(),
   spec: SpecSchema,

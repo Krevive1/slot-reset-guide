@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getAllMachines } from "@/lib/content/machines";
+import { getAllMachines, sortMachinesByPopularity } from "@/lib/content/machines";
 import MachineCard from "@/components/machine/MachineCard";
 import { SITE_URL } from "@/lib/site";
 
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default async function HomePage() {
-  const machines = await getAllMachines();
+  const machines = sortMachinesByPopularity(await getAllMachines());
 
   return (
     <>

@@ -50,6 +50,24 @@ export const getAllMachineSlugs = () => machineRepository.getAllSlugs();
 export const getMachine = (slug: string) => machineRepository.getBySlug(slug);
 export const getAllMachines = () => machineRepository.getAll();
 
+// Manually pinned above the popularity ranking, regardless of rank number.
+const PINNED_SLUGS = ["karakuri-circus-2"];
+
+export function sortMachinesByPopularity(machines: Machine[]): Machine[] {
+  return [...machines].sort((a, b) => {
+    const aPinned = PINNED_SLUGS.indexOf(a.slug);
+    const bPinned = PINNED_SLUGS.indexOf(b.slug);
+    if (aPinned !== -1 || bPinned !== -1) {
+      if (aPinned === -1) return 1;
+      if (bPinned === -1) return -1;
+      return aPinned - bPinned;
+    }
+    const rankA = a.popularityRank ?? Number.POSITIVE_INFINITY;
+    const rankB = b.popularityRank ?? Number.POSITIVE_INFINITY;
+    return rankA - rankB;
+  });
+}
+
 export async function getMachinesByMaker(makerSlug: string): Promise<Machine[]> {
   const machines = await getAllMachines();
   return machines.filter((machine) => machine.spec.maker?.slug === makerSlug);
