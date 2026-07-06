@@ -10,6 +10,10 @@ body {
   background: #f6f7f9;
 }
 
+a {
+  color: inherit;
+}
+
 .container {
   width: min(100% - 32px, 960px);
   margin: 0 auto;
@@ -104,6 +108,110 @@ footer {
   text-align: center;
 }
 
+/* Machine page sections */
+
+.updated-at {
+  color: #666;
+  font-size: 14px;
+  margin-top: -8px;
+}
+
+.section-note {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Reference video (third-party citation) */
+.reference-video {
+  border-left: 6px solid #8a94a6;
+}
+
+.reference-video .video-card + .video-card {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e2e6ea;
+}
+
+.video-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-attribution {
+  margin: 12px 0 4px;
+  font-size: 14px;
+  color: #444;
+}
+
+.video-attribution a {
+  color: #2b5cad;
+  text-decoration: underline;
+}
+
+.original-analysis {
+  background: #f3f5f8;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-top: 12px;
+}
+
+.original-analysis h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Practice record (first-party data) */
+.practice-record {
+  border-left: 6px solid #2b7fad;
+}
+
+.practice-record table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.practice-record th,
+.practice-record td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e2e6ea;
+}
+
+.practice-record .positive {
+  color: #1a7a3c;
+  font-weight: 700;
+}
+
+.practice-record .negative {
+  color: #c23b3b;
+  font-weight: 700;
+}
+
+.ad-slot {
+  border: 1px dashed #c7ccd4;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
 @media (max-width: 720px) {
   .site-header {
     padding: 24px 0;
@@ -125,5 +233,10 @@ footer {
   nav a {
     width: 100%;
     text-align: center;
+  }
+
+  .practice-record table {
+    display: block;
+    overflow-x: auto;
   }
 }

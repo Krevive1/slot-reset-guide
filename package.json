@@ -1,0 +1,26 @@
+{
+  "name": "slot-reset-guide",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run check:compliance && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "check:compliance": "node scripts/check-compliance.mjs"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/node": "^20.14.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.9.0",
+    "eslint-config-next": "^15.0.0"
+  }
+}
