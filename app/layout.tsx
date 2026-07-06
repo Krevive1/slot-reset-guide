@@ -5,8 +5,8 @@ import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "朝イチリセット情報ガイド",
-    template: "%s｜朝イチリセット情報ガイド",
+    default: "あさイチワンちゃんくん",
+    template: "%s｜あさイチワンちゃんくん",
   },
   description: "パチスロの朝イチリセット恩恵・判別方法・実践データを機種別に整理する情報サイトです。",
 };

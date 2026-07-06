@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "免責事項",
-  description: "朝イチリセット情報ガイドの免責事項です。",
+  description: "あさイチワンちゃんくんの免責事項です。",
 };
 
 export default function DisclaimerPage() {

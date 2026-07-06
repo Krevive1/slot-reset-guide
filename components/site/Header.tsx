@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="container">
-        <h1>朝イチリセット情報ガイド</h1>
+        <h1>あさイチワンちゃんくん🐶</h1>
         <p>朝イチリセットの仕組みを理解するための情報サイトです。</p>
         <nav aria-label="メインメニュー">
           <Link href="/">トップ</Link>

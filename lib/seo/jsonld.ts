@@ -7,7 +7,7 @@ export function buildArticleJsonLd(machine: Machine, url: string) {
     headline: `${machine.name}のリセット恩恵・朝イチ狙い目情報`,
     datePublished: machine.publishedAt,
     dateModified: machine.updatedAt,
-    author: { "@type": "Organization", name: "朝イチリセット情報ガイド" },
+    author: { "@type": "Organization", name: "あさイチワンちゃんくん" },
     mainEntityOfPage: url,
   };
 }

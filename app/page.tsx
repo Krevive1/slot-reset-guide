@@ -4,7 +4,7 @@ import { getAllMachines } from "@/lib/content/machines";
 import MachineCard from "@/components/machine/MachineCard";
 
 export const metadata: Metadata = {
-  title: "初心者向け｜パチスロ朝一リセット学習サイト",
+  title: "あさイチワンちゃんくん｜パチスロ朝一リセット学習サイト",
   description: "朝一リセット・リセット恩恵・注意点を初心者向けにやさしく学べる教育サイトです。",
 };
 

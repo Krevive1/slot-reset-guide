@@ -1,6 +1,6 @@
-# slot-reset-guide
+# slot-reset-guide（あさイチワンちゃんくん🐶）
 
-パチスロの「朝イチリセット情報」特化型SEOメディアです。Next.js（App Router）+ TypeScriptで構築しています。
+パチスロの「朝イチリセット情報」特化型SEOメディア「あさイチワンちゃんくん」です。Next.js（App Router）+ TypeScriptで構築しています。
 
 ## サイト概要
 
