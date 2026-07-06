@@ -15,6 +15,19 @@ export default function Header() {
           <Link href="/disclaimer">免責事項</Link>
           <Link href="/privacy">プライバシーポリシー</Link>
         </nav>
+        <form action="/search" method="get" className="search-form" role="search">
+          <label htmlFor="search-q" className="sr-only">
+            機種名で検索
+          </label>
+          <input
+            id="search-q"
+            type="search"
+            name="q"
+            placeholder="機種名で検索（例：北斗の拳）"
+            autoComplete="off"
+          />
+          <button type="submit">検索</button>
+        </form>
       </div>
     </header>
   );

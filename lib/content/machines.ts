@@ -78,6 +78,23 @@ export async function getMachinesBySeries(seriesSlug: string): Promise<Machine[]
   return machines.filter((machine) => machine.spec.series?.slug === seriesSlug);
 }
 
+export function searchMachines(machines: Machine[], query: string): Machine[] {
+  const normalized = query.trim().toLowerCase();
+  if (!normalized) return [];
+  return machines.filter((machine) => {
+    const haystack = [
+      machine.name,
+      machine.nameKana,
+      machine.spec.overview,
+      machine.spec.series?.name,
+    ]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+    return haystack.includes(normalized);
+  });
+}
+
 const NEW_BADGE_WINDOW_DAYS = 90;
 
 // Shows a "NEW" badge for 3 months (90 days) after a machine's release date.
