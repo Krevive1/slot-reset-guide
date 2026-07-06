@@ -17,3 +17,13 @@ export async function getAllMakers(): Promise<MakerRef[]> {
 export async function getAllSeries(): Promise<SeriesRef[]> {
   return readJson("series.json", z.array(SeriesRefSchema));
 }
+
+export async function getMakerBySlug(slug: string): Promise<MakerRef | null> {
+  const makers = await getAllMakers();
+  return makers.find((maker) => maker.slug === slug) ?? null;
+}
+
+export async function getSeriesBySlug(slug: string): Promise<SeriesRef | null> {
+  const series = await getAllSeries();
+  return series.find((s) => s.slug === slug) ?? null;
+}

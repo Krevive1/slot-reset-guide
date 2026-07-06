@@ -23,7 +23,7 @@ function ReferenceVideoCard({ video }: { video: ReferenceVideo }) {
       <h3>{video.title}</h3>
       <p>{video.summary}</p>
       <div className="original-analysis">
-        <h4>当サイトの考察</h4>
+        <h4>🐶 ワンちゃんの考察</h4>
         <p>{video.originalAnalysis}</p>
       </div>
     </div>
@@ -34,7 +34,8 @@ export default function ReferenceVideoSection({ videos }: { videos: ReferenceVid
   if (videos.length === 0) return null;
   return (
     <section className="card reference-video" aria-labelledby="reference-video-heading">
-      <h2 id="reference-video-heading">参考動画（出典明記）</h2>
+      <h2 id="reference-video-heading">参考動画</h2>
+      <p className="section-note">出典を明記した上で引用しています。</p>
       {videos.map((video) => (
         <ReferenceVideoCard key={video.youtubeVideoId} video={video} />
       ))}

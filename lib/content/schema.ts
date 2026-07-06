@@ -72,8 +72,14 @@ export const FaqItemSchema = z.object({
   answer: z.string(),
 });
 
+// "maker" and "series" are reserved path segments (/machines/maker/[maker],
+// /machines/series/[series]) and must never collide with a machine slug.
+const RESERVED_MACHINE_SLUGS = new Set(["maker", "series"]);
+
 export const MachineSchema = z.object({
-  slug: z.string(),
+  slug: z.string().refine((slug) => !RESERVED_MACHINE_SLUGS.has(slug), {
+    message: '"maker" and "series" are reserved and cannot be used as a machine slug',
+  }),
   name: z.string(),
   nameKana: z.string().optional(),
   heroImage: z.string().optional(),

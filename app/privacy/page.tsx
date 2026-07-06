@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "プライバシーポリシー",
   description: "あさイチワンちゃんくんのプライバシーポリシーです。",
+  alternates: { canonical: `${SITE_URL}/privacy` },
 };
 
 export default function PrivacyPage() {
   return (
     <div className="article">
+      <h1 className="page-title">プライバシーポリシー</h1>
+
       <h2>個人情報について</h2>
       <p>
         当サイトでは、お問い合わせ等で取得した個人情報を、

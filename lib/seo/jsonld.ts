@@ -1,4 +1,5 @@
 import { FaqItem, Machine } from "@/lib/content/schema";
+import { SITE_URL } from "@/lib/site";
 
 export function buildArticleJsonLd(machine: Machine, url: string) {
   return {
@@ -9,6 +10,7 @@ export function buildArticleJsonLd(machine: Machine, url: string) {
     dateModified: machine.updatedAt,
     author: { "@type": "Organization", name: "あさイチワンちゃんくん" },
     mainEntityOfPage: url,
+    ...(machine.heroImage && { image: [`${SITE_URL}${machine.heroImage}`] }),
   };
 }
 

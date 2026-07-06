@@ -4,7 +4,7 @@ export default function PracticeRecordSection({ records }: { records: PracticeRe
   if (records.length === 0) return null;
   return (
     <section className="card practice-record" aria-labelledby="practice-record-heading">
-      <h2 id="practice-record-heading">実践データ（自社一次情報）</h2>
+      <h2 id="practice-record-heading">実践データ</h2>
       <p className="section-note">
         当サイトが実際に実践した記録です。上記の参考動画とは別の一次情報です。
       </p>

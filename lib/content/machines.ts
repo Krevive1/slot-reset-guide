@@ -49,3 +49,13 @@ export const machineRepository: MachineRepository = new JsonFileMachineRepositor
 export const getAllMachineSlugs = () => machineRepository.getAllSlugs();
 export const getMachine = (slug: string) => machineRepository.getBySlug(slug);
 export const getAllMachines = () => machineRepository.getAll();
+
+export async function getMachinesByMaker(makerSlug: string): Promise<Machine[]> {
+  const machines = await getAllMachines();
+  return machines.filter((machine) => machine.spec.maker.slug === makerSlug);
+}
+
+export async function getMachinesBySeries(seriesSlug: string): Promise<Machine[]> {
+  const machines = await getAllMachines();
+  return machines.filter((machine) => machine.spec.series?.slug === seriesSlug);
+}

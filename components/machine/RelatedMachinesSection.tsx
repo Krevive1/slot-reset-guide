@@ -22,11 +22,13 @@ export default function RelatedMachinesSection({
           ))}
         </ul>
       )}
-      {/* Maker/series list pages (/machines/maker/[slug], /machines/series/[slug])
-          are phase 2 — show as plain text until those routes exist. */}
       <p className="section-note">
-        メーカー：{maker.name}
-        {series && <> ／ シリーズ：{series.name}</>}
+        メーカー：<Link href={`/machines/maker/${maker.slug}`}>{maker.name}</Link>
+        {series && (
+          <>
+            {" "}／ シリーズ：<Link href={`/machines/series/${series.slug}`}>{series.name}</Link>
+          </>
+        )}
       </p>
     </section>
   );

@@ -4,6 +4,7 @@ import { getAllMachineSlugs, getMachine } from "@/lib/content/machines";
 import { buildArticleJsonLd, buildBreadcrumbJsonLd, buildFaqJsonLd } from "@/lib/seo/jsonld";
 import { SITE_URL } from "@/lib/site";
 import JsonLd from "@/components/seo/JsonLd";
+import Breadcrumbs from "@/components/site/Breadcrumbs";
 import AdSlot from "@/components/ads/AdSlot";
 import MachineThumbnail from "@/components/machine/MachineThumbnail";
 import MachineSpec from "@/components/machine/MachineSpec";
@@ -29,9 +30,29 @@ export async function generateMetadata({
   const { slug } = await params;
   const machine = await getMachine(slug);
   if (!machine) return {};
+
+  const title = `${machine.name} リセット恩恵・朝イチ狙い目`;
+  const description = `${machine.name}のリセット恩恵・判別方法・朝イチの狙い目を解説。${machine.spec.overview}`;
+  const url = `${SITE_URL}/machines/${machine.slug}`;
+  const images = machine.heroImage ? [{ url: machine.heroImage }] : undefined;
+
   return {
-    title: machine.name,
-    description: machine.spec.overview,
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      type: "article",
+      images,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images,
+    },
   };
 }
 
@@ -45,9 +66,11 @@ export default async function MachinePage({
   if (!machine) notFound();
 
   const url = `${SITE_URL}/machines/${machine.slug}`;
+  const machinesUrl = `${SITE_URL}/machines`;
   const articleJsonLd = buildArticleJsonLd(machine, url);
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: SITE_URL },
+    { name: "機種一覧", url: machinesUrl },
     { name: machine.name, url },
   ]);
   const faqJsonLd = buildFaqJsonLd(machine.faq);
@@ -58,6 +81,13 @@ export default async function MachinePage({
       <JsonLd data={breadcrumbJsonLd} />
       {faqJsonLd && <JsonLd data={faqJsonLd} />}
 
+      <Breadcrumbs
+        items={[
+          { name: "トップ", href: "/" },
+          { name: "機種一覧", href: "/machines" },
+          { name: machine.name, href: `/machines/${machine.slug}` },
+        ]}
+      />
       <h1>{machine.name}</h1>
       <p className="updated-at">更新日：{machine.updatedAt.slice(0, 10)}</p>
       <MachineThumbnail heroImage={machine.heroImage} name={machine.name} />

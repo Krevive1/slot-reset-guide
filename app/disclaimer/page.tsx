@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "免責事項",
   description: "あさイチワンちゃんくんの免責事項です。",
+  alternates: { canonical: `${SITE_URL}/disclaimer` },
 };
 
 export default function DisclaimerPage() {
   return (
     <div className="article">
+      <h1 className="page-title">免責事項</h1>
+
       <h2>情報の正確性について</h2>
       <p>
         当サイトでは、できる限り正確な情報を掲載するよう努めていますが、

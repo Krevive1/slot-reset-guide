@@ -2,10 +2,12 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllMachines } from "@/lib/content/machines";
 import MachineCard from "@/components/machine/MachineCard";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "あさイチワンちゃんくん｜パチスロ朝一リセット学習サイト",
   description: "朝一リセット・リセット恩恵・注意点を初心者向けにやさしく学べる教育サイトです。",
+  alternates: { canonical: SITE_URL },
 };
 
 export default async function HomePage() {
@@ -13,6 +15,8 @@ export default async function HomePage() {
 
   return (
     <>
+      <h1 className="page-title">初心者向け パチスロ朝一リセット学習ガイド</h1>
+
       <section className="card warning" aria-label="注意喚起">
         <h2>はじめに（重要）</h2>
         <ul>
@@ -29,20 +33,21 @@ export default async function HomePage() {
           <li>リセット恩恵の代表例（天井短縮・モード優遇など）</li>
           <li>実践前に確認すべき注意点</li>
         </ol>
-        <p><Link href="/beginner">まずは「はじめてガイド」を読む →</Link></p>
+        <p><Link href="/beginner">3分で分かる基礎ガイドを読む →</Link></p>
       </section>
 
       {machines.length > 0 && (
         <section>
           <h2>機種一覧</h2>
           <p className="section-note">
-            機種ごとのリセット恩恵・判別方法・実践データをまとめたページの例です（現在はテンプレート確認用のサンプルデータです）。
+            機種ごとのリセット恩恵・判別方法・実践データをまとめています。掲載機種は順次追加予定です。
           </p>
           <div className="cards">
             {machines.map((machine) => (
               <MachineCard key={machine.slug} machine={machine} />
             ))}
           </div>
+          <p><Link href="/machines">全機種を見る →</Link></p>
         </section>
       )}
     </>
