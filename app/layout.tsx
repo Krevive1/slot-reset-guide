@@ -7,8 +7,8 @@ import "@/styles/globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "あさイチワンちゃんくん",
-    template: "%s｜あさイチワンちゃんくん",
+    default: "ワンチャンくん",
+    template: "%s｜ワンチャンくん",
   },
   description: "パチスロの朝イチリセット恩恵・判別方法・実践データを機種別に整理する情報サイトです。",
 };

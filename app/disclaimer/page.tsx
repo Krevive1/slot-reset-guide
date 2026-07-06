@@ -3,7 +3,7 @@ import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "免責事項",
-  description: "あさイチワンちゃんくんの免責事項です。",
+  description: "ワンチャンくんの免責事項です。",
   alternates: { canonical: `${SITE_URL}/disclaimer` },
 };
 

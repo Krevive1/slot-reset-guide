@@ -6,8 +6,9 @@ export default function Header() {
       <div className="container">
         {/* Not an <h1> — each page provides its own page-specific h1
             (machine name, page title, etc). Only one h1 per page. */}
-        <p className="site-title">あさイチワンちゃんくん🐶</p>
-        <p>朝イチの一手に迷ったら、ワンちゃんと一緒に。</p>
+        <p className="site-title">ワンチャンくん🐶</p>
+        <p className="site-description">あさイチリセット情報ガイド</p>
+        <p className="site-tagline">「あさイチを制する者は、スロットを制する」</p>
         <nav aria-label="メインメニュー">
           <Link href="/">トップ</Link>
           <Link href="/machines">機種一覧</Link>

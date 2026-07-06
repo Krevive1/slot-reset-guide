@@ -5,7 +5,7 @@ import MachineCard from "@/components/machine/MachineCard";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "あさイチワンちゃんくん｜パチスロ朝一リセット学習サイト",
+  title: "ワンチャンくん｜パチスロ朝一リセット学習サイト",
   description: "朝一リセット・リセット恩恵・注意点を初心者向けにやさしく学べる教育サイトです。",
   alternates: { canonical: SITE_URL },
 };

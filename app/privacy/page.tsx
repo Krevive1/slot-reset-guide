@@ -3,7 +3,7 @@ import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "プライバシーポリシー",
-  description: "あさイチワンちゃんくんのプライバシーポリシーです。",
+  description: "ワンチャンくんのプライバシーポリシーです。",
   alternates: { canonical: `${SITE_URL}/privacy` },
 };
 

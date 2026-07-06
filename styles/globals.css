@@ -31,6 +31,18 @@ a {
   font-weight: 700;
 }
 
+.site-header .site-description {
+  margin: 0 0 4px;
+  color: #d7dde6;
+}
+
+.site-header .site-tagline {
+  margin: 0 0 20px;
+  color: #f0a37a;
+  font-style: italic;
+  font-size: 14px;
+}
+
 .page-title {
   margin: 0 0 16px;
 }
