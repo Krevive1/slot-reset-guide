@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { getAllMachines, sortMachinesByPopularity } from "@/lib/content/machines";
 import MachineCard from "@/components/machine/MachineCard";
+import AdSlot from "@/components/ads/AdSlot";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export default async function HomePage() {
 
   return (
     <>
+      <AdSlot slot="home-top" />
       <Image
         src="/images/hero-banner.png"
         alt="ワンチャンくん"
@@ -44,6 +46,8 @@ export default async function HomePage() {
         </ol>
         <p><Link href="/beginner">3分で分かる基礎ガイドを読む →</Link></p>
       </section>
+
+      <AdSlot slot="home-mid" />
 
       {machines.length > 0 && (
         <section>

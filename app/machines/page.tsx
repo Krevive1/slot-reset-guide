@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllMachines, sortMachinesByPopularity } from "@/lib/content/machines";
 import MachineCard from "@/components/machine/MachineCard";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
+import AdSlot from "@/components/ads/AdSlot";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default async function MachinesIndexPage() {
       <p className="section-note">
         機種ごとのリセット恩恵・判別方法・朝イチの狙い目・実践データをまとめています。
       </p>
+      <AdSlot slot="machines-top" />
       {machines.length > 0 ? (
         <div className="cards">
           {machines.map((machine) => (

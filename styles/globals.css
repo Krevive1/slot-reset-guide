@@ -47,6 +47,21 @@ a {
   margin: 0 0 16px;
 }
 
+.affiliate-disclosure {
+  background: #eceff2;
+  border-bottom: 1px solid #dde1e6;
+  padding: 8px 0;
+}
+
+.affiliate-disclosure p {
+  margin: 0;
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+  width: min(100% - 32px, 960px);
+  margin-inline: auto;
+}
+
 .hero-banner {
   width: 100%;
   height: auto;
@@ -173,7 +188,7 @@ section h2,
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 

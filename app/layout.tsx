@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/site/Header";
 import Footer from "@/components/site/Footer";
+import AffiliateDisclosure from "@/components/site/AffiliateDisclosure";
 import { SITE_URL } from "@/lib/site";
 import "@/styles/globals.css";
 
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ja">
       <body>
         <Header />
+        <AffiliateDisclosure />
         <main className="container">{children}</main>
         <Footer />
       </body>
