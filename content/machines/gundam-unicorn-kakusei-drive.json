@@ -1,10 +1,11 @@
 {
-  "slug": "gundam-unicorn-kakusei",
-  "name": "Lガンダムユニコーン 覚醒・覚醒DRIVE",
+  "slug": "gundam-unicorn-kakusei-drive",
+  "name": "Lガンダムユニコーン 覚醒DRIVE",
   "popularityRank": 21,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
+    "releaseDate": "2026-04-20",
     "overview": "CZ間天井800G+α・AT間天井1400G+αの機種。設定変更時はCZ間400G・AT間1000Gに短縮され、ゲーム数の加算もある。"
   },
   "resetInfo": {

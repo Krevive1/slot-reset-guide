@@ -179,6 +179,18 @@ footer {
   margin-bottom: 4px;
 }
 
+.new-badge {
+  display: inline-block;
+  color: #e02424;
+  font-weight: 700;
+  font-size: 12px;
+  border: 1px solid #e02424;
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
 /* Machine page sections */
 
 .updated-at {

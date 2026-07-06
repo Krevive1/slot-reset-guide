@@ -7,6 +7,7 @@ import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import AdSlot from "@/components/ads/AdSlot";
 import MachineThumbnail from "@/components/machine/MachineThumbnail";
+import NewBadge from "@/components/machine/NewBadge";
 import MachineSpec from "@/components/machine/MachineSpec";
 import ResetInfo from "@/components/machine/ResetInfo";
 import DetectionMethod from "@/components/machine/DetectionMethod";
@@ -88,7 +89,10 @@ export default async function MachinePage({
           { name: machine.name, href: `/machines/${machine.slug}` },
         ]}
       />
-      <h1>{machine.name}</h1>
+      <h1>
+        {machine.name}
+        <NewBadge releaseDate={machine.spec.releaseDate} />
+      </h1>
       <p className="updated-at">更新日：{machine.updatedAt.slice(0, 10)}</p>
       <MachineThumbnail heroImage={machine.heroImage} name={machine.name} />
 
