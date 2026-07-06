@@ -20,13 +20,14 @@ a {
 }
 
 .site-header {
-  background: #18202b;
+  background: linear-gradient(180deg, #241407 0%, #3d2712 50%, #6b4a26 100%);
   color: #fff;
   padding: 32px 0;
 }
 
 .site-header .hero-banner {
   display: block;
+  width: 100%;
   margin-bottom: 20px;
 }
 
