@@ -1,14 +1,24 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
   return (
     <header className="site-header">
       <div className="container">
-        {/* Not an <h1> — each page provides its own page-specific h1
-            (machine name, page title, etc). Only one h1 per page. */}
-        <p className="site-title">ワンチャンくん🐶</p>
-        <p className="site-description">あさイチリセット情報ガイド</p>
-        <p className="site-tagline">「あさイチを制する者は、スロットを制する」</p>
+        {/* The banner image carries the brand name/description/tagline
+            visually — its alt text is the accessible equivalent, so no
+            separate <h1>/<p> duplicating that text belongs here. Each
+            page still provides its own page-specific h1. */}
+        <Link href="/">
+          <Image
+            src="/images/hero-banner.png"
+            alt="ワンチャンくん｜あさイチリセット情報ガイド｜あさイチを制する者は、スロットを制する"
+            width={1916}
+            height={821}
+            className="hero-banner"
+            priority
+          />
+        </Link>
         <nav aria-label="メインメニュー">
           <Link href="/">トップ</Link>
           <Link href="/machines">機種一覧</Link>

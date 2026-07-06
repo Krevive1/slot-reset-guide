@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { Metadata } from "next";
 import { getAllMachines, sortMachinesByPopularity } from "@/lib/content/machines";
 import MachineCard from "@/components/machine/MachineCard";
@@ -18,14 +17,6 @@ export default async function HomePage() {
   return (
     <>
       <AdSlot slot="home-top" />
-      <Image
-        src="/images/hero-banner.png"
-        alt="ワンチャンくん"
-        width={1916}
-        height={821}
-        className="hero-banner"
-        priority
-      />
       <h1 className="page-title">初心者向け パチスロ朝一リセット学習ガイド</h1>
 
       <section className="card warning" aria-label="注意喚起">

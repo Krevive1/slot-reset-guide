@@ -25,22 +25,9 @@ a {
   padding: 32px 0;
 }
 
-.site-header .site-title {
-  margin: 0 0 8px;
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.site-header .site-description {
-  margin: 0 0 4px;
-  color: #d7dde6;
-}
-
-.site-header .site-tagline {
-  margin: 0 0 20px;
-  color: #f0a37a;
-  font-style: italic;
-  font-size: 14px;
+.site-header .hero-banner {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .page-title {
@@ -370,10 +357,6 @@ footer {
 @media (max-width: 720px) {
   .site-header {
     padding: 24px 0;
-  }
-
-  .site-header .site-title {
-    font-size: 24px;
   }
 
   section,
