@@ -1,0 +1,39 @@
+{
+  "slug": "birdie-wing",
+  "name": "スマスロBIRDIE WING",
+  "updatedAt": "2026-07-06T09:00:00+09:00",
+  "publishedAt": "2026-07-06T09:00:00+09:00",
+  "spec": {
+    "overview": "通常時は10周期消化でBB+ST獲得の機種。設定変更時は周期天井が7周期に短縮される。"
+  },
+  "resetInfo": {
+    "benefits": [
+      "設定変更時は周期天井が10周期から7周期に短縮される"
+    ],
+    "notes": "本データはなな徹・ちょんぼりすた・スロベース・パチーモ等の公開解析情報を参照して作成した二次情報です。当サイト独自の実践データが蓄積され次第、実践データ欄に追加していきます。"
+  },
+  "detectionMethod": {
+    "methods": [
+      "周期の消化ペースと現在の周期数を確認し、短縮の兆候を確認する"
+    ]
+  },
+  "morningTarget": {
+    "points": [
+      "朝一は周期が進んでいる台・ハマり気味の台を優先して確認する"
+    ]
+  },
+  "ceilingZoneInfo": {
+    "ceilingGames": "7周期消化でBB+ST",
+    "zones": []
+  },
+  "quitTiming": {
+    "points": [
+      "決めておいた投資上限に達したら撤退する",
+      "短縮天井到達までの差枚推移を見て、回収困難と判断したら早めにやめる"
+    ]
+  },
+  "referenceVideos": [],
+  "practiceRecords": [],
+  "relatedMachines": [],
+  "faq": []
+}

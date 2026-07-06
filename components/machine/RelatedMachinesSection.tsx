@@ -7,9 +7,10 @@ export default function RelatedMachinesSection({
   series,
 }: {
   relatedMachines: Machine["relatedMachines"];
-  maker: Machine["spec"]["maker"];
+  maker?: Machine["spec"]["maker"];
   series?: Machine["spec"]["series"];
 }) {
+  const hasFooterLinks = maker || series;
   return (
     <section className="card" aria-labelledby="related-machines-heading">
       <h2 id="related-machines-heading">関連機種・同メーカーへの内部リンク</h2>
@@ -22,14 +23,20 @@ export default function RelatedMachinesSection({
           ))}
         </ul>
       )}
-      <p className="section-note">
-        メーカー：<Link href={`/machines/maker/${maker.slug}`}>{maker.name}</Link>
-        {series && (
-          <>
-            {" "}／ シリーズ：<Link href={`/machines/series/${series.slug}`}>{series.name}</Link>
-          </>
-        )}
-      </p>
+      {hasFooterLinks && (
+        <p className="section-note">
+          {maker && (
+            <>
+              メーカー：<Link href={`/machines/maker/${maker.slug}`}>{maker.name}</Link>
+            </>
+          )}
+          {series && (
+            <>
+              {maker && " ／ "}シリーズ：<Link href={`/machines/series/${series.slug}`}>{series.name}</Link>
+            </>
+          )}
+        </p>
+      )}
     </section>
   );
 }

@@ -11,11 +11,15 @@ export const SeriesRefSchema = z.object({
 });
 
 export const SpecSchema = z.object({
-  releaseDate: z.string(),
-  maker: MakerRefSchema,
+  // releaseDate/maker/baseProbability are optional: much of our reset-info
+  // research is sourced from third-party analysis sites that document
+  // ceiling/mode behavior but not official spec-sheet data. Never guess
+  // these values — omit rather than fabricate.
+  releaseDate: z.string().optional(),
+  maker: MakerRefSchema.optional(),
   series: SeriesRefSchema.optional(),
   overview: z.string(),
-  baseProbability: z.string(),
+  baseProbability: z.string().optional(),
   bonusProbability: z.string().optional(),
   atProbability: z.string().optional(),
 });

@@ -52,7 +52,7 @@ export const getAllMachines = () => machineRepository.getAll();
 
 export async function getMachinesByMaker(makerSlug: string): Promise<Machine[]> {
   const machines = await getAllMachines();
-  return machines.filter((machine) => machine.spec.maker.slug === makerSlug);
+  return machines.filter((machine) => machine.spec.maker?.slug === makerSlug);
 }
 
 export async function getMachinesBySeries(seriesSlug: string): Promise<Machine[]> {

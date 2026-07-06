@@ -1,3 +1,10 @@
 [
-  { "slug": "sample-fever", "name": "サンプルフィーバーシリーズ（架空シリーズ）" }
+  { "slug": "hokuto-no-ken", "name": "北斗の拳シリーズ" },
+  { "slug": "okidoki", "name": "沖ドキ!シリーズ" },
+  { "slug": "banchou", "name": "番長シリーズ" },
+  { "slug": "valvrave", "name": "ヴァルヴレイヴシリーズ" },
+  { "slug": "en-en-no-shouboutai", "name": "炎炎ノ消防隊シリーズ" },
+  { "slug": "karakuri-circus", "name": "からくりサーカスシリーズ" },
+  { "slug": "sengoku-otome", "name": "戦国乙女シリーズ" },
+  { "slug": "onimusha", "name": "鬼武者シリーズ" }
 ]
