@@ -36,6 +36,42 @@ a {
 .site-header nav a {
   color: #3d2712;
   background: rgba(61, 39, 18, 0.1);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Homage to a real pachislot panel layout: MAXbet button, lever,
+   then three stop buttons — left to right. Purely decorative markers
+   before each nav label; text stays fully readable either way. */
+.site-header nav a::before {
+  content: "";
+  flex-shrink: 0;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #4a4a4a, #0e0e0e);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.15);
+}
+
+/* Lever */
+.site-header nav a:nth-child(2)::before {
+  width: 9px;
+  height: 22px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #d64a36, #8a2418);
+}
+
+.site-header nav a:nth-child(2) {
+  margin-right: 10px;
+}
+
+/* Three stop buttons */
+.site-header nav a:nth-child(3)::before,
+.site-header nav a:nth-child(4)::before,
+.site-header nav a:nth-child(5)::before {
+  background: radial-gradient(circle at 35% 35%, #ffb347, #d9711f);
 }
 
 .page-title {
