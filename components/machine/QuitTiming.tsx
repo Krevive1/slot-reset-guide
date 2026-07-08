@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Machine } from "@/lib/content/schema";
 
 export default function QuitTiming({ quitTiming }: { quitTiming: Machine["quitTiming"] }) {
@@ -9,6 +10,9 @@ export default function QuitTiming({ quitTiming }: { quitTiming: Machine["quitTi
           <li key={point}>{point}</li>
         ))}
       </ul>
+      <p className="section-note">
+        <Link href="/guides/yamedoki-chuiten">失敗しやすいパターンと注意点はこちら →</Link>
+      </p>
     </section>
   );
 }

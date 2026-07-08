@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -44,6 +45,13 @@ export default function BeginnerPage() {
         このサイトは、射幸心をあおる表現を避け、
         初心者が仕組みを理解して無理な遊技を避けるための情報を整理します。
       </p>
+
+      <h2>関連ガイド</h2>
+      <ul>
+        <li><Link href="/guides/mikiwake-kata">朝一リセットの見分け方（基本の考え方）</Link></li>
+        <li><Link href="/guides/yamedoki-chuiten">失敗しやすいパターンと注意点</Link></li>
+        <li><Link href="/machines">機種一覧から個別の恩恵・判別方法を見る</Link></li>
+      </ul>
     </div>
   );
 }

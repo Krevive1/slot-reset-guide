@@ -14,6 +14,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: SITE_URL, changeFrequency: "daily", priority: 1 },
     { url: `${SITE_URL}/machines`, changeFrequency: "daily", priority: 0.9 },
     { url: `${SITE_URL}/beginner`, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${SITE_URL}/guides/mikiwake-kata`, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${SITE_URL}/guides/yamedoki-chuiten`, changeFrequency: "monthly", priority: 0.5 },
     { url: `${SITE_URL}/disclaimer`, changeFrequency: "yearly", priority: 0.1 },
     { url: `${SITE_URL}/privacy`, changeFrequency: "yearly", priority: 0.1 },
   ];

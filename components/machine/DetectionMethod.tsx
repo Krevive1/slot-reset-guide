@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Machine } from "@/lib/content/schema";
 
 export default function DetectionMethod({
@@ -13,6 +14,9 @@ export default function DetectionMethod({
           <li key={method}>{method}</li>
         ))}
       </ul>
+      <p className="section-note">
+        <Link href="/guides/mikiwake-kata">見分け方の基本的な考え方はこちら →</Link>
+      </p>
     </section>
   );
 }
