@@ -328,6 +328,63 @@ footer {
   color: #2b5cad;
 }
 
+.comments .comment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.comments .comment-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e6ea;
+}
+
+.comments .comment-list li:first-child {
+  padding-top: 0;
+}
+
+.comment-meta {
+  margin: 0 0 4px;
+  font-size: 13px;
+  color: #666;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.comment-form label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.comment-form input[type="text"],
+.comment-form textarea {
+  padding: 8px 10px;
+  border: 1px solid #dde1e6;
+  border-radius: 8px;
+  font: inherit;
+  resize: vertical;
+}
+
+.comment-form .hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.comment-form button {
+  align-self: flex-start;
+  margin-top: 8px;
+  cursor: pointer;
+  border: none;
+}
+
 /* Reference video (third-party citation) */
 .reference-video {
   border-left: 6px solid #8a94a6;
