@@ -19,6 +19,7 @@ import ReferenceVideoSection from "@/components/machine/ReferenceVideoSection";
 import PracticeRecordSection from "@/components/machine/PracticeRecordSection";
 import RelatedMachinesSection from "@/components/machine/RelatedMachinesSection";
 import ReferenceSources from "@/components/machine/ReferenceSources";
+import Comments from "@/components/machine/Comments";
 
 export async function generateStaticParams() {
   const slugs = await getAllMachineSlugs();
@@ -108,6 +109,7 @@ export default async function MachinePage({
       <AdSlot slot="in-article" />
       <ReferenceVideoSection videos={machine.referenceVideos} />
       <PracticeRecordSection records={machine.practiceRecords} />
+      <Comments slug={machine.slug} title={machine.name} />
       <RelatedMachinesSection
         relatedMachines={machine.relatedMachines}
         maker={machine.spec.maker}
