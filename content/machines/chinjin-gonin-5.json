@@ -1,11 +1,12 @@
 {
   "slug": "chinjin-gonin-5",
   "name": "L主役は銭形5",
-  "popularityRank": 20,
+  "popularityRank": 23,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "最大1250G+α（モード別）の天井を持つ機種。設定変更時は850G+αに短縮され、ゲーム数のランダム加算もある。"
+    "overview": "最大1250G+α（モード別）の天井を持つ機種。設定変更時は850G+αに短縮され、ゲーム数のランダム加算もある。",
+    "releaseDate": "2025-10-06"
   },
   "resetInfo": {
     "benefits": [

@@ -1,11 +1,12 @@
 {
   "slug": "magia-record",
   "name": "スマスロマギアレコード",
-  "popularityRank": 21,
+  "popularityRank": 24,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "ボーナス間最大950pt+α（約633G）の天井を持つ機種。設定変更時は600〜699pt+αに短縮されるが、恩恵は控えめ。"
+    "overview": "ボーナス間最大950pt+α（約633G）の天井を持つ機種。設定変更時は600〜699pt+αに短縮されるが、恩恵は控えめ。",
+    "releaseDate": "2025-04-07"
   },
   "resetInfo": {
     "benefits": [

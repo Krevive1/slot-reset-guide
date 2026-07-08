@@ -1,42 +1,31 @@
 import Link from "next/link";
+import MachineThumbnail from "./MachineThumbnail";
+import NewBadge from "./NewBadge";
+import HotBadge from "./HotBadge";
 import { Machine } from "@/lib/content/schema";
 
 export default function RelatedMachinesSection({
-  relatedMachines,
-  maker,
-  series,
+  randomMachines,
 }: {
-  relatedMachines: Machine["relatedMachines"];
-  maker?: Machine["spec"]["maker"];
-  series?: Machine["spec"]["series"];
+  randomMachines: Pick<Machine, "slug" | "name" | "heroImage" | "spec" | "hot">[];
 }) {
-  const hasFooterLinks = maker || series;
+  if (randomMachines.length === 0) return null;
+
   return (
-    <section className="card" aria-labelledby="related-machines-heading">
-      <h2 id="related-machines-heading">関連機種・同メーカーへの内部リンク</h2>
-      {relatedMachines.length > 0 && (
-        <ul>
-          {relatedMachines.map((related) => (
-            <li key={related.slug}>
-              <Link href={`/machines/${related.slug}`}>{related.name}</Link>
-            </li>
-          ))}
-        </ul>
-      )}
-      {hasFooterLinks && (
-        <p className="section-note">
-          {maker && (
-            <>
-              メーカー：<Link href={`/machines/maker/${maker.slug}`}>{maker.name}</Link>
-            </>
-          )}
-          {series && (
-            <>
-              {maker && " ／ "}シリーズ：<Link href={`/machines/series/${series.slug}`}>{series.name}</Link>
-            </>
-          )}
-        </p>
-      )}
+    <section className="card" aria-labelledby="related-articles-heading">
+      <h2 id="related-articles-heading">関連記事</h2>
+      <div className="cards">
+        {randomMachines.map((machine) => (
+          <Link key={machine.slug} href={`/machines/${machine.slug}`} className="card machine-card">
+            <MachineThumbnail heroImage={machine.heroImage} name={machine.name} />
+            <h3>
+              {machine.name}
+              <NewBadge releaseDate={machine.spec.releaseDate} />
+              <HotBadge hot={machine.hot} />
+            </h3>
+          </Link>
+        ))}
+      </div>
     </section>
   );
 }

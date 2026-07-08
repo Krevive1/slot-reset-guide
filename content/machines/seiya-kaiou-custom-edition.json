@@ -1,11 +1,12 @@
 {
   "slug": "seiya-kaiou-custom-edition",
   "name": "L聖闘士星矢 海皇覚醒 CUSTOM EDITION",
-  "popularityRank": 36,
+  "popularityRank": 39,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "999G+α（600G仮天井50%）の天井を持つ機種。AT後536Gに短縮され、約50%でGB高確・GBレベル2以上となる。"
+    "overview": "999G+α（600G仮天井50%）の天井を持つ機種。AT後536Gに短縮され、約50%でGB高確・GBレベル2以上となる。",
+    "releaseDate": "2024-06-03"
   },
   "resetInfo": {
     "benefits": [

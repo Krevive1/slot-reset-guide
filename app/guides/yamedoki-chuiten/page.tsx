@@ -1,17 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/site";
+import ShareButtons from "@/components/site/ShareButtons";
+
+const title = "朝一リセット狙いで失敗しやすいパターンと注意点";
+const url = `${SITE_URL}/guides/yamedoki-chuiten`;
 
 export const metadata: Metadata = {
-  title: "朝一リセット狙いで失敗しやすいパターンと注意点",
+  title,
   description: "パチスロの朝一リセット狙いでよくある失敗パターンと、やめどきの基本的な考え方をまとめました。",
-  alternates: { canonical: `${SITE_URL}/guides/yamedoki-chuiten` },
+  alternates: { canonical: url },
 };
 
 export default function YamedokiChuitenPage() {
   return (
     <div className="article">
-      <h1 className="page-title">朝一リセット狙いで失敗しやすいパターンと注意点</h1>
+      <h1 className="page-title">{title}</h1>
 
       <h2>よくある失敗パターン</h2>
       <ul>
@@ -39,6 +43,8 @@ export default function YamedokiChuitenPage() {
         <Link href="/beginner">初心者向け解説</Link>
         もあわせてご覧ください。
       </p>
+
+      <ShareButtons url={url} title={title} />
     </div>
   );
 }

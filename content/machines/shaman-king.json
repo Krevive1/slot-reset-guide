@@ -1,11 +1,12 @@
 {
   "slug": "shaman-king",
   "name": "スマスロシャーマンキング",
-  "popularityRank": 31,
+  "popularityRank": 34,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "ボーナス間天井800G+α・ATスルー10回の機種。設定変更時は500G+αに短縮され、憑依ポイント・巫門遁甲ポイントの加算もある。"
+    "overview": "ボーナス間天井800G+α・ATスルー10回の機種。設定変更時は500G+αに短縮され、憑依ポイント・巫門遁甲ポイントの加算もある。",
+    "releaseDate": "2025-02-03"
   },
   "resetInfo": {
     "benefits": [

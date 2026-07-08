@@ -1,11 +1,12 @@
 {
   "slug": "bakemonogatari",
   "name": "スマスロ化物語",
-  "popularityRank": 24,
+  "popularityRank": 27,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "AT後天井1000Gの機種。設定変更時は600Gに短縮される。"
+    "overview": "AT後天井1000Gの機種。設定変更時は600Gに短縮される。",
+    "releaseDate": "2025-12-08"
   },
   "resetInfo": {
     "benefits": [

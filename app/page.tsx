@@ -1,7 +1,12 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getAllMachines, sortMachinesByPopularity } from "@/lib/content/machines";
+import {
+  getAllMachines,
+  sortMachinesByLatest,
+  sortMachinesByPopularity,
+} from "@/lib/content/machines";
 import MachineCard from "@/components/machine/MachineCard";
+import MachineThumbnail from "@/components/machine/MachineThumbnail";
 import AdSlot from "@/components/ads/AdSlot";
 import LineCta from "@/components/site/LineCta";
 import { SITE_URL } from "@/lib/site";
@@ -13,12 +18,30 @@ export const metadata: Metadata = {
 };
 
 export default async function HomePage() {
-  const machines = sortMachinesByPopularity(await getAllMachines());
+  const allMachines = await getAllMachines();
+  const machines = sortMachinesByPopularity(allMachines);
+  const latestMachines = sortMachinesByLatest(allMachines).slice(0, 4);
 
   return (
     <>
       <AdSlot slot="home-top" />
       <h1 className="page-title">初心者向けパチスロ朝一リセットまとめサイト</h1>
+
+      {latestMachines.length > 0 && (
+        <section aria-label="新着情報">
+          <h2>新着情報</h2>
+          <ul className="latest-list">
+            {latestMachines.map((machine) => (
+              <li key={machine.slug} className="latest-list-item">
+                <Link href={`/machines/${machine.slug}`}>
+                  <MachineThumbnail heroImage={machine.heroImage} name={machine.name} />
+                </Link>
+                <Link href={`/machines/${machine.slug}`}>{machine.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <section className="card warning" aria-label="注意喚起">
         <h2>はじめに（重要）</h2>

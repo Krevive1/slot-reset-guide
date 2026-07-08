@@ -1,11 +1,12 @@
 {
   "slug": "magical-halloween-8",
   "name": "マジカルハロウィン8",
-  "popularityRank": 42,
+  "popularityRank": 45,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "最大777G+α（大半が777G）の天井を持つ機種。天井はランダムに短縮され（最大約600G）、朝一詠唱チャレンジも用意されている。"
+    "overview": "最大777G+α（大半が777G）の天井を持つ機種。天井はランダムに短縮され（最大約600G）、朝一詠唱チャレンジも用意されている。",
+    "releaseDate": "2023-12-04"
   },
   "resetInfo": {
     "benefits": [

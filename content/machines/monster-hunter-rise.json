@@ -1,11 +1,12 @@
 {
   "slug": "monster-hunter-rise",
   "name": "スマスロモンスターハンターライズ",
-  "popularityRank": 18,
+  "popularityRank": 21,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "ゲーム数999G・6スルー天井の機種。天井短縮こそないが、モードB以上が濃厚になり、75%以上で天国準備状態となる。"
+    "overview": "ゲーム数999G・6スルー天井の機種。天井短縮こそないが、モードB以上が濃厚になり、75%以上で天国準備状態となる。",
+    "releaseDate": "2024-11-18"
   },
   "resetInfo": {
     "benefits": [

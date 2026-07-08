@@ -1,11 +1,12 @@
 {
   "slug": "toaru-majutsu-no-index",
   "name": "Lスマスロ とある魔術の禁書目録",
-  "popularityRank": 37,
+  "popularityRank": 40,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "999G+α（モード別）の天井を持つ機種。通常B以上が濃厚になり、約3割の確率でチャンスモードにも移行する。"
+    "overview": "999G+α（モード別）の天井を持つ機種。通常B以上が濃厚になり、約3割の確率でチャンスモードにも移行する。",
+    "releaseDate": "2023-11-06"
   },
   "resetInfo": {
     "benefits": [

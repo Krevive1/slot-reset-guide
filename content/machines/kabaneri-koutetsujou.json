@@ -1,11 +1,12 @@
 {
   "slug": "kabaneri-koutetsujou",
   "name": "パチスロ甲鉄城のカバネリ（無印）",
-  "popularityRank": 32,
+  "popularityRank": 35,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "短縮天井型ではなく、有利区間や裏美馬ST後などの状況を見て狙う機種。リセット恩恵というより有利区間状況の判別・特殊狙いが中心になる。"
+    "overview": "短縮天井型ではなく、有利区間や裏美馬ST後などの状況を見て狙う機種。リセット恩恵というより有利区間状況の判別・特殊狙いが中心になる。",
+    "releaseDate": "2022-07-04"
   },
   "resetInfo": {
     "benefits": [

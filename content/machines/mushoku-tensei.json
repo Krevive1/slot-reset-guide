@@ -1,11 +1,12 @@
 {
   "slug": "mushoku-tensei",
   "name": "L無職転生",
-  "popularityRank": 25,
+  "popularityRank": 28,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "ステータスチェンジ天井19回（ボーナス間）・40回（AT間）の機種。設定変更時は13回・17回に短縮されるが、天井自体が深く到達は難しい。"
+    "overview": "ステータスチェンジ天井19回（ボーナス間）・40回（AT間）の機種。設定変更時は13回・17回に短縮されるが、天井自体が深く到達は難しい。",
+    "releaseDate": "2025-12-22"
   },
   "resetInfo": {
     "benefits": [

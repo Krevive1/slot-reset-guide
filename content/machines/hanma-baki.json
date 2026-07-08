@@ -1,11 +1,12 @@
 {
   "slug": "hanma-baki",
   "name": "L範馬刃牙",
-  "popularityRank": 23,
+  "popularityRank": 26,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "最大700G+α・6スルー天井の機種。約99%が200G+αの仮天井で当選し、チャンス・天国が濃厚となる。"
+    "overview": "最大700G+α・6スルー天井の機種。約99%が200G+αの仮天井で当選し、チャンス・天国が濃厚となる。",
+    "releaseDate": "2026-02-02"
   },
   "resetInfo": {
     "benefits": [

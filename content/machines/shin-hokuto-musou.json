@@ -1,7 +1,7 @@
 {
   "slug": "shin-hokuto-musou",
   "name": "スマスロ真・北斗無双",
-  "popularityRank": 33,
+  "popularityRank": 36,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
@@ -9,7 +9,8 @@
       "slug": "hokuto-no-ken",
       "name": "北斗の拳シリーズ"
     },
-    "overview": "最大1536宿命の機種。モードC以上が濃厚な場合、1024宿命に短縮される。"
+    "overview": "最大1536宿命の機種。モードC以上が濃厚な場合、1024宿命に短縮される。",
+    "releaseDate": "2024-07-08"
   },
   "resetInfo": {
     "benefits": [

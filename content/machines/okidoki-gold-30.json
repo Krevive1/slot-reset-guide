@@ -1,7 +1,7 @@
 {
   "slug": "okidoki-gold-30",
   "name": "沖ドキ!GOLD-30",
-  "popularityRank": 29,
+  "popularityRank": 32,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
@@ -9,7 +9,8 @@
       "slug": "okidoki",
       "name": "沖ドキ!シリーズ"
     },
-    "overview": "通常A/B天井999G、チャンス/引き戻し天井200Gの機種。設定変更時は約39.8%でチャンスモードへ移行し、通常A/B移行時も25%で399Gに短縮される。"
+    "overview": "通常A/B天井999G、チャンス/引き戻し天井200Gの機種。設定変更時は約39.8%でチャンスモードへ移行し、通常A/B移行時も25%で399Gに短縮される。",
+    "releaseDate": "2022-12-19"
   },
   "resetInfo": {
     "benefits": [

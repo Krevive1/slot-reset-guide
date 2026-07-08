@@ -1,11 +1,12 @@
 {
   "slug": "kinnikuman-7akuma",
   "name": "Lスマスロ キン肉マン 7人の悪魔超人編",
-  "popularityRank": 39,
+  "popularityRank": 42,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "超人パワー（平均約583G/実ゲーム数）で進行する機種。約25%でチャンスモードへ移行し、SPモードの初期ポイントも優遇される。"
+    "overview": "超人パワー（平均約583G/実ゲーム数）で進行する機種。約25%でチャンスモードへ移行し、SPモードの初期ポイントも優遇される。",
+    "releaseDate": "2023-08-07"
   },
   "resetInfo": {
     "benefits": [

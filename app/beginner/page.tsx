@@ -1,18 +1,22 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LineCta from "@/components/site/LineCta";
+import ShareButtons from "@/components/site/ShareButtons";
 import { SITE_URL } from "@/lib/site";
 
+const title = "朝一リセットとは？初心者向け解説";
+const url = `${SITE_URL}/beginner`;
+
 export const metadata: Metadata = {
-  title: "朝一リセットとは？初心者向け解説",
+  title,
   description: "パチスロ初心者向けに、朝一リセットの意味、リセット恩恵、注意点をわかりやすく解説します。",
-  alternates: { canonical: `${SITE_URL}/beginner` },
+  alternates: { canonical: url },
 };
 
 export default function BeginnerPage() {
   return (
     <div className="article">
-      <h1 className="page-title">朝一リセットとは？初心者向け解説</h1>
+      <h1 className="page-title">{title}</h1>
 
       <h2>朝一リセットとは？</h2>
       <p>
@@ -54,6 +58,7 @@ export default function BeginnerPage() {
         <li><Link href="/machines">機種一覧から個別の恩恵・判別方法を見る</Link></li>
       </ul>
 
+      <ShareButtons url={url} title={title} />
       <LineCta />
     </div>
   );

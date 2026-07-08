@@ -1,11 +1,12 @@
 {
   "slug": "one-punch-man",
   "name": "スマスロワンパンマン",
-  "popularityRank": 41,
+  "popularityRank": 44,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "CZ天井約320G+α（スルー回数天井あり）の機種。設定変更時は天井短縮ではなく、通常B以上への移行が中心となる。"
+    "overview": "CZ天井約320G+α（スルー回数天井あり）の機種。設定変更時は天井短縮ではなく、通常B以上への移行が中心となる。",
+    "releaseDate": "2024-08-05"
   },
   "resetInfo": {
     "benefits": [

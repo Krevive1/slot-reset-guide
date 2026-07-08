@@ -1,11 +1,12 @@
 {
   "slug": "taikai4-with-sonoko",
   "name": "大海物語4 with すーぱーそに子",
-  "popularityRank": 120,
+  "popularityRank": 123,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "天井非搭載、または朝一狙いに不向きなA/RT寄りの機種として扱われる。"
+    "overview": "天井非搭載、または朝一狙いに不向きなA/RT寄りの機種として扱われる。",
+    "releaseDate": "2018-10-15"
   },
   "resetInfo": {
     "benefits": [

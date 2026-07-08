@@ -1,11 +1,12 @@
 {
   "slug": "re-zero-season2",
   "name": "スロットRe:ゼロ Season2",
-  "popularityRank": 18,
+  "popularityRank": 21,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "規定1400pt（約930G）・AT間1300Gの天井を持つ機種。ポイント天井が短縮され（最大1000pt以下）、ポイント加算もある。"
+    "overview": "規定1400pt（約930G）・AT間1300Gの天井を持つ機種。ポイント天井が短縮され（最大1000pt以下）、ポイント加算もある。",
+    "releaseDate": "2024-10-21"
   },
   "resetInfo": {
     "benefits": [

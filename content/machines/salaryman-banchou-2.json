@@ -1,7 +1,7 @@
 {
   "slug": "salaryman-banchou-2",
   "name": "押忍!サラリーマン番長2",
-  "popularityRank": 44,
+  "popularityRank": 47,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
@@ -9,7 +9,8 @@
       "slug": "banchou",
       "name": "番長シリーズ"
     },
-    "overview": "モードA799G/モードB561G/天国99Gの機種。リセットは内部モードの再抽選にあたるが、明確な天井短縮の恩恵は乏しい。"
+    "overview": "モードA799G/モードB561G/天国99Gの機種。リセットは内部モードの再抽選にあたるが、明確な天井短縮の恩恵は乏しい。",
+    "releaseDate": "2020-04-20"
   },
   "resetInfo": {
     "benefits": [

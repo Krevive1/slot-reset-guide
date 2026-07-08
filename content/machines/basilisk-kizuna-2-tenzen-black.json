@@ -1,11 +1,12 @@
 {
   "slug": "basilisk-kizuna-2-tenzen-black",
   "name": "バジリスク絆2 天膳 BLACK EDITION",
-  "popularityRank": 30,
+  "popularityRank": 33,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
-    "overview": "有利区間800G（同色BC）・AT7スルーの機種。リセット時に大きな恩恵はなく、有利区間移行時のエピソードBC抽選など若干のチャンスがある程度で、天井は通常と同じ扱い。"
+    "overview": "有利区間800G（同色BC）・AT7スルーの機種。リセット時に大きな恩恵はなく、有利区間移行時のエピソードBC抽選など若干のチャンスがある程度で、天井は通常と同じ扱い。",
+    "releaseDate": "2023-12-18"
   },
   "resetInfo": {
     "benefits": [

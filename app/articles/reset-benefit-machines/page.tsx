@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import LineCta from "@/components/site/LineCta";
+import ShareButtons from "@/components/site/ShareButtons";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { SITE_URL } from "@/lib/site";
 
@@ -474,6 +475,7 @@ export default function ResetBenefitMachinesArticlePage() {
           <li>店舗状況や台の状態によって挙動は異なる場合があります。</li>
         </ul>
 
+        <ShareButtons url={url} title={title} />
         <LineCta />
       </div>
     </article>

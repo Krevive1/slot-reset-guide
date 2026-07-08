@@ -1,17 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL } from "@/lib/site";
+import ShareButtons from "@/components/site/ShareButtons";
+
+const title = "朝一リセットの見分け方（基本の考え方）";
+const url = `${SITE_URL}/guides/mikiwake-kata`;
 
 export const metadata: Metadata = {
-  title: "朝一リセットの見分け方（基本の考え方）",
+  title,
   description: "パチスロの朝一リセットを見分けるための基本的な考え方を解説します。機種ごとの判別方法を読む前に押さえておきたいポイントをまとめました。",
-  alternates: { canonical: `${SITE_URL}/guides/mikiwake-kata` },
+  alternates: { canonical: url },
 };
 
 export default function MikiwakeKataPage() {
   return (
     <div className="article">
-      <h1 className="page-title">朝一リセットの見分け方（基本の考え方）</h1>
+      <h1 className="page-title">{title}</h1>
 
       <h2>何を比較すればいいのか</h2>
       <ul>
@@ -39,6 +43,8 @@ export default function MikiwakeKataPage() {
         <Link href="/beginner">初心者向け解説</Link>
         もあわせてご覧ください。
       </p>
+
+      <ShareButtons url={url} title={title} />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 {
   "slug": "hokuto-no-ken-smart-slot",
   "name": "スマスロ北斗の拳",
-  "popularityRank": 17,
+  "popularityRank": 20,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
@@ -9,7 +9,8 @@
       "slug": "hokuto-no-ken",
       "name": "北斗の拳シリーズ"
     },
-    "overview": "1268G+α（300/777/800G短縮抽選あり）の天井を持つ機種。設定変更時は800G+αに短縮され、天井到達時の北斗揃い期待度・継続率も優遇される。"
+    "overview": "1268G+α（300/777/800G短縮抽選あり）の天井を持つ機種。設定変更時は800G+αに短縮され、天井到達時の北斗揃い期待度・継続率も優遇される。",
+    "releaseDate": "2023-04-03"
   },
   "resetInfo": {
     "benefits": [

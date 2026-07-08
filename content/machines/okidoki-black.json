@@ -1,7 +1,7 @@
 {
   "slug": "okidoki-black",
   "name": "沖ドキ!BLACK",
-  "popularityRank": 27,
+  "popularityRank": 30,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
@@ -9,7 +9,8 @@
       "slug": "okidoki",
       "name": "沖ドキ!シリーズ"
     },
-    "overview": "通常A/B天井999G+α、引き戻し/チャンス天井200G、天国系32Gの機種。有利区間リセット後に通常A/Bへ移行した場合、25%で399Gに短縮される。"
+    "overview": "通常A/B天井999G+α、引き戻し/チャンス天井200G、天国系32Gの機種。有利区間リセット後に通常A/Bへ移行した場合、25%で399Gに短縮される。",
+    "releaseDate": "2024-07-01"
   },
   "resetInfo": {
     "benefits": [

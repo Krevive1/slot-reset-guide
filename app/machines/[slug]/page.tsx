@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getAllMachineSlugs, getMachine } from "@/lib/content/machines";
+import { getAllMachineSlugs, getAllMachines, getMachine, getRandomMachines } from "@/lib/content/machines";
 import { buildArticleJsonLd, buildBreadcrumbJsonLd, buildFaqJsonLd } from "@/lib/seo/jsonld";
 import { SITE_URL } from "@/lib/site";
 import JsonLd from "@/components/seo/JsonLd";
@@ -21,6 +21,7 @@ import RelatedMachinesSection from "@/components/machine/RelatedMachinesSection"
 import ReferenceSources from "@/components/machine/ReferenceSources";
 import Comments from "@/components/machine/Comments";
 import LineCta from "@/components/site/LineCta";
+import ShareButtons from "@/components/site/ShareButtons";
 
 export async function generateStaticParams() {
   const slugs = await getAllMachineSlugs();
@@ -70,6 +71,9 @@ export default async function MachinePage({
   const machine = await getMachine(slug);
   if (!machine) notFound();
 
+  const allMachines = await getAllMachines();
+  const randomMachines = getRandomMachines(allMachines, machine.slug, 5);
+
   const url = `${SITE_URL}/machines/${machine.slug}`;
   const machinesUrl = `${SITE_URL}/machines`;
   const articleJsonLd = buildArticleJsonLd(machine, url);
@@ -111,11 +115,8 @@ export default async function MachinePage({
       <ReferenceVideoSection videos={machine.referenceVideos} />
       <PracticeRecordSection records={machine.practiceRecords} />
       <Comments slug={machine.slug} title={machine.name} />
-      <RelatedMachinesSection
-        relatedMachines={machine.relatedMachines}
-        maker={machine.spec.maker}
-        series={machine.spec.series}
-      />
+      <ShareButtons url={url} title={machine.name} />
+      <RelatedMachinesSection randomMachines={randomMachines} />
       <LineCta />
       <ReferenceSources />
     </article>

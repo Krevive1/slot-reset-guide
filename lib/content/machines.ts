@@ -68,6 +68,19 @@ export function sortMachinesByPopularity(machines: Machine[]): Machine[] {
   });
 }
 
+export function sortMachinesByLatest(machines: Machine[]): Machine[] {
+  return [...machines].sort((a, b) => {
+    const publishedDiff = new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
+    if (publishedDiff !== 0) return publishedDiff;
+    // publishedAt ties happen because many machines were bulk-added on the
+    // same day; break ties by real-world release date so "latest" reflects
+    // genuinely new machines rather than JSON file iteration order.
+    const releaseA = a.spec.releaseDate ? new Date(a.spec.releaseDate).getTime() : 0;
+    const releaseB = b.spec.releaseDate ? new Date(b.spec.releaseDate).getTime() : 0;
+    return releaseB - releaseA;
+  });
+}
+
 export async function getMachinesByMaker(makerSlug: string): Promise<Machine[]> {
   const machines = await getAllMachines();
   return machines.filter((machine) => machine.spec.maker?.slug === makerSlug);
@@ -93,6 +106,19 @@ export function searchMachines(machines: Machine[], query: string): Machine[] {
       .toLowerCase();
     return haystack.includes(normalized);
   });
+}
+
+// Picks a build-time-random sample of other machines for "related articles"
+// style sections. Random at build/deploy time is fine here — it just keeps
+// the picks from going stale between content updates.
+export function getRandomMachines(
+  machines: Machine[],
+  excludeSlug: string,
+  count: number
+): Machine[] {
+  const candidates = machines.filter((machine) => machine.slug !== excludeSlug);
+  const shuffled = [...candidates].sort(() => Math.random() - 0.5);
+  return shuffled.slice(0, count);
 }
 
 const NEW_BADGE_WINDOW_DAYS = 90;

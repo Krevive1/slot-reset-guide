@@ -1,7 +1,7 @@
 {
   "slug": "valvrave-2",
   "name": "Lヴァルヴレイヴ2",
-  "popularityRank": 19,
+  "popularityRank": 22,
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
@@ -9,7 +9,8 @@
       "slug": "valvrave",
       "name": "ヴァルヴレイヴシリーズ"
     },
-    "overview": "ボーナス・AT間天井1500G+α、6周期の機種。設定変更時は天井1000Gに短縮され、周期も6→3に短縮される。"
+    "overview": "ボーナス・AT間天井1500G+α、6周期の機種。設定変更時は天井1000Gに短縮され、周期も6→3に短縮される。",
+    "releaseDate": "2025-11-04"
   },
   "resetInfo": {
     "benefits": [

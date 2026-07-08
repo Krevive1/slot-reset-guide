@@ -1,32 +1,34 @@
 {
-  "slug": "code-geass-fukkatsu-no-lelouch",
-  "name": "スマスロコードギアス 復活のルルーシュ",
-  "popularityRank": 43,
-  "updatedAt": "2026-07-06T09:00:00+09:00",
-  "publishedAt": "2026-07-06T09:00:00+09:00",
+  "slug": "ultraman-saishuu-kessen",
+  "name": "L ULTRAMAN 最終決戦",
+  "popularityRank": 18,
+  "updatedAt": "2026-07-08T09:00:00+09:00",
+  "publishedAt": "2026-07-08T09:00:00+09:00",
   "spec": {
-    "overview": "通常A1000G/通常B700G/通常C950G/天国100Gの機種。リセットモードでは天井が700G+αに短縮される。",
-    "releaseDate": "2024-02-05"
+    "overview": "AT間天井1500G+α・CZ間最大700G+αの機種。設定変更時はAT間・CZ間どちらも天井が短縮される。",
+    "releaseDate": "2026-07-06"
   },
   "resetInfo": {
     "benefits": [
-      "リセットモードでは天井が700G+αに短縮される"
+      "設定変更時はAT間天井が1000G+αに短縮される",
+      "CZ間天井も最大500G+αに短縮される"
     ],
     "notes": "本データは公開解析情報を参照して作成した二次情報です。参照元は本ページ下部の「参考情報」欄をご覧ください。当サイト独自の実践データが蓄積され次第、実践データ欄に追加していきます。"
   },
   "detectionMethod": {
     "methods": [
       "前日の最終ゲーム数・差枚と当日のゲーム数表示を比較し、リセットの有無を確認する",
-      "本ページに記載の短縮天井・モード優遇の挙動が出ているかを確認する"
+      "AT間・CZ間の短縮天井到達ペースを確認する"
     ]
   },
   "morningTarget": {
     "points": [
-      "実戦上0G以降からプラスとの報告がある"
+      "天井短縮幅が大きいため、ハマり気味の台を優先して確認する",
+      "円換算の期待値は未公表のため、0Gから期待値プラスと断定せず短縮天井の挙動込みで判断する"
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "700G+α",
+    "ceilingGames": "AT間1000G+α／CZ間最大500G+α",
     "zones": []
   },
   "quitTiming": {
@@ -39,5 +41,5 @@
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [],
-  "heroImage": "/images/machines/code-geass-fukkatsu-no-lelouch.jpg"
+  "heroImage": "/images/machines/ultraman-saishuu-kessen.jpg"
 }
