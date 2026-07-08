@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getAllMachines, sortMachinesByPopularity } from "@/lib/content/machines";
 import MachineCard from "@/components/machine/MachineCard";
 import AdSlot from "@/components/ads/AdSlot";
+import LineCta from "@/components/site/LineCta";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default async function HomePage() {
       <section className="card warning" aria-label="注意喚起">
         <h2>はじめに（重要）</h2>
         <ul>
-          <li>本サイトは「勝てる・稼げる」を保証するものではありません。</li>
+          <li>本サイトは収支や遊技結果を保証するものではありません。</li>
           <li>無理な投資や借入をしての遊技は避けてください。</li>
           <li>不安を感じたら、すぐに休む・やめる判断を優先してください。</li>
         </ul>
@@ -39,6 +40,8 @@ export default async function HomePage() {
         <ul>
           <li><Link href="/guides/mikiwake-kata">朝一リセットの見分け方（基本の考え方）</Link></li>
           <li><Link href="/guides/yamedoki-chuiten">失敗しやすいパターンと注意点</Link></li>
+          <li><Link href="/articles/reset-benefit-machines">朝イチリセット恩恵を確認したい機種まとめ</Link></li>
+          <li><Link href="/articles/careful-morning-machines">朝一で慎重に確認したい機種まとめ</Link></li>
         </ul>
       </section>
 
@@ -58,6 +61,8 @@ export default async function HomePage() {
           <p><Link href="/machines">全機種を見る →</Link></p>
         </section>
       )}
+
+      <LineCta />
     </>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import LineCta from "@/components/site/LineCta";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -29,7 +30,7 @@ export default function BeginnerPage() {
       <p>
         リセットの挙動は機種によって異なります。
         ホールが必ずリセットしているとも限りません。
-        「朝一だから勝てる」という考え方は危険です。
+        「朝一なら結果が安定する」という考え方は危険です。
       </p>
 
       <h2>初心者が注意すべきこと</h2>
@@ -52,6 +53,8 @@ export default function BeginnerPage() {
         <li><Link href="/guides/yamedoki-chuiten">失敗しやすいパターンと注意点</Link></li>
         <li><Link href="/machines">機種一覧から個別の恩恵・判別方法を見る</Link></li>
       </ul>
+
+      <LineCta />
     </div>
   );
 }

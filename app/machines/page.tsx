@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getAllMachines, sortMachinesByPopularity } from "@/lib/content/machines";
 import MachineCard from "@/components/machine/MachineCard";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
@@ -20,6 +21,13 @@ export default async function MachinesIndexPage() {
       <h1 className="page-title">機種一覧</h1>
       <p className="section-note">
         機種ごとのリセット恩恵・判別方法・朝イチの狙い目・実践データをまとめています。
+      </p>
+      <p>
+        目的別に探したい場合は、
+        <Link href="/articles/reset-benefit-machines">朝イチリセット恩恵を確認したい機種まとめ</Link>
+        や
+        <Link href="/articles/careful-morning-machines">朝一で慎重に確認したい機種まとめ</Link>
+        も参考にしてください。
       </p>
       <AdSlot slot="machines-top" />
       {machines.length > 0 ? (

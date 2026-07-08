@@ -14,6 +14,26 @@ export function buildArticleJsonLd(machine: Machine, url: string) {
   };
 }
 
+export function buildGenericArticleJsonLd({
+  headline,
+  description,
+  url,
+}: {
+  headline: string;
+  description: string;
+  url: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline,
+    description,
+    author: { "@type": "Organization", name: "ワンチャンくん" },
+    publisher: { "@type": "Organization", name: "ワンチャンくん" },
+    mainEntityOfPage: url,
+  };
+}
+
 export function buildBreadcrumbJsonLd(items: { name: string; url: string }[]) {
   return {
     "@context": "https://schema.org",

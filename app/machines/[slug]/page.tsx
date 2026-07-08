@@ -20,6 +20,7 @@ import PracticeRecordSection from "@/components/machine/PracticeRecordSection";
 import RelatedMachinesSection from "@/components/machine/RelatedMachinesSection";
 import ReferenceSources from "@/components/machine/ReferenceSources";
 import Comments from "@/components/machine/Comments";
+import LineCta from "@/components/site/LineCta";
 
 export async function generateStaticParams() {
   const slugs = await getAllMachineSlugs();
@@ -115,6 +116,7 @@ export default async function MachinePage({
         maker={machine.spec.maker}
         series={machine.spec.series}
       />
+      <LineCta />
       <ReferenceSources />
     </article>
   );

@@ -217,6 +217,12 @@ section h2,
   font-weight: 700;
 }
 
+.button-secondary {
+  background: #f3f5f8;
+  color: #2b5cad;
+  border: 1px solid #d8dee8;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -242,6 +248,122 @@ footer {
   padding: 24px 0;
   color: #666;
   text-align: center;
+}
+
+.footer-nav {
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.footer-nav a {
+  color: #555;
+  background: transparent;
+  padding: 4px 6px;
+  border-radius: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.button-disabled {
+  background: #8a94a6;
+  cursor: default;
+}
+
+.line-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0 24px;
+}
+
+.line-actions .button {
+  margin-top: 0;
+}
+
+.line-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #fff;
+  border: 1px solid #e2e6ea;
+  border-left: 6px solid #2b7fad;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.line-cta h2 {
+  margin: 0 0 4px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.line-cta p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.line-cta .button {
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+.line-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.article-link-box {
+  border: 1px solid #e2e6ea;
+  border-left: 6px solid #8a94a6;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fbfcfd;
+  margin: 24px 0;
+}
+
+.article-link-box p {
+  margin-top: 0;
+}
+
+.article-category {
+  padding: 0;
+  margin: 28px 0 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.article-machine-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.article-machine-card {
+  border: 1px solid #e2e6ea;
+  border-radius: 12px;
+  background: #fbfcfd;
+  padding: 16px;
+}
+
+.article-machine-card h3 {
+  margin: 0 0 8px;
+  line-height: 1.4;
+}
+
+.article-machine-card p {
+  margin: 0 0 8px;
+}
+
+.article-machine-card a {
+  color: #2b5cad;
+  font-weight: 700;
 }
 
 /* Machine thumbnails / cards */
@@ -493,6 +615,37 @@ footer {
   nav a {
     width: 100%;
     text-align: center;
+  }
+
+  .footer-nav a {
+    width: auto;
+  }
+
+  .line-actions {
+    flex-direction: column;
+  }
+
+  .line-actions .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .line-cta {
+    display: block;
+  }
+
+  .line-cta .button {
+    width: 100%;
+    text-align: center;
+    margin-top: 14px;
+  }
+
+  .line-cta-actions {
+    display: block;
+  }
+
+  .article-machine-grid {
+    grid-template-columns: 1fr;
   }
 
   .practice-record table {
