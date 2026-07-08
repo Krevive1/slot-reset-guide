@@ -13,14 +13,20 @@ export async function GET(request: NextRequest) {
 
   await ensureCommentsTable();
   const sql = getSql();
-  const comments = await sql`
+  const pending = await sql`
     SELECT id, machine_slug, author_name, body, status, created_at
     FROM comments
     WHERE status = 'pending'
     ORDER BY created_at ASC
   `;
+  const approved = await sql`
+    SELECT id, machine_slug, author_name, body, status, created_at
+    FROM comments
+    WHERE status = 'approved'
+    ORDER BY created_at DESC
+  `;
 
-  return NextResponse.json({ comments });
+  return NextResponse.json({ comments: pending, approvedComments: approved });
 }
 
 export async function PATCH(request: NextRequest) {
@@ -42,6 +48,23 @@ export async function PATCH(request: NextRequest) {
   const sql = getSql();
   const status = action === "approve" ? "approved" : "rejected";
   await sql`UPDATE comments SET status = ${status} WHERE id = ${id}`;
+
+  return NextResponse.json({ ok: true });
+}
+
+export async function DELETE(request: NextRequest) {
+  if (!checkSecret(request)) {
+    return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  }
+
+  const id = Number(request.nextUrl.searchParams.get("id"));
+  if (!id) {
+    return NextResponse.json({ error: "id is required" }, { status: 400 });
+  }
+
+  await ensureCommentsTable();
+  const sql = getSql();
+  await sql`DELETE FROM comments WHERE id = ${id}`;
 
   return NextResponse.json({ ok: true });
 }
