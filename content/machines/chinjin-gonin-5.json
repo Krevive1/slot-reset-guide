@@ -35,7 +35,16 @@
       "複数サイトの狙い目G数を突合してから判断する"
     ]
   },
-  "referenceVideos": [],
+  "referenceVideos": [
+    {
+      "youtubeVideoId": "2sPggWxB7JA",
+      "channelName": "社不燦々【朝イチニキ】",
+      "channelUrl": "https://www.youtube.com/@syafu_sansan",
+      "title": "【L銭形5】1週間銭形の朝イチ生活したら果たして収支はどうなる？",
+      "summary": "社不燦々【朝イチニキ】様が、L主役は銭形5を1週間朝イチから実践した記録動画です。",
+      "originalAnalysis": "朝イチからの実践記録として参考になります。リセット台に絞った検証ではないため、判別方法やリセット恩恵の詳細は本ページの該当欄をあわせてご確認ください。"
+    }
+  ],
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [],

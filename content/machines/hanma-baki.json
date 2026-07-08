@@ -35,7 +35,17 @@
       "短縮天井到達までの差枚推移を見て、回収困難と判断したら早めにやめる"
     ]
   },
-  "referenceVideos": [],
+  "referenceVideos": [
+    {
+      "youtubeVideoId": "MA5MNhaKMR8",
+      "channelName": "社不燦々【朝イチニキ】",
+      "channelUrl": "https://www.youtube.com/@syafu_sansan",
+      "title": "【スマスロ範馬刃牙】1週間範馬刃牙の朝イチ生活したら果たして収支はどうなる？",
+      "summary": "社不燦々【朝イチニキ】様が、L範馬刃牙を1週間朝イチから実践した記録動画です。",
+      "originalAnalysis": "朝イチからの実践記録として参考になります。リセット台に絞った検証ではないため、判別方法やリセット恩恵の詳細は本ページの該当欄をあわせてご確認ください。",
+      "publishedAt": "2026-03-05"
+    }
+  ],
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [],

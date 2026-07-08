@@ -39,7 +39,16 @@
       "短縮天井到達までの差枚推移を見て、回収困難と判断したら早めにやめる"
     ]
   },
-  "referenceVideos": [],
+  "referenceVideos": [
+    {
+      "youtubeVideoId": "CUrwUY90fbw",
+      "channelName": "サラぱち親衛隊",
+      "channelUrl": "https://www.youtube.com/@%E3%82%B5%E3%83%A9%E3%81%B1%E3%81%A1%E8%A6%AA%E8%A1%9B%E9%9A%8A",
+      "title": "【朝一検証】VVV2の朝一狙いは想像以上に甘い!?",
+      "summary": "サラぱち親衛隊様による、Lヴァルヴレイヴ2の朝一狙いを検証した動画です。",
+      "originalAnalysis": "朝一狙いの検証動画として参考になります。1週間などの継続実践形式ではないため、判別方法やリセット恩恵の詳細は本ページの該当欄をあわせてご確認ください。"
+    }
+  ],
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [],
