@@ -56,6 +56,7 @@ export default function BeginnerPage() {
         <li><Link href="/guides/mikiwake-kata">朝一リセットの見分け方（基本の考え方）</Link></li>
         <li><Link href="/guides/yamedoki-chuiten">失敗しやすいパターンと注意点</Link></li>
         <li><Link href="/machines">機種一覧から個別の恩恵・判別方法を見る</Link></li>
+        <li><Link href="/articles/asaichi-benri-guzzu">朝一待ち・実戦に便利な持ち物まとめ</Link></li>
       </ul>
 
       <ShareButtons url={url} title={title} />

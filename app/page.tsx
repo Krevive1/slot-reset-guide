@@ -65,6 +65,7 @@ export default async function HomePage() {
           <li><Link href="/guides/yamedoki-chuiten">失敗しやすいパターンと注意点</Link></li>
           <li><Link href="/articles/reset-benefit-machines">朝イチリセット恩恵を確認したい機種まとめ</Link></li>
           <li><Link href="/articles/careful-morning-machines">朝一で慎重に確認したい機種まとめ</Link></li>
+          <li><Link href="/articles/asaichi-benri-guzzu">朝一待ち・実戦に便利な持ち物まとめ</Link></li>
         </ul>
       </section>
 

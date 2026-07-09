@@ -15,6 +15,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL}/machines`, changeFrequency: "daily", priority: 0.9 },
     { url: `${SITE_URL}/articles/reset-benefit-machines`, changeFrequency: "weekly", priority: 0.7 },
     { url: `${SITE_URL}/articles/careful-morning-machines`, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${SITE_URL}/articles/asaichi-benri-guzzu`, changeFrequency: "monthly", priority: 0.5 },
+    { url: `${SITE_URL}/articles/ie-suro-erabikata`, changeFrequency: "monthly", priority: 0.4 },
     { url: `${SITE_URL}/beginner`, changeFrequency: "monthly", priority: 0.5 },
     { url: `${SITE_URL}/line`, changeFrequency: "monthly", priority: 0.4 },
     { url: `${SITE_URL}/line/checklist`, changeFrequency: "monthly", priority: 0.5 },

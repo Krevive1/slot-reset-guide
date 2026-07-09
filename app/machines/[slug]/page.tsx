@@ -15,6 +15,7 @@ import DetectionMethod from "@/components/machine/DetectionMethod";
 import MorningTarget from "@/components/machine/MorningTarget";
 import CeilingZoneInfo from "@/components/machine/CeilingZoneInfo";
 import QuitTiming from "@/components/machine/QuitTiming";
+import RelatedReading from "@/components/machine/RelatedReading";
 import ReferenceVideoSection from "@/components/machine/ReferenceVideoSection";
 import PracticeRecordSection from "@/components/machine/PracticeRecordSection";
 import RelatedMachinesSection from "@/components/machine/RelatedMachinesSection";
@@ -111,6 +112,7 @@ export default async function MachinePage({
       <MorningTarget morningTarget={machine.morningTarget} />
       <CeilingZoneInfo ceilingZoneInfo={machine.ceilingZoneInfo} />
       <QuitTiming quitTiming={machine.quitTiming} />
+      <RelatedReading />
       <AdSlot slot="in-article" />
       <ReferenceVideoSection videos={machine.referenceVideos} />
       <PracticeRecordSection records={machine.practiceRecords} />
