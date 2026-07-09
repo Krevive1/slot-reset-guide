@@ -28,7 +28,7 @@
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "CZ間400G／AT間1000G",
+    "ceilingGames": "通常CZ間800G+α・AT間1400G+α→設定変更時CZ間400G・AT間1000Gに短縮",
     "zones": []
   },
   "quitTiming": {

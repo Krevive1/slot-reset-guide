@@ -30,7 +30,7 @@
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "1024宿命",
+    "ceilingGames": "通常最大1536宿命→モードC以上濃厚時1024宿命に短縮",
     "zones": []
   },
   "quitTiming": {

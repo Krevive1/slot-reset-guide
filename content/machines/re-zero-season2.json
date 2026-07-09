@@ -27,7 +27,7 @@
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "最大1000pt以下",
+    "ceilingGames": "通常規定1400pt（AT間1300G）→設定変更時最大1000pt以下に短縮",
     "zones": []
   },
   "quitTiming": {

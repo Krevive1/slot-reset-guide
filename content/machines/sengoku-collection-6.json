@@ -27,7 +27,7 @@
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "最大3周期（ゲーム数天井は個別確認）",
+    "ceilingGames": "通常最大6周期→設定変更時最大3周期に短縮（ゲーム数天井は個別確認）",
     "zones": []
   },
   "quitTiming": {

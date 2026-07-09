@@ -26,7 +26,7 @@
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "600〜699pt+α",
+    "ceilingGames": "通常最大950pt+α→設定変更時600〜699pt+αに短縮",
     "zones": []
   },
   "quitTiming": {

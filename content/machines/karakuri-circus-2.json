@@ -30,7 +30,7 @@
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "液晶500GでCZ",
+    "ceilingGames": "通常時は液晶1100Gゾーン（最深1200G、実ゲーム数約890G付近）でCZ。設定変更時は500Gに短縮",
     "zones": []
   },
   "quitTiming": {

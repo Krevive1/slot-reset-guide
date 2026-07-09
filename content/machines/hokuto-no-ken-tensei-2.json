@@ -32,7 +32,7 @@
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "1280あべし",
+    "ceilingGames": "通常最大1536あべし→設定変更時1280あべしに短縮",
     "zones": []
   },
   "quitTiming": {

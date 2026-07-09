@@ -27,7 +27,7 @@
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "850G+α",
+    "ceilingGames": "通常最大1250G+α→設定変更時850G+αに短縮",
     "zones": []
   },
   "quitTiming": {

@@ -28,7 +28,7 @@
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "AT間1000G+α／CZ間最大500G+α",
+    "ceilingGames": "通常AT間1500G+α・CZ間最大700G+α→設定変更時AT間1000G+α・CZ間最大500G+αに短縮",
     "zones": []
   },
   "quitTiming": {

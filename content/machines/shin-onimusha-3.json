@@ -31,7 +31,7 @@
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "4周期（ゲーム数1000G）",
+    "ceilingGames": "通常6周期（ゲーム数1000G）→設定変更時4周期に短縮",
     "zones": []
   },
   "quitTiming": {

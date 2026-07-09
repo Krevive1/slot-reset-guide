@@ -26,7 +26,7 @@
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "ステータスチェンジ13回／17回",
+    "ceilingGames": "通常19回・40回→設定変更時13回・17回に短縮",
     "zones": []
   },
   "quitTiming": {

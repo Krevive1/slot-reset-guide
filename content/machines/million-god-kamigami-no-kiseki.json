@@ -26,7 +26,7 @@
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "短縮振り分けあり（510G/1000G）",
+    "ceilingGames": "通常最大1480G→約35.5%で510Gまたは1000Gに短縮",
     "zones": []
   },
   "quitTiming": {

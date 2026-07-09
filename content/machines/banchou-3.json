@@ -32,7 +32,7 @@
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "ベル128回",
+    "ceilingGames": "通常ベル200回→設定変更時128回に短縮",
     "zones": []
   },
   "quitTiming": {

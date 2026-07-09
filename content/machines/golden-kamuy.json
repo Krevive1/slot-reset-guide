@@ -27,7 +27,7 @@
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "1600ピュウ",
+    "ceilingGames": "通常1800ピュウ→設定変更時1600ピュウに短縮",
     "zones": []
   },
   "quitTiming": {

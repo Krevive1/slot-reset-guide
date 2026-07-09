@@ -25,7 +25,7 @@
     ]
   },
   "ceilingZoneInfo": {
-    "ceilingGames": "7周期消化でBB+ST",
+    "ceilingGames": "通常10周期→設定変更時7周期に短縮でBB+ST",
     "zones": []
   },
   "quitTiming": {
