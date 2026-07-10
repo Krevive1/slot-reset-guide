@@ -61,6 +61,7 @@ export default async function HomePage() {
         </ol>
         <p><Link href="/beginner">3分で分かる基礎ガイドを読む →</Link></p>
         <ul>
+          <li><Link href="/guides/yougo-shu">パチスロ用語集（初心者向け基本用語まとめ）</Link></li>
           <li><Link href="/guides/mikiwake-kata">朝一リセットの見分け方（基本の考え方）</Link></li>
           <li><Link href="/guides/yamedoki-chuiten">失敗しやすいパターンと注意点</Link></li>
           <li><Link href="/articles/reset-benefit-machines">朝イチリセット恩恵を確認したい機種まとめ</Link></li>

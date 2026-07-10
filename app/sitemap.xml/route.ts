@@ -28,6 +28,7 @@ const staticEntries: SitemapEntry[] = [
   { path: "/advertising-policy", changeFrequency: "yearly", priority: 0.2 },
   { path: "/guides/mikiwake-kata", changeFrequency: "monthly", priority: 0.5 },
   { path: "/guides/yamedoki-chuiten", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/guides/yougo-shu", changeFrequency: "monthly", priority: 0.6 },
   { path: "/disclaimer", changeFrequency: "yearly", priority: 0.1 },
   { path: "/privacy", changeFrequency: "yearly", priority: 0.1 },
 ];
