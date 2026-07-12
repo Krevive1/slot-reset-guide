@@ -1,5 +1,6 @@
-// Update after the Vercel project is created and a production domain is known.
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://slot-reset-guide-two.vercel.app";
+// Custom domain connected 2026-07-10. Old Vercel URL kept only as the redirect
+// source in next.config.mjs.
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wanchankun.com";
 export const LINE_OFFICIAL_URL = "https://lin.ee/vyukjWs";
 export const X_OFFICIAL_URL = "https://x.com/onechancekun";
 
