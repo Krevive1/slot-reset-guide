@@ -38,7 +38,16 @@
       "短縮天井到達までの差枚推移を見て、回収困難と判断したら早めにやめる"
     ]
   },
-  "referenceVideos": [],
+  "referenceVideos": [
+    {
+      "youtubeVideoId": "pmBvQwpuVYM",
+      "channelName": "社不燦々【朝イチニキ】",
+      "channelUrl": "https://www.youtube.com/@syafu_sansan",
+      "title": "【スマスロ ソードアート・オンラインII】1週間SAO2の朝イチ生活したら果たして収支はどうなる？",
+      "summary": "社不燦々【朝イチニキ】様による、スロット ソードアート・オンラインIIを1週間朝イチから実戦検証した動画です。",
+      "originalAnalysis": "1週間にわたって朝イチから実戦した検証動画です。設定変更後の挙動や収支を、実戦ベースで確認したい方に参考になる内容です。解析情報上の確定仕様ではなく、あくまで実戦記録の一つとしてご覧ください。"
+    }
+  ],
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [],
