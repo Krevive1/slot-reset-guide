@@ -4,6 +4,10 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://wanchankun.
 export const LINE_OFFICIAL_URL = "https://lin.ee/vyukjWs";
 export const X_OFFICIAL_URL = "https://x.com/onechancekun";
 
+// GA4 measurement ID. Env-var only, no fallback default — GoogleAnalytics
+// isn't rendered when this is unset (see app/layout.tsx).
+export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID;
+
 // Amazon Associates tracking tag, approved 2026-07-09.
 export const AMAZON_ASSOCIATE_TAG = "wanchankun-22";
 
