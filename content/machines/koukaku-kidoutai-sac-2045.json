@@ -43,7 +43,12 @@
   },
   "referenceVideos": [],
   "practiceRecords": [],
-  "relatedMachines": [],
+  "relatedMachines": [
+    {
+      "slug": "god-eater-resurrection",
+      "name": "スマスロ ゴッドイーター リザレクション"
+    }
+  ],
   "faq": [],
   "heroImage": "/images/machines/koukaku-kidoutai-sac-2045.jpg"
 }

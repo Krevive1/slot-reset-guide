@@ -298,6 +298,18 @@ const machinesBySlug: Record<string, ArticleMachine> = {
     summary: "天井短縮と周期短縮を確認したい機種です。",
     point: "ボーナス・AT間ゲーム数と周期数を確認します。",
   },
+  "koukaku-kidoutai-sac-2045": {
+    slug: "koukaku-kidoutai-sac-2045",
+    name: "スマスロ 攻殻機動隊",
+    summary: "CZ天井・AT間天井の短縮を確認したい機種です。",
+    point: "設定変更時のCZテーブルと朝一挙動を確認します。",
+  },
+  "god-eater-resurrection": {
+    slug: "god-eater-resurrection",
+    name: "スマスロ ゴッドイーター リザレクション",
+    summary: "設定変更時の天井短縮と、逆鱗ハンニバル失敗後の特殊条件を確認したい機種です。",
+    point: "600G+α短縮テーブルとの整合、逆鱗ハンニバル失敗後の挙動を確認します。",
+  },
 };
 
 const categories = [
@@ -331,6 +343,8 @@ const categories = [
       "tekken-6",
       "tokyo-ghoul",
       "valvrave-2",
+      "koukaku-kidoutai-sac-2045",
+      "god-eater-resurrection",
     ],
   },
   {
