@@ -343,8 +343,8 @@ const machinesBySlug: Record<string, ArticleMachine> = {
   "jormungand": {
     slug: "jormungand",
     name: "スマスロ ヨルムンガンド",
-    summary: "450G+αの仮天井が選ばれやすくなる機種です。",
-    point: "仮天井テーブルでの当選有無を確認します。",
+    summary: "設定変更後は450G+αの仮天井で必ずATに当選する機種です。",
+    point: "450G+αの設定変更後天井と、通常時の仮天井抽選を分けて確認します。",
   },
   "shinuchi-yoshimune": {
     slug: "shinuchi-yoshimune",
