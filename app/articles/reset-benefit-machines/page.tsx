@@ -370,6 +370,66 @@ const machinesBySlug: Record<string, ArticleMachine> = {
     summary: "設定変更時に浅い天井が選ばれやすくなる機種です。",
     point: "浅い天井テーブルと裏覚醒準備モードの示唆を確認します。",
   },
+  "hihouden": {
+    slug: "hihouden",
+    name: "スマスロ秘宝伝",
+    summary: "BIG後・REG後・設定変更後で天井条件が異なる機種です。",
+    point: "499G+α系の設定変更後天井を、BIG後・REG後と分けて確認します。",
+  },
+  "prism-nana": {
+    slug: "prism-nana",
+    name: "プリズムナナ",
+    summary: "設定変更後は天井短縮・通常B以上・周期短縮が重なる機種です。",
+    point: "555G+α系の設定変更後天井と、通常B以上の示唆を確認します。",
+  },
+  "zettai-shougeki-4": {
+    slug: "zettai-shougeki-4",
+    name: "L絶対衝激Ⅳ",
+    summary: "設定変更時に周期天井が最大5周期へ短縮される機種です。",
+    point: "短縮天井テーブルと滞在モードによる天井周期の変化を確認します。",
+  },
+  "toaru-kagaku-no-railgun-2": {
+    slug: "toaru-kagaku-no-railgun-2",
+    name: "スマスロ とある科学の超電磁砲2",
+    summary: "設定変更後の天井短縮（最大699G+α）を確認したい機種です。",
+    point: "短縮天井テーブルでの当選有無を確認します。",
+  },
+  "watashi-no-shiawase-na-kekkon": {
+    slug: "watashi-no-shiawase-na-kekkon",
+    name: "わたしの幸せな結婚",
+    summary: "設定変更後は通常C以上濃厚・天井350G+αへ短縮される機種です。",
+    point: "通常C以上の示唆と、ボーナス6回天井を分けて確認します。",
+  },
+  "azur-lane-the-animation": {
+    slug: "azur-lane-the-animation",
+    name: "Lアズールレーン THE ANIMATION",
+    summary: "設定変更後はスルー回数天井が最大6回へ短縮される機種です。",
+    point: "スルー回数天井とAT間天井を分けて確認します。",
+  },
+  "kaguya-sama-wa-kokurasetai": {
+    slug: "kaguya-sama-wa-kokurasetai",
+    name: "パチスロ かぐや様は告らせたい",
+    summary: "通常・REG後・設定変更後で天井条件が異なる機種です。",
+    point: "800G+α系の設定変更後天井を、通常・REG後と分けて確認します。",
+  },
+  "tokyo-revengers": {
+    slug: "tokyo-revengers",
+    name: "スマスロ 東京リベンジャーズ",
+    summary: "設定変更時の天井短縮（最大900G）と抽選優遇を確認したい機種です。",
+    point: "短縮天井テーブルとモード移行優遇の兆候を確認します。",
+  },
+  "initial-d-2nd": {
+    slug: "initial-d-2nd",
+    name: "スマスロ頭文字D 2nd",
+    summary: "設定変更時に約50%で天井が短縮される、内部ゲーム数加算がある機種です。",
+    point: "早期当選だけでリセット確定と判断せず、複数の挙動を確認します。",
+  },
+  "girls-und-panzer-finale": {
+    slug: "girls-und-panzer-finale",
+    name: "Lパチスロガールズ&パンツァー 最終章",
+    summary: "設定変更時に約65%で天井が短縮される、確定ではない機種です。",
+    point: "500G天井は通常時にも出現するため、単独の当選では判断しません。",
+  },
 };
 
 const categories = [
@@ -413,6 +473,14 @@ const categories = [
       "jormungand",
       "shinuchi-yoshimune",
       "to-love-ru-darkness-trance-8-7",
+      "hihouden",
+      "prism-nana",
+      "zettai-shougeki-4",
+      "toaru-kagaku-no-railgun-2",
+      "watashi-no-shiawase-na-kekkon",
+      "azur-lane-the-animation",
+      "kaguya-sama-wa-kokurasetai",
+      "tokyo-revengers",
     ],
   },
   {
@@ -462,6 +530,8 @@ const categories = [
       "okidoki-gorgeous-30",
       "one-punch-man",
       "salaryman-banchou-2",
+      "initial-d-2nd",
+      "girls-und-panzer-finale",
     ],
   },
   {
