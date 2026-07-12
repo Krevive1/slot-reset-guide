@@ -4,6 +4,8 @@ import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
+import MachineThumbnail from "@/components/machine/MachineThumbnail";
+import { getAllMachines } from "@/lib/content/machines";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { SITE_URL } from "@/lib/site";
 
@@ -396,9 +398,12 @@ const categories = [
   },
 ];
 
-function ArticleMachineCard({ machine }: { machine: ArticleMachine }) {
+function ArticleMachineCard({ machine, heroImage }: { machine: ArticleMachine; heroImage?: string }) {
   return (
     <article className="article-machine-card">
+      <Link href={`/machines/${machine.slug}`}>
+        <MachineThumbnail heroImage={heroImage} name={machine.name} />
+      </Link>
       <h3>{machine.name}</h3>
       <p>{machine.summary}</p>
       <p className="section-note">確認したいポイント：{machine.point}</p>
@@ -407,7 +412,9 @@ function ArticleMachineCard({ machine }: { machine: ArticleMachine }) {
   );
 }
 
-export default function ResetBenefitMachinesArticlePage() {
+export default async function ResetBenefitMachinesArticlePage() {
+  const allMachines = await getAllMachines();
+  const heroImageBySlug = new Map(allMachines.map((m) => [m.slug, m.heroImage]));
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: SITE_URL },
@@ -461,7 +468,11 @@ export default function ResetBenefitMachinesArticlePage() {
             <p className="section-note">{category.description}</p>
             <div className="article-machine-grid">
               {category.slugs.map((slug) => (
-                <ArticleMachineCard key={`${category.title}-${slug}`} machine={machinesBySlug[slug]} />
+                <ArticleMachineCard
+                  key={`${category.title}-${slug}`}
+                  machine={machinesBySlug[slug]}
+                  heroImage={heroImageBySlug.get(slug)}
+                />
               ))}
             </div>
           </section>
