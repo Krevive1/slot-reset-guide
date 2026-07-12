@@ -310,6 +310,66 @@ const machinesBySlug: Record<string, ArticleMachine> = {
     summary: "設定変更時の天井短縮と、逆鱗ハンニバル失敗後の特殊条件を確認したい機種です。",
     point: "600G+α短縮テーブルとの整合、逆鱗ハンニバル失敗後の挙動を確認します。",
   },
+  "takt-op-destiny": {
+    slug: "takt-op-destiny",
+    name: "Lタクトオーパス デスティニー",
+    summary: "設定変更時のCZ天井短縮を確認したい機種です。",
+    point: "300G+α系のCZテーブルとモードB以上の挙動を確認します。",
+  },
+  "kyokou-suiri": {
+    slug: "kyokou-suiri",
+    name: "L虚構推理",
+    summary: "設定変更時の天井短縮（700G・300G系）を確認したい機種です。",
+    point: "短縮天井テーブルと高確スタートの挙動を確認します。",
+  },
+  "goblin-slayer-2": {
+    slug: "goblin-slayer-2",
+    name: "スマスロ ゴブリンスレイヤーⅡ",
+    summary: "設定変更時の天井短縮（1000G+α）を確認したい機種です。",
+    point: "短縮天井テーブルと兜ポイントの初期加算状況を確認します。",
+  },
+  "animal-slot-dotch": {
+    slug: "animal-slot-dotch",
+    name: "アニマルスロット ドッチ",
+    summary: "BIG後・REG後・設定変更後で天井条件が異なる機種です。",
+    point: "499G系の設定変更後天井と赤満月移行状態を確認します。",
+  },
+  "big-dream-golden-pusher": {
+    slug: "big-dream-golden-pusher",
+    name: "スマスロ ビッグドリーム THE GOLDEN PUSHER",
+    summary: "設定変更時の天井短縮（333G/555G/999G）を確認したい機種です。",
+    point: "短縮天井テーブルとボール天井ポイントの初期状況を確認します。",
+  },
+  "jormungand": {
+    slug: "jormungand",
+    name: "スマスロ ヨルムンガンド",
+    summary: "450G+αの仮天井が選ばれやすくなる機種です。",
+    point: "仮天井テーブルでの当選有無を確認します。",
+  },
+  "shinuchi-yoshimune": {
+    slug: "shinuchi-yoshimune",
+    name: "L真打吉宗",
+    summary: "設定変更時のAT天井短縮（1000G+α）を確認したい機種です。",
+    point: "短縮天井テーブルと真BB後の別条件（700G）を分けて確認します。",
+  },
+  "to-love-ru-darkness-trance-8-7": {
+    slug: "to-love-ru-darkness-trance-8-7",
+    name: "L ToLOVEるダークネス TRANCE ver.8.7",
+    summary: "設定変更時の天井短縮（650G+α）を確認したい機種です。",
+    point: "短縮天井テーブルとどきどきポイントの初期蓄積状況を確認します。",
+  },
+  "akudama-drive": {
+    slug: "akudama-drive",
+    name: "Lアクダマドライブ",
+    summary: "天井短縮ではなく内部抽選優遇が中心の機種です。",
+    point: "カンサイ教育番組関連演出と処刑課バトルのセット数優遇を確認します。",
+  },
+  "mahjong-fight-club-kakusei": {
+    slug: "mahjong-fight-club-kakusei",
+    name: "L麻雀格闘倶楽部 覚醒",
+    summary: "設定変更時に浅い天井が選ばれやすくなる機種です。",
+    point: "浅い天井テーブルと裏覚醒準備モードの示唆を確認します。",
+  },
 };
 
 const categories = [
@@ -345,6 +405,14 @@ const categories = [
       "valvrave-2",
       "koukaku-kidoutai-sac-2045",
       "god-eater-resurrection",
+      "takt-op-destiny",
+      "kyokou-suiri",
+      "goblin-slayer-2",
+      "animal-slot-dotch",
+      "big-dream-golden-pusher",
+      "jormungand",
+      "shinuchi-yoshimune",
+      "to-love-ru-darkness-trance-8-7",
     ],
   },
   {
@@ -378,6 +446,8 @@ const categories = [
       "seiya-kaiou-custom-edition",
       "sengoku-otome-5",
       "shaman-king",
+      "akudama-drive",
+      "mahjong-fight-club-kakusei",
     ],
   },
   {
