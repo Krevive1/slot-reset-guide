@@ -41,7 +41,16 @@
       "CZ（殲滅ゾーン）通過後、上位モードの示唆が出なければ早めに見切る"
     ]
   },
-  "referenceVideos": [],
+  "referenceVideos": [
+    {
+      "youtubeVideoId": "LApitGNZGFA",
+      "channelName": "社不燦々【朝イチニキ】",
+      "channelUrl": "https://www.youtube.com/@syafu_sansan",
+      "title": "【スマスロ攻殻機動隊】1週間攻殻機動隊の朝イチ生活したら果たして収支はどうなる？",
+      "summary": "社不燦々【朝イチニキ】様による、スマスロ攻殻機動隊を1週間朝イチから実戦検証した動画です。",
+      "originalAnalysis": "1週間の朝イチリセット実戦検証動画です。動画内の検証では、設定変更時のCZ天井短縮や朝イチ挙動を実戦ベースで確認できます。解析情報上の確定仕様ではなく、あくまで実戦記録の一つとしてご覧ください。"
+    }
+  ],
   "practiceRecords": [],
   "relatedMachines": [
     {
