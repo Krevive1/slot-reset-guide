@@ -36,6 +36,9 @@ export default function MikiwakeKataPage() {
         リセットの有無だけで期待値が決まるわけではありません。
         ホールの営業方針（全台リセットか、設定変更のみか）も影響します。
         確信が持てない状態で投資を増やすのは避けてください。
+        店舗ごとの傾向を調べる方法は
+        <Link href="/guides/how-to-check-hall-reset-pattern">こちらの記事</Link>
+        でまとめています。
       </p>
 
       <p className="section-note">
