@@ -430,6 +430,66 @@ const machinesBySlug: Record<string, ArticleMachine> = {
     summary: "設定変更時に約65%で天井が短縮される、確定ではない機種です。",
     point: "500G天井は通常時にも出現するため、単独の当選では判断しません。",
   },
+  "biohazard-5": {
+    slug: "biohazard-5",
+    name: "スマスロ バイオハザード5",
+    summary: "設定変更時に天井が最大666G+αへ短縮される機種です。",
+    point: "999G天井到達後の次回99G天井（別条件）と混同せず確認します。",
+  },
+  "tensei-shitara-ken-deshita": {
+    slug: "tensei-shitara-ken-deshita",
+    name: "パチスロ 転生したら剣でした",
+    summary: "AT間天井とボーナス間天井の両方が設定変更時に短縮される機種です。",
+    point: "二つの天井システムを分けて、当日の消化数を確認します。",
+  },
+  "saki-choujou-kessen": {
+    slug: "saki-choujou-kessen",
+    name: "L咲-Saki- 頂上決戦",
+    summary: "設定変更時にゲーム数天井が最大600G+αへ短縮される機種です。",
+    point: "ゲーム数天井・CZ失敗回数天井・周期ポイントを分けて確認します。",
+  },
+  "darling-in-the-franxx": {
+    slug: "darling-in-the-franxx",
+    name: "L ダーリン・イン・ザ・フランキス",
+    summary: "設定変更時に天井が390G以下へ短縮される機種です。",
+    point: "内部ランダム減算があるため、390Gちょうどでなくても該当する場合があります。",
+  },
+  "arifureta-shokugyou-de-sekai-saikyou": {
+    slug: "arifureta-shokugyou-de-sekai-saikyou",
+    name: "Lパチスロ ありふれた職業で世界最強",
+    summary: "設定変更時に天井が最大700Gへ短縮される機種です。",
+    point: "ミュウボーナスのスルー回数天井とは別に確認します。",
+  },
+  "shin-ikki-tousen": {
+    slug: "shin-ikki-tousen",
+    name: "L 真・一騎当千",
+    summary: "設定変更時に必ず通常Dまたは天国が選ばれ、天井が短縮される機種です。",
+    point: "内部モード別天井（常時存在）と設定変更の恩恵を分けて確認します。",
+  },
+  "nanatsu-no-maken-ga-shihai-suru": {
+    slug: "nanatsu-no-maken-ga-shihai-suru",
+    name: "七つの魔剣が支配する",
+    summary: "設定変更時に天井が最大650G+αへ短縮される機種です。",
+    point: "CZポイントは非表示の内部状態のため、示唆だけで確定と判断しません。",
+  },
+  "dunbine": {
+    slug: "dunbine",
+    name: "スマスロ 聖戦士ダンバイン",
+    summary: "設定変更時に周期天井が最大5周期へ短縮される機種です。",
+    point: "「1Gから期待できる」評価と円単位の0G期待値は分けて確認します。",
+  },
+  "devil-may-cry-5-stylish-tribe": {
+    slug: "devil-may-cry-5-stylish-tribe",
+    name: "スマスロ デビル メイ クライ5 スタイリッシュトライブ",
+    summary: "設定変更時に天井が最大800G+αへ短縮される機種です。",
+    point: "STスルー時・上位ST終了後も同じ天井のため、単独では設定変更と断定しません。",
+  },
+  "karakuri-circus": {
+    slug: "karakuri-circus",
+    name: "パチスロ からくりサーカス",
+    summary: "固定の天井短縮ではなく、モード優遇を確認したい機種です。",
+    point: "ステージは電断時と共通のため、ステージ表示だけで判別しません。",
+  },
 };
 
 const categories = [
@@ -481,6 +541,15 @@ const categories = [
       "azur-lane-the-animation",
       "kaguya-sama-wa-kokurasetai",
       "tokyo-revengers",
+      "biohazard-5",
+      "tensei-shitara-ken-deshita",
+      "saki-choujou-kessen",
+      "darling-in-the-franxx",
+      "arifureta-shokugyou-de-sekai-saikyou",
+      "shin-ikki-tousen",
+      "nanatsu-no-maken-ga-shihai-suru",
+      "dunbine",
+      "devil-may-cry-5-stylish-tribe",
     ],
   },
   {
@@ -499,6 +568,7 @@ const categories = [
       "seiya-kaiou-custom-edition",
       "shin-hokuto-musou",
       "toaru-majutsu-no-index",
+      "karakuri-circus",
     ],
   },
   {
