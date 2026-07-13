@@ -70,14 +70,13 @@ export function sortMachinesByPopularity(machines: Machine[]): Machine[] {
 
 export function sortMachinesByLatest(machines: Machine[]): Machine[] {
   return [...machines].sort((a, b) => {
-    const publishedDiff = new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
-    if (publishedDiff !== 0) return publishedDiff;
-    // publishedAt ties happen because many machines were bulk-added on the
-    // same day; break ties by real-world release date so "latest" reflects
-    // genuinely new machines rather than JSON file iteration order.
+    // Sort by real-world machine release date (導入日) rather than site
+    // publish date, so "新着情報" reflects genuinely new machines.
     const releaseA = a.spec.releaseDate ? new Date(a.spec.releaseDate).getTime() : 0;
     const releaseB = b.spec.releaseDate ? new Date(b.spec.releaseDate).getTime() : 0;
-    return releaseB - releaseA;
+    const releaseDiff = releaseB - releaseA;
+    if (releaseDiff !== 0) return releaseDiff;
+    return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
   });
 }
 
