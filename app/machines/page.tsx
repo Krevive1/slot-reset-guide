@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllMachines, sortMachinesByPopularity } from "@/lib/content/machines";
-import MachineCard from "@/components/machine/MachineCard";
+import MachinesBrowser from "@/components/machine/MachinesBrowser";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import AdSlot from "@/components/ads/AdSlot";
 import { SITE_URL } from "@/lib/site";
@@ -31,14 +31,11 @@ export default async function MachinesIndexPage() {
       </p>
       <AdSlot slot="machines-top" />
       {machines.length > 0 ? (
-        <div className="cards">
-          {machines.map((machine) => (
-            <MachineCard key={machine.slug} machine={machine} />
-          ))}
-        </div>
+        <MachinesBrowser machines={machines} />
       ) : (
         <p>現在公開中の機種ページはありません。</p>
       )}
+      <p><Link href="/">← TOPへ戻る</Link></p>
     </>
   );
 }

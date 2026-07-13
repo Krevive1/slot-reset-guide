@@ -244,6 +244,40 @@ section h2,
   border-left: 6px solid #e94b35;
 }
 
+.home-machines-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.home-machines-actions .button {
+  margin-top: 0;
+}
+
+.machines-browser-search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+  max-width: 420px;
+}
+
+.machines-browser-search input[type="search"] {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid #d8dee8;
+  font-size: 14px;
+}
+
+.load-more-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .latest-list {
   list-style: none;
   display: grid;

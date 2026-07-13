@@ -1,10 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import {
-  getAllMachines,
-  sortMachinesByLatest,
-  sortMachinesByPopularity,
-} from "@/lib/content/machines";
+import { getAllMachines, sortMachinesByLatest } from "@/lib/content/machines";
+import { selectHomeMachines } from "@/lib/content/popularity";
 import MachineCard from "@/components/machine/MachineCard";
 import MachineThumbnail from "@/components/machine/MachineThumbnail";
 import AdSlot from "@/components/ads/AdSlot";
@@ -19,7 +16,7 @@ export const metadata: Metadata = {
 
 export default async function HomePage() {
   const allMachines = await getAllMachines();
-  const machines = sortMachinesByPopularity(allMachines);
+  const homeSelection = selectHomeMachines(allMachines, 12);
   const latestMachines = sortMachinesByLatest(allMachines).slice(0, 4);
 
   return (
@@ -72,18 +69,30 @@ export default async function HomePage() {
 
       <AdSlot slot="home-mid" />
 
-      {machines.length > 0 && (
+      {homeSelection.machines.length > 0 && (
         <section>
-          <h2>機種一覧</h2>
+          <h2>{homeSelection.heading}</h2>
           <p className="section-note">
-            機種ごとのリセット恩恵・判別方法・実践データをまとめています。掲載機種は順次追加予定です。
+            {homeSelection.heading === "よく見られている機種"
+              ? "実際によく検索・閲覧されている機種を中心に表示しています。"
+              : "機種ごとのリセット恩恵・判別方法・実践データをまとめています。掲載機種は順次追加予定です。"}
           </p>
           <div className="cards">
-            {machines.map((machine) => (
+            {homeSelection.machines.map((machine) => (
               <MachineCard key={machine.slug} machine={machine} />
             ))}
           </div>
-          <p><Link href="/machines">全機種を見る →</Link></p>
+          <div className="home-machines-actions">
+            <Link href="/machines" className="button">
+              全機種を見る（全{allMachines.length}件）
+            </Link>
+            <Link href="/search" className="button button-secondary">
+              機種名で検索する
+            </Link>
+            <Link href="/articles/reset-benefit-machines" className="button button-secondary">
+              リセット恩恵別に探す
+            </Link>
+          </div>
         </section>
       )}
 

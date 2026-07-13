@@ -1,4 +1,4 @@
-import { isNewMachine } from "@/lib/content/machines";
+import { isNewMachine } from "@/lib/content/badges";
 
 export default function NewBadge({ releaseDate }: { releaseDate?: string }) {
   if (!isNewMachine(releaseDate)) return null;

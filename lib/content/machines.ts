@@ -1,6 +1,9 @@
 import { readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { Machine, MachineSchema } from "./schema";
+import { buildSearchHaystack, matchesQuery } from "./search";
+
+export { isNewMachine } from "./badges";
 
 const CONTENT_DIR = path.join(process.cwd(), "content", "machines");
 
@@ -91,20 +94,8 @@ export async function getMachinesBySeries(seriesSlug: string): Promise<Machine[]
 }
 
 export function searchMachines(machines: Machine[], query: string): Machine[] {
-  const normalized = query.trim().toLowerCase();
-  if (!normalized) return [];
-  return machines.filter((machine) => {
-    const haystack = [
-      machine.name,
-      machine.nameKana,
-      machine.spec.overview,
-      machine.spec.series?.name,
-    ]
-      .filter(Boolean)
-      .join(" ")
-      .toLowerCase();
-    return haystack.includes(normalized);
-  });
+  if (!query.trim()) return [];
+  return machines.filter((machine) => matchesQuery(buildSearchHaystack(machine), query));
 }
 
 // Picks a build-time-random sample of other machines for "related articles"
@@ -120,14 +111,3 @@ export function getRandomMachines(
   return shuffled.slice(0, count);
 }
 
-const NEW_BADGE_WINDOW_DAYS = 90;
-
-// Shows a "NEW" badge for 3 months (90 days) after a machine's release date.
-// Evaluated at build/render time, so it naturally stops showing once expired.
-export function isNewMachine(releaseDate: string | undefined, now: Date = new Date()): boolean {
-  if (!releaseDate) return false;
-  const release = new Date(releaseDate);
-  if (Number.isNaN(release.getTime())) return false;
-  const diffDays = (now.getTime() - release.getTime()) / (1000 * 60 * 60 * 24);
-  return diffDays >= 0 && diffDays <= NEW_BADGE_WINDOW_DAYS;
-}
