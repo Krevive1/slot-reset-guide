@@ -490,6 +490,66 @@ const machinesBySlug: Record<string, ArticleMachine> = {
     summary: "固定の天井短縮ではなく、モード優遇を確認したい機種です。",
     point: "ステージは電断時と共通のため、ステージ表示だけで判別しません。",
   },
+  "iza-bancho": {
+    slug: "iza-bancho",
+    name: "Lいざ！番長",
+    summary: "設定変更時に天井が600G+αへ短縮される機種です。番長3・サラリーマン番長2とは別機種です。",
+    point: "内部モード別天井（常時存在）と設定変更の恩恵を分けて確認します。",
+  },
+  "kaidoumokushiroku-kaiji": {
+    slug: "kaidoumokushiroku-kaiji",
+    name: "回胴黙示録カイジ 狂宴",
+    summary: "設定変更時に天井が最大800G+αへ短縮される機種です。",
+    point: "沼最終決戦失敗後の別条件と混同せず確認します。",
+  },
+  "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e": {
+    slug: "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e",
+    name: "スマスロ ようこそ実力至上主義の教室へ",
+    summary: "設定変更時にAT間天井が最大630G+αへ短縮される機種です。",
+    point: "CZ間天井・スルー回数天井とは別に確認します。",
+  },
+  "godzilla": {
+    slug: "godzilla",
+    name: "Lゴジラ",
+    summary: "設定変更時のモード優遇や天井短縮が解析情報として報告されている機種です。",
+    point: "単独ソースの情報が多いため、他の要素とあわせて総合的に判断します。",
+  },
+  "gundam-seed": {
+    slug: "gundam-seed",
+    name: "L機動戦士ガンダムSEED",
+    summary: "設定変更時にAT間天井が750G+αへ短縮される機種です。ガンダムユニコーン覚醒DRIVEとは別機種です。",
+    point: "AT駆け抜け時も同じ天井のため、単独では設定変更と断定しません。",
+  },
+  "zombieland-saga": {
+    slug: "zombieland-saga",
+    name: "スマスロ ゾンビランドサガ",
+    summary: "設定変更時に天井が555Gへ短縮される機種です。",
+    point: "電源再起動では777G天井のまま引き継がれるため区別します。",
+  },
+  "million-live": {
+    slug: "million-live",
+    name: "スマスロ アイドルマスター ミリオンライブ！ ネクストプロローグ",
+    summary: "設定変更時に天井が500G+αへ短縮される機種です。2021年発売の旧機種とは別機種です。",
+    point: "3モード制の天井を分けて確認します。",
+  },
+  "super-black-jack": {
+    slug: "super-black-jack",
+    name: "スマスロ スーパーブラックジャック",
+    summary: "設定変更時に天井が666G+αへ短縮される機種です。",
+    point: "スルー回数天井・スイカ天井とは別に確認します。",
+  },
+  "bofuri": {
+    slug: "bofuri",
+    name: "L痛いのは嫌なので防御力に極振りしたいと思います。",
+    summary: "設定変更時に天井が450Gまたは650Gへランダムに短縮される機種です。",
+    point: "中段チェリー確率の上昇やゾーン挙動の変化とあわせて確認します。",
+  },
+  "to-love-ru-darkness": {
+    slug: "to-love-ru-darkness",
+    name: "L ToLOVEるダークネス",
+    summary: "設定変更時に天井が650G+αへ短縮される機種です。TRANCE ver.8.7とは別機種です。",
+    point: "穢れポイントの再抽選、ドキドキポイントの回復状況を確認します。",
+  },
 };
 
 const categories = [
@@ -550,6 +610,16 @@ const categories = [
       "nanatsu-no-maken-ga-shihai-suru",
       "dunbine",
       "devil-may-cry-5-stylish-tribe",
+      "iza-bancho",
+      "kaidoumokushiroku-kaiji",
+      "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e",
+      "godzilla",
+      "gundam-seed",
+      "zombieland-saga",
+      "million-live",
+      "super-black-jack",
+      "bofuri",
+      "to-love-ru-darkness",
     ],
   },
   {
