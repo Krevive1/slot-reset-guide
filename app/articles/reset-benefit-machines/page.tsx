@@ -550,6 +550,36 @@ const machinesBySlug: Record<string, ArticleMachine> = {
     summary: "設定変更時に天井が650G+αへ短縮される機種です。TRANCE ver.8.7とは別機種です。",
     point: "穢れポイントの再抽選、ドキドキポイントの回復状況を確認します。",
   },
+  "lupin-iii-daikoukaisha-no-hihou": {
+    slug: "lupin-iii-daikoukaisha-no-hihou",
+    name: "Lルパン三世 大航海者の秘宝",
+    summary: "設定変更時に天井が700G+αへ短縮される機種です。",
+    point: "保証ゲーム数への移行率優遇や、帯の色・出現有無とあわせて確認します。",
+  },
+  "bandori": {
+    slug: "bandori",
+    name: "Lバンドリ!",
+    summary: "設定変更時に周期天井が最大7周期へ短縮される機種です。",
+    point: "周期カウンターは朝一「???」表示のため、単独では判別しません。",
+  },
+  "dumbbell-nan-kilo-moteru": {
+    slug: "dumbbell-nan-kilo-moteru",
+    name: "Lパチスロ ダンベル何キロ持てる？",
+    summary: "設定変更後にAT天井が1000Gへ短縮される機種です。",
+    point: "設定変更後1回目の終了画面の紫枠出現率上昇とあわせて確認します。",
+  },
+  "senki-zesshou-symphogear": {
+    slug: "senki-zesshou-symphogear",
+    name: "Lパチスロ戦姫絶唱シンフォギア 正義の歌",
+    summary: "設定変更時に天井が498G+αへ短縮される機種です。",
+    point: "CZ煽り演出が発生するゲーム数の違いとあわせて確認します。",
+  },
+  "yoshimune": {
+    slug: "yoshimune",
+    name: "L吉宗",
+    summary: "設定変更時の天井短縮の有無について情報源により見解が分かれている機種です。",
+    point: "L真打吉宗とは別機種です。天国モード（193G）の挙動を中心に確認します。",
+  },
 };
 
 const categories = [
@@ -620,6 +650,10 @@ const categories = [
       "super-black-jack",
       "bofuri",
       "to-love-ru-darkness",
+      "lupin-iii-daikoukaisha-no-hihou",
+      "bandori",
+      "dumbbell-nan-kilo-moteru",
+      "senki-zesshou-symphogear",
     ],
   },
   {
@@ -688,6 +722,7 @@ const categories = [
       "okidoki-gorgeous-30",
       "salaryman-banchou-2",
       "taikai4-with-sonoko",
+      "yoshimune",
     ],
   },
 ];
