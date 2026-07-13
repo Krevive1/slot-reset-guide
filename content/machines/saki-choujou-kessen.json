@@ -1,7 +1,7 @@
 {
   "slug": "saki-choujou-kessen",
   "name": "L咲-Saki- 頂上決戦",
-  "updatedAt": "2026-07-13T09:30:00+09:00",
+  "updatedAt": "2026-07-13T10:30:00+09:00",
   "publishedAt": "2026-07-13T09:30:00+09:00",
   "spec": {
     "overview": "通常ゲーム数天井最大1000G+αの機種。CZ（特打）を最大6回失敗後の7回目は強制当選となり、周期ポイント（300pt起点で減算、8周期で天井）も別途存在する。設定変更後はゲーム数天井が最大600G+αに短縮される。",
@@ -41,7 +41,16 @@
       "AT終了後に液晶上へ紫色のモヤが発生した場合が、続行判断の目安の一つとされる解析情報がある"
     ]
   },
-  "referenceVideos": [],
+  "referenceVideos": [
+    {
+      "youtubeVideoId": "5BahcgnTsxg",
+      "channelName": "社不燦々【朝イチニキ】",
+      "channelUrl": "https://www.youtube.com/@syafu_sansan",
+      "title": "【スマスロ咲】1週間咲の朝イチ生活したら果たして収支はどうなる？",
+      "summary": "社不燦々【朝イチニキ】様による、L咲-Saki- 頂上決戦を1週間朝イチから実戦検証した動画です。",
+      "originalAnalysis": "1週間の朝イチ実戦検証動画です。実戦上の挙動・収支を確認できますが、解析上の確定仕様ではなく、あくまで実戦記録の一例です。動画結果だけでリセット恩恵や期待値を断定しないでください。"
+    }
+  ],
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [],
