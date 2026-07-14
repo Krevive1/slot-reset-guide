@@ -20,6 +20,7 @@ const staticEntries: SitemapEntry[] = [
   { path: "/articles/careful-morning-machines", changeFrequency: "weekly", priority: 0.7 },
   { path: "/articles/asaichi-benri-guzzu", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/ie-suro-erabikata", changeFrequency: "monthly", priority: 0.4 },
+  { path: "/articles/kachikachi-kun", changeFrequency: "monthly", priority: 0.4 },
   { path: "/beginner", changeFrequency: "monthly", priority: 0.5 },
   { path: "/line", changeFrequency: "monthly", priority: 0.4 },
   { path: "/line/checklist", changeFrequency: "monthly", priority: 0.5 },

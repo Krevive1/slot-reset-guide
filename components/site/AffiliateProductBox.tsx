@@ -17,7 +17,10 @@ export default function AffiliateProductBox({
 }: AffiliateProductBoxProps) {
   return (
     <div className="product-box">
-      <span className="product-box-provider">{provider}</span>
+      <span className="product-box-provider">
+        {provider}
+        <span className="product-box-ad-label">広告</span>
+      </span>
       <h3>{name}</h3>
       <p>{note}</p>
       {ctaHref ? (

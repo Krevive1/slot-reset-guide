@@ -74,6 +74,11 @@ const categories: { title: string; description: string; items: ProductItem[] }[]
         searchKeyword: "小型メモ帳 筆記用具",
       },
       {
+        name: "カチカチくん（小役カウンター）",
+        note: "スイカ・チェリー・ベルなどの小役成立回数を手持ちで数えられるカウンターです。詳しい使い方や選び方は下記の個別記事もご覧ください。",
+        searchKeyword: "カチカチくん",
+      },
+      {
         name: "除菌シート・手指消毒",
         note: "台や椅子に触れる機会が多いため、衛生面のケアも準備しておくと安心です。",
         searchKeyword: "除菌シート 携帯用",
@@ -124,6 +129,13 @@ export default function AsaichiBenriGuzzuArticlePage() {
                 />
               ))}
             </div>
+            {category.title === "記録・確認まわりで役立つもの" && (
+              <p className="section-note">
+                カチカチくんの使い方や選び方は、
+                <Link href="/articles/kachikachi-kun">カチカチくん（小役カウンター）とは？使う場面と選び方</Link>
+                で詳しく解説しています。
+              </p>
+            )}
           </section>
         ))}
 
