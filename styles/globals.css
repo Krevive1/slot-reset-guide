@@ -523,6 +523,105 @@ footer {
   margin: 0 0 12px;
 }
 
+.article-table-wrap {
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.article-table-wrap table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 320px;
+  font-size: 14px;
+}
+
+.article-table-wrap th,
+.article-table-wrap td {
+  border: 1px solid #e2e6ea;
+  padding: 8px 10px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.article-table-wrap th:first-child,
+.article-table-wrap td:first-child {
+  text-align: left;
+}
+
+.article-table-wrap thead th {
+  background: #f3f5f8;
+}
+
+.gomaiyaku-calculator {
+  border: 1px solid #e2e6ea;
+  border-radius: 12px;
+  background: #fbfcfd;
+  padding: 16px;
+  margin: 16px 0;
+  max-width: 100%;
+}
+
+.gomaiyaku-calculator-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.gomaiyaku-calculator-field label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #444;
+}
+
+.gomaiyaku-calculator-field input {
+  width: 100%;
+  max-width: 220px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d8dee8;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.gomaiyaku-calculator-error {
+  color: #c0392b;
+  font-weight: 700;
+  margin: 8px 0 0;
+}
+
+.gomaiyaku-calculator-result {
+  color: #1a6d3b;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 8px 0 0;
+}
+
+.gomaiyaku-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin: 16px 0;
+}
+
+.gomaiyaku-flow-step {
+  border: 1px solid #e2e6ea;
+  border-radius: 10px;
+  background: #fbfcfd;
+  padding: 10px 16px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+}
+
+.gomaiyaku-flow-arrow {
+  font-size: 18px;
+  color: #8a94a6;
+}
+
 .article-machine-card {
   border: 1px solid #e2e6ea;
   border-radius: 12px;

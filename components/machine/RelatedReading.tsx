@@ -5,8 +5,8 @@ import Link from "next/link";
 // per-machine schema field.
 const SLUG_SPECIFIC_LINKS: Record<string, { href: string; label: string }> = {
   "monkey-turn-v": {
-    href: "/articles/kachikachi-kun",
-    label: "カチカチくん（小役カウンター）とは？使う場面と選び方",
+    href: "/articles/monkey-turn-v-5mai-yaku",
+    label: "モンキーターンVの5枚役とは？設定差・数え方・計算方法",
   },
 };
 
