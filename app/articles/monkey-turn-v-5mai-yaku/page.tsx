@@ -68,11 +68,11 @@ export default function MonkeyTurnVGomaiYakuArticlePage() {
 
         <h2>なぜ設定推測の参考になるのか</h2>
         <p>
-          5枚役は、設定（設定1〜6）によって出現率が異なるとされる役です。高設定ほど出現しやすいとする情報が複数の解析サイトで共有されており、
-          自分で成立回数を数えることで、設定推測の材料の一つとして活用されています。
+          5枚役は、設定1・2・4・5・6によって出現率が異なるとされる役です。高設定ほど出現しやすいとする同一の数値が複数サイトに掲載されていますが、
+          元の出所やメーカー公式値であることは確認できていません。自分で成立回数を数えることで、設定推測の材料の一つとして活用されています。
         </p>
         <p>
-          ただし、この機種には設定3が存在しません（設定1・2・4・5・6の5段階）。数値の詳しい確度や注意点は、後述の「設定別確率との比較」で説明します。
+          なお、この機種には設定3が存在しません。数値の詳しい確度や注意点は、後述の「非公式に流通している設定別参考値」で説明します。
         </p>
 
         <h2>通常時とAT中の両方で数えること</h2>
@@ -155,7 +155,10 @@ export default function MonkeyTurnVGomaiYakuArticlePage() {
           </p>
         </div>
 
-        <h2>設定別確率との比較</h2>
+        <h2>非公式に流通している設定別参考値</h2>
+        <p className="section-note">
+          以下はメーカー公式の公表値ではなく、SNSや解析情報サイトで流通している非公式の参考値です。出所を確認できず、別の実戦推定値も存在するため、数値の確定性はありません。
+        </p>
         <div className="article-table-wrap">
           <table>
             <thead>
@@ -174,9 +177,6 @@ export default function MonkeyTurnVGomaiYakuArticlePage() {
             </tbody>
           </table>
         </div>
-        <p className="section-note">
-          以下の数値はメーカー公式の公表値として確認できたものではなく、SNSや解析情報サイトで共有されている非公式情報です。設定推測の参考値としてご覧ください。
-        </p>
         <p>
           この数値は複数のサイトで同じ形式で共有されていますが、元の情報がどこから出たのかを明記しているサイトは見つかっておらず、
           「情報のソースが不明」と明記した上でこの数値を紹介しているサイトもあります。
@@ -212,7 +212,7 @@ export default function MonkeyTurnVGomaiYakuArticlePage() {
           </table>
         </div>
         <p className="section-note">
-          上記は各確率から算出した理論上の平均回数です。実際の出現回数は短時間では大きく上下し、この回数だけで設定を確定できるものではありません。
+          上記は、掲載した非公式の参考値から算出した理論上の平均回数です。実際の出現回数は短時間では大きく上下し、この回数だけで設定を確定できるものではありません。
         </p>
 
         <h2>5枚役だけで設定を断定しない注意点</h2>
@@ -256,6 +256,25 @@ export default function MonkeyTurnVGomaiYakuArticlePage() {
             <li><Link href="/articles/asaichi-benri-guzzu">朝一待ち・実戦に便利な持ち物まとめ</Link></li>
           </ul>
         </div>
+
+        <h2>参考情報</h2>
+        <p className="section-note">
+          設定別参考値の調査にあたり、以下のページを確認しました。いずれもメーカー公式情報ではなく、SNSや解析情報サイトによる非公式の参考情報です。
+        </p>
+        <ul>
+          <li>
+            <a href="https://altema.jp/pachimo/lmonkeygomaiyaku" target="_blank" rel="noopener noreferrer">
+              パチーモ：モンキーターンVの5枚役の設定差・カウント方法
+            </a>
+            （メーカー公式情報ではありません）
+          </li>
+          <li>
+            <a href="https://hesosulo.com/hannbetsu-monkyturnv-5maiyaku/" target="_blank" rel="noopener noreferrer">
+              ヘソスロの期待値道：モンキーターンVの5枚役設定差考察
+            </a>
+            （メーカー公式情報ではありません）
+          </li>
+        </ul>
 
         <ShareButtons url={url} title={title} />
         <LineCta />
