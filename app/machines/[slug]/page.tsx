@@ -112,7 +112,7 @@ export default async function MachinePage({
       <MorningTarget morningTarget={machine.morningTarget} />
       <CeilingZoneInfo ceilingZoneInfo={machine.ceilingZoneInfo} />
       <QuitTiming quitTiming={machine.quitTiming} />
-      <RelatedReading />
+      <RelatedReading slug={machine.slug} />
       <AdSlot slot="in-article" />
       <ReferenceVideoSection videos={machine.referenceVideos} />
       <PracticeRecordSection records={machine.practiceRecords} />
