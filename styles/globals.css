@@ -244,6 +244,37 @@ section h2,
   border-left: 6px solid #e94b35;
 }
 
+.quick-facts {
+  border-left: 6px solid #2b5cad;
+  background: #f3f7ff;
+}
+
+.quick-facts ul {
+  margin: 0;
+}
+
+.machine-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.machine-faq-item {
+  border: 1px solid #e2e6ea;
+  border-radius: 10px;
+  padding: 10px 14px;
+  background: #fbfcfd;
+}
+
+.machine-faq-item summary {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.machine-faq-item p {
+  margin: 10px 0 0;
+}
+
 .home-machines-actions {
   display: flex;
   flex-wrap: wrap;

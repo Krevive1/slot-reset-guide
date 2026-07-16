@@ -9,12 +9,14 @@ import AdSlot from "@/components/ads/AdSlot";
 import MachineThumbnail from "@/components/machine/MachineThumbnail";
 import NewBadge from "@/components/machine/NewBadge";
 import HotBadge from "@/components/machine/HotBadge";
+import QuickFacts from "@/components/machine/QuickFacts";
 import MachineSpec from "@/components/machine/MachineSpec";
 import ResetInfo from "@/components/machine/ResetInfo";
 import DetectionMethod from "@/components/machine/DetectionMethod";
 import MorningTarget from "@/components/machine/MorningTarget";
 import CeilingZoneInfo from "@/components/machine/CeilingZoneInfo";
 import QuitTiming from "@/components/machine/QuitTiming";
+import MachineFaq from "@/components/machine/MachineFaq";
 import RelatedReading from "@/components/machine/RelatedReading";
 import ReferenceVideoSection from "@/components/machine/ReferenceVideoSection";
 import PracticeRecordSection from "@/components/machine/PracticeRecordSection";
@@ -104,6 +106,7 @@ export default async function MachinePage({
         <HotBadge hot={machine.hot} />
       </h1>
       <p className="updated-at">更新日：{machine.updatedAt.slice(0, 10)}</p>
+      <QuickFacts quickFacts={machine.quickFacts} />
       <MachineThumbnail heroImage={machine.heroImage} name={machine.name} />
 
       <MachineSpec spec={machine.spec} />
@@ -112,6 +115,7 @@ export default async function MachinePage({
       <MorningTarget morningTarget={machine.morningTarget} />
       <CeilingZoneInfo ceilingZoneInfo={machine.ceilingZoneInfo} />
       <QuitTiming quitTiming={machine.quitTiming} />
+      <MachineFaq faq={machine.faq} />
       <RelatedReading slug={machine.slug} />
       <AdSlot slot="in-article" />
       <ReferenceVideoSection videos={machine.referenceVideos} />

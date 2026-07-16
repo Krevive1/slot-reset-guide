@@ -92,6 +92,15 @@ export const MachineSchema = z.object({
   popularityRank: z.number().optional(),
   // Manual "熱" (hot/trending) flag, editorially assigned rather than computed.
   hot: z.boolean().optional(),
+  // Optional "30秒で確認" summary shown near the top of the page, above the
+  // hero image. Opt-in per machine (not auto-generated) -- omitted machines
+  // render nothing here and look exactly as before this field existed.
+  quickFacts: z
+    .object({
+      title: z.string(),
+      items: z.array(z.string()).min(1),
+    })
+    .optional(),
   updatedAt: z.string(),
   publishedAt: z.string(),
   spec: SpecSchema,
