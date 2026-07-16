@@ -2,7 +2,7 @@
   "slug": "karakuri-circus-2",
   "name": "Lからくりサーカス2",
   "popularityRank": 1,
-  "updatedAt": "2026-07-06T09:00:00+09:00",
+  "updatedAt": "2026-07-16T16:05:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
     "series": {
@@ -39,7 +39,16 @@
       "短縮天井到達までの差枚推移を見て、回収困難と判断したら早めにやめる"
     ]
   },
-  "referenceVideos": [],
+  "referenceVideos": [
+    {
+      "youtubeVideoId": "uX3EznWbxxk",
+      "channelName": "ぱち家(パチンカス家を買う)",
+      "channelUrl": "https://www.youtube.com/@%E3%81%B1%E3%81%A1%E5%AE%B6%E3%83%91%E3%83%81%E3%83%B3%E3%82%AB%E3%82%B9%E5%AE%B6%E3%82%92%E8%B2%B7%E3%81%86",
+      "title": "【検証】からサー2のリセット台を1週間打ち続けたら地獄のような日々が待っていた…。【Lパチスロ からくりサーカス2】【新台】",
+      "summary": "ぱち家(パチンカス家を買う)様による、Lからくりサーカス2のリセット台を1週間実戦検証した動画です。",
+      "originalAnalysis": "1週間のリセット台実戦検証動画です。実戦上の挙動・収支を確認できますが、解析上の確定仕様ではなく、あくまで実戦記録の一例です。動画結果だけでリセット恩恵や期待値を断定しないでください。"
+    }
+  ],
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [],
