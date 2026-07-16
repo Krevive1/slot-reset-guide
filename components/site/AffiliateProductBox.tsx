@@ -1,3 +1,5 @@
+import AffiliateLink from "./AffiliateLink";
+
 type AffiliateProductBoxProps = {
   provider: "Amazon" | "A8.net";
   name: string;
@@ -24,14 +26,15 @@ export default function AffiliateProductBox({
       <h3>{name}</h3>
       <p>{note}</p>
       {ctaHref ? (
-        <a
+        <AffiliateLink
           href={ctaHref}
           className="button button-secondary"
-          target="_blank"
-          rel="noopener noreferrer sponsored"
+          provider={provider}
+          productName={name}
+          ctaLabel={ctaLabel}
         >
           {ctaLabel}
-        </a>
+        </AffiliateLink>
       ) : (
         <span className="button button-disabled" aria-disabled="true">
           リンク準備中
