@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { getPublishedMachines, searchMachines, sortMachinesByPopularity } from "@/lib/content/machines";
+import {
+  getPublishedMachines,
+  getComingSoonMachines,
+  searchMachines,
+  sortMachinesByPopularity,
+} from "@/lib/content/machines";
 import MachineCard from "@/components/machine/MachineCard";
+import ComingSoonSection from "@/components/machine/ComingSoonSection";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import { SITE_URL } from "@/lib/site";
 
@@ -19,6 +25,7 @@ export default async function SearchPage({
   const { q } = await searchParams;
   const query = q ?? "";
   const machines = query ? sortMachinesByPopularity(searchMachines(await getPublishedMachines(), query)) : [];
+  const comingSoonResults = query ? searchMachines(await getComingSoonMachines(), query) : [];
 
   return (
     <>
@@ -42,21 +49,27 @@ export default async function SearchPage({
 
       {query && (
         <p className="section-note">
-          「{query}」の検索結果：{machines.length}件
+          「{query}」の検索結果：掲載中 {machines.length}件
+          {comingSoonResults.length > 0 && ` ／ Coming Soon ${comingSoonResults.length}件`}
         </p>
       )}
 
-      {query && machines.length === 0 && (
+      {query && machines.length === 0 && comingSoonResults.length === 0 && (
         <p>該当する機種が見つかりませんでした。別のキーワードでお試しください。</p>
       )}
 
       {machines.length > 0 && (
-        <div className="cards">
-          {machines.map((machine) => (
-            <MachineCard key={machine.slug} machine={machine} />
-          ))}
-        </div>
+        <section aria-labelledby="search-published-heading">
+          <h2 id="search-published-heading">掲載中の機種</h2>
+          <div className="cards">
+            {machines.map((machine) => (
+              <MachineCard key={machine.slug} machine={machine} />
+            ))}
+          </div>
+        </section>
       )}
+
+      <ComingSoonSection machines={comingSoonResults} />
     </>
   );
 }

@@ -1,9 +1,10 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getPublishedMachines, sortMachinesByLatest } from "@/lib/content/machines";
+import { getPublishedMachines, getComingSoonMachines, sortMachinesByLatest } from "@/lib/content/machines";
 import { selectHomeMachines } from "@/lib/content/popularity";
 import MachineCard from "@/components/machine/MachineCard";
 import MachineThumbnail from "@/components/machine/MachineThumbnail";
+import ComingSoonSection from "@/components/machine/ComingSoonSection";
 import AdSlot from "@/components/ads/AdSlot";
 import LineCta from "@/components/site/LineCta";
 import { SITE_URL } from "@/lib/site";
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
 
 export default async function HomePage() {
   const allMachines = await getPublishedMachines();
+  const comingSoonMachines = await getComingSoonMachines();
   const homeSelection = selectHomeMachines(allMachines, 12);
   const latestMachines = sortMachinesByLatest(allMachines).slice(0, 4);
 
@@ -39,6 +41,13 @@ export default async function HomePage() {
           </ul>
         </section>
       )}
+
+      <ComingSoonSection
+        machines={comingSoonMachines}
+        heading="8月3日導入予定｜Coming Soon"
+        description="2026年8月3日導入予定の新台について、現在判明している朝一・リセット情報をまとめています。導入前情報のため、解析情報は随時更新します。"
+        footerLink={{ href: "/machines#coming-soon", label: "導入予定機種をすべて見る" }}
+      />
 
       <section className="card warning" aria-label="注意喚起">
         <h2>はじめに（重要）</h2>
