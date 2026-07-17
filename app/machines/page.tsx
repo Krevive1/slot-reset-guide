@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllMachines, sortMachinesByPopularity } from "@/lib/content/machines";
+import { getPublishedMachines, getComingSoonMachines, sortMachinesByPopularity } from "@/lib/content/machines";
 import MachinesBrowser from "@/components/machine/MachinesBrowser";
+import ComingSoonSection from "@/components/machine/ComingSoonSection";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import AdSlot from "@/components/ads/AdSlot";
 import { SITE_URL } from "@/lib/site";
@@ -13,7 +14,11 @@ export const metadata: Metadata = {
 };
 
 export default async function MachinesIndexPage() {
-  const machines = sortMachinesByPopularity(await getAllMachines());
+  const [publishedMachines, comingSoonMachines] = await Promise.all([
+    getPublishedMachines(),
+    getComingSoonMachines(),
+  ]);
+  const machines = sortMachinesByPopularity(publishedMachines);
 
   return (
     <>
@@ -35,6 +40,7 @@ export default async function MachinesIndexPage() {
       ) : (
         <p>現在公開中の機種ページはありません。</p>
       )}
+      <ComingSoonSection machines={comingSoonMachines} />
       <p><Link href="/">← TOPへ戻る</Link></p>
     </>
   );

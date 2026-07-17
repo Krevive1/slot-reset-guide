@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getAllMachineSlugs, getAllMachines, getMachine, getRandomMachines } from "@/lib/content/machines";
+import { getAllMachineSlugs, getPublishedMachines, getMachine, getRandomMachines } from "@/lib/content/machines";
 import { buildArticleJsonLd, buildBreadcrumbJsonLd, buildFaqJsonLd } from "@/lib/seo/jsonld";
 import { SITE_URL } from "@/lib/site";
 import JsonLd from "@/components/seo/JsonLd";
@@ -10,6 +10,10 @@ import MachineThumbnail from "@/components/machine/MachineThumbnail";
 import NewBadge from "@/components/machine/NewBadge";
 import HotBadge from "@/components/machine/HotBadge";
 import QuickFacts from "@/components/machine/QuickFacts";
+import ComingSoonBadge from "@/components/machine/ComingSoonBadge";
+import ComingSoonNotice from "@/components/machine/ComingSoonNotice";
+import ComingSoonMeta from "@/components/machine/ComingSoonMeta";
+import UpdateHistorySection from "@/components/machine/UpdateHistorySection";
 import MachineSpec from "@/components/machine/MachineSpec";
 import ResetInfo from "@/components/machine/ResetInfo";
 import DetectionMethod from "@/components/machine/DetectionMethod";
@@ -40,8 +44,13 @@ export async function generateMetadata({
   const machine = await getMachine(slug);
   if (!machine) return {};
 
-  const title = `${machine.name} リセット恩恵・朝イチ狙い目`;
-  const description = `${machine.name}のリセット恩恵・判別方法・朝イチの狙い目を解説。${machine.spec.overview}`;
+  const isComingSoon = machine.status === "coming-soon";
+  const title = isComingSoon
+    ? `${machine.name} 朝一・リセット恩恵【導入前暫定】`
+    : `${machine.name} リセット恩恵・朝イチ狙い目`;
+  const description = isComingSoon
+    ? `${machine.name}は${machine.spec.releaseDate ?? "導入予定"}導入予定の機種です。導入前情報をもとにしたリセット恩恵の暫定情報をまとめています。解析情報は導入後に更新予定で、0Gからの金額期待値は確認できていません。`
+    : `${machine.name}のリセット恩恵・判別方法・朝イチの狙い目を解説。${machine.spec.overview}`;
   const url = `${SITE_URL}/machines/${machine.slug}`;
   const images = machine.heroImage ? [{ url: machine.heroImage }] : undefined;
 
@@ -74,8 +83,8 @@ export default async function MachinePage({
   const machine = await getMachine(slug);
   if (!machine) notFound();
 
-  const allMachines = await getAllMachines();
-  const randomMachines = getRandomMachines(allMachines, machine.slug, 5);
+  const publishedMachines = await getPublishedMachines();
+  const randomMachines = getRandomMachines(publishedMachines, machine.slug, 5);
 
   const url = `${SITE_URL}/machines/${machine.slug}`;
   const machinesUrl = `${SITE_URL}/machines`;
@@ -102,10 +111,22 @@ export default async function MachinePage({
       />
       <h1>
         {machine.name}
-        <NewBadge releaseDate={machine.spec.releaseDate} />
-        <HotBadge hot={machine.hot} />
+        {machine.status === "coming-soon" ? (
+          <ComingSoonBadge />
+        ) : (
+          <>
+            <NewBadge releaseDate={machine.spec.releaseDate} />
+            <HotBadge hot={machine.hot} />
+          </>
+        )}
       </h1>
       <p className="updated-at">更新日：{machine.updatedAt.slice(0, 10)}</p>
+      {machine.status === "coming-soon" && (
+        <>
+          <ComingSoonNotice />
+          <ComingSoonMeta comingSoon={machine.comingSoon} />
+        </>
+      )}
       <QuickFacts quickFacts={machine.quickFacts} />
       <MachineThumbnail heroImage={machine.heroImage} name={machine.name} />
 
@@ -116,6 +137,7 @@ export default async function MachinePage({
       <CeilingZoneInfo ceilingZoneInfo={machine.ceilingZoneInfo} />
       <QuitTiming quitTiming={machine.quitTiming} />
       <MachineFaq faq={machine.faq} />
+      {machine.status === "coming-soon" && <UpdateHistorySection updateHistory={machine.comingSoon} />}
       <RelatedReading slug={machine.slug} />
       <AdSlot slot="in-article" />
       <ReferenceVideoSection videos={machine.referenceVideos} />

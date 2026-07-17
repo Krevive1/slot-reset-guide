@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getAllMachines, sortMachinesByLatest } from "@/lib/content/machines";
+import { getPublishedMachines, sortMachinesByLatest } from "@/lib/content/machines";
 import { selectHomeMachines } from "@/lib/content/popularity";
 import MachineCard from "@/components/machine/MachineCard";
 import MachineThumbnail from "@/components/machine/MachineThumbnail";
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 export default async function HomePage() {
-  const allMachines = await getAllMachines();
+  const allMachines = await getPublishedMachines();
   const homeSelection = selectHomeMachines(allMachines, 12);
   const latestMachines = sortMachinesByLatest(allMachines).slice(0, 4);
 

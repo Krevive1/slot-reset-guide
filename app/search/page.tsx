@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getAllMachines, searchMachines, sortMachinesByPopularity } from "@/lib/content/machines";
+import { getPublishedMachines, searchMachines, sortMachinesByPopularity } from "@/lib/content/machines";
 import MachineCard from "@/components/machine/MachineCard";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import { SITE_URL } from "@/lib/site";
@@ -18,7 +18,7 @@ export default async function SearchPage({
 }) {
   const { q } = await searchParams;
   const query = q ?? "";
-  const machines = query ? sortMachinesByPopularity(searchMachines(await getAllMachines(), query)) : [];
+  const machines = query ? sortMachinesByPopularity(searchMachines(await getPublishedMachines(), query)) : [];
 
   return (
     <>

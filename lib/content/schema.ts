@@ -76,6 +76,21 @@ export const FaqItemSchema = z.object({
   answer: z.string(),
 });
 
+export const UpdateHistoryEntrySchema = z.object({
+  date: z.string(),
+  note: z.string(),
+});
+
+// Extra fields shown only on pre-release "Coming Soon" pages (status ===
+// "coming-soon"). releaseDate itself stays on spec.releaseDate (single
+// source of truth, no duplication) -- this block only carries the
+// provisional-info-specific metadata that published machines don't need.
+export const ComingSoonInfoSchema = z.object({
+  infoStatus: z.string(),
+  lastConfirmedAt: z.string(),
+  updateHistory: z.array(UpdateHistoryEntrySchema).min(1),
+});
+
 // "maker" and "series" are reserved path segments (/machines/maker/[maker],
 // /machines/series/[series]) and must never collide with a machine slug.
 const RESERVED_MACHINE_SLUGS = new Set(["maker", "series"]);
@@ -92,6 +107,15 @@ export const MachineSchema = z.object({
   popularityRank: z.number().optional(),
   // Manual "熱" (hot/trending) flag, editorially assigned rather than computed.
   hot: z.boolean().optional(),
+  // "published" is the default so all existing content (which predates this
+  // field) keeps working with zero changes. "coming-soon" machines are kept
+  // out of the main listing/count/search/related-machines pools and shown in
+  // a separate section instead (see lib/content/machines.ts
+  // getPublishedMachines/getComingSoonMachines). "draft" is reserved for
+  // future unpublished-work-in-progress content; no current tooling reads it
+  // yet beyond being excluded from getPublishedMachines.
+  status: z.enum(["published", "coming-soon", "draft"]).default("published"),
+  comingSoon: ComingSoonInfoSchema.optional(),
   // Optional "30秒で確認" summary shown near the top of the page, above the
   // hero image. Opt-in per machine (not auto-generated) -- omitted machines
   // render nothing here and look exactly as before this field existed.

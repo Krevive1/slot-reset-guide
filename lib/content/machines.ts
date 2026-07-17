@@ -51,7 +51,22 @@ export const machineRepository: MachineRepository = new JsonFileMachineRepositor
 
 export const getAllMachineSlugs = () => machineRepository.getAllSlugs();
 export const getMachine = (slug: string) => machineRepository.getBySlug(slug);
+// Raw, unfiltered fetch -- includes coming-soon/draft machines. Used by
+// sitemap.xml (which intentionally lists coming-soon pages too) and by
+// generateStaticParams (every status still needs its page built). Listing,
+// counting, searching, and "related machines" pools should use
+// getPublishedMachines() below instead.
 export const getAllMachines = () => machineRepository.getAll();
+
+export async function getPublishedMachines(): Promise<Machine[]> {
+  const machines = await getAllMachines();
+  return machines.filter((machine) => machine.status === "published");
+}
+
+export async function getComingSoonMachines(): Promise<Machine[]> {
+  const machines = await getAllMachines();
+  return machines.filter((machine) => machine.status === "coming-soon");
+}
 
 // Manually pinned above the popularity ranking, regardless of rank number.
 const PINNED_SLUGS = ["karakuri-circus-2"];
