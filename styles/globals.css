@@ -93,6 +93,10 @@ a {
   margin-inline: auto;
 }
 
+.affiliate-disclosure p + p {
+  margin-top: 4px;
+}
+
 .hero-banner {
   width: 100%;
   height: auto;
