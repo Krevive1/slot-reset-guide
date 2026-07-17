@@ -4,7 +4,7 @@ import ComingSoonCard from "./ComingSoonCard";
 export default function ComingSoonSection({
   machines,
 }: {
-  machines: Pick<Machine, "slug" | "name" | "spec" | "resetInfo" | "comingSoon">[];
+  machines: Pick<Machine, "slug" | "name" | "heroImage" | "spec" | "resetInfo" | "comingSoon">[];
 }) {
   if (machines.length === 0) return null;
 

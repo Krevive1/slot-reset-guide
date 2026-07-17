@@ -1,14 +1,16 @@
 import Link from "next/link";
 import ComingSoonBadge from "./ComingSoonBadge";
+import MachineThumbnail from "./MachineThumbnail";
 import { Machine } from "@/lib/content/schema";
 
 export default function ComingSoonCard({
   machine,
 }: {
-  machine: Pick<Machine, "slug" | "name" | "spec" | "resetInfo" | "comingSoon">;
+  machine: Pick<Machine, "slug" | "name" | "heroImage" | "spec" | "resetInfo" | "comingSoon">;
 }) {
   return (
     <Link href={`/machines/${machine.slug}`} className="card machine-card coming-soon-card">
+      <MachineThumbnail heroImage={machine.heroImage} name={machine.name} />
       <ComingSoonBadge />
       <h3>{machine.name}</h3>
       <p className="section-note">
