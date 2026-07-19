@@ -137,6 +137,13 @@ export const MachineSchema = z.object({
   practiceRecords: z.array(PracticeRecordSchema).default([]),
   relatedMachines: z.array(RelatedMachineRefSchema).default([]),
   faq: z.array(FaqItemSchema).default([]),
+  // Optional overrides for the auto-generated title/description template in
+  // generateMetadata (see app/machines/[slug]/page.tsx). Omitted machines use
+  // the standard "<name> リセット恩恵・朝イチ狙い目" template unchanged. Use
+  // this only when Search Console data shows the generic template underperforms
+  // for a specific machine (e.g. high impressions but low CTR).
+  seoTitle: z.string().optional(),
+  seoDescription: z.string().optional(),
 });
 
 export type MakerRef = z.infer<typeof MakerRefSchema>;

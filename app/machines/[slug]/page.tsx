@@ -45,12 +45,16 @@ export async function generateMetadata({
   if (!machine) return {};
 
   const isComingSoon = machine.status === "coming-soon";
-  const title = isComingSoon
-    ? `${machine.name} 朝一・リセット恩恵【導入前暫定】`
-    : `${machine.name} リセット恩恵・朝イチ狙い目`;
-  const description = isComingSoon
-    ? `${machine.name}は${machine.spec.releaseDate ?? "導入予定"}導入予定の機種です。導入前情報をもとにしたリセット恩恵の暫定情報をまとめています。解析情報は導入後に更新予定で、0Gからの金額期待値は確認できていません。`
-    : `${machine.name}のリセット恩恵・判別方法・朝イチの狙い目を解説。${machine.spec.overview}`;
+  const title =
+    machine.seoTitle ??
+    (isComingSoon
+      ? `${machine.name} 朝一・リセット恩恵【導入前暫定】`
+      : `${machine.name} リセット恩恵・朝イチ狙い目`);
+  const description =
+    machine.seoDescription ??
+    (isComingSoon
+      ? `${machine.name}は${machine.spec.releaseDate ?? "導入予定"}導入予定の機種です。導入前情報をもとにしたリセット恩恵の暫定情報をまとめています。解析情報は導入後に更新予定で、0Gからの金額期待値は確認できていません。`
+      : `${machine.name}のリセット恩恵・判別方法・朝イチの狙い目を解説。${machine.spec.overview}`);
   const url = `${SITE_URL}/machines/${machine.slug}`;
   const images = machine.heroImage ? [{ url: machine.heroImage }] : undefined;
 
