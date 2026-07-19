@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { LINE_OFFICIAL_URL, SITE_URL } from "@/lib/site";
+import LineFollowLink from "@/components/site/LineFollowLink";
 
 export const metadata: Metadata = {
   title: "LINE公式アカウント案内",
@@ -22,14 +23,9 @@ export default function LinePage() {
         <Link href="/line/checklist" className="button">
           チェックリストを見る
         </Link>
-        <a
-          href={LINE_OFFICIAL_URL}
-          className="button button-secondary"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <LineFollowLink href={LINE_OFFICIAL_URL} className="button button-secondary" ctaLabel="line_page_main">
           LINEで更新情報を受け取る
-        </a>
+        </LineFollowLink>
       </div>
 
       <h2>無料配布予定</h2>

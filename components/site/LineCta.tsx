@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { LINE_OFFICIAL_URL } from "@/lib/site";
+import LineFollowLink from "./LineFollowLink";
 
 export default function LineCta() {
   return (
@@ -12,14 +13,9 @@ export default function LineCta() {
         <Link href="/line/checklist" className="button">
           無料チェックリストを見る
         </Link>
-        <a
-          href={LINE_OFFICIAL_URL}
-          className="button button-secondary"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <LineFollowLink href={LINE_OFFICIAL_URL} className="button button-secondary" ctaLabel="line_cta_home">
           LINEで更新情報を受け取る
-        </a>
+        </LineFollowLink>
       </div>
     </aside>
   );
