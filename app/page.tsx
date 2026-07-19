@@ -45,8 +45,9 @@ export default async function HomePage() {
       <ComingSoonSection
         machines={comingSoonMachines}
         heading="8月3日導入予定｜Coming Soon"
-        description="2026年8月3日導入予定の新台について、現在判明している朝一・リセット情報をまとめています。導入前情報のため、解析情報は随時更新します。"
+        description="8月3日導入予定の新台4機種です。解析情報は随時更新します。"
         footerLink={{ href: "/machines#coming-soon", label: "導入予定機種をすべて見る" }}
+        variant="compact"
       />
 
       <section className="card warning" aria-label="注意喚起">

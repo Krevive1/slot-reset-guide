@@ -792,6 +792,14 @@ footer {
   border: 1px dashed #6b4fa0;
 }
 
+.coming-soon-card--compact .section-note {
+  margin: 4px 0;
+}
+
+.coming-soon-card--compact .coming-soon-meta {
+  margin: 4px 0 0;
+}
+
 .update-history-list {
   list-style: none;
   margin: 0;
@@ -999,6 +1007,30 @@ footer {
 
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .coming-soon-section--compact .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .coming-soon-section--compact .coming-soon-card--compact {
+    padding: 10px;
+  }
+
+  .coming-soon-section--compact .coming-soon-card--compact h3 {
+    font-size: 14px;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+  }
+
+  .coming-soon-section--compact .coming-soon-card--compact .section-note {
+    font-size: 12px;
+  }
+
+  .coming-soon-section--compact .coming-soon-card--compact .coming-soon-info-status {
+    font-size: 11px;
+    padding: 2px 8px;
   }
 
   nav a {
