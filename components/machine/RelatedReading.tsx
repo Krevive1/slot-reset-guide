@@ -8,6 +8,10 @@ const SLUG_SPECIFIC_LINKS: Record<string, { href: string; label: string }> = {
     href: "/articles/monkey-turn-v-5mai-yaku",
     label: "モンキーターンVの5枚役とは？設定差・数え方・計算方法",
   },
+  "tokyo-ghoul": {
+    href: "/articles/tokyo-ghoul-trophy-misugoshi",
+    label: "実践記録：トロフィーを確認せず5万円使い切った7月7日",
+  },
 };
 
 export default function RelatedReading({ slug }: { slug?: string }) {

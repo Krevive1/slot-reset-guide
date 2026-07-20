@@ -106,6 +106,22 @@ export default async function HomePage() {
         </section>
       )}
 
+      <section aria-label="実践記録・コラム">
+        <h2>実践記録・コラム</h2>
+        <p className="section-note">運営者自身の実践記録や失敗談、コラムを掲載しています。</p>
+        <div className="cards">
+          <Link href="/articles/tokyo-ghoul-trophy-misugoshi" className="card machine-card">
+            <MachineThumbnail
+              heroImage="/images/articles/tokyo-ghoul-trophy-misugoshi.jpg"
+              name="スマスロ東京喰種 実践記録｜トロフィーを確認せず5万円使い切った7月7日"
+            />
+            <h3>実践記録：トロフィーを確認せず5万円使い切った7月7日</h3>
+            <p className="updated-at">公開日：2026-07-19</p>
+            <p className="section-note">スマスロ東京喰種の実践記録・失敗談です。</p>
+          </Link>
+        </div>
+      </section>
+
       <LineCta />
     </>
   );
