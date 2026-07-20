@@ -9,7 +9,7 @@ export default function Header() {
         <Image
           src="/images/hero-banner.png"
           alt="ワンチャンくん｜あさイチリセット情報ガイド｜あさイチを制する者は、スロットを制する"
-          width={1916}
+          width={1915}
           height={821}
           className="hero-banner"
           priority
