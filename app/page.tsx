@@ -110,6 +110,15 @@ export default async function HomePage() {
         <h2>実践記録・コラム</h2>
         <p className="section-note">運営者自身の実践記録や失敗談、コラムを掲載しています。</p>
         <div className="cards">
+          <Link href="/articles/hokuto-loud-neighbor-column" className="card machine-card">
+            <MachineThumbnail
+              heroImage="/images/articles/hokuto-loud-neighbor-column.jpg"
+              name="スマスロ北斗の拳で隣に音量MAXの男が座った話｜収支は負けたが謎の勝負には勝った"
+            />
+            <h3>隣に音量MAXの男が座った話</h3>
+            <p className="updated-at">公開日：2026-07-21</p>
+            <p className="section-note">スマスロ北斗の拳のホール体験コラムです。</p>
+          </Link>
           <Link href="/articles/tokyo-ghoul-trophy-misugoshi" className="card machine-card">
             <MachineThumbnail
               heroImage="/images/articles/tokyo-ghoul-trophy-misugoshi.jpg"

@@ -12,6 +12,10 @@ const SLUG_SPECIFIC_LINKS: Record<string, { href: string; label: string }> = {
     href: "/articles/tokyo-ghoul-trophy-misugoshi",
     label: "実践記録：トロフィーを確認せず5万円使い切った7月7日",
   },
+  "hokuto-no-ken-smart-slot": {
+    href: "/articles/hokuto-loud-neighbor-column",
+    label: "隣に音量MAXの男が座った話｜収支は負けたが謎の勝負には勝った",
+  },
 };
 
 export default function RelatedReading({ slug }: { slug?: string }) {
