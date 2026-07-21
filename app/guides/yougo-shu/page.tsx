@@ -7,7 +7,7 @@ import ShareButtons from "@/components/site/ShareButtons";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { SITE_URL } from "@/lib/site";
 
-const title = "パチスロ用語集｜朝一リセット初心者向け基本用語まとめ";
+const title = "天井・CZ・有利区間とは？パチスロ用語集【朝一リセット初心者向け】";
 const description =
   "天井、CZ、有利区間、設定変更など、朝一リセットを理解するうえで欠かせないパチスロの基本用語を初心者向けに解説します。";
 const url = `${SITE_URL}/guides/yougo-shu`;
