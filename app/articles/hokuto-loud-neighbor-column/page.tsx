@@ -185,6 +185,7 @@ export default function HokutoLoudNeighborColumnPage() {
           <ul>
             <li><Link href="/articles/tokyo-ghoul-trophy-misugoshi">実践記録：トロフィーを確認せず5万円使い切った7月7日</Link></li>
             <li><Link href="/articles/asaichi-benri-guzzu">朝一待ち・実戦に便利な持ち物まとめ</Link></li>
+            <li><Link href="/articles/soundcore-liberty-4-hall-noise-column">ホールでSoundcore Liberty 4を使ってみた話</Link></li>
           </ul>
         </div>
 

@@ -718,6 +718,82 @@ footer {
   background: #f3f5f8;
 }
 
+.profile-hero {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 20px 0 28px;
+}
+
+.profile-hero-image {
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 140px;
+  height: 140px;
+}
+
+.profile-hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-hero-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-quote {
+  border-left: 6px solid #f0b93a;
+  background: #fff8e6;
+  border-radius: 0 10px 10px 0;
+  padding: 12px 18px;
+  margin: 0 0 12px;
+  font-style: italic;
+}
+
+.profile-quote p {
+  margin: 0;
+}
+
+.profile-episode {
+  border: 1px solid #f0d9a0;
+  background: #fff8e6;
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin: 16px 0;
+}
+
+.profile-episode p {
+  margin: 0;
+}
+
+.profile-callout {
+  border-left: 6px solid #2b5cad;
+  background: #f3f7ff;
+  border-radius: 0 10px 10px 0;
+  padding: 14px 18px;
+  margin: 16px 0;
+}
+
+.profile-callout p {
+  margin: 0 0 8px;
+}
+
+.profile-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.profile-callout ul {
+  margin: 8px 0 0;
+}
+
+.profile-emphasis {
+  font-weight: 700;
+}
+
 .gomaiyaku-calculator {
   border: 1px solid #e2e6ea;
   border-radius: 12px;
@@ -1207,5 +1283,10 @@ footer {
   .practice-record table {
     display: block;
     overflow-x: auto;
+  }
+
+  .profile-hero {
+    flex-direction: column;
+    text-align: center;
   }
 }

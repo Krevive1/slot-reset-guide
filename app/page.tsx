@@ -110,6 +110,14 @@ export default async function HomePage() {
         <h2>実践記録・コラム</h2>
         <p className="section-note">運営者自身の実践記録や失敗談、コラムを掲載しています。</p>
         <div className="cards">
+          <Link href="/articles/soundcore-liberty-4-hall-noise-column" className="card machine-card">
+            <MachineThumbnail
+              name="モンキーターン・東京喰種・北斗の爆音から耳を守りたい｜ホールでSoundcore Liberty 4を使ってみた"
+            />
+            <h3>ホールでSoundcore Liberty 4を使ってみた</h3>
+            <p className="updated-at">公開日：2026-07-24</p>
+            <p className="section-note">隣台の爆音対策コラムです。</p>
+          </Link>
           <Link href="/articles/hokuto-loud-neighbor-column" className="card machine-card">
             <MachineThumbnail
               heroImage="/images/articles/hokuto-loud-neighbor-column.jpg"
