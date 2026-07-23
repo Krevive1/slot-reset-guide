@@ -28,6 +28,7 @@ import RelatedMachinesSection from "@/components/machine/RelatedMachinesSection"
 import ReferenceSources from "@/components/machine/ReferenceSources";
 import Comments from "@/components/machine/Comments";
 import MachineAffiliateSection from "@/components/machine/MachineAffiliateSection";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
 
@@ -147,6 +148,7 @@ export default async function MachinePage({
       <MorningTarget morningTarget={machine.morningTarget} tone={isComingSoon ? "pending" : "neutral"} />
       <CeilingZoneInfo ceilingZoneInfo={machine.ceilingZoneInfo} tone={isComingSoon ? "caution" : "basic"} />
       <QuitTiming quitTiming={machine.quitTiming} tone={isComingSoon ? "pending" : "neutral"} />
+      <WanchankunComment comment={machine.wanchankunComment} />
       <MachineAffiliateSection />
       <MachineFaq faq={machine.faq} />
       {machine.status === "coming-soon" && <UpdateHistorySection updateHistory={machine.comingSoon} />}

@@ -58,5 +58,6 @@
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [],
-  "heroImage": "/images/machines/zettai-shougeki-4.jpg"
+  "heroImage": "/images/machines/zettai-shougeki-4.jpg",
+  "wanchankunComment": "最大5周期までの短縮。9周期からだとかなり浅くなるから天井到達も現実的になる。"
 }

@@ -144,6 +144,9 @@ export const MachineSchema = z.object({
   // for a specific machine (e.g. high impressions but low CTR).
   seoTitle: z.string().optional(),
   seoDescription: z.string().optional(),
+  // Optional one-line mascot comment shown in a speech bubble after the
+  // quit-timing section. Opt-in per machine; omitted machines render nothing.
+  wanchankunComment: z.string().optional(),
 });
 
 export type MakerRef = z.infer<typeof MakerRefSchema>;

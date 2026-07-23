@@ -257,6 +257,73 @@ section h2,
   margin: 0;
 }
 
+.wanchankun-comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.wanchankun-comment-avatar {
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #f0b93a;
+}
+
+.wanchankun-comment-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wanchankun-comment-bubble {
+  position: relative;
+  flex: 1;
+  background: #fff8e6;
+  border: 1px solid #f0d9a0;
+  border-radius: 14px;
+  padding: 12px 16px;
+}
+
+.wanchankun-comment-bubble::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 18px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #f0d9a0;
+}
+
+.wanchankun-comment-bubble::after {
+  content: "";
+  position: absolute;
+  left: -6.5px;
+  top: 19px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid #fff8e6;
+}
+
+.wanchankun-comment-label {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #b8860b;
+}
+
+.wanchankun-comment-text {
+  margin: 0;
+}
+
 /* Meaningful color-coding for machine detail page sections (InfoHighlight).
    Tone is chosen from structured data (e.g. machine.status), never from
    matching words in the section's own text. Kept intentionally soft --
