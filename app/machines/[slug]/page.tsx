@@ -88,6 +88,12 @@ export default async function MachinePage({
   const machine = await getMachine(slug);
   if (!machine) notFound();
 
+  // Coming Soon machines carry pre-release info, so their reset/ceiling/
+  // morning-target/quit-timing sections get a lower-confidence tone. This is
+  // derived purely from the existing `status` field -- never from matching
+  // words in the section text -- so it can't mislabel unconfirmed info.
+  const isComingSoon = machine.status === "coming-soon";
+
   const publishedMachines = await getPublishedMachines();
   const randomMachines = getRandomMachines(publishedMachines, machine.slug, 5);
 
@@ -136,11 +142,11 @@ export default async function MachinePage({
       <MachineThumbnail heroImage={machine.heroImage} name={machine.name} />
 
       <MachineSpec spec={machine.spec} />
-      <ResetInfo resetInfo={machine.resetInfo} />
+      <ResetInfo resetInfo={machine.resetInfo} tone={isComingSoon ? "caution" : "neutral"} />
       <DetectionMethod detectionMethod={machine.detectionMethod} />
-      <MorningTarget morningTarget={machine.morningTarget} />
-      <CeilingZoneInfo ceilingZoneInfo={machine.ceilingZoneInfo} />
-      <QuitTiming quitTiming={machine.quitTiming} />
+      <MorningTarget morningTarget={machine.morningTarget} tone={isComingSoon ? "pending" : "neutral"} />
+      <CeilingZoneInfo ceilingZoneInfo={machine.ceilingZoneInfo} tone={isComingSoon ? "caution" : "basic"} />
+      <QuitTiming quitTiming={machine.quitTiming} tone={isComingSoon ? "pending" : "neutral"} />
       <MachineAffiliateSection />
       <MachineFaq faq={machine.faq} />
       {machine.status === "coming-soon" && <UpdateHistorySection updateHistory={machine.comingSoon} />}

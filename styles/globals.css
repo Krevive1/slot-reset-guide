@@ -257,6 +257,70 @@ section h2,
   margin: 0;
 }
 
+/* Meaningful color-coding for machine detail page sections (InfoHighlight).
+   Tone is chosen from structured data (e.g. machine.status), never from
+   matching words in the section's own text. Kept intentionally soft --
+   tinted background + left accent + small label -- so a page with several
+   of these doesn't read as "all urgent." */
+.info-highlight-label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+.info-highlight--important {
+  border-left: 6px solid #e94b35;
+  background: #fdf1ef;
+}
+
+.info-highlight-label--important {
+  background: #fbdedb;
+  color: #b8341e;
+}
+
+.info-highlight--basic {
+  border-left: 6px solid #2b5cad;
+  background: #f3f7ff;
+}
+
+.info-highlight-label--basic {
+  background: #dde8fb;
+  color: #2b5cad;
+}
+
+.info-highlight--action {
+  border-left: 6px solid #2f8f4e;
+  background: #f0f8f3;
+}
+
+.info-highlight-label--action {
+  background: #d9f0e1;
+  color: #24703d;
+}
+
+.info-highlight--caution {
+  border-left: 6px solid #c97a1f;
+  background: #fdf3e7;
+}
+
+.info-highlight-label--caution {
+  background: #fbe7cb;
+  color: #96591a;
+}
+
+.info-highlight--pending {
+  border-left: 6px solid #8a94a6;
+  background: #f3f4f6;
+}
+
+.info-highlight-label--pending {
+  background: #e4e6ea;
+  color: #5b6472;
+}
+
 .machine-faq-list {
   display: flex;
   flex-direction: column;

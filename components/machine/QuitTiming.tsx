@@ -1,9 +1,17 @@
 import Link from "next/link";
 import { Machine } from "@/lib/content/schema";
+import { InfoTone, ToneLabel, toneSectionClassName } from "./InfoHighlight";
 
-export default function QuitTiming({ quitTiming }: { quitTiming: Machine["quitTiming"] }) {
+export default function QuitTiming({
+  quitTiming,
+  tone = "action",
+}: {
+  quitTiming: Machine["quitTiming"];
+  tone?: InfoTone;
+}) {
   return (
-    <section className="card warning" aria-labelledby="quit-timing-heading">
+    <section className={toneSectionClassName(tone)} aria-labelledby="quit-timing-heading">
+      <ToneLabel tone={tone} />
       <h2 id="quit-timing-heading">やめどき</h2>
       <ul>
         {quitTiming.points.map((point) => (
