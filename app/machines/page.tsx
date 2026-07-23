@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getPublishedMachines, getComingSoonMachines, sortMachinesByPopularity } from "@/lib/content/machines";
+import { getPublishedMachines, getComingSoonMachines, sortMachinesByLatest } from "@/lib/content/machines";
 import MachinesBrowser from "@/components/machine/MachinesBrowser";
 import ComingSoonSection from "@/components/machine/ComingSoonSection";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
@@ -18,7 +18,7 @@ export default async function MachinesIndexPage() {
     getPublishedMachines(),
     getComingSoonMachines(),
   ]);
-  const machines = sortMachinesByPopularity(publishedMachines);
+  const machines = sortMachinesByLatest(publishedMachines);
 
   return (
     <>
