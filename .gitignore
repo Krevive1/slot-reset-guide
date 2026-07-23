@@ -8,3 +8,6 @@ next-env.d.ts
 
 # Raw/working design assets (originals before processing into public/images)
 assets/
+
+# Service account credentials for GA4/Search Console reporting automation
+.credentials/
