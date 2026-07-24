@@ -45,7 +45,16 @@
       "短縮天井到達までの差枚推移を見て、回収困難と判断したら早めにやめる"
     ]
   },
-  "referenceVideos": [],
+  "referenceVideos": [
+    {
+      "youtubeVideoId": "8E95PFfgUXE",
+      "channelName": "ライテンちゃんねる",
+      "channelUrl": "https://www.youtube.com/@raiten_ch",
+      "title": "【チバリヨ2】朝イチ一発目からの天国モード移行率を調べてみた！",
+      "summary": "ライテンちゃんねる様による、チバリヨ2の朝イチ一発目からの天国モード移行率を調査した検証動画です。",
+      "originalAnalysis": "朝イチ1回転目からの天国モード移行率を実戦ベースで検証した動画です。解析情報上の確定仕様ではなく、あくまで実戦記録の一つとしてご覧ください。"
+    }
+  ],
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [],

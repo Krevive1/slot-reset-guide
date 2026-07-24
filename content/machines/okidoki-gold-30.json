@@ -50,7 +50,16 @@
       "短縮天井到達までの差枚推移を見て、回収困難と判断したら早めにやめる"
     ]
   },
-  "referenceVideos": [],
+  "referenceVideos": [
+    {
+      "youtubeVideoId": "cHf3JouiyVk",
+      "channelName": "にぱち",
+      "channelUrl": "https://www.youtube.com/@にぱち-z6x",
+      "title": "【沖ドキGOLD】設定別リセット後検証 設定2の朝イチがかなり想定外でヤバい",
+      "summary": "にぱち様による、沖ドキ!GOLD-30の設定別リセット後の朝イチ挙動を検証した動画です。",
+      "originalAnalysis": "設定別にリセット後の朝イチ挙動を実戦ベースで検証した動画です。解析情報上の確定仕様ではなく、あくまで実戦記録の一つとしてご覧ください。"
+    }
+  ],
   "practiceRecords": [],
   "relatedMachines": [
     {
