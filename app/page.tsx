@@ -112,6 +112,7 @@ export default async function HomePage() {
         <div className="cards">
           <Link href="/articles/soundcore-liberty-4-hall-noise-column" className="card machine-card">
             <MachineThumbnail
+              heroImage="/images/articles/soundcore-liberty-4-hall-noise-column.jpg"
               name="モンキーターン・東京喰種・北斗の爆音から耳を守りたい｜ホールでSoundcore Liberty 4を使ってみた"
             />
             <h3>ホールでSoundcore Liberty 4を使ってみた</h3>

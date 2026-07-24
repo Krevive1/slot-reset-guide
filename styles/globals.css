@@ -680,6 +680,21 @@ footer {
   padding: 1px 8px;
 }
 
+.product-box-image-link {
+  display: block;
+}
+
+.product-box-image {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 12px;
+}
+
 .product-box h3 {
   margin: 0 0 8px;
   line-height: 1.4;

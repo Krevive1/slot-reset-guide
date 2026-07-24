@@ -15,6 +15,7 @@ const title =
 const description =
   "パチスロホールで隣台がうるさいときの騒音対策を、Soundcore Liberty 4の実体験をもとに解説。爆音は消えなくても、耳への負担はかなり和らぎました。";
 const url = `${SITE_URL}/articles/soundcore-liberty-4-hall-noise-column`;
+const heroImage = "/images/articles/soundcore-liberty-4-hall-noise-column.jpg";
 const publishedAt = "2026-07-24";
 
 export const metadata: Metadata = {
@@ -26,11 +27,13 @@ export const metadata: Metadata = {
     description,
     url,
     type: "article",
+    images: [{ url: heroImage }],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
+    images: [heroImage],
   },
 };
 
@@ -56,7 +59,7 @@ export default function SoundcoreLiberty4HallNoiseColumnPage() {
         <h1 className="page-title">{title}</h1>
         <p className="updated-at">公開日：{publishedAt}</p>
 
-        <MachineThumbnail name={title} />
+        <MachineThumbnail heroImage={heroImage} name={title} />
 
         <p>モンキーターンの爆音は、耳が壊れます。</p>
         <p>東京喰種の爆音も、耳が壊れます。</p>
@@ -204,6 +207,7 @@ export default function SoundcoreLiberty4HallNoiseColumnPage() {
             note="運営者が実際にホールで使用している製品です。"
             ctaLabel="Amazonで探す"
             ctaHref={buildAmazonSearchUrl("Soundcore Liberty 4")}
+            imageSrc="/images/products/soundcore-liberty-4.png"
           />
           <AffiliateProductBox
             provider="Amazon"
@@ -211,6 +215,7 @@ export default function SoundcoreLiberty4HallNoiseColumnPage() {
             note="Anker Japan公式サイトでLiberty 4の後継機として案内されているモデルです。"
             ctaLabel="Amazonで探す"
             ctaHref={buildAmazonSearchUrl("Soundcore Liberty 5")}
+            imageSrc="/images/products/soundcore-liberty-5.png"
           />
         </div>
 
