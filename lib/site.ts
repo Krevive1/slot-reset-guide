@@ -20,3 +20,7 @@ export function buildAmazonSearchUrl(keyword: string): string {
 
 // A8.net merchant affiliation approved 2026-07-09 (家庭で楽しめる中古スロット【A-SLOT】, 素材ID unlisted).
 export const A8_SLOT_URL = "https://px.a8.net/svt/ejp?a8mat=4B7WD6+BRB7W2+2SY6+5YJRM";
+
+// AdSense publisher ID, site submitted for review 2026-07-24. Ad units
+// themselves stay unimplemented (AdSlot.tsx) until the site passes review.
+export const ADSENSE_CLIENT_ID = "ca-pub-1724919625498395";
