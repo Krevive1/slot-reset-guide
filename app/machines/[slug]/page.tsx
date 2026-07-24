@@ -9,6 +9,7 @@ import AdSlot from "@/components/ads/AdSlot";
 import MachineThumbnail from "@/components/machine/MachineThumbnail";
 import NewBadge from "@/components/machine/NewBadge";
 import HotBadge from "@/components/machine/HotBadge";
+import VideoBadge from "@/components/machine/VideoBadge";
 import QuickFacts from "@/components/machine/QuickFacts";
 import ComingSoonBadge from "@/components/machine/ComingSoonBadge";
 import ComingSoonNotice from "@/components/machine/ComingSoonNotice";
@@ -129,6 +130,7 @@ export default async function MachinePage({
           <>
             <NewBadge releaseDate={machine.spec.releaseDate} />
             <HotBadge hot={machine.hot} />
+            <VideoBadge count={machine.referenceVideos.length} />
           </>
         )}
       </h1>

@@ -48,7 +48,16 @@
       "導入直後は期待値情報が暫定のため、深追いしすぎない"
     ]
   },
-  "referenceVideos": [],
+  "referenceVideos": [
+    {
+      "youtubeVideoId": "eUWzg8dLfgM",
+      "channelName": "社不燦々【朝イチニキ】",
+      "channelUrl": "https://www.youtube.com/@syafu_sansan",
+      "title": "【スマスロ 戦国コレクション6】1週間戦コレ6の朝イチリセット生活したら果たして収支はどうなる？",
+      "summary": "社不燦々【朝イチニキ】様による、戦国コレクション6を1週間朝イチから実戦検証した動画です。",
+      "originalAnalysis": "1週間にわたって朝イチから実戦した検証動画です。設定変更後の挙動や収支を、実戦ベースで確認したい方に参考になる内容です。解析情報上の確定仕様ではなく、あくまで実戦記録の一つとしてご覧ください。"
+    }
+  ],
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [],

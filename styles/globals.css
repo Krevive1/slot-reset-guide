@@ -962,6 +962,18 @@ footer {
   vertical-align: middle;
 }
 
+.video-badge {
+  display: inline-block;
+  color: #fff;
+  background: #2b5cad;
+  font-weight: 700;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
 .coming-soon-badge {
   display: inline-block;
   color: #fff;
