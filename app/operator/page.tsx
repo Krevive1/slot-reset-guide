@@ -13,7 +13,7 @@ const title = "運営者情報｜ワンチャンくんについて";
 const description =
   "パチスロ歴20年近くの運営者が、ワンチャンくんを作った理由と、期待値・やめどきに対する考え方、実体験をまとめています。";
 const url = `${SITE_URL}/operator`;
-const heroImage = "/images/profile-illustration.png";
+const heroImage = "/images/wanchankun-comment.png";
 
 export const metadata: Metadata = {
   title,
@@ -56,7 +56,7 @@ export default function OperatorPage() {
 
       <div className="profile-hero">
         <div className="profile-hero-image">
-          <Image src={heroImage} alt="ワンチャンくん｜朝イチリセットガイド" width={140} height={140} priority />
+          <Image src={heroImage} alt="ワンチャンくん" width={140} height={140} priority />
         </div>
         <div className="profile-hero-body">
           <div className="profile-quote">
