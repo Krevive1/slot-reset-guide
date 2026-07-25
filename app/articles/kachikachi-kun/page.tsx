@@ -8,7 +8,7 @@ import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { SITE_URL, buildAmazonSearchUrl } from "@/lib/site";
 
-const title = "カチカチくんとは？小役カウンターの使う場面・選び方";
+const title = "小役カウンターとは？カチカチくんの使い方・選び方";
 const description =
   "パチスロの実戦で使われる手持ちの小役カウンター「カチカチくん」について、何を数える道具なのか、スマホアプリとの違い、使う場面や注意点を初心者向けに整理しました。";
 const url = `${SITE_URL}/articles/kachikachi-kun`;
