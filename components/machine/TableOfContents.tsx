@@ -11,8 +11,8 @@ export default function TableOfContents({ machine }: { machine: Machine }) {
 
   return (
     <nav className="machine-toc" aria-label="このページの目次">
-      <p className="machine-toc-heading">このページの目次</p>
-      <ul>
+      <p className="machine-toc-heading">目次</p>
+      <ol className="machine-toc-list">
         {sections.map((section) => (
           <li
             key={section.id}
@@ -34,7 +34,7 @@ export default function TableOfContents({ machine }: { machine: Machine }) {
             </a>
           </li>
         ))}
-      </ul>
+      </ol>
     </nav>
   );
 }
