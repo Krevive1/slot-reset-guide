@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Machine } from "@/lib/content/schema";
 import { InfoTone, ToneLabel, toneSectionClassName } from "./InfoHighlight";
+import { TOC_IDS } from "@/lib/content/toc";
 
 export default function QuitTiming({
   quitTiming,
@@ -10,7 +11,7 @@ export default function QuitTiming({
   tone?: InfoTone;
 }) {
   return (
-    <section className={toneSectionClassName(tone)} aria-labelledby="quit-timing-heading">
+    <section id={TOC_IDS.quitTiming} className={toneSectionClassName(tone)} aria-labelledby="quit-timing-heading">
       <ToneLabel tone={tone} />
       <h2 id="quit-timing-heading">やめどき</h2>
       <ul>

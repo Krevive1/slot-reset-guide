@@ -1,4 +1,5 @@
 import { Machine } from "@/lib/content/schema";
+import { TOC_IDS } from "@/lib/content/toc";
 
 const SOURCES = [
   { name: "なな徹", url: "https://nana-press.com/" },
@@ -15,7 +16,7 @@ export default function ReferenceSources({
   const extra = additionalReferences ?? [];
 
   return (
-    <section className="card reference-sources" aria-labelledby="reference-sources-heading">
+    <section id={TOC_IDS.sources} className="card reference-sources" aria-labelledby="reference-sources-heading">
       <h2 id="reference-sources-heading">参考情報</h2>
       <ul>
         {SOURCES.map((source) => (

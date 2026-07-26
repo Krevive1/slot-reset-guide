@@ -1,8 +1,9 @@
 import { Machine } from "@/lib/content/schema";
+import { TOC_IDS } from "@/lib/content/toc";
 
 export default function MachineSpec({ spec }: { spec: Machine["spec"] }) {
   return (
-    <section className="card" aria-labelledby="spec-heading">
+    <section id={TOC_IDS.specs} className="card" aria-labelledby="spec-heading">
       <h2 id="spec-heading">スペック</h2>
       <ul>
         {spec.releaseDate && <li>導入日：{spec.releaseDate}</li>}

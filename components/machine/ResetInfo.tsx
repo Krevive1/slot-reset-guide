@@ -1,5 +1,6 @@
 import { Machine } from "@/lib/content/schema";
 import { InfoTone, ToneLabel, toneSectionClassName } from "./InfoHighlight";
+import { TOC_IDS } from "@/lib/content/toc";
 
 export default function ResetInfo({
   resetInfo,
@@ -9,7 +10,7 @@ export default function ResetInfo({
   tone?: InfoTone;
 }) {
   return (
-    <section className={toneSectionClassName(tone)} aria-labelledby="reset-info-heading">
+    <section id={TOC_IDS.resetBenefits} className={toneSectionClassName(tone)} aria-labelledby="reset-info-heading">
       <ToneLabel tone={tone} />
       <h2 id="reset-info-heading">リセット恩恵</h2>
       <ul>

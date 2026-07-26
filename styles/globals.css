@@ -2,6 +2,34 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Scoped to exactly the machine-detail-page TOC anchor ids (TOC_IDS in
+   lib/content/toc.ts), not every section[id] site-wide, so a jump from the
+   table of contents never lands a heading flush against the viewport edge
+   without affecting any other page's anchors. */
+#summary,
+#specs,
+#reset-benefits,
+#reset-check,
+#morning-strategy,
+#ceiling-zones,
+#quit-timing,
+#practice-data,
+#videos,
+#faq,
+#sources {
+  scroll-margin-top: 16px;
+}
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
@@ -246,6 +274,66 @@ section h2,
 
 .warning {
   border-left: 6px solid #e94b35;
+}
+
+.machine-toc {
+  border: 1px solid #e2e6ea;
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin: 16px 0;
+  background: #fbfcfd;
+}
+
+.machine-toc-heading {
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.machine-toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.machine-toc-item--primary {
+  grid-column: 1 / -1;
+}
+
+.machine-toc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid #dde1e6;
+  border-radius: 10px;
+  background: #f3f5f8;
+  color: #2b5cad;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.machine-toc-item--primary .machine-toc-link {
+  background: #eef4ff;
+  border-color: #c8d8f5;
+  font-weight: 700;
+}
+
+.machine-toc-item--primary .machine-toc-link--quit {
+  background: #fff3e6;
+  border-color: #f0b93a;
+  color: #96591a;
+}
+
+.machine-toc-link:focus-visible {
+  outline: 2px solid #2b5cad;
+  outline-offset: 2px;
 }
 
 .quick-facts {

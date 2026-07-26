@@ -10,6 +10,7 @@ import MachineThumbnail from "@/components/machine/MachineThumbnail";
 import NewBadge from "@/components/machine/NewBadge";
 import HotBadge from "@/components/machine/HotBadge";
 import VideoBadge from "@/components/machine/VideoBadge";
+import TableOfContents from "@/components/machine/TableOfContents";
 import QuickFacts from "@/components/machine/QuickFacts";
 import ComingSoonBadge from "@/components/machine/ComingSoonBadge";
 import ComingSoonNotice from "@/components/machine/ComingSoonNotice";
@@ -141,6 +142,7 @@ export default async function MachinePage({
           <ComingSoonMeta comingSoon={machine.comingSoon} />
         </>
       )}
+      {!isComingSoon && <TableOfContents machine={machine} />}
       <QuickFacts quickFacts={machine.quickFacts} />
       <MachineThumbnail heroImage={machine.heroImage} name={machine.name} />
 

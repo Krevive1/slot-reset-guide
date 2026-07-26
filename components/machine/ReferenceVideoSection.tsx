@@ -1,4 +1,5 @@
 import { ReferenceVideo } from "@/lib/content/schema";
+import { hasReferenceVideos, TOC_IDS } from "@/lib/content/toc";
 
 function ReferenceVideoCard({ video }: { video: ReferenceVideo }) {
   return (
@@ -31,9 +32,9 @@ function ReferenceVideoCard({ video }: { video: ReferenceVideo }) {
 }
 
 export default function ReferenceVideoSection({ videos }: { videos: ReferenceVideo[] }) {
-  if (videos.length === 0) return null;
+  if (!hasReferenceVideos(videos)) return null;
   return (
-    <section className="card reference-video" aria-labelledby="reference-video-heading">
+    <section id={TOC_IDS.videos} className="card reference-video" aria-labelledby="reference-video-heading">
       <h2 id="reference-video-heading">参考動画</h2>
       <p className="section-note">出典を明記した上で引用しています。</p>
       {videos.map((video) => (

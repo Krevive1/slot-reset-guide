@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Machine } from "@/lib/content/schema";
+import { TOC_IDS } from "@/lib/content/toc";
 
 export default function DetectionMethod({
   detectionMethod,
@@ -7,7 +8,7 @@ export default function DetectionMethod({
   detectionMethod: Machine["detectionMethod"];
 }) {
   return (
-    <section className="card" aria-labelledby="detection-method-heading">
+    <section id={TOC_IDS.resetCheck} className="card" aria-labelledby="detection-method-heading">
       <h2 id="detection-method-heading">判別方法</h2>
       <ul>
         {detectionMethod.methods.map((method) => (

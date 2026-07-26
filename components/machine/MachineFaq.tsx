@@ -1,4 +1,5 @@
 import { Machine } from "@/lib/content/schema";
+import { hasFaq, TOC_IDS } from "@/lib/content/toc";
 
 // Renders the same question/answer pairs used to build the FAQPage JSON-LD
 // (see lib/seo/jsonld.ts buildFaqJsonLd), so structured data always matches
@@ -6,10 +7,10 @@ import { Machine } from "@/lib/content/schema";
 // answer text is present in the server-rendered markup regardless of
 // JavaScript, only the open/closed visual state depends on JS.
 export default function MachineFaq({ faq }: { faq: Machine["faq"] }) {
-  if (faq.length === 0) return null;
+  if (!hasFaq(faq)) return null;
 
   return (
-    <section className="card" aria-labelledby="machine-faq-heading">
+    <section id={TOC_IDS.faq} className="card" aria-labelledby="machine-faq-heading">
       <h2 id="machine-faq-heading">よくある質問</h2>
       <div className="machine-faq-list">
         {faq.map((item) => (

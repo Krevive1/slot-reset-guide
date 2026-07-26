@@ -1,9 +1,10 @@
 import { PracticeRecord } from "@/lib/content/schema";
+import { hasPracticeRecords, TOC_IDS } from "@/lib/content/toc";
 
 export default function PracticeRecordSection({ records }: { records: PracticeRecord[] }) {
-  if (records.length === 0) return null;
+  if (!hasPracticeRecords(records)) return null;
   return (
-    <section className="card practice-record" aria-labelledby="practice-record-heading">
+    <section id={TOC_IDS.practiceData} className="card practice-record" aria-labelledby="practice-record-heading">
       <h2 id="practice-record-heading">実践データ</h2>
       <p className="section-note">
         当サイトが実際に実践した記録です。上記の参考動画とは別の一次情報です。
