@@ -162,7 +162,7 @@ export default async function MachinePage({
       <ShareButtons url={url} title={machine.name} />
       <RelatedMachinesSection randomMachines={randomMachines} />
       <LineCta />
-      <ReferenceSources />
+      <ReferenceSources additionalReferences={machine.additionalReferences} />
     </article>
   );
 }

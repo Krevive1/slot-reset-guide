@@ -42,8 +42,17 @@ export const CeilingZoneInfoSchema = z.object({
   zones: z.array(z.string()).default([]),
 });
 
+export const QuitTimingGroupSchema = z.object({
+  heading: z.string(),
+  items: z.array(z.string()).min(1),
+});
+
 export const QuitTimingSchema = z.object({
   points: z.array(z.string()).min(1),
+  // Optional branch/table-style breakdown for machines with enough
+  // situation-specific yamedoki info to warrant it (e.g. per-ending
+  // branches). Omitted machines render `points` as a plain list, unchanged.
+  groups: z.array(QuitTimingGroupSchema).optional(),
 });
 
 // Compliance-critical: attribution + original analysis are required so a
@@ -147,6 +156,18 @@ export const MachineSchema = z.object({
   // Optional one-line mascot comment shown in a speech bubble after the
   // quit-timing section. Opt-in per machine; omitted machines render nothing.
   wanchankunComment: z.string().optional(),
+  // Optional machine-specific sources shown alongside the site-wide list in
+  // ReferenceSources (e.g. a maker's official dev-trivia page, or the exact
+  // analysis article a section was sourced from). Omitted machines show only
+  // the site-wide list, unchanged.
+  additionalReferences: z
+    .array(
+      z.object({
+        name: z.string(),
+        url: z.string().url(),
+      })
+    )
+    .optional(),
 });
 
 export type MakerRef = z.infer<typeof MakerRefSchema>;
