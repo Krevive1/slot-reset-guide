@@ -733,7 +733,9 @@ function ArticleMachineCard({ machine, heroImage }: { machine: ArticleMachine; h
       <Link href={`/machines/${machine.slug}`}>
         <MachineThumbnail heroImage={heroImage} name={machine.name} />
       </Link>
-      <h3>{machine.name}</h3>
+      <h3>
+        <Link href={`/machines/${machine.slug}`}>{machine.name}</Link>
+      </h3>
       <p>{machine.summary}</p>
       <p className="section-note">確認したいポイント：{machine.point}</p>
       <Link href={`/machines/${machine.slug}`}>個別ページを見る</Link>

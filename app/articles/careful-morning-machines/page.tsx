@@ -331,7 +331,9 @@ const categories: { title: string; description: string; machines: CarefulMachine
 function CarefulMachineCard({ machine }: { machine: CarefulMachine }) {
   return (
     <article className="article-machine-card">
-      <h3>{machine.name}</h3>
+      <h3>
+        <Link href={`/machines/${machine.slug}`}>{machine.name}</Link>
+      </h3>
       <p>{machine.reason}</p>
       <p className="section-note">確認ポイント：{machine.point}</p>
       <Link href={`/machines/${machine.slug}`}>個別ページを見る</Link>
