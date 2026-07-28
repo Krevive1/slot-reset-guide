@@ -12,10 +12,11 @@ export default function MachineAffiliateSection() {
       <div className="product-box-grid">
         <AffiliateProductBox
           provider="Amazon"
-          name="遮音タイプの耳栓"
-          note="店内の音量は長時間だと負担になりやすいため、遮音性のある耳栓を使う人が多いです。"
+          name="Soundcore Liberty 4"
+          note="隣台の爆音がつらいときに。運営者が実際にホールで使用している製品です。"
           ctaLabel="Amazonで探す"
-          ctaHref={buildAmazonSearchUrl("耳栓 遮音")}
+          ctaHref={buildAmazonSearchUrl("Soundcore Liberty 4")}
+          imageSrc="/images/products/soundcore-liberty-4.png"
         />
         <AffiliateProductBox
           provider="Amazon"
