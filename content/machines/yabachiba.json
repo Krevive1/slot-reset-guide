@@ -1,7 +1,7 @@
 {
   "slug": "yabachiba",
   "name": "ヤバチバ",
-  "updatedAt": "2026-07-17T20:15:00+09:00",
+  "updatedAt": "2026-07-29T00:00:00+09:00",
   "publishedAt": "2026-07-17T20:05:00+09:00",
   "quickFacts": {
     "title": "ヤバチバの朝イチ・リセット恩恵を30秒で確認",
@@ -56,12 +56,12 @@
   },
   "referenceVideos": [
     {
-      "youtubeVideoId": "0G0GY1PyEtI",
+      "youtubeVideoId": "abTmepo-Q88",
       "channelName": "社不燦々【朝イチニキ】",
       "channelUrl": "https://www.youtube.com/@syafu_sansan",
-      "title": "【Lモンキーターン】1週間モンキーターン朝イチ生活したら果たして収益はどうなる？好評企画第2弾！",
-      "summary": "社不燦々【朝イチニキ】様による朝イチ実戦動画です。",
-      "originalAnalysis": "朝イチからの実戦記録として参考になります。動画内の結果は一例であり、同じ結果や収支を保証するものではありません。"
+      "title": "【スマスロ ヤバチバ】1週間ヤバチバの朝イチリセット生活したら果たして収支はどうなる？",
+      "summary": "社不燦々【朝イチニキ】様による、ヤバチバの朝イチリセット台を1週間実戦検証した動画です。",
+      "originalAnalysis": "1週間にわたる朝イチリセット台の実戦記録として参考になります。動画内の結果は一例であり、同じ挙動や収支を保証するものではありません。"
     }
   ],
   "practiceRecords": [],
