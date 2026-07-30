@@ -490,31 +490,6 @@ section h2,
   margin-top: 12px;
 }
 
-.quit-timing-details {
-  margin-top: 12px;
-  border-top: 1px solid #e2e6ea;
-  padding-top: 10px;
-}
-
-.quit-timing-details summary {
-  width: fit-content;
-  color: #2457a6;
-  font-weight: 700;
-  cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.quit-timing-details summary:focus-visible {
-  outline: 3px solid #f2b84b;
-  outline-offset: 4px;
-  border-radius: 3px;
-}
-
-.quit-timing-details[open] summary {
-  margin-bottom: 4px;
-}
-
 .quit-timing-group {
   border: 1px solid #e2e6ea;
   border-radius: 10px;
