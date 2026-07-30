@@ -3,9 +3,11 @@ import Image from "next/image";
 export default function MachineThumbnail({
   heroImage,
   name,
+  sizes = "(max-width: 720px) calc(100vw - 64px), 216px",
 }: {
   heroImage?: string;
   name: string;
+  sizes?: string;
 }) {
   if (!heroImage) {
     return (
@@ -20,7 +22,7 @@ export default function MachineThumbnail({
         src={heroImage}
         alt={name}
         fill
-        sizes="(max-width: 720px) 100vw, 320px"
+        sizes={sizes}
         quality={65}
         style={{ objectFit: "cover" }}
       />

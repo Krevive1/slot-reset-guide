@@ -33,7 +33,7 @@ export default async function HomePage() {
             {latestMachines.map((machine) => (
               <li key={machine.slug} className="latest-list-item">
                 <Link href={`/machines/${machine.slug}`}>
-                  <MachineThumbnail heroImage={machine.heroImage} name={machine.name} />
+                  <MachineThumbnail heroImage={machine.heroImage} name={machine.name} sizes="72px" />
                 </Link>
                 <Link href={`/machines/${machine.slug}`}>{machine.name}</Link>
               </li>

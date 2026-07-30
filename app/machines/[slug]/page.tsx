@@ -144,7 +144,11 @@ export default async function MachinePage({
       )}
       {!isComingSoon && <TableOfContents machine={machine} />}
       <QuickFacts quickFacts={machine.quickFacts} />
-      <MachineThumbnail heroImage={machine.heroImage} name={machine.name} />
+      <MachineThumbnail
+        heroImage={machine.heroImage}
+        name={machine.name}
+        sizes="(max-width: 720px) calc(100vw - 32px), 960px"
+      />
 
       <MachineSpec spec={machine.spec} />
       <ResetInfo resetInfo={machine.resetInfo} tone={isComingSoon ? "caution" : "neutral"} />
