@@ -36,7 +36,10 @@ export default async function MachinesIndexPage() {
       </p>
       <AdSlot slot="machines-top" />
       {machines.length > 0 ? (
-        <MachinesBrowser machines={machines} />
+        <>
+          <h2 className="sr-only">公開中の機種</h2>
+          <MachinesBrowser machines={machines} />
+        </>
       ) : (
         <p>現在公開中の機種ページはありません。</p>
       )}
