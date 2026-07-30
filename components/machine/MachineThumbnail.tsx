@@ -21,6 +21,7 @@ export default function MachineThumbnail({
         alt={name}
         fill
         sizes="(max-width: 720px) 100vw, 320px"
+        quality={65}
         style={{ objectFit: "cover" }}
       />
     </div>
