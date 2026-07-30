@@ -42,6 +42,32 @@ a {
   color: inherit;
 }
 
+/* Make links embedded in normal page copy clearly distinguishable from plain
+   text. Button, navigation, card and media links keep their component styles. */
+main a:not(.button):not(.machine-card):not(.share-button):not(.machine-toc-link):not(.product-box-image-link) {
+  color: #1f5fbf;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+  text-decoration-skip-ink: auto;
+}
+
+main a:not(.button):not(.machine-card):not(.share-button):not(.machine-toc-link):not(.product-box-image-link):visited {
+  color: #6842a0;
+}
+
+main a:not(.button):not(.machine-card):not(.share-button):not(.machine-toc-link):not(.product-box-image-link):hover {
+  color: #17478f;
+  text-decoration-thickness: 0.14em;
+}
+
+main a:not(.button):not(.machine-card):not(.share-button):not(.machine-toc-link):not(.product-box-image-link):focus-visible {
+  outline: 3px solid rgba(31, 95, 191, 0.35);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 .container {
   width: min(100% - 32px, 960px);
   margin: 0 auto;
@@ -195,7 +221,8 @@ a {
 
 .breadcrumbs a {
   color: #2b5cad;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .site-header p {
