@@ -12,7 +12,10 @@ export default function Header() {
           width={1915}
           height={821}
           className="hero-banner"
+          sizes="100vw"
+          quality={70}
           priority
+          fetchPriority="high"
         />
       </Link>
       <div className="container">
