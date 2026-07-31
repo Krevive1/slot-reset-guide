@@ -157,7 +157,7 @@ export default async function MachinePage({
       <CeilingZoneInfo ceilingZoneInfo={machine.ceilingZoneInfo} tone={isComingSoon ? "caution" : "basic"} />
       <QuitTiming quitTiming={machine.quitTiming} tone={isComingSoon ? "pending" : "neutral"} />
       <WanchankunComment comment={machine.wanchankunComment} />
-      <MachineAffiliateSection />
+      <MachineAffiliateSection slug={machine.slug} />
       <MachineFaq faq={machine.faq} />
       {machine.status === "coming-soon" && <UpdateHistorySection updateHistory={machine.comingSoon} />}
       <RelatedReading slug={machine.slug} />

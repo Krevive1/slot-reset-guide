@@ -6,7 +6,8 @@ import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
-import { SITE_URL, buildAmazonSearchUrl } from "@/lib/site";
+import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
+import { SITE_URL } from "@/lib/site";
 
 const title = "小役カウンターとは？カチカチくんの使い方・選び方";
 const description =
@@ -50,6 +51,7 @@ const checkPoints: CheckPoint[] = [
 ];
 
 export default function KachikachiKunArticlePage() {
+  const kachikachiOffer = getActiveAffiliateOffer("kachikachiKun");
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: SITE_URL },
@@ -129,15 +131,22 @@ export default function KachikachiKunArticlePage() {
           ))}
         </div>
 
-        <div className="product-box-grid">
-          <AffiliateProductBox
-            provider="Amazon"
-            name="カチカチくん（小役カウンター）"
-            note="価格・在庫・レビュー内容は変動するため、購入前に商品ページで最新情報をご確認ください。"
-            ctaLabel="Amazonで探す"
-            ctaHref={buildAmazonSearchUrl("カチカチくん")}
-          />
-        </div>
+        {kachikachiOffer && (
+          <div className="product-box-grid">
+            <AffiliateProductBox
+              provider={kachikachiOffer.provider}
+              name={kachikachiOffer.serviceName}
+              note="価格・在庫・レビュー内容は変動するため、購入前に商品ページで最新情報をご確認ください。"
+              ctaLabel={kachikachiOffer.ctaLabel}
+              ctaHref={kachikachiOffer.href}
+              disclosure={kachikachiOffer.disclosure}
+              offerType={kachikachiOffer.offerType}
+              serviceName={kachikachiOffer.serviceName}
+              placement="comparison"
+              affiliateProgram={kachikachiOffer.programName}
+            />
+          </div>
+        )}
 
         <h2>使用時の注意点</h2>
         <ul>

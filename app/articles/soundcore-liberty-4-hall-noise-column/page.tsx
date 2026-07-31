@@ -8,7 +8,8 @@ import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import Comments from "@/components/machine/Comments";
 import MachineThumbnail from "@/components/machine/MachineThumbnail";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
-import { SITE_URL, buildAmazonSearchUrl } from "@/lib/site";
+import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
+import { SITE_URL } from "@/lib/site";
 
 const title =
   "モンキーターン・東京喰種・北斗の爆音から耳を守りたい｜ホールでSoundcore Liberty 4を使ってみた";
@@ -38,6 +39,8 @@ export const metadata: Metadata = {
 };
 
 export default function SoundcoreLiberty4HallNoiseColumnPage() {
+  const liberty4Offer = getActiveAffiliateOffer("soundcoreLiberty4");
+  const liberty5Offer = getActiveAffiliateOffer("soundcoreLiberty5");
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: SITE_URL },
@@ -200,24 +203,40 @@ export default function SoundcoreLiberty4HallNoiseColumnPage() {
           </a>
           （いずれも2026年7月24日確認）に基づく仕様です。価格は変動する場合があるため、購入前に公式サイトで最新情報をご確認ください。
         </p>
-        <div className="product-box-grid">
-          <AffiliateProductBox
-            provider="Amazon"
-            name="Soundcore Liberty 4"
-            note="運営者が実際にホールで使用している製品です。"
-            ctaLabel="Amazonで探す"
-            ctaHref={buildAmazonSearchUrl("Soundcore Liberty 4")}
-            imageSrc="/images/products/soundcore-liberty-4.png"
-          />
-          <AffiliateProductBox
-            provider="Amazon"
-            name="Soundcore Liberty 5"
-            note="Anker Japan公式サイトでLiberty 4の後継機として案内されているモデルです。"
-            ctaLabel="Amazonで探す"
-            ctaHref={buildAmazonSearchUrl("Soundcore Liberty 5")}
-            imageSrc="/images/products/soundcore-liberty-5.png"
-          />
-        </div>
+        {(liberty4Offer || liberty5Offer) && (
+          <div className="product-box-grid">
+            {liberty4Offer && (
+              <AffiliateProductBox
+                provider={liberty4Offer.provider}
+                name={liberty4Offer.serviceName}
+                note="運営者が実際にホールで使用している製品です。"
+                ctaLabel={liberty4Offer.ctaLabel}
+                ctaHref={liberty4Offer.href}
+                imageSrc={liberty4Offer.imageSrc}
+                disclosure={liberty4Offer.disclosure}
+                offerType={liberty4Offer.offerType}
+                serviceName={liberty4Offer.serviceName}
+                placement="comparison"
+                affiliateProgram={liberty4Offer.programName}
+              />
+            )}
+            {liberty5Offer && (
+              <AffiliateProductBox
+                provider={liberty5Offer.provider}
+                name={liberty5Offer.serviceName}
+                note="Anker Japan公式サイトでLiberty 4の後継機として案内されているモデルです。"
+                ctaLabel={liberty5Offer.ctaLabel}
+                ctaHref={liberty5Offer.href}
+                imageSrc={liberty5Offer.imageSrc}
+                disclosure={liberty5Offer.disclosure}
+                offerType={liberty5Offer.offerType}
+                serviceName={liberty5Offer.serviceName}
+                placement="comparison"
+                affiliateProgram={liberty5Offer.programName}
+              />
+            )}
+          </div>
+        )}
 
         <h2>まとめ</h2>
         <p>

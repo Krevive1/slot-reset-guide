@@ -7,7 +7,8 @@ import ShareButtons from "@/components/site/ShareButtons";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import GomaiYakuCalculator from "@/components/articles/GomaiYakuCalculator";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
-import { SITE_URL, buildAmazonSearchUrl } from "@/lib/site";
+import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
+import { SITE_URL } from "@/lib/site";
 
 const title = "モンキーターンVの5枚役とは？設定差・数え方・計算方法を初心者向けに解説";
 const description =
@@ -43,6 +44,7 @@ const averageTable: { setting: string; g500: string; g1000: string; g2000: strin
 ];
 
 export default function MonkeyTurnVGomaiYakuArticlePage() {
+  const kachikachiOffer = getActiveAffiliateOffer("kachikachiKun");
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: SITE_URL },
@@ -235,15 +237,22 @@ export default function MonkeyTurnVGomaiYakuArticlePage() {
           <Link href="/articles/kachikachi-kun">カチカチくん（小役カウンター）の使い方と選び方</Link>
         </p>
 
-        <div className="product-box-grid">
-          <AffiliateProductBox
-            provider="Amazon"
-            name="カチカチくん（小役カウンター）"
-            note="スマートフォンではなく、ボタン操作で5枚役を記録したい人向けです。価格や在庫は変動するため、商品ページで最新情報をご確認ください。"
-            ctaLabel="カチカチくんをAmazonで探す"
-            ctaHref={buildAmazonSearchUrl("カチカチくん")}
-          />
-        </div>
+        {kachikachiOffer && (
+          <div className="product-box-grid">
+            <AffiliateProductBox
+              provider={kachikachiOffer.provider}
+              name={kachikachiOffer.serviceName}
+              note="スマートフォンではなく、ボタン操作で5枚役を記録したい人向けです。価格や在庫は変動するため、商品ページで最新情報をご確認ください。"
+              ctaLabel="カチカチくんをAmazonで探す"
+              ctaHref={kachikachiOffer.href}
+              disclosure={kachikachiOffer.disclosure}
+              offerType={kachikachiOffer.offerType}
+              serviceName={kachikachiOffer.serviceName}
+              placement="mid_article"
+              affiliateProgram={kachikachiOffer.programName}
+            />
+          </div>
+        )}
 
         <div className="article-link-box">
           <p>

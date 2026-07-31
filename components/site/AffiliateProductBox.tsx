@@ -1,13 +1,19 @@
 import Image from "next/image";
 import AffiliateLink from "./AffiliateLink";
+import type { AffiliateOfferType, AffiliatePlacement } from "@/lib/affiliate/offers";
 
 type AffiliateProductBoxProps = {
-  provider: "Amazon" | "A8.net";
+  provider: string;
   name: string;
   note: string;
   ctaLabel: string;
   ctaHref?: string | null;
   imageSrc?: string;
+  disclosure?: "広告" | "PR";
+  offerType?: AffiliateOfferType;
+  serviceName?: string;
+  placement?: AffiliatePlacement;
+  affiliateProgram?: string;
 };
 
 // ctaHref is null until the corresponding affiliate account is approved and a
@@ -19,12 +25,17 @@ export default function AffiliateProductBox({
   ctaLabel,
   ctaHref,
   imageSrc,
+  disclosure = "広告",
+  offerType,
+  serviceName,
+  placement,
+  affiliateProgram,
 }: AffiliateProductBoxProps) {
   return (
     <div className="product-box">
       <span className="product-box-provider">
         {provider}
-        <span className="product-box-ad-label">広告</span>
+        <span className="product-box-ad-label">{disclosure}</span>
       </span>
       {imageSrc && ctaHref ? (
         <AffiliateLink
@@ -33,6 +44,10 @@ export default function AffiliateProductBox({
           provider={provider}
           productName={name}
           ctaLabel={ctaLabel}
+          offerType={offerType}
+          serviceName={serviceName}
+          placement={placement}
+          affiliateProgram={affiliateProgram}
         >
           <span className="product-box-image">
             <Image src={imageSrc} alt={name} fill sizes="(max-width: 720px) 100vw, 320px" style={{ objectFit: "contain" }} />
@@ -52,6 +67,10 @@ export default function AffiliateProductBox({
           provider={provider}
           productName={name}
           ctaLabel={ctaLabel}
+          offerType={offerType}
+          serviceName={serviceName}
+          placement={placement}
+          affiliateProgram={affiliateProgram}
         >
           {ctaLabel}
         </AffiliateLink>

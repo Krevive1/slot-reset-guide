@@ -8,7 +8,8 @@ import ShareButtons from "@/components/site/ShareButtons";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import Comments from "@/components/machine/Comments";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
-import { SITE_URL, X_OFFICIAL_URL, buildAmazonSearchUrl } from "@/lib/site";
+import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
+import { SITE_URL, X_OFFICIAL_URL } from "@/lib/site";
 
 const title = "スマスロ北斗の拳で隣に音量MAXの男が座った話｜収支は負けたが謎の勝負には勝った";
 const description =
@@ -37,6 +38,7 @@ export const metadata: Metadata = {
 };
 
 export default function HokutoLoudNeighborColumnPage() {
+  const earphonesOffer = getActiveAffiliateOffer("noiseCancellingEarphones");
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: SITE_URL },
@@ -166,15 +168,22 @@ export default function HokutoLoudNeighborColumnPage() {
           <p>
             余談ですが、ホールの音量がどうしても気になる場合は、ノイズキャンセリング機能付きのイヤホンを使っている方も多いようです。ただし、店内放送や店員からの呼びかけが聞こえなくなるほど遮音してしまうと本末転倒なので、外音取り込みモードなどを併用し、周囲の様子が分かる範囲で使うのがおすすめです（座位の足上げ運動より確実に静かです）。
           </p>
-          <div className="product-box-grid">
-            <AffiliateProductBox
-              provider="Amazon"
-              name="ノイズキャンセリングイヤホン"
-              note="周囲の音量が気になる場面で使われることが多いアイテムです。外音取り込みモードの有無も選ぶ際の参考にしてください。"
-              ctaLabel="Amazonで探す"
-              ctaHref={buildAmazonSearchUrl("ノイズキャンセリング イヤホン")}
-            />
-          </div>
+          {earphonesOffer && (
+            <div className="product-box-grid">
+              <AffiliateProductBox
+                provider={earphonesOffer.provider}
+                name={earphonesOffer.serviceName}
+                note="周囲の音量が気になる場面で使われることが多いアイテムです。外音取り込みモードの有無も選ぶ際の参考にしてください。"
+                ctaLabel={earphonesOffer.ctaLabel}
+                ctaHref={earphonesOffer.href}
+                disclosure={earphonesOffer.disclosure}
+                offerType={earphonesOffer.offerType}
+                serviceName={earphonesOffer.serviceName}
+                placement="mid_article"
+                affiliateProgram={earphonesOffer.programName}
+              />
+            </div>
+          )}
         </section>
 
         <div className="article-link-box">

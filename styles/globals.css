@@ -805,6 +805,13 @@ footer {
 
 .product-box-image-link {
   display: block;
+  border-radius: 8px;
+}
+
+.product-box-image-link:focus-visible,
+.product-box .button:focus-visible {
+  outline: 3px solid rgba(31, 95, 191, 0.45);
+  outline-offset: 3px;
 }
 
 .product-box-image {

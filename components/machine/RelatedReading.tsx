@@ -1,35 +1,21 @@
 import Link from "next/link";
-
-// Slug-specific extra reading links, layered onto the default link below.
-// Keyed by machine slug so this stays a small lookup table rather than a
-// per-machine schema field.
-const SLUG_SPECIFIC_LINKS: Record<string, { href: string; label: string }> = {
-  "monkey-turn-v": {
-    href: "/articles/monkey-turn-v-5mai-yaku",
-    label: "モンキーターンVの5枚役とは？設定差・数え方・計算方法",
-  },
-  "tokyo-ghoul": {
-    href: "/articles/tokyo-ghoul-trophy-misugoshi",
-    label: "実践記録：トロフィーを確認せず5万円使い切った7月7日",
-  },
-  "hokuto-no-ken-smart-slot": {
-    href: "/articles/hokuto-loud-neighbor-column",
-    label: "隣に音量MAXの男が座った話｜収支は負けたが謎の勝負には勝った",
-  },
-};
+import { machineAffiliatePlacements } from "@/lib/affiliate/machinePlacements";
 
 export default function RelatedReading({ slug }: { slug?: string }) {
-  const extra = slug ? SLUG_SPECIFIC_LINKS[slug] : undefined;
+  const readings = slug ? machineAffiliatePlacements[slug]?.relatedReadings ?? [] : [];
+
+  if (readings.length === 0) return null;
+
   return (
     <section className="article-link-box" aria-label="合わせて読みたい">
-      <p>
-        合わせて読みたい：<Link href="/articles/ie-suro-erabikata">家スロ（家庭用実機）の選び方</Link>
-        {extra && (
-          <>
-            {" "}／ <Link href={extra.href}>{extra.label}</Link>
-          </>
-        )}
-      </p>
+      <p>合わせて読みたい</p>
+      <ul>
+        {readings.map((reading) => (
+          <li key={reading.href}>
+            <Link href={reading.href}>{reading.label}</Link>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }

@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { sendGAEvent } from "@next/third-parties/google";
+import type { AffiliateOfferType, AffiliatePlacement } from "@/lib/affiliate/offers";
 
 type AffiliateLinkProps = {
   href: string;
@@ -9,6 +10,10 @@ type AffiliateLinkProps = {
   provider: string;
   productName: string;
   ctaLabel: string;
+  offerType?: AffiliateOfferType;
+  serviceName?: string;
+  placement?: AffiliatePlacement;
+  affiliateProgram?: string;
   children: React.ReactNode;
 };
 
@@ -23,6 +28,10 @@ export default function AffiliateLink({
   provider,
   productName,
   ctaLabel,
+  offerType,
+  serviceName,
+  placement,
+  affiliateProgram,
   children,
 }: AffiliateLinkProps) {
   const pathname = usePathname();
@@ -35,12 +44,19 @@ export default function AffiliateLink({
       } catch {
         destinationHost = "";
       }
+      const optionalParameters = {
+        ...(offerType && { offer_type: offerType }),
+        ...(serviceName && { service_name: serviceName }),
+        ...(placement && { placement }),
+        ...(affiliateProgram && { affiliate_program: affiliateProgram }),
+      };
       sendGAEvent("event", "affiliate_click", {
         affiliate_provider: provider,
         product_name: productName,
         cta_label: ctaLabel,
         page_path: pathname,
         destination_host: destinationHost,
+        ...optionalParameters,
       });
     } catch {
       // Never let analytics failures (ad blockers, GA not loaded) block navigation.

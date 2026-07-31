@@ -6,7 +6,8 @@ import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
-import { A8_SLOT_URL, SITE_URL } from "@/lib/site";
+import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
+import { SITE_URL } from "@/lib/site";
 
 const title = "家スロ（家庭用実機）の選び方｜購入前に確認したいポイント";
 const description =
@@ -58,6 +59,7 @@ const checkPoints: CheckPoint[] = [
 ];
 
 export default function IeSuroErabikataArticlePage() {
+  const aSlotOffer = getActiveAffiliateOffer("aSlot");
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: SITE_URL },
@@ -98,15 +100,22 @@ export default function IeSuroErabikataArticlePage() {
           家スロは個人売買よりも、動作確認や保証を明示している専門販売店を通す方が、初心者にとってはトラブルが少なくなります。
           販売店ごとに保証期間や搬入サポートの内容が異なるため、条件を比較してから検討してください。
         </p>
-        <div className="product-box-grid">
-          <AffiliateProductBox
-            provider="A8.net"
-            name="家庭で楽しめる中古スロット【A-SLOT】"
-            note="動作確認・保証内容・搬入サポートの有無を、販売店ごとに比較してから検討することをおすすめします。"
-            ctaLabel="A-SLOTを見る"
-            ctaHref={A8_SLOT_URL}
-          />
-        </div>
+        {aSlotOffer && (
+          <div className="product-box-grid">
+            <AffiliateProductBox
+              provider={aSlotOffer.provider}
+              name={aSlotOffer.serviceName}
+              note="動作確認・保証内容・搬入サポートの有無を、販売店ごとに比較してから検討することをおすすめします。"
+              ctaLabel={aSlotOffer.ctaLabel}
+              ctaHref={aSlotOffer.href}
+              disclosure={aSlotOffer.disclosure}
+              offerType={aSlotOffer.offerType}
+              serviceName={aSlotOffer.serviceName}
+              placement="comparison"
+              affiliateProgram={aSlotOffer.programName}
+            />
+          </div>
+        )}
 
         <div className="article-link-box">
           <p>
