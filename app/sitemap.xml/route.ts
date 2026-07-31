@@ -23,6 +23,7 @@ const staticEntries: SitemapEntry[] = [
   { path: "/articles/kachikachi-kun", changeFrequency: "monthly", priority: 0.4 },
   { path: "/articles/monkey-turn-v-5mai-yaku", changeFrequency: "monthly", priority: 0.4 },
   { path: "/articles/tokyo-ghoul-trophy-misugoshi", lastModified: "2026-07-19", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/articles/tokyo-ghoul-manga-reading-order", lastModified: "2026-07-31", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/hokuto-loud-neighbor-column", lastModified: "2026-07-21", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/soundcore-liberty-4-hall-noise-column", lastModified: "2026-07-24", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/monkey-paramount-neighbor-column", lastModified: "2026-07-28", changeFrequency: "monthly", priority: 0.5 },

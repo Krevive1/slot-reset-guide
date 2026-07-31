@@ -29,6 +29,10 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
         href: "/articles/tokyo-ghoul-trophy-misugoshi",
         label: "実践記録：トロフィーを確認せず5万円使い切った7月7日",
       },
+      {
+        href: "/articles/tokyo-ghoul-manga-reading-order",
+        label: "東京喰種の漫画を読む順番｜無印14巻と:re16巻を解説",
+      },
     ],
   },
   "hokuto-no-ken-smart-slot": {
