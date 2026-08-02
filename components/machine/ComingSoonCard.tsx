@@ -24,7 +24,7 @@ export default function ComingSoonCard({
         {machine.spec.releaseDate ?? "導入予定日未定"}導入予定
         {!isCompact && machine.spec.maker && `／${machine.spec.maker.name}`}
       </p>
-      {!isCompact && <p>{machine.resetInfo.benefits[0]}</p>}
+      {!isCompact && <p className="coming-soon-benefit">{machine.resetInfo.benefits[0]}</p>}
       {machine.comingSoon && (
         <p className="coming-soon-meta">
           <span className="coming-soon-info-status">{machine.comingSoon.infoStatus}</span>
