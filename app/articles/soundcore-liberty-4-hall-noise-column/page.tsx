@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
@@ -6,7 +7,6 @@ import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import Comments from "@/components/machine/Comments";
-import MachineThumbnail from "@/components/machine/MachineThumbnail";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
@@ -62,7 +62,15 @@ export default function SoundcoreLiberty4HallNoiseColumnPage() {
         <h1 className="page-title">{title}</h1>
         <p className="updated-at">公開日：{publishedAt}</p>
 
-        <MachineThumbnail heroImage={heroImage} name={title} />
+        <div className="thumbnail">
+          <Image
+            src={heroImage}
+            alt={`ワンチャンくんコラム「${title}」のアイキャッチ`}
+            fill
+            sizes="(max-width: 720px) 100vw, 720px"
+            style={{ objectFit: "cover" }}
+          />
+        </div>
 
         <p>モンキーターンの爆音は、耳が壊れます。</p>
         <p>東京喰種の爆音も、耳が壊れます。</p>
