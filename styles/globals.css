@@ -1010,6 +1010,9 @@ footer {
 }
 
 .article-machine-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   border: 1px solid #e2e6ea;
   border-radius: 12px;
   background: #fbfcfd;
@@ -1023,6 +1026,10 @@ footer {
 
 .article-machine-card p {
   margin: 0 0 8px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .article-machine-card a {

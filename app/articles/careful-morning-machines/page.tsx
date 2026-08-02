@@ -4,6 +4,8 @@ import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
+import MachineThumbnail from "@/components/machine/MachineThumbnail";
+import { getAllMachines } from "@/lib/content/machines";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { SITE_URL } from "@/lib/site";
 
@@ -328,9 +330,12 @@ const categories: { title: string; description: string; machines: CarefulMachine
   },
 ];
 
-function CarefulMachineCard({ machine }: { machine: CarefulMachine }) {
+function CarefulMachineCard({ machine, heroImage }: { machine: CarefulMachine; heroImage?: string }) {
   return (
     <article className="article-machine-card">
+      <Link href={`/machines/${machine.slug}`}>
+        <MachineThumbnail heroImage={heroImage} name={machine.name} />
+      </Link>
       <h3>
         <Link href={`/machines/${machine.slug}`}>{machine.name}</Link>
       </h3>
@@ -341,7 +346,9 @@ function CarefulMachineCard({ machine }: { machine: CarefulMachine }) {
   );
 }
 
-export default function CarefulMorningMachinesArticlePage() {
+export default async function CarefulMorningMachinesArticlePage() {
+  const allMachines = await getAllMachines();
+  const heroImageBySlug = new Map(allMachines.map((m) => [m.slug, m.heroImage]));
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: SITE_URL },
@@ -396,7 +403,11 @@ export default function CarefulMorningMachinesArticlePage() {
             <p className="section-note">{category.description}</p>
             <div className="article-machine-grid">
               {category.machines.map((machine) => (
-                <CarefulMachineCard key={`${category.title}-${machine.slug}`} machine={machine} />
+                <CarefulMachineCard
+                  key={`${category.title}-${machine.slug}`}
+                  machine={machine}
+                  heroImage={heroImageBySlug.get(machine.slug)}
+                />
               ))}
             </div>
           </section>
