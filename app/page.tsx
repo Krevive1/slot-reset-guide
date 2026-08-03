@@ -44,8 +44,8 @@ export default async function HomePage() {
 
       <ComingSoonSection
         machines={comingSoonMachines}
-        heading="8月3日導入予定｜Coming Soon"
-        description={`8月3日導入予定の新台${comingSoonMachines.length}機種です。解析情報は随時更新します。`}
+        heading="導入予定｜Coming Soon"
+        description={`導入予定の新台${comingSoonMachines.length}機種です。解析情報は随時更新します。`}
         footerLink={{ href: "/machines#coming-soon", label: "導入予定機種をすべて見る" }}
         variant="compact"
       />
