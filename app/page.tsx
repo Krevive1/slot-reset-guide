@@ -18,6 +18,13 @@ export const metadata: Metadata = {
 export default async function HomePage() {
   const allMachines = await getPublishedMachines();
   const comingSoonMachines = await getComingSoonMachines();
+  const comingSoonGroups = Object.entries(
+    comingSoonMachines.reduce<Record<string, typeof comingSoonMachines>>((groups, machine) => {
+      const releaseDate = machine.spec.releaseDate ?? "undated";
+      (groups[releaseDate] ??= []).push(machine);
+      return groups;
+    }, {})
+  ).sort(([dateA], [dateB]) => dateA.localeCompare(dateB));
   const homeSelection = selectHomeMachines(allMachines, 12);
   const latestMachines = sortMachinesByLatest(allMachines).slice(0, 4);
 
@@ -42,13 +49,25 @@ export default async function HomePage() {
         </section>
       )}
 
-      <ComingSoonSection
-        machines={comingSoonMachines}
-        heading="導入予定｜Coming Soon"
-        description={`導入予定の新台${comingSoonMachines.length}機種です。解析情報は随時更新します。`}
-        footerLink={{ href: "/machines#coming-soon", label: "導入予定機種をすべて見る" }}
-        variant="compact"
-      />
+      {comingSoonGroups.map(([releaseDate, machines], index) => {
+        const releaseLabel = releaseDate === "undated"
+          ? "導入日未定"
+          : `${Number(releaseDate.slice(5, 7))}月${Number(releaseDate.slice(8, 10))}日導入予定`;
+
+        return (
+          <ComingSoonSection
+            key={releaseDate}
+            sectionId={`coming-soon-${releaseDate}`}
+            machines={machines}
+            heading={`${releaseLabel}｜Coming Soon`}
+            description={`${releaseLabel}の新台${machines.length}機種です。解析情報は随時更新します。`}
+            footerLink={index === comingSoonGroups.length - 1
+              ? { href: "/machines#coming-soon", label: "導入予定機種をすべて見る" }
+              : undefined}
+            variant="compact"
+          />
+        );
+      })}
 
       <section className="card warning" aria-label="注意喚起">
         <h2>はじめに（重要）</h2>
