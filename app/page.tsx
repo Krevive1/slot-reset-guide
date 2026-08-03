@@ -129,6 +129,15 @@ export default async function HomePage() {
         <h2>実践記録・コラム</h2>
         <p className="section-note">運営者自身の実践記録や失敗談、コラムを掲載しています。</p>
         <div className="cards">
+          <Link href="/articles/tokyo-ghoul-jiro-8586-column" className="card machine-card">
+            <MachineThumbnail
+              heroImage="/images/articles/tokyo-ghoul-jiro-8586-column.jpg"
+              name="二郎系ラーメンを食べに遠征したら、東京喰種で8586枚出た話"
+            />
+            <h3>二郎系ラーメンを食べに遠征したら、東京喰種で8586枚出た話</h3>
+            <p className="updated-at">公開日：2026-08-03</p>
+            <p className="section-note">ジャグラーで少し勝って帰るはずが、東京喰種の周りをグールグール5周。乗り打ちで最終8586枚となった二郎系ラーメン遠征の実践記録です。</p>
+          </Link>
           <Link href="/articles/monkey-paramount-neighbor-column" className="card machine-card">
             <MachineThumbnail
               heroImage="/images/articles/monkey-paramount-neighbor-column.jpg"
