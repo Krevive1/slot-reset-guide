@@ -5,7 +5,9 @@ import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
+import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import Comments from "@/components/machine/Comments";
+import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { SITE_URL } from "@/lib/site";
 
@@ -66,6 +68,7 @@ function ArticlePhoto({
 }
 
 export default function TokyoGhoulJiro8586ColumnPage() {
+  const jalanOffer = getActiveAffiliateOffer("jalanNet");
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: SITE_URL },
@@ -528,6 +531,29 @@ export default function TokyoGhoulJiro8586ColumnPage() {
         <p>今回の遠征で分かったことは、ひとつです。</p>
         <p><strong>二郎系ラーメンを食べたあとに東京喰種の周りを5周すると、たまに喰種側へ行けます。</strong></p>
         <p>再現性はありません。</p>
+
+        {jalanOffer && (
+          <section className="card" aria-labelledby="jalan-heading">
+            <h2 id="jalan-heading">遠征先の宿を探すなら</h2>
+            <p>
+              今回は日帰りでしたが、遠征を伴う実践では宿泊先の確保も悩みどころです。次の遠征先を探す際の参考にしてください。
+            </p>
+            <div className="product-box-grid">
+              <AffiliateProductBox
+                provider={jalanOffer.provider}
+                name={jalanOffer.serviceName}
+                note={jalanOffer.description ?? "詳細はリンク先でご確認ください。"}
+                ctaLabel={jalanOffer.ctaLabel}
+                ctaHref={jalanOffer.href}
+                disclosure={jalanOffer.disclosure}
+                offerType={jalanOffer.offerType}
+                serviceName={jalanOffer.serviceName}
+                placement="conclusion"
+                affiliateProgram={jalanOffer.programName}
+              />
+            </div>
+          </section>
+        )}
 
         <ShareButtons url={url} title={title} />
         <Comments slug="tokyo-ghoul-jiro-8586-column" title={title} />

@@ -65,6 +65,7 @@ export default function TokyoGhoulMangaReadingOrderPage() {
   const mangazenkanOffer = getActiveAffiliateOffer("mangazenkanTokyoGhoul30");
   const rakutenOffer = getActiveAffiliateOffer("rakutenTokyoGhoul30");
   const yahooOffer = getActiveAffiliateOffer("yahooTokyoGhoul30");
+  const rentaOffer = getActiveAffiliateOffer("rentaTokyoGhoul");
   const articleJsonLd = {
     ...buildGenericArticleJsonLd({ headline: title, description, url }),
     datePublished: publishedAt,
@@ -111,6 +112,7 @@ export default function TokyoGhoulMangaReadingOrderPage() {
               note="『東京喰種トーキョーグール』の電子書籍シリーズページです。価格やキャンペーン条件はリンク先で確認してください。"
               ctaLabel={bookwalkerOffer.ctaLabel}
               ctaHref={bookwalkerOffer.href}
+              imageSrc={bookwalkerOffer.imageSrc}
               disclosure={bookwalkerOffer.disclosure}
               offerType={bookwalkerOffer.offerType}
               serviceName={bookwalkerOffer.serviceName}
@@ -179,6 +181,7 @@ export default function TokyoGhoulMangaReadingOrderPage() {
               note="電子書籍で単巻から確認できます。価格やキャンペーン条件はリンク先で確認してください。"
               ctaLabel={bookwalkerOffer.ctaLabel}
               ctaHref={bookwalkerOffer.href}
+              imageSrc={bookwalkerOffer.imageSrc}
               disclosure={bookwalkerOffer.disclosure}
               offerType={bookwalkerOffer.offerType}
               serviceName={bookwalkerOffer.serviceName}
@@ -193,6 +196,7 @@ export default function TokyoGhoulMangaReadingOrderPage() {
               note="無印14巻＋:re16巻の本編全30冊セットです。価格・在庫・送料はリンク先で確認してください。"
               ctaLabel={mangazenkanOffer.ctaLabel}
               ctaHref={mangazenkanOffer.href}
+              imageSrc={mangazenkanOffer.imageSrc}
               disclosure={mangazenkanOffer.disclosure}
               offerType={mangazenkanOffer.offerType}
               serviceName={mangazenkanOffer.serviceName}
@@ -200,11 +204,26 @@ export default function TokyoGhoulMangaReadingOrderPage() {
               affiliateProgram={mangazenkanOffer.programName}
             />
           )}
+          {rentaOffer && (
+            <AffiliateProductBox
+              provider={rentaOffer.provider}
+              name={rentaOffer.serviceName}
+              note="ポイント購入で単巻から読める電子書籍サービスです。価格やキャンペーン条件はリンク先で確認してください。"
+              ctaLabel={rentaOffer.ctaLabel}
+              ctaHref={rentaOffer.href}
+              imageSrc={rentaOffer.imageSrc}
+              disclosure={rentaOffer.disclosure}
+              offerType={rentaOffer.offerType}
+              serviceName={rentaOffer.serviceName}
+              placement="comparison"
+              affiliateProgram={rentaOffer.programName}
+            />
+          )}
         </div>
 
-        <h2>電子書籍で読むならBOOK☆WALKER</h2>
+        <h2>電子書籍で読むならBOOK☆WALKERやRenta</h2>
         <p>
-          BOOK☆WALKERでは、確認時点で『東京喰種トーキョーグール』全14巻と『東京喰種トーキョーグール:re』全16巻の電子書籍を取り扱っています。単巻で購入でき、シリーズページから各巻を確認できます。
+          BOOK☆WALKERでは、確認時点で『東京喰種トーキョーグール』全14巻と『東京喰種トーキョーグール:re』全16巻の電子書籍を取り扱っています。単巻で購入でき、シリーズページから各巻を確認できます。Rentaでも同作品をポイント購入で単巻から読めます。
         </p>
         <p>価格やキャンペーン条件は変動するため、最新情報はリンク先で確認してください。</p>
 
@@ -226,6 +245,7 @@ export default function TokyoGhoulMangaReadingOrderPage() {
               note="検索結果には関連商品も含まれます。本編全30巻か、商品内訳を確認してください。"
               ctaLabel={rakutenOffer.ctaLabel}
               ctaHref={rakutenOffer.href}
+              imageSrc={rakutenOffer.imageSrc}
               disclosure={rakutenOffer.disclosure}
               offerType={rakutenOffer.offerType}
               serviceName={rakutenOffer.serviceName}
@@ -240,6 +260,7 @@ export default function TokyoGhoulMangaReadingOrderPage() {
               note="検索結果には関連商品も含まれます。本編全30巻か、商品内訳を確認してください。"
               ctaLabel={yahooOffer.ctaLabel}
               ctaHref={yahooOffer.href}
+              imageSrc={yahooOffer.imageSrc}
               disclosure={yahooOffer.disclosure}
               offerType={yahooOffer.offerType}
               serviceName={yahooOffer.serviceName}

@@ -108,6 +108,7 @@ export default function IeSuroErabikataArticlePage() {
               note="動作確認・保証内容・搬入サポートの有無を、販売店ごとに比較してから検討することをおすすめします。"
               ctaLabel={aSlotOffer.ctaLabel}
               ctaHref={aSlotOffer.href}
+              imageSrc={aSlotOffer.imageSrc}
               disclosure={aSlotOffer.disclosure}
               offerType={aSlotOffer.offerType}
               serviceName={aSlotOffer.serviceName}

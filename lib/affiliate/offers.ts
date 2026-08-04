@@ -83,6 +83,7 @@ export const affiliateOffers = {
     ctaLabel: "A-SLOTを見る",
     disclosure: "広告",
     isActive: true,
+    imageSrc: "/images/products/a-slot-banner.gif",
   },
   bookwalkerTokyoGhoul: {
     id: "bookwalker-tokyo-ghoul",
@@ -95,6 +96,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "『東京喰種トーキョーグール』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   mangazenkanTokyoGhoul30: {
     id: "mangazenkan-tokyo-ghoul-30",
@@ -107,6 +109,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "無印14巻と『:re』16巻をまとめた本編全30冊セットです。",
+    imageSrc: "/images/products/mangazenkan-tokyo-ghoul-banner.jpg",
   },
   rakutenTokyoGhoul30: {
     id: "rakuten-tokyo-ghoul-30",
@@ -118,6 +121,7 @@ export const affiliateOffers = {
     ctaLabel: "楽天市場で無印14巻＋:re16巻・本編全30巻を確認する",
     disclosure: "広告",
     isActive: true,
+    imageSrc: "/images/products/rakuten-banner.gif",
   },
   yahooTokyoGhoul30: {
     id: "yahoo-tokyo-ghoul-30",
@@ -129,6 +133,32 @@ export const affiliateOffers = {
     ctaLabel: "Yahoo!ショッピングで無印14巻＋:re16巻・本編全30巻を確認する",
     disclosure: "広告",
     isActive: true,
+    imageSrc: "/images/products/yahoo-shopping-banner.jpg",
+  },
+  rentaTokyoGhoul: {
+    id: "valuecommerce-renta-tokyo-ghoul",
+    provider: "バリューコマース",
+    programName: "Renta!プログラム",
+    offerType: "ebook",
+    serviceName: "Renta!",
+    href: "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3777293&pid=892672270&vc_url=https%3A%2F%2Frenta.papy.co.jp%2Frenta%2Fsc%2Ffrm%2Fitem%2F171259%3Fref%3Dvc",
+    ctaLabel: "Rentaで東京喰種を確認する",
+    disclosure: "広告",
+    isActive: true,
+    description: "『東京喰種トーキョーグール』をポイント購入で読める電子書籍サービスです。",
+    imageSrc: "/images/products/renta-banner.jpg",
+  },
+  jalanNet: {
+    id: "valuecommerce-jalan-net",
+    provider: "バリューコマース",
+    programName: "★ホテル・宿予約サイト「じゃらんnet」",
+    offerType: "hotel",
+    serviceName: "じゃらんnet",
+    href: "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3777293&pid=892672272&vc_url=https%3A%2F%2Fwww.jalan.net%2F",
+    ctaLabel: "じゃらんnetで宿を探す",
+    disclosure: "広告",
+    isActive: true,
+    description: "遠征を伴う実践の宿・ホテル予約に使えるサービスです。",
   },
 } as const satisfies Record<string, AffiliateOffer>;
 
