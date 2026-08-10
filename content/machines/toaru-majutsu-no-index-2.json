@@ -59,7 +59,16 @@
       "金額期待値や機械割による裏付けは公開されておらず、媒体間でも表現が異なるため、現時点では暫定的なやめどき情報として扱います"
     ]
   },
-  "referenceVideos": [],
+  "referenceVideos": [
+    {
+      "youtubeVideoId": "yQlEibO8caY",
+      "channelName": "ぱち家(パチンカス家を買う)",
+      "channelUrl": "https://www.youtube.com/channel/UCQ6fAa4DaIUahXc6T5xMGBw",
+      "title": "【検証】禁書目録2のリセット台1週間打ち続けたら喰種より●●という事実がわかった！【スマスロ とある魔術の禁書目録2】【新台】",
+      "summary": "ぱち家(パチンカス家を買う)様による、スマスロとある魔術の禁書目録2の朝イチリセット台を1週間打ち続けて収支を検証した動画です。",
+      "originalAnalysis": "1週間の朝イチ実戦検証動画です。解析情報上の確定仕様ではなく、あくまで実戦記録の一例としてご覧ください。本ページでも金額期待値・朝一0G期待値は未公開のため、動画内の収支結果を単独の判断材料にしないようご注意ください。"
+    }
+  ],
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [

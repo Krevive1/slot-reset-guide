@@ -69,7 +69,16 @@
       }
     ]
   },
-  "referenceVideos": [],
+  "referenceVideos": [
+    {
+      "youtubeVideoId": "YSDLcaRgJ1Y",
+      "channelName": "社不燦々【朝イチニキ】",
+      "channelUrl": "https://www.youtube.com/@syafu_sansan",
+      "title": "【初代とある魔術の禁書目録】1週間インデックスの朝イチリセット生活したら果たして収支はどうなる？",
+      "summary": "社不燦々【朝イチニキ】様による、Lスマスロ とある魔術の禁書目録（初代）を1週間朝イチから実戦検証した動画です。",
+      "originalAnalysis": "1週間の朝イチ実戦検証動画です。解析情報上の確定仕様ではなく、あくまで実戦記録の一例としてご覧ください。"
+    }
+  ],
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [],
