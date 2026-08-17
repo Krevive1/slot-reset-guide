@@ -120,7 +120,7 @@ export const affiliateOffers = {
     href: "https://af.moshimo.com/af/c/click?a_id=5721789&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fsearch.rakuten.co.jp%2Fsearch%2Fmall%2F%25E6%259D%25B1%25E4%25BA%25AC%25E5%2596%25B0%25E7%25A8%25AE%2B%25E5%2585%25A8%25E5%25B7%25BB%2F",
     ctaLabel: "楽天市場で無印14巻＋:re16巻・本編全30巻を確認する",
     disclosure: "広告",
-    isActive: true,
+    isActive: false,
     imageSrc: "/images/products/rakuten-banner.gif",
   },
   yahooTokyoGhoul30: {
@@ -132,7 +132,7 @@ export const affiliateOffers = {
     href: "https://af.moshimo.com/af/c/click?a_id=5721823&p_id=1225&pc_id=1925&pl_id=18502&url=https%3A%2F%2Fshopping.yahoo.co.jp%2Fsearch%3Fp%3D%25E6%259D%25B1%25E4%25BA%25AC%25E5%2596%25B0%25E7%25A8%25AE%2B%25E5%2585%25A8%25E5%25B7%25BB",
     ctaLabel: "Yahoo!ショッピングで無印14巻＋:re16巻・本編全30巻を確認する",
     disclosure: "広告",
-    isActive: true,
+    isActive: false,
     imageSrc: "/images/products/yahoo-shopping-banner.jpg",
   },
   rentaTokyoGhoul: {
