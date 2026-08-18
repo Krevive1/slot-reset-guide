@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getPublishedMachines, getComingSoonMachines, sortMachinesByLatest } from "@/lib/content/machines";
-import { getAllSeries } from "@/lib/content/refs";
+import { getAllSeries, getAllMakers } from "@/lib/content/refs";
 import MachinesBrowser from "@/components/machine/MachinesBrowser";
 import ComingSoonSection from "@/components/machine/ComingSoonSection";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
@@ -15,10 +15,11 @@ export const metadata: Metadata = {
 };
 
 export default async function MachinesIndexPage() {
-  const [publishedMachines, comingSoonMachines, series] = await Promise.all([
+  const [publishedMachines, comingSoonMachines, series, makers] = await Promise.all([
     getPublishedMachines(),
     getComingSoonMachines(),
     getAllSeries(),
+    getAllMakers(),
   ]);
   const machines = sortMachinesByLatest(publishedMachines);
 
@@ -53,6 +54,18 @@ export default async function MachinesIndexPage() {
             {series.map((s) => (
               <li key={s.slug}>
                 <Link href={`/machines/series/${s.slug}`}>{s.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+      {makers.length > 0 && (
+        <section aria-labelledby="maker-heading">
+          <h2 id="maker-heading">メーカーから探す</h2>
+          <ul>
+            {makers.map((m) => (
+              <li key={m.slug}>
+                <Link href={`/machines/maker/${m.slug}`}>{m.name}</Link>
               </li>
             ))}
           </ul>

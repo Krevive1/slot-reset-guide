@@ -1,1 +1,14 @@
-[]
+[
+  { "slug": "belco", "name": "ベルコ（製造：ヤーマ）" },
+  { "slug": "fujishoji", "name": "藤商事" },
+  { "slug": "leostar", "name": "レオスター" },
+  { "slug": "net", "name": "ネット" },
+  { "slug": "oizumi", "name": "オーイズミ" },
+  { "slug": "olympia", "name": "オリンピア" },
+  { "slug": "paon-deep", "name": "パオン・ディーピー" },
+  { "slug": "pioneer", "name": "パイオニア" },
+  { "slug": "sammy", "name": "サミー" },
+  { "slug": "sankyo", "name": "SANKYO" },
+  { "slug": "sunthree", "name": "サンスリー" },
+  { "slug": "universal-bros", "name": "ユニバーサルブロス" }
+]

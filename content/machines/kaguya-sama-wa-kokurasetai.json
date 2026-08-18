@@ -84,7 +84,24 @@
   ],
   "practiceRecords": [],
   "relatedMachines": [],
-  "faq": [],
+  "faq": [
+    {
+      "question": "通常時の天井は？",
+      "answer": "通常ボーナス間天井は最大約1100G+α。REG後は900G+αに短縮されます。"
+    },
+    {
+      "question": "設定変更時の恩恵は？",
+      "answer": "設定変更後の天井は800G+αとなり、通常・REG後よりも浅い水準になります。"
+    },
+    {
+      "question": "リセットは見た目で判別できる？",
+      "answer": "電断後は初回ボーナスまでゲーム数表示の色が変化しないため、表示色だけでは判別できません。前日の最終ゲーム数や店舗のリセット傾向とあわせて判断してください。"
+    },
+    {
+      "question": "やめどきは？",
+      "answer": "ボーナス終了後100Gの引き戻し確認が基本です。引き戻し期待度はボーナス4連目までが約25%、5連目以降は約50%とされています。"
+    }
+  ],
   "heroImage": "/images/machines/kaguya-sama-wa-kokurasetai.jpg",
   "wanchankunComment": "かぐや様はボーナス後100Gまでが基本。CZ当選が見込めるときは130G付近まで、奇跡的相性モードなら32G以内のスーパーBIG当選を確認したい🐶",
   "additionalReferences": [
