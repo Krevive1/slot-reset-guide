@@ -28,6 +28,8 @@ const staticEntries: SitemapEntry[] = [
   { path: "/articles/soundcore-liberty-4-hall-noise-column", lastModified: "2026-07-24", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/monkey-paramount-neighbor-column", lastModified: "2026-07-28", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/tokyo-ghoul-jiro-8586-column", lastModified: "2026-08-03", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/articles/monkey-turn-red-news", lastModified: "2026-08-22", changeFrequency: "weekly", priority: 0.5 },
+  { path: "/articles/basilisk-4-news", lastModified: "2026-08-22", changeFrequency: "weekly", priority: 0.5 },
   { path: "/beginner", changeFrequency: "monthly", priority: 0.5 },
   { path: "/line", changeFrequency: "monthly", priority: 0.4 },
   { path: "/line/checklist", changeFrequency: "monthly", priority: 0.5 },
