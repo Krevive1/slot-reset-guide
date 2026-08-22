@@ -288,6 +288,10 @@ section h2,
   gap: 16px;
 }
 
+.top-news-cards {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .card {
   border: 1px solid #e2e6ea;
   border-radius: 14px;

@@ -49,6 +49,41 @@ export default async function HomePage() {
         </section>
       )}
 
+      <section aria-label="注目の新台NEWS">
+        <h2>🔥 注目の新台NEWS</h2>
+        <p className="section-note">
+          検定通過・公式特報など、今後登場が期待される注目機種の最新情報をまとめています。
+        </p>
+        <div className="cards top-news-cards">
+          <Link href="/articles/monkey-turn-red-news" className="card machine-card">
+            <MachineThumbnail
+              heroImage="/images/articles/monkey-turn-red-news.jpg"
+              name="モンキーターンRED始動！「王道から挑戦へ」"
+            />
+            <h3>
+              モンキーターンRED始動！「王道から挑戦へ」<span className="new-badge">公式特報</span>
+            </h3>
+            <p className="updated-at">公開日：2026-08-22</p>
+            <p className="section-note">
+              山佐公式特報が公開。VIではなく“RED”――新作で今わかっていること。
+            </p>
+          </Link>
+          <Link href="/articles/basilisk-4-news" className="card machine-card">
+            <MachineThumbnail
+              heroImage="/images/articles/basilisk-4-news.jpg"
+              name="バジリスクⅣが検定通過！"
+            />
+            <h3>
+              バジリスクⅣが検定通過！<span className="new-badge">検定通過</span>
+            </h3>
+            <p className="updated-at">公開日：2026-08-22</p>
+            <p className="section-note">
+              “絆3”ではなく約10年ぶりのナンバリング新作？ 今わかっている情報を整理。
+            </p>
+          </Link>
+        </div>
+      </section>
+
       {comingSoonGroups.map(([releaseDate, machines], index) => {
         const releaseLabel = releaseDate === "undated"
           ? "導入日未定"
