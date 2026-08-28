@@ -62,7 +62,16 @@
       "199まいるまでの金額期待値は確認できず、必須のフォローとはしていません"
     ]
   },
-  "referenceVideos": [],
+  "referenceVideos": [
+    {
+      "youtubeVideoId": "MGEwp0hCHPY",
+      "channelName": "社不燦々【朝イチニキ】",
+      "channelUrl": "https://www.youtube.com/@syafu_sansan",
+      "title": "【スマスロ やじきた道中記参る！】1週間やじきた道中記の朝イチリセット生活したら果たして収支はどうなる？",
+      "summary": "社不燦々【朝イチニキ】様による、スマスロ やじきた道中記参る！の朝イチリセット台を1週間打ち続けて収支を検証した動画です。",
+      "originalAnalysis": "1週間の朝イチ実戦検証動画です。解析情報上の確定仕様ではなく、あくまで実戦記録の一例としてご覧ください。"
+    }
+  ],
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [
