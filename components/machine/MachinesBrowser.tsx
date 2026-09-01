@@ -5,15 +5,13 @@ import MachineCard from "./MachineCard";
 import { buildSearchHaystack, matchesQuery } from "@/lib/content/search";
 import type { Machine } from "@/lib/content/schema";
 
-const PAGE_SIZE = 20;
-
-// All machine cards are always rendered (and linked) in the DOM -- search and
-// "load more" only toggle the `hidden` attribute on wrapper elements. This
-// keeps every /machines/[slug] link present in the server-rendered HTML for
-// crawlers, even though the visible portion is progressively revealed.
+// Every machine card is always rendered AND visible in the default
+// (no-query) state, so every /machines/[slug] link is present and
+// unhidden in the server-rendered HTML for crawlers. Search only toggles
+// the `hidden` attribute to filter the list -- it never limits the
+// default, no-query view.
 export default function MachinesBrowser({ machines }: { machines: Machine[] }) {
   const [query, setQuery] = useState("");
-  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   const haystacks = useMemo(
     () => new Map(machines.map((machine) => [machine.slug, buildSearchHaystack(machine)])),
@@ -32,18 +30,6 @@ export default function MachinesBrowser({ machines }: { machines: Machine[] }) {
 
   const matchedCount = matchedSlugs ? matchedSlugs.size : machines.length;
 
-  const visibleSlugs = useMemo(() => {
-    const pool = matchedSlugs ? machines.filter((m) => matchedSlugs.has(m.slug)) : machines;
-    return new Set(pool.slice(0, visibleCount).map((m) => m.slug));
-  }, [matchedSlugs, machines, visibleCount]);
-
-  const handleQueryChange = (value: string) => {
-    setQuery(value);
-    setVisibleCount(PAGE_SIZE);
-  };
-
-  const hasMore = matchedCount > visibleCount;
-
   return (
     <div>
       <form role="search" onSubmit={(e) => e.preventDefault()} className="machines-browser-search">
@@ -54,7 +40,7 @@ export default function MachinesBrowser({ machines }: { machines: Machine[] }) {
           id="machines-browser-q"
           type="search"
           value={query}
-          onChange={(e) => handleQueryChange(e.target.value)}
+          onChange={(e) => setQuery(e.target.value)}
           placeholder="機種名・シリーズ名・メーカー名で検索"
           autoComplete="off"
         />
@@ -69,26 +55,13 @@ export default function MachinesBrowser({ machines }: { machines: Machine[] }) {
       ) : (
         <div className="cards">
           {machines.map((machine) => {
-            const isMatch = matchedSlugs ? matchedSlugs.has(machine.slug) : true;
-            const isVisible = isMatch && visibleSlugs.has(machine.slug);
+            const isVisible = matchedSlugs ? matchedSlugs.has(machine.slug) : true;
             return (
               <div key={machine.slug} hidden={!isVisible}>
                 <MachineCard machine={machine} />
               </div>
             );
           })}
-        </div>
-      )}
-
-      {hasMore && (
-        <div className="load-more-row">
-          <button
-            type="button"
-            className="button"
-            onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}
-          >
-            さらに表示（残り{matchedCount - visibleCount}件）
-          </button>
         </div>
       )}
     </div>
