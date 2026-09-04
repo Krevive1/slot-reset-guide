@@ -17,6 +17,10 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     offerIds: ["soundcoreLiberty4", "kachikachiKun"],
     relatedReadings: [
       {
+        href: "/articles/monkey-turn-v-ex-item-rate",
+        label: "激走チャージEXアイテムとは？弱レア役からの獲得率に設定差",
+      },
+      {
         href: "/articles/monkey-turn-v-5mai-yaku",
         label: "モンキーターンVの5枚役とは？設定差・数え方・計算方法",
       },
