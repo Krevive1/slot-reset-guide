@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
@@ -12,6 +13,7 @@ const title = "スマスロ『押忍！番長番付』2026年12月導入予定�
 const description =
   "大都技研の番長シリーズ最新作『押忍！番長番付』のティザーPVが公開されました。2026年12月7日導入予定、V図柄採用など、現時点で分かっていること・まだ分かっていないことを整理してまとめます。続報が入り次第、随時更新します。";
 const url = `${SITE_URL}/articles/bancho-banzuke-news`;
+const heroImage = "/images/articles/bancho-banzuke-news.png";
 const publishedAt = "2026-09-04";
 const updatedAt = "2026-09-04";
 
@@ -24,11 +26,13 @@ export const metadata: Metadata = {
     description,
     url,
     type: "article",
+    images: [{ url: heroImage }],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
+    images: [heroImage],
   },
 };
 
@@ -54,6 +58,16 @@ export default function BanchoBanzukeNewsPage() {
         <p className="updated-at">
           公開日：{publishedAt}　更新日：{updatedAt}
         </p>
+
+        <div className="thumbnail">
+          <Image
+            src={heroImage}
+            alt="押忍！番長番付のティザーPVイメージ"
+            fill
+            sizes="(max-width: 720px) 100vw, 720px"
+            style={{ objectFit: "cover" }}
+          />
+        </div>
 
         <p>
           大都技研の人気シリーズ「押忍！番長」の最新作情報が動き出しました。名称は「押忍！番長番付」。2026年9月1日にティザーPVが公開され、話題になっています。

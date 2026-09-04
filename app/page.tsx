@@ -55,6 +55,19 @@ export default async function HomePage() {
           検定通過・公式特報など、今後登場が期待される注目機種の最新情報をまとめています。
         </p>
         <div className="cards top-news-cards">
+          <Link href="/articles/bancho-banzuke-news" className="card machine-card">
+            <MachineThumbnail
+              heroImage="/images/articles/bancho-banzuke-news.png"
+              name="押忍！番長番付「V図柄」採用"
+            />
+            <h3>
+              押忍！番長番付、2026年12月導入予定<span className="new-badge">ティザーPV</span>
+            </h3>
+            <p className="updated-at">公開日：2026-09-04</p>
+            <p className="section-note">
+              番長シリーズ最新作のティザーPVが公開。V図柄採用など今わかっていることを整理。
+            </p>
+          </Link>
           <Link href="/articles/monkey-turn-red-news" className="card machine-card">
             <MachineThumbnail
               heroImage="/images/articles/monkey-turn-red-news.jpg"
