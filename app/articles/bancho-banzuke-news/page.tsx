@@ -80,6 +80,22 @@ export default function BanchoBanzukeNewsPage() {
         <p>
           2026年9月1日、大都技研から番長シリーズ最新作「押忍！番長番付」のティザーPVが公開されました。機種名の「番付」が示す通り、スポーツ競技・運動会をモチーフにしたお祭り系の演出になる見込みで、ティザーPVにはカーリングやサッカーといった対決演出が登場しています。
         </p>
+        <p>
+          大都技研公式X（旧Twitter）アカウント「株式会社大都技研」（
+          <a href="https://x.com/DAITOGIKEN_JP" target="_blank" rel="noopener noreferrer nofollow">
+            @DAITOGIKEN_JP
+          </a>
+          ）から、「続報　スロット最新作　ティザーPV公開」として投稿されています。X上で公開されている動画のため、当サイトでは埋め込みではなく公式投稿への直接リンクでご紹介します。
+        </p>
+        <p>
+          <a
+            href="https://x.com/DAITOGIKEN_JP/status/2094621277713735952"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            大都技研公式Xのティザーpost（PVリンクあり）を見る
+          </a>
+        </p>
 
         <h2>導入時期はいつ？</h2>
         <p>
@@ -149,9 +165,18 @@ export default function BanchoBanzukeNewsPage() {
 
         <h2>参考情報</h2>
         <p className="section-note">
-          本記事の作成にあたり、以下の情報を参考にしました。いずれもメーカー公式発表そのものではなく、業界情報サイト・解析情報サイトによる報道・調査情報です。
+          本記事の作成にあたり、以下の情報を参考にしました。ティザーPVは大都技研公式Xの投稿、それ以外は業界情報サイト・解析情報サイトによる報道・調査情報です。
         </p>
         <ul>
+          <li>
+            <a
+              href="https://x.com/DAITOGIKEN_JP/status/2094621277713735952"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              株式会社大都技研 公式X（ティザーPV・一次ソース）
+            </a>
+          </li>
           <li>
             <a href="https://parlourfullslotl.com/archives/184700" target="_blank" rel="noopener noreferrer nofollow">
               パーラーフルスロットル（ティザーPV公開・V図柄情報）
