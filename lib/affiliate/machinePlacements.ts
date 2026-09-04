@@ -26,6 +26,10 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     offerIds: ["soundcoreLiberty4"],
     relatedReadings: [
       {
+        href: "/articles/tokyo-ghoul-arima-judgment-reigu-research",
+        label: "『有馬J失敗後は約2000G冷遇』説を調査｜実戦報告に傾向はある？",
+      },
+      {
         href: "/articles/tokyo-ghoul-trophy-misugoshi",
         label: "実践記録：トロフィーを確認せず5万円使い切った7月7日",
       },
