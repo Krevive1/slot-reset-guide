@@ -85,15 +85,23 @@ export default function BanchoBanzukeNewsPage() {
           <a href="https://x.com/DAITOGIKEN_JP" target="_blank" rel="noopener noreferrer nofollow">
             @DAITOGIKEN_JP
           </a>
-          ）から、「続報　スロット最新作　ティザーPV公開」として投稿されています。X上で公開されている動画のため、当サイトでは埋め込みではなく公式投稿への直接リンクでご紹介します。
+          ）から、「続報　スロット最新作　ティザーPV公開」として投稿され、公式YouTube動画が案内されています。
         </p>
-        <p>
+        <div className="video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/1PCcjGiIMZI"
+            title="押忍！番長番付 ティザーPV"
+            loading="lazy"
+            allowFullScreen
+          />
+        </div>
+        <p className="section-note">
           <a
             href="https://x.com/DAITOGIKEN_JP/status/2094621277713735952"
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
-            大都技研公式Xのティザーpost（PVリンクあり）を見る
+            大都技研公式Xの投稿はこちら
           </a>
         </p>
 
@@ -165,16 +173,25 @@ export default function BanchoBanzukeNewsPage() {
 
         <h2>参考情報</h2>
         <p className="section-note">
-          本記事の作成にあたり、以下の情報を参考にしました。ティザーPVは大都技研公式Xの投稿、それ以外は業界情報サイト・解析情報サイトによる報道・調査情報です。
+          本記事の作成にあたり、以下の情報を参考にしました。ティザーPVは大都技研公式YouTube・Xの投稿、それ以外は業界情報サイト・解析情報サイトによる報道・調査情報です。
         </p>
         <ul>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=1PCcjGiIMZI"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              押忍！番長番付 ティザーPV（大都技研公式YouTube・一次ソース）
+            </a>
+          </li>
           <li>
             <a
               href="https://x.com/DAITOGIKEN_JP/status/2094621277713735952"
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
-              株式会社大都技研 公式X（ティザーPV・一次ソース）
+              株式会社大都技研 公式X（ティザーPV告知投稿）
             </a>
           </li>
           <li>
