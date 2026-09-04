@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
@@ -11,6 +12,7 @@ const title = "モンキーターンVの激走チャージEXアイテムとは�
 const description =
   "スマスロモンキーターンVの激走チャージ中に成立するレア役から、EXアイテムを獲得できるかどうかに設定差があるとされています。ボート・弱チェリーなど弱レア役からの獲得率を中心に、非公式に流通している設定別参考値を整理しました。";
 const url = `${SITE_URL}/articles/monkey-turn-v-ex-item-rate`;
+const heroImage = "/images/articles/monkey-turn-v-ex-item-rate.png";
 const publishedAt = "2026-09-04";
 
 export const metadata: Metadata = {
@@ -22,11 +24,13 @@ export const metadata: Metadata = {
     description,
     url,
     type: "article",
+    images: [{ url: heroImage }],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
+    images: [heroImage],
   },
 };
 
@@ -56,6 +60,16 @@ export default function MonkeyTurnVExItemRateArticlePage() {
       <div className="article">
         <h1 className="page-title">{title}</h1>
         <p className="updated-at">公開日：{publishedAt}</p>
+
+        <div className="thumbnail">
+          <Image
+            src={heroImage}
+            alt="モンキーターンVの激走チャージEXアイテムのイメージ"
+            fill
+            sizes="(max-width: 720px) 100vw, 720px"
+            style={{ objectFit: "cover" }}
+          />
+        </div>
 
         <h2>激走チャージ・EXアイテムとは</h2>
         <p>

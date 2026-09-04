@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getPublishedMachines, getComingSoonMachines, sortMachinesByLatest } from "@/lib/content/machines";
+import { getPublishedMachines, getComingSoonMachines } from "@/lib/content/machines";
 import { selectHomeMachines } from "@/lib/content/popularity";
 import MachineCard from "@/components/machine/MachineCard";
 import MachineThumbnail from "@/components/machine/MachineThumbnail";
@@ -26,28 +26,41 @@ export default async function HomePage() {
     }, {})
   ).sort(([dateA], [dateB]) => dateA.localeCompare(dateB));
   const homeSelection = selectHomeMachines(allMachines, 12);
-  const latestMachines = sortMachinesByLatest(allMachines).slice(0, 4);
 
   return (
     <>
       <AdSlot slot="home-top" />
       <h1 className="page-title">初心者向けパチスロ朝一リセットまとめサイト</h1>
 
-      {latestMachines.length > 0 && (
-        <section aria-label="新着情報">
-          <h2>新着情報</h2>
-          <ul className="latest-list">
-            {latestMachines.map((machine) => (
-              <li key={machine.slug} className="latest-list-item">
-                <Link href={`/machines/${machine.slug}`}>
-                  <MachineThumbnail heroImage={machine.heroImage} name={machine.name} sizes="72px" />
-                </Link>
-                <Link href={`/machines/${machine.slug}`}>{machine.name}</Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      <section aria-label="プチニュース">
+        <h2>プチニュース</h2>
+        <ul className="latest-list">
+          <li className="latest-list-item">
+            <Link href="/articles/monkey-turn-v-ex-item-rate">
+              <MachineThumbnail
+                heroImage="/images/articles/monkey-turn-v-ex-item-rate.png"
+                name="モンキーターンV 激走チャージEXアイテム"
+                sizes="72px"
+              />
+            </Link>
+            <Link href="/articles/monkey-turn-v-ex-item-rate">
+              モンキーターンV｜激走チャージEXアイテムとは？弱レア役からの獲得率に設定差
+            </Link>
+          </li>
+          <li className="latest-list-item">
+            <Link href="/articles/tokyo-ghoul-arima-judgment-reigu-research">
+              <MachineThumbnail
+                heroImage="/images/articles/tokyo-ghoul-arima-judgment-reigu-research.png"
+                name="東京喰種 有馬J失敗後2000G冷遇説"
+                sizes="72px"
+              />
+            </Link>
+            <Link href="/articles/tokyo-ghoul-arima-judgment-reigu-research">
+              東京喰種｜『有馬J失敗後は約2000G冷遇』説を調査
+            </Link>
+          </li>
+        </ul>
+      </section>
 
       <section aria-label="注目の新台NEWS">
         <h2>🔥 注目の新台NEWS</h2>

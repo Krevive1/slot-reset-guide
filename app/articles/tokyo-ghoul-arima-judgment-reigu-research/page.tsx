@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
@@ -11,6 +12,7 @@ const title = "スマスロ東京喰種『有馬J失敗後は約2000G冷遇』�
 const description =
   "スマスロ東京喰種で話題になっている「有利区間切断後、有馬貴将ジャッジメント失敗後は約2000Gの冷遇に入る」という説について、公開情報とX上の複数の実戦報告をもとに調査しました。確定情報・観測されている傾向・未確定事項を分けて整理しています。";
 const url = `${SITE_URL}/articles/tokyo-ghoul-arima-judgment-reigu-research`;
+const heroImage = "/images/articles/tokyo-ghoul-arima-judgment-reigu-research.png";
 const publishedAt = "2026-09-04";
 
 export const metadata: Metadata = {
@@ -22,11 +24,13 @@ export const metadata: Metadata = {
     description,
     url,
     type: "article",
+    images: [{ url: heroImage }],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
+    images: [heroImage],
   },
 };
 
@@ -51,6 +55,16 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
       <div className="article">
         <h1 className="page-title">{title}</h1>
         <p className="updated-at">公開日：{publishedAt}</p>
+
+        <div className="thumbnail">
+          <Image
+            src={heroImage}
+            alt="東京喰種『有馬J失敗後は約2000G冷遇』説のイメージ"
+            fill
+            sizes="(max-width: 720px) 100vw, 720px"
+            style={{ objectFit: "cover" }}
+          />
+        </div>
 
         <p>
           X（旧Twitter）上で、スマスロ東京喰種の「有利区間切断後、有馬貴将ジャッジメント失敗後は約2000Gの冷遇に入る」という説が話題になっています。
