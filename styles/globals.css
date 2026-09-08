@@ -1474,3 +1474,28 @@ footer {
     text-align: center;
   }
 }
+
+/* Hover-lift feedback for card/button-style links (thumbnails, machine
+   cards, CTA buttons, share buttons, ad links, nav, TOC entries). Scoped to
+   real mouse pointers only, so a tap on mobile never leaves an element
+   stuck in a "lifted" hover state. */
+@media (hover: hover) and (pointer: fine) {
+  .machine-card,
+  .button,
+  .share-button,
+  .product-box-image-link,
+  .site-header nav a,
+  .machine-toc-link {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .machine-card:hover,
+  .button:hover,
+  .share-button:hover,
+  .product-box-image-link:hover,
+  .site-header nav a:hover,
+  .machine-toc-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(20, 30, 50, 0.16);
+  }
+}
