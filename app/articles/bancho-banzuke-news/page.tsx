@@ -6,7 +6,9 @@ import Breadcrumbs from "@/components/site/Breadcrumbs";
 import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
 import WanchankunComment from "@/components/machine/WanchankunComment";
+import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
+import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
 
 const title = "スマスロ『押忍！番長番付』2026年12月導入予定｜ティザーPV・V図柄・最新情報まとめ";
@@ -37,6 +39,7 @@ export const metadata: Metadata = {
 };
 
 export default function BanchoBanzukeNewsPage() {
+  const jinsOffer = getActiveAffiliateOffer("jinsScreen");
   const articleJsonLd = {
     ...buildGenericArticleJsonLd({ headline: title, description, url }),
     datePublished: publishedAt,
@@ -162,6 +165,23 @@ export default function BanchoBanzukeNewsPage() {
           押忍！番長番付は、ティザーPVだけですでに大きな注目を集めている新台です。2026年12月7日の導入まで時間はありますが、V図柄採用やスポーツ・お祭りモチーフといった気になる要素はすでに出そろっています。
         </p>
         <p>続報が入り次第、ワンチャンくんでも改めて紹介していきます。楽しみに待ちましょう。</p>
+
+        {jinsOffer && (
+          <div className="product-box-grid">
+            <AffiliateProductBox
+              provider={jinsOffer.provider}
+              name={jinsOffer.serviceName}
+              note={jinsOffer.description ?? "詳細はリンク先でご確認ください。"}
+              ctaLabel={jinsOffer.ctaLabel}
+              ctaHref={jinsOffer.href}
+              disclosure={jinsOffer.disclosure}
+              offerType={jinsOffer.offerType}
+              serviceName={jinsOffer.serviceName}
+              placement="mid_article"
+              affiliateProgram={jinsOffer.programName}
+            />
+          </div>
+        )}
 
         <div className="article-link-box">
           <p>番長シリーズの他の機種については、以下のページもあわせてご覧ください。</p>

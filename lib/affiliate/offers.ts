@@ -1060,6 +1060,18 @@ export const affiliateOffers = {
     isActive: true,
     description: "コミカライズ版『ULTRAMAN』（清水栄一/下口智裕）を電子書籍で確認できます。",
   },
+  jinsScreen: {
+    id: "amazon-jins-screen",
+    provider: "Amazon",
+    programName: "Amazonアソシエイト",
+    offerType: "product",
+    serviceName: "JINS SCREEN",
+    href: buildAmazonSearchUrl("JINS SCREEN ブルーライトカットメガネ"),
+    ctaLabel: "Amazonで探す",
+    disclosure: "広告",
+    isActive: true,
+    description: "長時間実戦で台の光が気になる人に。液晶やランプの明るさが気になるときに使いやすい、ブルーライトカットタイプのメガネです。",
+  },
 } as const satisfies Record<string, AffiliateOffer>;
 
 export type AffiliateOfferId = keyof typeof affiliateOffers;

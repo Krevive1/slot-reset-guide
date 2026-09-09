@@ -5,7 +5,9 @@ import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
+import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
+import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
 
 const title = "スマスロ東京喰種『有馬J失敗後は約2000G冷遇』説を調査｜実戦報告に傾向はある？";
@@ -35,6 +37,7 @@ export const metadata: Metadata = {
 };
 
 export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
+  const jinsOffer = getActiveAffiliateOffer("jinsScreen");
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: SITE_URL },
@@ -147,6 +150,23 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
           今回の内容はあくまで公開情報とX上の実戦報告をもとにした調査であり、遊技を強くおすすめするものではありません。
           「約2000G冷遇」という数値は確定情報ではないため、この数値だけを根拠に立ち回りやヤメ時を判断せず、資金状況に応じて無理のない範囲で楽しむことを大切にしてください。
         </p>
+
+        {jinsOffer && (
+          <div className="product-box-grid">
+            <AffiliateProductBox
+              provider={jinsOffer.provider}
+              name={jinsOffer.serviceName}
+              note={jinsOffer.description ?? "詳細はリンク先でご確認ください。"}
+              ctaLabel={jinsOffer.ctaLabel}
+              ctaHref={jinsOffer.href}
+              disclosure={jinsOffer.disclosure}
+              offerType={jinsOffer.offerType}
+              serviceName={jinsOffer.serviceName}
+              placement="mid_article"
+              affiliateProgram={jinsOffer.programName}
+            />
+          </div>
+        )}
 
         <div className="article-link-box">
           <p>

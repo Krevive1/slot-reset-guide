@@ -5,7 +5,9 @@ import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
+import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
+import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
 
 const title = "モンキーターンVの激走チャージEXアイテムとは？弱レア役からの獲得率に設定差";
@@ -43,6 +45,7 @@ const exItemTable: { setting: string; weak: string; weakChance: string; strongCh
 ];
 
 export default function MonkeyTurnVExItemRateArticlePage() {
+  const jinsOffer = getActiveAffiliateOffer("jinsScreen");
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: SITE_URL },
@@ -126,6 +129,23 @@ export default function MonkeyTurnVExItemRateArticlePage() {
           <li>激走チャージ中のレア役成立回数自体が少ない場合、獲得率が理論値から大きく偏ることがあります。</li>
           <li>EXアイテムの獲得有無だけで設定を断定せず、天井短縮や終了画面など他の情報とあわせて判断してください。</li>
         </ul>
+
+        {jinsOffer && (
+          <div className="product-box-grid">
+            <AffiliateProductBox
+              provider={jinsOffer.provider}
+              name={jinsOffer.serviceName}
+              note={jinsOffer.description ?? "詳細はリンク先でご確認ください。"}
+              ctaLabel={jinsOffer.ctaLabel}
+              ctaHref={jinsOffer.href}
+              disclosure={jinsOffer.disclosure}
+              offerType={jinsOffer.offerType}
+              serviceName={jinsOffer.serviceName}
+              placement="mid_article"
+              affiliateProgram={jinsOffer.programName}
+            />
+          </div>
+        )}
 
         <div className="article-link-box">
           <p>

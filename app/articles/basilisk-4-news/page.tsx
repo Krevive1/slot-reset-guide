@@ -7,7 +7,9 @@ import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
 import Comments from "@/components/machine/Comments";
 import WanchankunComment from "@/components/machine/WanchankunComment";
+import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
+import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
 
 const title =
@@ -39,6 +41,7 @@ export const metadata: Metadata = {
 };
 
 export default function Basilisk4NewsPage() {
+  const jinsOffer = getActiveAffiliateOffer("jinsScreen");
   const articleJsonLd = {
     ...buildGenericArticleJsonLd({ headline: title, description, url }),
     datePublished: publishedAt,
@@ -179,6 +182,23 @@ export default function Basilisk4NewsPage() {
           バジリスクⅣは、検定通過という公的な裏付けが取れている点で、モンキーターンREDよりも一歩進んだ段階にある新台です。とはいえ、ゲーム性や正式な導入日はまだ分かっておらず、続報を待つ段階であることに変わりはありません。
         </p>
         <p>続報が入り次第、ワンチャンくんでも改めて紹介していきます。</p>
+
+        {jinsOffer && (
+          <div className="product-box-grid">
+            <AffiliateProductBox
+              provider={jinsOffer.provider}
+              name={jinsOffer.serviceName}
+              note={jinsOffer.description ?? "詳細はリンク先でご確認ください。"}
+              ctaLabel={jinsOffer.ctaLabel}
+              ctaHref={jinsOffer.href}
+              disclosure={jinsOffer.disclosure}
+              offerType={jinsOffer.offerType}
+              serviceName={jinsOffer.serviceName}
+              placement="mid_article"
+              affiliateProgram={jinsOffer.programName}
+            />
+          </div>
+        )}
 
         <div className="article-link-box" aria-label="参考情報">
           <p>本記事の作成にあたり、以下の情報を参考にしました。</p>

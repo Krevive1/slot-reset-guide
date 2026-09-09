@@ -400,4 +400,14 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   // common goods only (no originalWorkOfferIds) for now.
   "chinjin-gonin-5": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "mahjong-fight-club-kakusei": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  // Remaining no-source-work machines: added jinsScreen per ChatGPT + real
+  // player-blog research (2026-09-09) as the differentiator for pages with
+  // no original-work box.
+  "prism-nana": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "jinsScreen"] },
+  "super-bin-musume": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "jinsScreen"] },
+  "super-black-jack": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "jinsScreen"] },
+  "sengoku-collection-6": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "jinsScreen"] },
+  "sengoku-otome-5": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "jinsScreen"] },
+  "world-dai-star": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "jinsScreen"] },
+  "salaryman-banchou-2": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "jinsScreen"] },
 };
