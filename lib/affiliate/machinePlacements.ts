@@ -211,4 +211,41 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["amazonGodEater"],
   },
+  // Group A, phase 5.
+  "biohazard-5": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonBiohazard"],
+  },
+  "biohazard-re3": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonBiohazard"],
+  },
+  "monster-hunter-rise": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonMonsterHunter"],
+  },
+  "devil-may-cry-5-stylish-tribe": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonDevilMayCry5"],
+  },
+  "girls-und-panzer-finale": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonGirlsPanzer"],
+  },
+  "birdie-wing": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonBirdieWing"],
+  },
+  "bofuri": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerBofuri"],
+  },
+  "bandori": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerBandori"],
+  },
+  "azur-lane-the-animation": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerAzurLane"],
+  },
 };
