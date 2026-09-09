@@ -322,4 +322,41 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerValvrave"],
   },
+  // Group A, phase 8.
+  "toaru-majutsu-no-index": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerToaruIndex"],
+  },
+  "toaru-majutsu-no-index-2": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerToaruIndex"],
+  },
+  "toaru-kagaku-no-railgun-2": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerToaruRailgun"],
+  },
+  "to-love-ru-darkness": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerToLoveRu"],
+  },
+  "to-love-ru-darkness-trance-8-7": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerToLoveRu"],
+  },
+  "darling-in-the-franxx": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerDarlingFranxx"],
+  },
+  "watashi-no-shiawase-na-kekkon": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerWatashiNoShiawase"],
+  },
+  "youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerYokoso"],
+  },
+  "zombieland-saga": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerZombielandSaga"],
+  },
 };
