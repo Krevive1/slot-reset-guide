@@ -285,4 +285,41 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerInitialD"],
   },
+  // Group A, phase 7.
+  "nanatsu-no-maken-ga-shihai-suru": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerNanatsuNoMaken"],
+  },
+  "tensei-shitara-ken-deshita": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerTenseiKen"],
+  },
+  "tensei-oujo-to-tensai-reijou": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerTenseiOujo"],
+  },
+  "re-zero-season2": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerRezero"],
+  },
+  "seishun-buta-yaro": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerSeishunButaYaro"],
+  },
+  "seiya-kaiou-custom-edition": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerSeiya"],
+  },
+  "shin-ikki-tousen": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerIkkiTousen"],
+  },
+  "shin-onimusha-3": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonOnimusha"],
+  },
+  "valvrave-2": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerValvrave"],
+  },
 };
