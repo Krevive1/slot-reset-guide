@@ -52,4 +52,33 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
       },
     ],
   },
+  "street-fighter-6": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+  },
+  // Group B: no identifiable manga/anime/game source material — common goods
+  // (earphones + mobile battery) only. Added 2026-09-09 per ChatGPT + user
+  // review; see DECISIONS.md affiliate policy.
+  "okidoki-black": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "okidoki-gold-30": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "okidoki-gorgeous-30": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "iza-bancho": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "banchou-3": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "juoh": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "hihouden": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "nangoku-sodachi-special": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "yoshimune": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "shinuchi-yoshimune": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "super-rio-ace-2": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "million-god-kamigami-no-kiseki": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "taikai4-with-sonoko": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "tacoslot": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "yabachiba": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "yajikita-dochuki-mairu": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "mogumogu-furinkazan-daikaisen": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "animal-slot-dotch": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "big-dream-golden-pusher": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "chibariyo-2": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "magical-halloween-8": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "zettai-shougeki-4": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "lotis": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
 };

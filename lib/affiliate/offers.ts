@@ -73,6 +73,18 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
   },
+  mobileBatteryCable: {
+    id: "amazon-mobile-battery-cable",
+    provider: "Amazon",
+    programName: "Amazonアソシエイト",
+    offerType: "product",
+    serviceName: "ケーブル内蔵モバイルバッテリー",
+    href: buildAmazonSearchUrl("モバイルバッテリー ケーブル内蔵 10000mAh"),
+    ctaLabel: "Amazonで探す",
+    disclosure: "広告",
+    isActive: true,
+    description: "朝一からの長時間実戦でスマホの電池が切れそうなときに。ケーブル内蔵タイプなら荷物も増えにくいです。",
+  },
   aSlot: {
     id: "a8-a-slot",
     provider: "A8.net",
