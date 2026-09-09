@@ -7,6 +7,7 @@ export type RelatedReadingItem = {
 
 export type MachineAffiliatePlacement = {
   offerIds?: AffiliateOfferId[];
+  originalWorkOfferIds?: AffiliateOfferId[];
   relatedReadings?: RelatedReadingItem[];
 };
 
@@ -15,6 +16,7 @@ export type MachineAffiliatePlacement = {
 export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacement> = {
   "monkey-turn-v": {
     offerIds: ["soundcoreLiberty4", "kachikachiKun"],
+    originalWorkOfferIds: ["bookwalkerMonkeyTurn", "mangazenkanMonkeyTurn30"],
     relatedReadings: [
       {
         href: "/articles/monkey-turn-v-ex-item-rate",
@@ -28,6 +30,7 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   },
   "tokyo-ghoul": {
     offerIds: ["soundcoreLiberty4"],
+    originalWorkOfferIds: ["bookwalkerTokyoGhoul", "mangazenkanTokyoGhoul30", "rentaTokyoGhoul"],
     relatedReadings: [
       {
         href: "/articles/tokyo-ghoul-arima-judgment-reigu-research",
@@ -81,4 +84,23 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "magical-halloween-8": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "zettai-shougeki-4": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "lotis": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  // Group A (original-work-linked), phase 1 of the follow-up rollout. Common
+  // goods box included per the two-layer model (common goods on every
+  // machine page + original-work box only where a source work exists).
+  "saki-choujou-kessen": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerSaki", "mangazenkanSaki27"],
+  },
+  "koukaku-kidoutai-sac-2045": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerKoukaku"],
+  },
+  "bakemonogatari": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerBakemonogatari"],
+  },
+  "lycoris-recoil": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerLycorisRecoil"],
+  },
 };

@@ -30,6 +30,7 @@ import RelatedMachinesSection from "@/components/machine/RelatedMachinesSection"
 import ReferenceSources from "@/components/machine/ReferenceSources";
 import Comments from "@/components/machine/Comments";
 import MachineAffiliateSection from "@/components/machine/MachineAffiliateSection";
+import MachineOriginalWorkSection from "@/components/machine/MachineOriginalWorkSection";
 import WanchankunComment from "@/components/machine/WanchankunComment";
 import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
@@ -161,6 +162,7 @@ export default async function MachinePage({
       <MachineFaq faq={machine.faq} />
       {machine.status === "coming-soon" && <UpdateHistorySection updateHistory={machine.comingSoon} />}
       <RelatedReading slug={machine.slug} />
+      <MachineOriginalWorkSection slug={machine.slug} />
       <AdSlot slot="in-article" />
       <ReferenceVideoSection videos={machine.referenceVideos} />
       <PracticeRecordSection records={machine.practiceRecords} />
