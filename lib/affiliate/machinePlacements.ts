@@ -174,4 +174,41 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerMushokuTensei"],
   },
+  // Group A, phase 4.
+  "basilisk-kizuna-2-tenzen-black": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerBasilisk"],
+  },
+  "goblin-slayer-2": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerGoblinSlayer"],
+  },
+  "godzilla": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonGodzilla"],
+  },
+  "tekken-6": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonTekken"],
+  },
+  "code-geass-fukkatsu-no-lelouch": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerCodeGeass"],
+  },
+  "dumbbell-nan-kilo-moteru": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerDumbbell"],
+  },
+  "en-en-no-shouboutai-2": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerFireForce"],
+  },
+  "garei-zero-re": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerGarei"],
+  },
+  "god-eater-resurrection": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonGodEater"],
+  },
 };
