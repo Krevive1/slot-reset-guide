@@ -359,4 +359,45 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerZombielandSaga"],
   },
+  // Group A, phase 9 (missed in the initial classification pass).
+  "akudama-drive": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerAkudamaDrive"],
+  },
+  "dunbine": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonDunbine"],
+  },
+  "jashin-chan-dropkick": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerJashinChan"],
+  },
+  "jormungand": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerJormungand"],
+  },
+  "mieruko-chan": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerMierukoChan"],
+  },
+  "paripi-koumei": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerParipiKoumei"],
+  },
+  "shin-hokuto-musou": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonShinHokutoMusou"],
+  },
+  "sword-art-online-2": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerSAO"],
+  },
+  "ultraman-saishuu-kessen": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerUltraman"],
+  },
+  // Group C candidates re-checked: no confident source-work match found, so
+  // common goods only (no originalWorkOfferIds) for now.
+  "chinjin-gonin-5": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "mahjong-fight-club-kakusei": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
 };
