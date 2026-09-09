@@ -248,4 +248,41 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerAzurLane"],
   },
+  // Group A, phase 6.
+  "magia-record": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerMagiaRecord"],
+  },
+  "million-live": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonMillionLive"],
+  },
+  "takt-op-destiny": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonTaktOp"],
+  },
+  "arifureta-shokugyou-de-sekai-saikyou": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerArifureta"],
+  },
+  "senki-zesshou-symphogear": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerSymphogear"],
+  },
+  "kabaneri-kaimon-kessen": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerKabaneri"],
+  },
+  "kabaneri-koutetsujou": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerKabaneri"],
+  },
+  "lupin-iii-daikoukaisha-no-hihou": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerLupin"],
+  },
+  "initial-d-2nd": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerInitialD"],
+  },
 };
