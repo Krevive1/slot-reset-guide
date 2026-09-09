@@ -137,4 +137,41 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerGoldenKamuy"],
   },
+  // Group A, phase 3.
+  "kaidoumokushiroku-kaiji": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerKaiji"],
+  },
+  "kinnikuman-7akuma": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerKinnikuman"],
+  },
+  "hanma-baki": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerHanmaBaki"],
+  },
+  "karakuri-circus": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerKarakuriCircus"],
+  },
+  "karakuri-circus-2": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerKarakuriCircus"],
+  },
+  "kyokou-suiri": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerKyokouSuiri"],
+  },
+  "kaguya-sama-wa-kokurasetai": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerKaguyaSama", "mangazenkanKaguyaSama28"],
+  },
+  "shaman-king": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerShamanKing"],
+  },
+  "mushoku-tensei": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerMushokuTensei"],
+  },
 };
