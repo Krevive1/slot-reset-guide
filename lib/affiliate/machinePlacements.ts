@@ -48,6 +48,7 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   },
   "hokuto-no-ken-smart-slot": {
     offerIds: ["soundcoreLiberty4"],
+    originalWorkOfferIds: ["bookwalkerHokutoNoKen"],
     relatedReadings: [
       {
         href: "/articles/hokuto-loud-neighbor-column",
@@ -102,5 +103,38 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "lycoris-recoil": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerLycorisRecoil"],
+  },
+  // Group A, phase 2.
+  "hokuto-no-ken-tensei-2": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerHokutoNoKen"],
+  },
+  "hokuto-tensho": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerHokutoNoKen"],
+  },
+  "gundam-seed": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonGundamSeed"],
+  },
+  "gundam-unicorn-kakusei-drive": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerGundamUC"],
+  },
+  "tokyo-revengers": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerTokyoRevengers"],
+  },
+  "one-punch-man": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerOnePunchMan"],
+  },
+  "kanojo-okarishimasu": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerKanojoOkarishimasu", "mangazenkanKanojoOkarishimasu45"],
+  },
+  "golden-kamuy": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["bookwalkerGoldenKamuy"],
   },
 };
