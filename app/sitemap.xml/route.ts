@@ -33,6 +33,7 @@ const staticEntries: SitemapEntry[] = [
   { path: "/articles/bancho-banzuke-news", lastModified: "2026-09-04", changeFrequency: "weekly", priority: 0.5 },
   { path: "/articles/monkey-turn-v-ex-item-rate", lastModified: "2026-09-04", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/tokyo-ghoul-arima-judgment-reigu-research", lastModified: "2026-09-04", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/articles/mieruko-chan-cz-rate-setting-diff", lastModified: "2026-09-10", changeFrequency: "monthly", priority: 0.5 },
   { path: "/beginner", changeFrequency: "monthly", priority: 0.5 },
   { path: "/line", changeFrequency: "monthly", priority: 0.4 },
   { path: "/line/checklist", changeFrequency: "monthly", priority: 0.5 },

@@ -379,6 +379,12 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "mieruko-chan": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerMierukoChan"],
+    relatedReadings: [
+      {
+        href: "/articles/mieruko-chan-cz-rate-setting-diff",
+        label: "見える子ちゃん｜弱レア役CZに最大3倍差、終了画面にも設定示唆パターン",
+      },
+    ],
   },
   "paripi-koumei": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],

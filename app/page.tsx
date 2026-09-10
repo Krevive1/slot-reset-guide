@@ -36,6 +36,18 @@ export default async function HomePage() {
         <h2>プチニュース</h2>
         <ul className="latest-list">
           <li className="latest-list-item">
+            <Link href="/articles/mieruko-chan-cz-rate-setting-diff">
+              <MachineThumbnail
+                heroImage="/images/articles/mieruko-chan-cz-rate-setting-diff.png"
+                name="見える子ちゃん 弱レア役CZ設定差"
+                sizes="72px"
+              />
+            </Link>
+            <Link href="/articles/mieruko-chan-cz-rate-setting-diff">
+              見える子ちゃん｜弱レア役CZに最大3倍差、終了画面にも設定示唆パターン
+            </Link>
+          </li>
+          <li className="latest-list-item">
             <Link href="/articles/monkey-turn-v-ex-item-rate">
               <MachineThumbnail
                 heroImage="/images/articles/monkey-turn-v-ex-item-rate.png"
