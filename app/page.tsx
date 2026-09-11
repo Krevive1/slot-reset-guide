@@ -109,14 +109,14 @@ export default async function HomePage() {
           <Link href="/articles/basilisk-4-news" className="card machine-card">
             <MachineThumbnail
               heroImage="/images/articles/basilisk-4-news.jpg"
-              name="バジリスクⅣが検定通過！"
+              name="バジリスクⅣ、2026年12月導入予定"
             />
             <h3>
-              バジリスクⅣが検定通過！<span className="new-badge">検定通過</span>
+              バジリスクⅣ、2026年12月導入予定<span className="new-badge">正式発表</span>
             </h3>
-            <p className="updated-at">公開日：2026-08-22</p>
+            <p className="updated-at">公開日：2026-08-22　更新日：2026-09-11</p>
             <p className="section-note">
-              “絆3”ではなく約10年ぶりのナンバリング新作？ 今わかっている情報を整理。
+              ユニバーサル公式が正式発表。新BT「胎動の刻」「死合」も判明した最新情報を整理。
             </p>
           </Link>
         </div>
