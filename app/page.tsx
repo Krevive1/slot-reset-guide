@@ -36,6 +36,18 @@ export default async function HomePage() {
         <h2>プチニュース</h2>
         <ul className="latest-list">
           <li className="latest-list-item">
+            <Link href="/articles/lycoris-recoil-sns-topic">
+              <MachineThumbnail
+                heroImage="/images/machines/lycoris-recoil.jpg"
+                name="リコリス・リコイル 間違い探し話題"
+                sizes="72px"
+              />
+            </Link>
+            <Link href="/articles/lycoris-recoil-sns-topic">
+              リコリス・リコイル｜Xで「間違い探し」が話題、高稼働の声も
+            </Link>
+          </li>
+          <li className="latest-list-item">
             <Link href="/articles/mieruko-chan-cz-rate-setting-diff">
               <MachineThumbnail
                 heroImage="/images/articles/mieruko-chan-cz-rate-setting-diff.png"
