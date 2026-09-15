@@ -6,7 +6,9 @@ import Breadcrumbs from "@/components/site/Breadcrumbs";
 import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
 import TweetEmbed from "@/components/site/TweetEmbed";
+import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
+import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
 
 const title =
@@ -37,6 +39,7 @@ export const metadata: Metadata = {
 };
 
 export default function LycorisRecoilSnsTopicPage() {
+  const jinsOffer = getActiveAffiliateOffer("jinsScreen");
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: SITE_URL },
@@ -138,6 +141,23 @@ export default function LycorisRecoilSnsTopicPage() {
           今回はゲーム性の解析情報ではありませんが、導入直後の注目度の高さがうかがえる話題として紹介しました。
           原因については、メーカーからの公式な情報が出るまで断定しません。続報が入り次第、このページを更新します。
         </p>
+
+        {jinsOffer && (
+          <div className="product-box-grid">
+            <AffiliateProductBox
+              provider={jinsOffer.provider}
+              name={jinsOffer.serviceName}
+              note={jinsOffer.description ?? "詳細はリンク先でご確認ください。"}
+              ctaLabel={jinsOffer.ctaLabel}
+              ctaHref={jinsOffer.href}
+              disclosure={jinsOffer.disclosure}
+              offerType={jinsOffer.offerType}
+              serviceName={jinsOffer.serviceName}
+              placement="mid_article"
+              affiliateProgram={jinsOffer.programName}
+            />
+          </div>
+        )}
 
         <div className="article-link-box">
           <p>
