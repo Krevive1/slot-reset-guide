@@ -38,7 +38,7 @@ export default async function HomePage() {
           <li className="latest-list-item">
             <Link href="/articles/lycoris-recoil-sns-topic">
               <MachineThumbnail
-                heroImage="/images/machines/lycoris-recoil.jpg"
+                heroImage="/images/articles/lycoris-recoil-sns-topic.png"
                 name="リコリス・リコイル 間違い探し話題"
                 sizes="72px"
               />

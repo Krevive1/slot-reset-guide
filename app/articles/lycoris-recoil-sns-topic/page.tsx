@@ -14,7 +14,7 @@ const title =
 const description =
   "2026年9月7日導入のスマスロ リコリス・リコイルで、他機種のパーツが付いているように見える個体の投稿がXで拡散し「間違い探し」として話題になっています。話題になっている投稿と、現時点で確認できていることを整理しました。";
 const url = `${SITE_URL}/articles/lycoris-recoil-sns-topic`;
-const heroImage = "/images/machines/lycoris-recoil.jpg";
+const heroImage = "/images/articles/lycoris-recoil-sns-topic.png";
 const publishedAt = "2026-09-15";
 
 export const metadata: Metadata = {
