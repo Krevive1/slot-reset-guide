@@ -36,6 +36,30 @@ export default async function HomePage() {
         <h2>プチニュース</h2>
         <ul className="latest-list">
           <li className="latest-list-item">
+            <Link href="/articles/uma-musume-pachislot-sns-topic">
+              <MachineThumbnail
+                heroImage="/images/articles/uma-musume-pachislot-sns-topic.png"
+                name="ウマ娘 パチスロ化の噂"
+                sizes="72px"
+              />
+            </Link>
+            <Link href="/articles/uma-musume-pachislot-sns-topic">
+              ウマ娘のパチスロ化を巡る情報がSNSで話題に｜保通協通過との投稿
+            </Link>
+          </li>
+          <li className="latest-list-item">
+            <Link href="/articles/god-arm-hokuto-sns-topic">
+              <MachineThumbnail
+                heroImage="/images/articles/god-arm-hokuto-sns-topic.png"
+                name="ゴッドアーム問題"
+                sizes="72px"
+              />
+            </Link>
+            <Link href="/articles/god-arm-hokuto-sns-topic">
+              「ゴッドアーム」問題でSNS議論拡大｜演者の“台への関与”を巡り意見分かれる
+            </Link>
+          </li>
+          <li className="latest-list-item">
             <Link href="/articles/lycoris-recoil-sns-topic">
               <MachineThumbnail
                 heroImage="/images/articles/lycoris-recoil-sns-topic.png"

@@ -35,6 +35,8 @@ const staticEntries: SitemapEntry[] = [
   { path: "/articles/tokyo-ghoul-arima-judgment-reigu-research", lastModified: "2026-09-04", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/mieruko-chan-cz-rate-setting-diff", lastModified: "2026-09-10", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/lycoris-recoil-sns-topic", lastModified: "2026-09-15", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/articles/uma-musume-pachislot-sns-topic", lastModified: "2026-09-18", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/articles/god-arm-hokuto-sns-topic", lastModified: "2026-09-18", changeFrequency: "monthly", priority: 0.5 },
   { path: "/beginner", changeFrequency: "monthly", priority: 0.5 },
   { path: "/line", changeFrequency: "monthly", priority: 0.4 },
   { path: "/line/checklist", changeFrequency: "monthly", priority: 0.5 },
