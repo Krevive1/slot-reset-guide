@@ -7,6 +7,7 @@ import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
 import WanchankunComment from "@/components/machine/WanchankunComment";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
+import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
@@ -167,7 +168,7 @@ export default function BanchoBanzukeNewsPage() {
         </p>
         <p>続報が入り次第、ワンチャンくんでも改めて紹介していきます。楽しみに待ちましょう。</p>
 
-        <div className="product-box-grid">
+        <div className="product-box-grid product-box-grid--single">
             {foodOffer && (
               <AffiliateProductBox
                 provider={foodOffer.provider}
@@ -183,22 +184,8 @@ export default function BanchoBanzukeNewsPage() {
                 affiliateProgram={foodOffer.programName}
               />
             )}
-            {vodOffer && (
-              <AffiliateProductBox
-                provider={vodOffer.provider}
-                name={vodOffer.serviceName}
-                note={vodOffer.description ?? "詳細はリンク先でご確認ください。"}
-                ctaLabel={vodOffer.ctaLabel}
-                ctaHref={vodOffer.href}
-                disclosure={vodOffer.disclosure}
-                offerType={vodOffer.offerType}
-                serviceName={vodOffer.serviceName}
-                imageSrc={vodOffer.imageSrc}
-                placement="mid_article"
-                affiliateProgram={vodOffer.programName}
-              />
-            )}
         </div>
+        <StickyBottomBanner offer={vodOffer} />
 
         <div className="article-link-box">
           <p>番長シリーズの他の機種については、以下のページもあわせてご覧ください。</p>

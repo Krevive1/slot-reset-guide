@@ -7,6 +7,7 @@ import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
 import TweetEmbed from "@/components/site/TweetEmbed";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
+import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
@@ -154,7 +155,7 @@ export default function GodArmHokutoSnsTopicPage() {
           ただし、記事としては特定の行為が正しい・間違っていると結論づけるのではなく、今後、演者によるファンの遊技への関与について業界でどのような線引きがされていくのかを見ていきたいところです。
         </p>
 
-        <div className="product-box-grid">
+        <div className="product-box-grid product-box-grid--single">
             {foodOffer && (
               <AffiliateProductBox
                 provider={foodOffer.provider}
@@ -170,22 +171,8 @@ export default function GodArmHokutoSnsTopicPage() {
                 affiliateProgram={foodOffer.programName}
               />
             )}
-            {vodOffer && (
-              <AffiliateProductBox
-                provider={vodOffer.provider}
-                name={vodOffer.serviceName}
-                note={vodOffer.description ?? "詳細はリンク先でご確認ください。"}
-                ctaLabel={vodOffer.ctaLabel}
-                ctaHref={vodOffer.href}
-                disclosure={vodOffer.disclosure}
-                offerType={vodOffer.offerType}
-                serviceName={vodOffer.serviceName}
-                imageSrc={vodOffer.imageSrc}
-                placement="mid_article"
-                affiliateProgram={vodOffer.programName}
-              />
-            )}
         </div>
+        <StickyBottomBanner offer={vodOffer} />
 
         <div className="article-link-box">
           <p>

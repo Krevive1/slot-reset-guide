@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/site/Breadcrumbs";
 import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
+import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
@@ -153,7 +154,7 @@ export default function MierukoChanCzRateSettingDiffPage() {
           新しい判別要素や詳細な数値が判明した場合は、このページを更新します。
         </p>
 
-        <div className="product-box-grid">
+        <div className="product-box-grid product-box-grid--single">
             {foodOffer && (
               <AffiliateProductBox
                 provider={foodOffer.provider}
@@ -169,22 +170,8 @@ export default function MierukoChanCzRateSettingDiffPage() {
                 affiliateProgram={foodOffer.programName}
               />
             )}
-            {vodOffer && (
-              <AffiliateProductBox
-                provider={vodOffer.provider}
-                name={vodOffer.serviceName}
-                note={vodOffer.description ?? "詳細はリンク先でご確認ください。"}
-                ctaLabel={vodOffer.ctaLabel}
-                ctaHref={vodOffer.href}
-                disclosure={vodOffer.disclosure}
-                offerType={vodOffer.offerType}
-                serviceName={vodOffer.serviceName}
-                imageSrc={vodOffer.imageSrc}
-                placement="mid_article"
-                affiliateProgram={vodOffer.programName}
-              />
-            )}
         </div>
+        <StickyBottomBanner offer={vodOffer} />
 
         <div className="article-link-box">
           <p>

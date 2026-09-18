@@ -7,7 +7,8 @@ export type AffiliatePlacement =
   | "comparison"
   | "mid_article"
   | "conclusion"
-  | "machine_related";
+  | "machine_related"
+  | "sticky_footer";
 
 export type AffiliateOffer = {
   id: string;

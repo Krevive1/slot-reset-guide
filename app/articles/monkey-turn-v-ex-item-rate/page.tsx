@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/site/Breadcrumbs";
 import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
+import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
@@ -131,7 +132,7 @@ export default function MonkeyTurnVExItemRateArticlePage() {
           <li>EXアイテムの獲得有無だけで設定を断定せず、天井短縮や終了画面など他の情報とあわせて判断してください。</li>
         </ul>
 
-        <div className="product-box-grid">
+        <div className="product-box-grid product-box-grid--single">
             {foodOffer && (
               <AffiliateProductBox
                 provider={foodOffer.provider}
@@ -147,22 +148,8 @@ export default function MonkeyTurnVExItemRateArticlePage() {
                 affiliateProgram={foodOffer.programName}
               />
             )}
-            {vodOffer && (
-              <AffiliateProductBox
-                provider={vodOffer.provider}
-                name={vodOffer.serviceName}
-                note={vodOffer.description ?? "詳細はリンク先でご確認ください。"}
-                ctaLabel={vodOffer.ctaLabel}
-                ctaHref={vodOffer.href}
-                disclosure={vodOffer.disclosure}
-                offerType={vodOffer.offerType}
-                serviceName={vodOffer.serviceName}
-                imageSrc={vodOffer.imageSrc}
-                placement="mid_article"
-                affiliateProgram={vodOffer.programName}
-              />
-            )}
         </div>
+        <StickyBottomBanner offer={vodOffer} />
 
         <div className="article-link-box">
           <p>
