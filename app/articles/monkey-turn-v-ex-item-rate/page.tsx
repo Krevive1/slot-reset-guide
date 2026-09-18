@@ -45,7 +45,8 @@ const exItemTable: { setting: string; weak: string; weakChance: string; strongCh
 ];
 
 export default function MonkeyTurnVExItemRateArticlePage() {
-  const jinsOffer = getActiveAffiliateOffer("jinsScreen");
+  const foodOffer = getActiveAffiliateOffer("amazonFoodDrink");
+  const vodOffer = getActiveAffiliateOffer("abemaPremium");
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: SITE_URL },
@@ -130,22 +131,36 @@ export default function MonkeyTurnVExItemRateArticlePage() {
           <li>EXアイテムの獲得有無だけで設定を断定せず、天井短縮や終了画面など他の情報とあわせて判断してください。</li>
         </ul>
 
-        {jinsOffer && (
-          <div className="product-box-grid">
-            <AffiliateProductBox
-              provider={jinsOffer.provider}
-              name={jinsOffer.serviceName}
-              note={jinsOffer.description ?? "詳細はリンク先でご確認ください。"}
-              ctaLabel={jinsOffer.ctaLabel}
-              ctaHref={jinsOffer.href}
-              disclosure={jinsOffer.disclosure}
-              offerType={jinsOffer.offerType}
-              serviceName={jinsOffer.serviceName}
-              placement="mid_article"
-              affiliateProgram={jinsOffer.programName}
-            />
-          </div>
-        )}
+        <div className="product-box-grid">
+            {foodOffer && (
+              <AffiliateProductBox
+                provider={foodOffer.provider}
+                name={foodOffer.serviceName}
+                note={foodOffer.description ?? "詳細はリンク先でご確認ください。"}
+                ctaLabel={foodOffer.ctaLabel}
+                ctaHref={foodOffer.href}
+                disclosure={foodOffer.disclosure}
+                offerType={foodOffer.offerType}
+                serviceName={foodOffer.serviceName}
+                placement="mid_article"
+                affiliateProgram={foodOffer.programName}
+              />
+            )}
+            {vodOffer && (
+              <AffiliateProductBox
+                provider={vodOffer.provider}
+                name={vodOffer.serviceName}
+                note={vodOffer.description ?? "詳細はリンク先でご確認ください。"}
+                ctaLabel={vodOffer.ctaLabel}
+                ctaHref={vodOffer.href}
+                disclosure={vodOffer.disclosure}
+                offerType={vodOffer.offerType}
+                serviceName={vodOffer.serviceName}
+                placement="mid_article"
+                affiliateProgram={vodOffer.programName}
+              />
+            )}
+        </div>
 
         <div className="article-link-box">
           <p>

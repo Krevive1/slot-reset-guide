@@ -1069,8 +1069,35 @@ export const affiliateOffers = {
     href: buildAmazonSearchUrl("JINS SCREEN ブルーライトカットメガネ"),
     ctaLabel: "Amazonで探す",
     disclosure: "広告",
-    isActive: true,
+    // Disabled 2026-09-18: JINS SCREEN isn't sold on Amazon, so this search
+    // link never surfaces the named product — see amazonFoodDrink/abemaPremium
+    // for the replacement common プチニュース boxes.
+    isActive: false,
     description: "長時間実戦で台の光が気になる人に。液晶やランプの明るさが気になるときに使いやすい、ブルーライトカットタイプのメガネです。",
+  },
+  amazonFoodDrink: {
+    id: "amazon-food-drink",
+    provider: "Amazon",
+    programName: "Amazonアソシエイト",
+    offerType: "product",
+    serviceName: "食品・飲料",
+    href: buildAmazonSearchUrl("コーヒー 飲料 詰め合わせ"),
+    ctaLabel: "Amazonで探す",
+    disclosure: "広告",
+    isActive: true,
+    description: "朝からホールに行く日の食事・間食に。人気の食品・飲料をAmazonでチェックできます。",
+  },
+  abemaPremium: {
+    id: "a8-abema-premium",
+    provider: "A8.net",
+    programName: "ABEMAプレミアム",
+    offerType: "vod",
+    serviceName: "ABEMAプレミアム",
+    href: "https://px.a8.net/svt/ejp?a8mat=4B8DGU+5HNXMA+4EKC+60WN6",
+    ctaLabel: "ABEMAプレミアムを見る",
+    disclosure: "広告",
+    isActive: true,
+    description: "待ち時間や移動中に。オリジナル番組やアニメ・映画が見放題のABEMAプレミアムです。",
   },
 } as const satisfies Record<string, AffiliateOffer>;
 
