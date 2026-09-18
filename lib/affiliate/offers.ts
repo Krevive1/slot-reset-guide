@@ -1086,6 +1086,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "朝からホールに行く日の食事・間食に。人気の食品・飲料をAmazonでチェックできます。",
+    imageSrc: "/images/ads/amazon-food-drink-banner.png",
   },
   abemaPremium: {
     id: "a8-abema-premium",
@@ -1093,11 +1094,12 @@ export const affiliateOffers = {
     programName: "ABEMAプレミアム",
     offerType: "vod",
     serviceName: "ABEMAプレミアム",
-    href: "https://px.a8.net/svt/ejp?a8mat=4B8DGU+5HNXMA+4EKC+60WN6",
+    href: "https://px.a8.net/svt/ejp?a8mat=4B8DGU+5HNXMA+4EKC+62MDD",
     ctaLabel: "ABEMAプレミアムを見る",
     disclosure: "広告",
     isActive: true,
     description: "待ち時間や移動中に。オリジナル番組やアニメ・映画が見放題のABEMAプレミアムです。",
+    imageSrc: "/images/ads/abema-premium-banner.png",
   },
 } as const satisfies Record<string, AffiliateOffer>;
 

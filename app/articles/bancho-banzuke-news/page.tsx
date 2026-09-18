@@ -178,6 +178,7 @@ export default function BanchoBanzukeNewsPage() {
                 disclosure={foodOffer.disclosure}
                 offerType={foodOffer.offerType}
                 serviceName={foodOffer.serviceName}
+                imageSrc={foodOffer.imageSrc}
                 placement="mid_article"
                 affiliateProgram={foodOffer.programName}
               />
@@ -192,6 +193,7 @@ export default function BanchoBanzukeNewsPage() {
                 disclosure={vodOffer.disclosure}
                 offerType={vodOffer.offerType}
                 serviceName={vodOffer.serviceName}
+                imageSrc={vodOffer.imageSrc}
                 placement="mid_article"
                 affiliateProgram={vodOffer.programName}
               />
