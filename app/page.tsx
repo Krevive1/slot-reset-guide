@@ -36,6 +36,18 @@ export default async function HomePage() {
         <h2>プチニュース</h2>
         <ul className="latest-list">
           <li className="latest-list-item">
+            <Link href="/articles/rinseki-fuda-trouble-sns-topic">
+              <MachineThumbnail
+                heroImage="/images/articles/rinseki-fuda-trouble-sns-topic.png"
+                name="離席札トラブル"
+                sizes="72px"
+              />
+            </Link>
+            <Link href="/articles/rinseki-fuda-trouble-sns-topic">
+              「離席札を置かずに席を立ったら…」ホールでの台確保トラブルがXで話題に
+            </Link>
+          </li>
+          <li className="latest-list-item">
             <Link href="/articles/uma-musume-pachislot-sns-topic">
               <MachineThumbnail
                 heroImage="/images/articles/uma-musume-pachislot-sns-topic.png"
