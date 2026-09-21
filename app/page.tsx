@@ -34,42 +34,112 @@ export default async function HomePage() {
 
       <section aria-label="プチニュース">
         <h2>プチニュース</h2>
-        {/* テキストリンクのみ、最大10件。新しい記事を追加する際は先頭に足し、10件を超えたら末尾から削る */}
+        {/* 小さめサムネイル＋タイトル＋日付、最大10件。新しい記事を追加する際は先頭に足し、10件を超えたら末尾から削る */}
         <ul className="latest-list">
           <li className="latest-list-item">
-            <Link href="/articles/rinseki-fuda-trouble-sns-topic">
-              「離席札を置かずに席を立ったら…」ホールでの台確保トラブルがXで話題に
+            <Link href="/articles/rinseki-fuda-trouble-sns-topic" className="latest-list-thumb">
+              <MachineThumbnail
+                heroImage="/images/articles/rinseki-fuda-trouble-sns-topic.png"
+                name="離席札トラブル"
+                sizes="64px"
+              />
             </Link>
+            <div className="latest-list-body">
+              <Link href="/articles/rinseki-fuda-trouble-sns-topic">
+                「離席札を置かずに席を立ったら…」ホールでの台確保トラブルがXで話題に
+              </Link>
+              <p className="latest-list-date">2026-09-21</p>
+            </div>
           </li>
           <li className="latest-list-item">
-            <Link href="/articles/uma-musume-pachislot-sns-topic">
-              ウマ娘のパチスロ化を巡る情報がSNSで話題に｜保通協通過との投稿
+            <Link href="/articles/uma-musume-pachislot-sns-topic" className="latest-list-thumb">
+              <MachineThumbnail
+                heroImage="/images/articles/uma-musume-pachislot-sns-topic.png"
+                name="ウマ娘 パチスロ化の噂"
+                sizes="64px"
+              />
             </Link>
+            <div className="latest-list-body">
+              <Link href="/articles/uma-musume-pachislot-sns-topic">
+                ウマ娘のパチスロ化を巡る情報がSNSで話題に｜保通協通過との投稿
+              </Link>
+              <p className="latest-list-date">2026-09-18</p>
+            </div>
           </li>
           <li className="latest-list-item">
-            <Link href="/articles/god-arm-hokuto-sns-topic">
-              「ゴッドアーム」問題でSNS議論拡大｜演者の“台への関与”を巡り意見分かれる
+            <Link href="/articles/god-arm-hokuto-sns-topic" className="latest-list-thumb">
+              <MachineThumbnail
+                heroImage="/images/articles/god-arm-hokuto-sns-topic.png"
+                name="ゴッドアーム問題"
+                sizes="64px"
+              />
             </Link>
+            <div className="latest-list-body">
+              <Link href="/articles/god-arm-hokuto-sns-topic">
+                「ゴッドアーム」問題でSNS議論拡大｜演者の“台への関与”を巡り意見分かれる
+              </Link>
+              <p className="latest-list-date">2026-09-18</p>
+            </div>
           </li>
           <li className="latest-list-item">
-            <Link href="/articles/lycoris-recoil-sns-topic">
-              リコリス・リコイル｜Xで「間違い探し」が話題、高稼働の声も
+            <Link href="/articles/lycoris-recoil-sns-topic" className="latest-list-thumb">
+              <MachineThumbnail
+                heroImage="/images/articles/lycoris-recoil-sns-topic.png"
+                name="リコリス・リコイル 間違い探し話題"
+                sizes="64px"
+              />
             </Link>
+            <div className="latest-list-body">
+              <Link href="/articles/lycoris-recoil-sns-topic">
+                リコリス・リコイル｜Xで「間違い探し」が話題、高稼働の声も
+              </Link>
+              <p className="latest-list-date">2026-09-15</p>
+            </div>
           </li>
           <li className="latest-list-item">
-            <Link href="/articles/mieruko-chan-cz-rate-setting-diff">
-              見える子ちゃん｜弱レア役CZに最大3倍差、終了画面にも設定示唆パターン
+            <Link href="/articles/mieruko-chan-cz-rate-setting-diff" className="latest-list-thumb">
+              <MachineThumbnail
+                heroImage="/images/articles/mieruko-chan-cz-rate-setting-diff.png"
+                name="見える子ちゃん 弱レア役CZ設定差"
+                sizes="64px"
+              />
             </Link>
+            <div className="latest-list-body">
+              <Link href="/articles/mieruko-chan-cz-rate-setting-diff">
+                見える子ちゃん｜弱レア役CZに最大3倍差、終了画面にも設定示唆パターン
+              </Link>
+              <p className="latest-list-date">2026-09-10</p>
+            </div>
           </li>
           <li className="latest-list-item">
-            <Link href="/articles/monkey-turn-v-ex-item-rate">
-              モンキーターンV｜激走チャージEXアイテムとは？弱レア役からの獲得率に設定差
+            <Link href="/articles/monkey-turn-v-ex-item-rate" className="latest-list-thumb">
+              <MachineThumbnail
+                heroImage="/images/articles/monkey-turn-v-ex-item-rate.png"
+                name="モンキーターンV 激走チャージEXアイテム"
+                sizes="64px"
+              />
             </Link>
+            <div className="latest-list-body">
+              <Link href="/articles/monkey-turn-v-ex-item-rate">
+                モンキーターンV｜激走チャージEXアイテムとは？弱レア役からの獲得率に設定差
+              </Link>
+              <p className="latest-list-date">2026-09-04</p>
+            </div>
           </li>
           <li className="latest-list-item">
-            <Link href="/articles/tokyo-ghoul-arima-judgment-reigu-research">
-              東京喰種｜『有馬J失敗後は約2000G冷遇』説を調査
+            <Link href="/articles/tokyo-ghoul-arima-judgment-reigu-research" className="latest-list-thumb">
+              <MachineThumbnail
+                heroImage="/images/articles/tokyo-ghoul-arima-judgment-reigu-research.png"
+                name="東京喰種 有馬J失敗後2000G冷遇説"
+                sizes="64px"
+              />
             </Link>
+            <div className="latest-list-body">
+              <Link href="/articles/tokyo-ghoul-arima-judgment-reigu-research">
+                東京喰種｜『有馬J失敗後は約2000G冷遇』説を調査
+              </Link>
+              <p className="latest-list-date">2026-09-04</p>
+            </div>
           </li>
         </ul>
       </section>

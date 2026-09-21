@@ -595,17 +595,35 @@ section h2,
 
 .latest-list-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
+}
+
+.latest-list-thumb {
+  flex: none;
 }
 
 .latest-list-item .thumbnail {
   position: relative;
   flex: none;
-  width: 72px;
-  height: 54px;
+  width: 64px;
+  height: 64px;
   border-radius: 8px;
   overflow: hidden;
+}
+
+.latest-list-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.latest-list-date {
+  margin: 0;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #767676;
 }
 
 .share-buttons {
