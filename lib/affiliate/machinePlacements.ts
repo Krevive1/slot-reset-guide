@@ -103,6 +103,12 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "lycoris-recoil": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerLycorisRecoil"],
+    relatedReadings: [
+      {
+        href: "/articles/lycoris-recoil-sns-topic",
+        label: "「間違い探し」が話題｜別機種パーツらしき個体・高稼働の声も",
+      },
+    ],
   },
   // Group A, phase 2.
   "hokuto-no-ken-tensei-2": {
