@@ -34,87 +34,39 @@ export default async function HomePage() {
 
       <section aria-label="プチニュース">
         <h2>プチニュース</h2>
+        {/* テキストリンクのみ、最大10件。新しい記事を追加する際は先頭に足し、10件を超えたら末尾から削る */}
         <ul className="latest-list">
           <li className="latest-list-item">
-            <Link href="/articles/rinseki-fuda-trouble-sns-topic">
-              <MachineThumbnail
-                heroImage="/images/articles/rinseki-fuda-trouble-sns-topic.png"
-                name="離席札トラブル"
-                sizes="72px"
-              />
-            </Link>
             <Link href="/articles/rinseki-fuda-trouble-sns-topic">
               「離席札を置かずに席を立ったら…」ホールでの台確保トラブルがXで話題に
             </Link>
           </li>
           <li className="latest-list-item">
             <Link href="/articles/uma-musume-pachislot-sns-topic">
-              <MachineThumbnail
-                heroImage="/images/articles/uma-musume-pachislot-sns-topic.png"
-                name="ウマ娘 パチスロ化の噂"
-                sizes="72px"
-              />
-            </Link>
-            <Link href="/articles/uma-musume-pachislot-sns-topic">
               ウマ娘のパチスロ化を巡る情報がSNSで話題に｜保通協通過との投稿
             </Link>
           </li>
           <li className="latest-list-item">
-            <Link href="/articles/god-arm-hokuto-sns-topic">
-              <MachineThumbnail
-                heroImage="/images/articles/god-arm-hokuto-sns-topic.png"
-                name="ゴッドアーム問題"
-                sizes="72px"
-              />
-            </Link>
             <Link href="/articles/god-arm-hokuto-sns-topic">
               「ゴッドアーム」問題でSNS議論拡大｜演者の“台への関与”を巡り意見分かれる
             </Link>
           </li>
           <li className="latest-list-item">
             <Link href="/articles/lycoris-recoil-sns-topic">
-              <MachineThumbnail
-                heroImage="/images/articles/lycoris-recoil-sns-topic.png"
-                name="リコリス・リコイル 間違い探し話題"
-                sizes="72px"
-              />
-            </Link>
-            <Link href="/articles/lycoris-recoil-sns-topic">
               リコリス・リコイル｜Xで「間違い探し」が話題、高稼働の声も
             </Link>
           </li>
           <li className="latest-list-item">
-            <Link href="/articles/mieruko-chan-cz-rate-setting-diff">
-              <MachineThumbnail
-                heroImage="/images/articles/mieruko-chan-cz-rate-setting-diff.png"
-                name="見える子ちゃん 弱レア役CZ設定差"
-                sizes="72px"
-              />
-            </Link>
             <Link href="/articles/mieruko-chan-cz-rate-setting-diff">
               見える子ちゃん｜弱レア役CZに最大3倍差、終了画面にも設定示唆パターン
             </Link>
           </li>
           <li className="latest-list-item">
             <Link href="/articles/monkey-turn-v-ex-item-rate">
-              <MachineThumbnail
-                heroImage="/images/articles/monkey-turn-v-ex-item-rate.png"
-                name="モンキーターンV 激走チャージEXアイテム"
-                sizes="72px"
-              />
-            </Link>
-            <Link href="/articles/monkey-turn-v-ex-item-rate">
               モンキーターンV｜激走チャージEXアイテムとは？弱レア役からの獲得率に設定差
             </Link>
           </li>
           <li className="latest-list-item">
-            <Link href="/articles/tokyo-ghoul-arima-judgment-reigu-research">
-              <MachineThumbnail
-                heroImage="/images/articles/tokyo-ghoul-arima-judgment-reigu-research.png"
-                name="東京喰種 有馬J失敗後2000G冷遇説"
-                sizes="72px"
-              />
-            </Link>
             <Link href="/articles/tokyo-ghoul-arima-judgment-reigu-research">
               東京喰種｜『有馬J失敗後は約2000G冷遇』説を調査
             </Link>
@@ -137,9 +89,6 @@ export default async function HomePage() {
               押忍！番長番付、2026年12月導入予定<span className="new-badge">ティザーPV</span>
             </h3>
             <p className="updated-at">公開日：2026-09-04</p>
-            <p className="section-note">
-              番長シリーズ最新作のティザーPVが公開。V図柄採用など今わかっていることを整理。
-            </p>
           </Link>
           <Link href="/articles/monkey-turn-red-news" className="card machine-card">
             <MachineThumbnail
@@ -150,9 +99,6 @@ export default async function HomePage() {
               モンキーターンRED始動！「王道から挑戦へ」<span className="new-badge">公式特報</span>
             </h3>
             <p className="updated-at">公開日：2026-08-22</p>
-            <p className="section-note">
-              山佐公式特報が公開。VIではなく“RED”――新作で今わかっていること。
-            </p>
           </Link>
           <Link href="/articles/basilisk-4-news" className="card machine-card">
             <MachineThumbnail
@@ -163,9 +109,6 @@ export default async function HomePage() {
               バジリスクⅣ、2026年12月導入予定<span className="new-badge">正式発表</span>
             </h3>
             <p className="updated-at">公開日：2026-08-22　更新日：2026-09-11</p>
-            <p className="section-note">
-              ユニバーサル公式が正式発表。新BT「胎動の刻」「死合」も判明した最新情報を整理。
-            </p>
           </Link>
         </div>
       </section>
@@ -196,24 +139,6 @@ export default async function HomePage() {
           <li>本サイトは収支や遊技結果を保証するものではありません。</li>
           <li>無理な投資や借入をしての遊技は避けてください。</li>
           <li>不安を感じたら、すぐに休む・やめる判断を優先してください。</li>
-        </ul>
-      </section>
-
-      <section className="card">
-        <h2>このサイトで学べること</h2>
-        <ol>
-          <li>朝一リセットとは何か</li>
-          <li>リセット恩恵の代表例（天井短縮・モード優遇など）</li>
-          <li>実践前に確認すべき注意点</li>
-        </ol>
-        <p><Link href="/beginner">3分で分かる基礎ガイドを読む →</Link></p>
-        <ul>
-          <li><Link href="/guides/yougo-shu">パチスロ用語集（初心者向け基本用語まとめ）</Link></li>
-          <li><Link href="/guides/mikiwake-kata">朝一リセットの見分け方（基本の考え方）</Link></li>
-          <li><Link href="/guides/yamedoki-chuiten">失敗しやすいパターンと注意点</Link></li>
-          <li><Link href="/articles/reset-benefit-machines">朝イチリセット恩恵を確認したい機種まとめ</Link></li>
-          <li><Link href="/articles/careful-morning-machines">朝一で慎重に確認したい機種まとめ</Link></li>
-          <li><Link href="/articles/asaichi-benri-guzzu">朝一待ち・実戦に便利な持ち物まとめ</Link></li>
         </ul>
       </section>
 
@@ -296,6 +221,24 @@ export default async function HomePage() {
             <p className="section-note">スマスロ東京喰種の実践記録・失敗談です。</p>
           </Link>
         </div>
+      </section>
+
+      <section className="card">
+        <h2>このサイトで学べること</h2>
+        <ol>
+          <li>朝一リセットとは何か</li>
+          <li>リセット恩恵の代表例（天井短縮・モード優遇など）</li>
+          <li>実践前に確認すべき注意点</li>
+        </ol>
+        <p><Link href="/beginner">3分で分かる基礎ガイドを読む →</Link></p>
+        <ul>
+          <li><Link href="/guides/yougo-shu">パチスロ用語集（初心者向け基本用語まとめ）</Link></li>
+          <li><Link href="/guides/mikiwake-kata">朝一リセットの見分け方（基本の考え方）</Link></li>
+          <li><Link href="/guides/yamedoki-chuiten">失敗しやすいパターンと注意点</Link></li>
+          <li><Link href="/articles/reset-benefit-machines">朝イチリセット恩恵を確認したい機種まとめ</Link></li>
+          <li><Link href="/articles/careful-morning-machines">朝一で慎重に確認したい機種まとめ</Link></li>
+          <li><Link href="/articles/asaichi-benri-guzzu">朝一待ち・実戦に便利な持ち物まとめ</Link></li>
+        </ul>
       </section>
 
       <LineCta />
