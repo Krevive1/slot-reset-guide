@@ -41,6 +41,7 @@ const staticEntries: SitemapEntry[] = [
   { path: "/articles/uma-musume-pachislot-sns-topic", lastModified: "2026-09-18", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/god-arm-hokuto-sns-topic", lastModified: "2026-09-18", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/rinseki-fuda-trouble-sns-topic", lastModified: "2026-09-21", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/articles/minpachi-slosami-2026-trouble-sns-topic", lastModified: "2026-09-23", changeFrequency: "monthly", priority: 0.5 },
   { path: "/beginner", changeFrequency: "monthly", priority: 0.5 },
   { path: "/line", changeFrequency: "monthly", priority: 0.4 },
   { path: "/line/checklist", changeFrequency: "monthly", priority: 0.5 },

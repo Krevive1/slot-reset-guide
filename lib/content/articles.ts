@@ -35,6 +35,15 @@ export const ARTICLE_CATEGORY_INFO: Record<
 // 本文は各記事の app/articles/<slug>/page.tsx に独立して存在し、ここでは一覧表示用のメタデータだけを管理する。
 export const articles: ArticleMeta[] = [
   {
+    slug: "minpachi-slosami-2026-trouble-sns-topic",
+    title: "「みんパチ・スロサミ2026」で物販・くじにアクセス集中｜SNSでは長時間待機の声も",
+    description:
+      "業界公式のファン感謝祭「みんパチ・スロサミ2026」（2026年9月22日開催）で、物販・くじコーナーにアクセスが集中し、主催側が新規整列とくじコーナーを一時中止しました。現地参加者のSNS投稿と、公式が案内した内容を整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-09-23",
+    heroImage: "/images/articles/minpachi-slosami-2026-trouble-sns-topic.png",
+  },
+  {
     slug: "rinseki-fuda-trouble-sns-topic",
     title: "「離席札を置かずに席を立ったら…」ホールでの台確保トラブル投稿がXで話題に",
     description:
