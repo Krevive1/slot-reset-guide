@@ -16,6 +16,9 @@ interface SitemapEntry {
 const staticEntries: SitemapEntry[] = [
   { path: "/", changeFrequency: "daily", priority: 1 },
   { path: "/machines", changeFrequency: "daily", priority: 0.9 },
+  { path: "/articles/petit-news", changeFrequency: "daily", priority: 0.8 },
+  { path: "/articles/new-machine-news", changeFrequency: "daily", priority: 0.8 },
+  { path: "/articles/columns", changeFrequency: "weekly", priority: 0.7 },
   { path: "/articles/reset-benefit-machines", changeFrequency: "weekly", priority: 0.7 },
   { path: "/articles/careful-morning-machines", changeFrequency: "weekly", priority: 0.7 },
   { path: "/articles/asaichi-benri-guzzu", changeFrequency: "monthly", priority: 0.5 },

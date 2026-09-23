@@ -2,12 +2,18 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getPublishedMachines, getComingSoonMachines } from "@/lib/content/machines";
 import { selectHomeMachines } from "@/lib/content/popularity";
+import { getArticlesByCategory, ARTICLE_CATEGORY_INFO } from "@/lib/content/articles";
 import MachineCard from "@/components/machine/MachineCard";
 import MachineThumbnail from "@/components/machine/MachineThumbnail";
+import ArticleCardGrid from "@/components/site/ArticleCardGrid";
 import ComingSoonSection from "@/components/machine/ComingSoonSection";
 import AdSlot from "@/components/ads/AdSlot";
 import LineCta from "@/components/site/LineCta";
 import { SITE_URL } from "@/lib/site";
+
+const PETIT_NEWS_HOME_LIMIT = 7;
+const NEW_MACHINE_NEWS_HOME_LIMIT = 4;
+const COLUMN_HOME_LIMIT = 4;
 
 export const metadata: Metadata = {
   title: "ワンチャンくん｜パチスロ朝一リセットまとめサイト",
@@ -26,6 +32,9 @@ export default async function HomePage() {
     }, {})
   ).sort(([dateA], [dateB]) => dateA.localeCompare(dateB));
   const homeSelection = selectHomeMachines(allMachines, 12);
+  const petitNewsArticles = getArticlesByCategory("petit-news");
+  const newMachineNewsArticles = getArticlesByCategory("new-machine-news");
+  const columnArticles = getArticlesByCategory("column");
 
   return (
     <>
@@ -34,114 +43,25 @@ export default async function HomePage() {
 
       <section aria-label="プチニュース">
         <h2>プチニュース</h2>
-        {/* 小さめサムネイル＋タイトル＋日付、最大10件。新しい記事を追加する際は先頭に足し、10件を超えたら末尾から削る */}
+        {/* articles.ts から新しい順に取得。トップページでは最大{PETIT_NEWS_HOME_LIMIT}件のみ表示し、超過分は一覧ページへ */}
         <ul className="latest-list">
-          <li className="latest-list-item">
-            <Link href="/articles/rinseki-fuda-trouble-sns-topic" className="latest-list-thumb">
-              <MachineThumbnail
-                heroImage="/images/articles/rinseki-fuda-trouble-sns-topic.png"
-                name="離席札トラブル"
-                sizes="64px"
-              />
-            </Link>
-            <div className="latest-list-body">
-              <Link href="/articles/rinseki-fuda-trouble-sns-topic">
-                「離席札を置かずに席を立ったら…」ホールでの台確保トラブルがXで話題に
+          {petitNewsArticles.slice(0, PETIT_NEWS_HOME_LIMIT).map((article) => (
+            <li key={article.slug} className="latest-list-item">
+              <Link href={`/articles/${article.slug}`} className="latest-list-thumb">
+                <MachineThumbnail heroImage={article.heroImage} name={article.title} sizes="64px" />
               </Link>
-              <p className="latest-list-date">2026-09-21</p>
-            </div>
-          </li>
-          <li className="latest-list-item">
-            <Link href="/articles/uma-musume-pachislot-sns-topic" className="latest-list-thumb">
-              <MachineThumbnail
-                heroImage="/images/articles/uma-musume-pachislot-sns-topic.png"
-                name="ウマ娘 パチスロ化の噂"
-                sizes="64px"
-              />
-            </Link>
-            <div className="latest-list-body">
-              <Link href="/articles/uma-musume-pachislot-sns-topic">
-                ウマ娘のパチスロ化を巡る情報がSNSで話題に｜保通協通過との投稿
-              </Link>
-              <p className="latest-list-date">2026-09-18</p>
-            </div>
-          </li>
-          <li className="latest-list-item">
-            <Link href="/articles/god-arm-hokuto-sns-topic" className="latest-list-thumb">
-              <MachineThumbnail
-                heroImage="/images/articles/god-arm-hokuto-sns-topic.png"
-                name="ゴッドアーム問題"
-                sizes="64px"
-              />
-            </Link>
-            <div className="latest-list-body">
-              <Link href="/articles/god-arm-hokuto-sns-topic">
-                「ゴッドアーム」問題でSNS議論拡大｜演者の“台への関与”を巡り意見分かれる
-              </Link>
-              <p className="latest-list-date">2026-09-18</p>
-            </div>
-          </li>
-          <li className="latest-list-item">
-            <Link href="/articles/lycoris-recoil-sns-topic" className="latest-list-thumb">
-              <MachineThumbnail
-                heroImage="/images/articles/lycoris-recoil-sns-topic.png"
-                name="リコリス・リコイル 間違い探し話題"
-                sizes="64px"
-              />
-            </Link>
-            <div className="latest-list-body">
-              <Link href="/articles/lycoris-recoil-sns-topic">
-                リコリス・リコイル｜Xで「間違い探し」が話題、高稼働の声も
-              </Link>
-              <p className="latest-list-date">2026-09-15</p>
-            </div>
-          </li>
-          <li className="latest-list-item">
-            <Link href="/articles/mieruko-chan-cz-rate-setting-diff" className="latest-list-thumb">
-              <MachineThumbnail
-                heroImage="/images/articles/mieruko-chan-cz-rate-setting-diff.png"
-                name="見える子ちゃん 弱レア役CZ設定差"
-                sizes="64px"
-              />
-            </Link>
-            <div className="latest-list-body">
-              <Link href="/articles/mieruko-chan-cz-rate-setting-diff">
-                見える子ちゃん｜弱レア役CZに最大3倍差、終了画面にも設定示唆パターン
-              </Link>
-              <p className="latest-list-date">2026-09-10</p>
-            </div>
-          </li>
-          <li className="latest-list-item">
-            <Link href="/articles/monkey-turn-v-ex-item-rate" className="latest-list-thumb">
-              <MachineThumbnail
-                heroImage="/images/articles/monkey-turn-v-ex-item-rate.png"
-                name="モンキーターンV 激走チャージEXアイテム"
-                sizes="64px"
-              />
-            </Link>
-            <div className="latest-list-body">
-              <Link href="/articles/monkey-turn-v-ex-item-rate">
-                モンキーターンV｜激走チャージEXアイテムとは？弱レア役からの獲得率に設定差
-              </Link>
-              <p className="latest-list-date">2026-09-04</p>
-            </div>
-          </li>
-          <li className="latest-list-item">
-            <Link href="/articles/tokyo-ghoul-arima-judgment-reigu-research" className="latest-list-thumb">
-              <MachineThumbnail
-                heroImage="/images/articles/tokyo-ghoul-arima-judgment-reigu-research.png"
-                name="東京喰種 有馬J失敗後2000G冷遇説"
-                sizes="64px"
-              />
-            </Link>
-            <div className="latest-list-body">
-              <Link href="/articles/tokyo-ghoul-arima-judgment-reigu-research">
-                東京喰種｜『有馬J失敗後は約2000G冷遇』説を調査
-              </Link>
-              <p className="latest-list-date">2026-09-04</p>
-            </div>
-          </li>
+              <div className="latest-list-body">
+                <Link href={`/articles/${article.slug}`}>{article.title}</Link>
+                <p className="latest-list-date">{article.updatedAt ?? article.publishedAt}</p>
+              </div>
+            </li>
+          ))}
         </ul>
+        {petitNewsArticles.length > PETIT_NEWS_HOME_LIMIT && (
+          <p>
+            <Link href={ARTICLE_CATEGORY_INFO["petit-news"].path}>プチニュース一覧を見る →</Link>
+          </p>
+        )}
       </section>
 
       <section aria-label="注目の新台NEWS">
@@ -149,38 +69,12 @@ export default async function HomePage() {
         <p className="section-note">
           検定通過・公式特報など、今後登場が期待される注目機種の最新情報をまとめています。
         </p>
-        <div className="cards top-news-cards">
-          <Link href="/articles/bancho-banzuke-news" className="card machine-card">
-            <MachineThumbnail
-              heroImage="/images/articles/bancho-banzuke-news.png"
-              name="押忍！番長番付「V図柄」採用"
-            />
-            <h3>
-              押忍！番長番付、2026年12月導入予定<span className="new-badge">ティザーPV</span>
-            </h3>
-            <p className="updated-at">公開日：2026-09-04</p>
-          </Link>
-          <Link href="/articles/monkey-turn-red-news" className="card machine-card">
-            <MachineThumbnail
-              heroImage="/images/articles/monkey-turn-red-news.jpg"
-              name="モンキーターンRED始動！「王道から挑戦へ」"
-            />
-            <h3>
-              モンキーターンRED始動！「王道から挑戦へ」<span className="new-badge">公式特報</span>
-            </h3>
-            <p className="updated-at">公開日：2026-08-22</p>
-          </Link>
-          <Link href="/articles/basilisk-4-news" className="card machine-card">
-            <MachineThumbnail
-              heroImage="/images/articles/basilisk-4-news.jpg"
-              name="バジリスクⅣ、2026年12月導入予定"
-            />
-            <h3>
-              バジリスクⅣ、2026年12月導入予定<span className="new-badge">正式発表</span>
-            </h3>
-            <p className="updated-at">公開日：2026-08-22　更新日：2026-09-11</p>
-          </Link>
-        </div>
+        <ArticleCardGrid articles={newMachineNewsArticles.slice(0, NEW_MACHINE_NEWS_HOME_LIMIT)} />
+        {newMachineNewsArticles.length > NEW_MACHINE_NEWS_HOME_LIMIT && (
+          <p>
+            <Link href={ARTICLE_CATEGORY_INFO["new-machine-news"].path}>注目の新台NEWS一覧を見る →</Link>
+          </p>
+        )}
       </section>
 
       {comingSoonGroups.map(([releaseDate, machines], index) => {
@@ -244,53 +138,12 @@ export default async function HomePage() {
       <section aria-label="実践記録・コラム">
         <h2>実践記録・コラム</h2>
         <p className="section-note">運営者自身の実践記録や失敗談、コラムを掲載しています。</p>
-        <div className="cards">
-          <Link href="/articles/tokyo-ghoul-jiro-8586-column" className="card machine-card">
-            <MachineThumbnail
-              heroImage="/images/articles/tokyo-ghoul-jiro-8586-column.jpg"
-              name="二郎系ラーメンを食べに遠征したら、東京喰種で8586枚出た話"
-            />
-            <h3>二郎系ラーメンを食べに遠征したら、東京喰種で8586枚出た話</h3>
-            <p className="updated-at">公開日：2026-08-03</p>
-            <p className="section-note">ジャグラーで少し勝って帰るはずが、東京喰種の周りをグールグール5周。乗り打ちで最終8586枚となった二郎系ラーメン遠征の実践記録です。</p>
-          </Link>
-          <Link href="/articles/monkey-paramount-neighbor-column" className="card machine-card">
-            <MachineThumbnail
-              heroImage="/images/articles/monkey-paramount-neighbor-column.jpg"
-              name="隣のパラマウント打ちに「表出ろ」と言われた結果、まさかの正体が判明した"
-            />
-            <h3>隣のパラマウント打ちに「表出ろ」と言われた話</h3>
-            <p className="updated-at">公開日：2026-07-28</p>
-            <p className="section-note">スマスロモンキーターンVのホール体験コラムです。</p>
-          </Link>
-          <Link href="/articles/soundcore-liberty-4-hall-noise-column" className="card machine-card">
-            <MachineThumbnail
-              heroImage="/images/articles/soundcore-liberty-4-hall-noise-column.jpg"
-              name="モンキーターン・東京喰種・北斗の爆音から耳を守りたい｜ホールでSoundcore Liberty 4を使ってみた"
-            />
-            <h3>ホールでSoundcore Liberty 4を使ってみた</h3>
-            <p className="updated-at">公開日：2026-07-24</p>
-            <p className="section-note">隣台の爆音対策コラムです。</p>
-          </Link>
-          <Link href="/articles/hokuto-loud-neighbor-column" className="card machine-card">
-            <MachineThumbnail
-              heroImage="/images/articles/hokuto-loud-neighbor-column.jpg"
-              name="スマスロ北斗の拳で隣に音量MAXの男が座った話｜収支は負けたが謎の勝負には勝った"
-            />
-            <h3>隣に音量MAXの男が座った話</h3>
-            <p className="updated-at">公開日：2026-07-21</p>
-            <p className="section-note">スマスロ北斗の拳のホール体験コラムです。</p>
-          </Link>
-          <Link href="/articles/tokyo-ghoul-trophy-misugoshi" className="card machine-card">
-            <MachineThumbnail
-              heroImage="/images/articles/tokyo-ghoul-trophy-misugoshi.jpg"
-              name="スマスロ東京喰種 実践記録｜トロフィーを確認せず5万円使い切った7月7日"
-            />
-            <h3>実践記録：トロフィーを確認せず5万円使い切った7月7日</h3>
-            <p className="updated-at">公開日：2026-07-19</p>
-            <p className="section-note">スマスロ東京喰種の実践記録・失敗談です。</p>
-          </Link>
-        </div>
+        <ArticleCardGrid articles={columnArticles.slice(0, COLUMN_HOME_LIMIT)} showDescription />
+        {columnArticles.length > COLUMN_HOME_LIMIT && (
+          <p>
+            <Link href={ARTICLE_CATEGORY_INFO["column"].path}>コラム一覧を見る →</Link>
+          </p>
+        )}
       </section>
 
       <section className="card">

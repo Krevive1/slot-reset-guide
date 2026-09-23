@@ -1,0 +1,31 @@
+import type { Metadata } from "next";
+import Breadcrumbs from "@/components/site/Breadcrumbs";
+import ArticleCardGrid from "@/components/site/ArticleCardGrid";
+import { getArticlesByCategory, ARTICLE_CATEGORY_INFO } from "@/lib/content/articles";
+import { SITE_URL } from "@/lib/site";
+
+const info = ARTICLE_CATEGORY_INFO["column"];
+const url = `${SITE_URL}${info.path}`;
+
+export const metadata: Metadata = {
+  title: info.label,
+  description: info.description,
+  alternates: { canonical: url },
+};
+
+export default function ColumnsIndexPage() {
+  const articles = getArticlesByCategory("column");
+
+  return (
+    <>
+      <Breadcrumbs items={[{ name: "トップ", href: "/" }, { name: info.label, href: info.path }]} />
+      <h1 className="page-title">{info.label}</h1>
+      <p className="section-note">{info.description}</p>
+      {articles.length > 0 ? (
+        <ArticleCardGrid articles={articles} showDescription />
+      ) : (
+        <p>現在公開中のコラムはありません。</p>
+      )}
+    </>
+  );
+}
