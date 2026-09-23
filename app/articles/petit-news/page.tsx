@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
-import ArticleCardGrid from "@/components/site/ArticleCardGrid";
+import ArticleList from "@/components/site/ArticleList";
 import { getArticlesByCategory, ARTICLE_CATEGORY_INFO } from "@/lib/content/articles";
 import { SITE_URL } from "@/lib/site";
 
@@ -22,7 +22,7 @@ export default function PetitNewsIndexPage() {
       <h1 className="page-title">{info.label}</h1>
       <p className="section-note">{info.description}</p>
       {articles.length > 0 ? (
-        <ArticleCardGrid articles={articles} />
+        <ArticleList articles={articles} />
       ) : (
         <p>現在公開中のプチニュースはありません。</p>
       )}

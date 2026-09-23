@@ -4,8 +4,8 @@ import { getPublishedMachines, getComingSoonMachines } from "@/lib/content/machi
 import { selectHomeMachines } from "@/lib/content/popularity";
 import { getArticlesByCategory, ARTICLE_CATEGORY_INFO } from "@/lib/content/articles";
 import MachineCard from "@/components/machine/MachineCard";
-import MachineThumbnail from "@/components/machine/MachineThumbnail";
 import ArticleCardGrid from "@/components/site/ArticleCardGrid";
+import ArticleList from "@/components/site/ArticleList";
 import ComingSoonSection from "@/components/machine/ComingSoonSection";
 import AdSlot from "@/components/ads/AdSlot";
 import LineCta from "@/components/site/LineCta";
@@ -44,19 +44,7 @@ export default async function HomePage() {
       <section aria-label="プチニュース">
         <h2>プチニュース</h2>
         {/* articles.ts から新しい順に取得。トップページでは最大{PETIT_NEWS_HOME_LIMIT}件のみ表示し、超過分は一覧ページへ */}
-        <ul className="latest-list">
-          {petitNewsArticles.slice(0, PETIT_NEWS_HOME_LIMIT).map((article) => (
-            <li key={article.slug} className="latest-list-item">
-              <Link href={`/articles/${article.slug}`} className="latest-list-thumb">
-                <MachineThumbnail heroImage={article.heroImage} name={article.title} sizes="64px" />
-              </Link>
-              <div className="latest-list-body">
-                <Link href={`/articles/${article.slug}`}>{article.title}</Link>
-                <p className="latest-list-date">{article.updatedAt ?? article.publishedAt}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
+        <ArticleList articles={petitNewsArticles.slice(0, PETIT_NEWS_HOME_LIMIT)} />
         {petitNewsArticles.length > PETIT_NEWS_HOME_LIMIT && (
           <p>
             <Link href={ARTICLE_CATEGORY_INFO["petit-news"].path}>プチニュース一覧を見る →</Link>
@@ -69,7 +57,7 @@ export default async function HomePage() {
         <p className="section-note">
           検定通過・公式特報など、今後登場が期待される注目機種の最新情報をまとめています。
         </p>
-        <ArticleCardGrid articles={newMachineNewsArticles.slice(0, NEW_MACHINE_NEWS_HOME_LIMIT)} />
+        <ArticleCardGrid articles={newMachineNewsArticles.slice(0, NEW_MACHINE_NEWS_HOME_LIMIT)} wide />
         {newMachineNewsArticles.length > NEW_MACHINE_NEWS_HOME_LIMIT && (
           <p>
             <Link href={ARTICLE_CATEGORY_INFO["new-machine-news"].path}>注目の新台NEWS一覧を見る →</Link>
