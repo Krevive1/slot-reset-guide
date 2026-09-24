@@ -105,6 +105,10 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     originalWorkOfferIds: ["bookwalkerLycorisRecoil"],
     relatedReadings: [
       {
+        href: "/articles/lycoris-recoil-yuuri-giri-himitsu-sns-topic",
+        label: "「有利切りの秘密」を公式が公開｜条件は6つ、明確に分かるのは2つだけ",
+      },
+      {
         href: "/articles/lycoris-recoil-sns-topic",
         label: "「間違い探し」が話題｜別機種パーツらしき個体・高稼働の声も",
       },
