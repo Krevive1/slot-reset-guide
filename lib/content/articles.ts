@@ -41,7 +41,7 @@ export const articles: ArticleMeta[] = [
       "サミー開発ボイスが「リコスロ3DAYS」企画の一環として、スマスロ リコリス・リコイルの有利区間リセット（通称：有利切り）の条件を公式に公開しました。条件は6パターンあるとされ、実戦上プレイヤーが明確に判別できるのは2パターンのみと紹介されています。公式投稿の内容を整理しました。",
     category: "petit-news",
     publishedAt: "2026-09-24",
-    heroImage: "/images/articles/lycoris-recoil-sns-topic.png",
+    heroImage: "/images/articles/lycoris-recoil-yuuri-giri-himitsu-sns-topic.png",
   },
   {
     slug: "minpachi-slosami-2026-trouble-sns-topic",
