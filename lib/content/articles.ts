@@ -35,6 +35,15 @@ export const ARTICLE_CATEGORY_INFO: Record<
 // 本文は各記事の app/articles/<slug>/page.tsx に独立して存在し、ここでは一覧表示用のメタデータだけを管理する。
 export const articles: ArticleMeta[] = [
   {
+    slug: "rio-tojyo-magicbird2-sns-topic",
+    title: "東城りおさん来店でファン対応整理券が配布終了｜マジックバード2に多くのファン",
+    description:
+      "麻雀プロの東城りおさんが大阪・マジックバード2に来店した際、ファン対応整理券が早い時間に配布終了したとの投稿がXで話題になっています。当日の投稿内容を整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-09-24",
+    heroImage: "/images/articles/rio-tojyo-magicbird2-sns-topic.png",
+  },
+  {
     slug: "lycoris-recoil-yuuri-giri-himitsu-sns-topic",
     title: "Lリコリス・リコイル「有利切りの秘密」を公式が公開｜条件は6つ、明確に分かるのは2つだけ",
     description:
