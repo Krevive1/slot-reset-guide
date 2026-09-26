@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 };
 
 export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
-  const foodOffer = getActiveAffiliateOffer("amazonFoodDrink");
+  const rentaOffer = getActiveAffiliateOffer("rentaTokyoGhoul");
   const vodOffer = getActiveAffiliateOffer("abemaPremium");
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
@@ -154,19 +154,19 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
         </p>
 
         <div className="product-box-grid product-box-grid--single">
-            {foodOffer && (
+            {rentaOffer && (
               <AffiliateProductBox
-                provider={foodOffer.provider}
-                name={foodOffer.serviceName}
-                note={foodOffer.description ?? "詳細はリンク先でご確認ください。"}
-                ctaLabel={foodOffer.ctaLabel}
-                ctaHref={foodOffer.href}
-                disclosure={foodOffer.disclosure}
-                offerType={foodOffer.offerType}
-                serviceName={foodOffer.serviceName}
-                imageSrc={foodOffer.imageSrc}
+                provider={rentaOffer.provider}
+                name={rentaOffer.serviceName}
+                note={rentaOffer.description ?? "詳細はリンク先でご確認ください。"}
+                ctaLabel={rentaOffer.ctaLabel}
+                ctaHref={rentaOffer.href}
+                disclosure={rentaOffer.disclosure}
+                offerType={rentaOffer.offerType}
+                serviceName={rentaOffer.serviceName}
+                imageSrc={rentaOffer.imageSrc}
                 placement="mid_article"
-                affiliateProgram={foodOffer.programName}
+                affiliateProgram={rentaOffer.programName}
               />
             )}
         </div>
@@ -176,7 +176,7 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
           <p>
             東京喰種のリセット恩恵・判別方法は、
             <Link href="/machines/tokyo-ghoul">L東京喰種（スマスロ東京グール）の機種ページ</Link>
-            で詳しく解説しています。
+            で詳しく解説しています。原作を確認したい方は、上記のRentaでも読めます。
           </p>
           <ul>
             <li><Link href="/beginner">朝一リセットとは？初心者向け解説</Link></li>

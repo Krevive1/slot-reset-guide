@@ -46,7 +46,7 @@ const exItemTable: { setting: string; weak: string; weakChance: string; strongCh
 ];
 
 export default function MonkeyTurnVExItemRateArticlePage() {
-  const foodOffer = getActiveAffiliateOffer("amazonFoodDrink");
+  const bookOffer = getActiveAffiliateOffer("bookwalkerMonkeyTurn");
   const vodOffer = getActiveAffiliateOffer("abemaPremium");
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
@@ -133,19 +133,19 @@ export default function MonkeyTurnVExItemRateArticlePage() {
         </ul>
 
         <div className="product-box-grid product-box-grid--single">
-            {foodOffer && (
+            {bookOffer && (
               <AffiliateProductBox
-                provider={foodOffer.provider}
-                name={foodOffer.serviceName}
-                note={foodOffer.description ?? "詳細はリンク先でご確認ください。"}
-                ctaLabel={foodOffer.ctaLabel}
-                ctaHref={foodOffer.href}
-                disclosure={foodOffer.disclosure}
-                offerType={foodOffer.offerType}
-                serviceName={foodOffer.serviceName}
-                imageSrc={foodOffer.imageSrc}
+                provider={bookOffer.provider}
+                name={bookOffer.serviceName}
+                note={bookOffer.description ?? "詳細はリンク先でご確認ください。"}
+                ctaLabel={bookOffer.ctaLabel}
+                ctaHref={bookOffer.href}
+                disclosure={bookOffer.disclosure}
+                offerType={bookOffer.offerType}
+                serviceName={bookOffer.serviceName}
+                imageSrc={bookOffer.imageSrc}
                 placement="mid_article"
-                affiliateProgram={foodOffer.programName}
+                affiliateProgram={bookOffer.programName}
               />
             )}
         </div>

@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 };
 
 export default function RioTojyoMagicbird2SnsTopicPage() {
-  const foodOffer = getActiveAffiliateOffer("amazonFoodDrink");
+  const jalanOffer = getActiveAffiliateOffer("jalanNet");
   const vodOffer = getActiveAffiliateOffer("abemaPremium");
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
@@ -113,19 +113,19 @@ export default function RioTojyoMagicbird2SnsTopicPage() {
         </p>
 
         <div className="product-box-grid product-box-grid--single">
-          {foodOffer && (
+          {jalanOffer && (
             <AffiliateProductBox
-              provider={foodOffer.provider}
-              name={foodOffer.serviceName}
-              note={foodOffer.description ?? "詳細はリンク先でご確認ください。"}
-              ctaLabel={foodOffer.ctaLabel}
-              ctaHref={foodOffer.href}
-              disclosure={foodOffer.disclosure}
-              offerType={foodOffer.offerType}
-              serviceName={foodOffer.serviceName}
-              imageSrc={foodOffer.imageSrc}
+              provider={jalanOffer.provider}
+              name={jalanOffer.serviceName}
+              note={jalanOffer.description ?? "詳細はリンク先でご確認ください。"}
+              ctaLabel={jalanOffer.ctaLabel}
+              ctaHref={jalanOffer.href}
+              disclosure={jalanOffer.disclosure}
+              offerType={jalanOffer.offerType}
+              serviceName={jalanOffer.serviceName}
+              imageSrc={jalanOffer.imageSrc}
               placement="mid_article"
-              affiliateProgram={foodOffer.programName}
+              affiliateProgram={jalanOffer.programName}
             />
           )}
         </div>
