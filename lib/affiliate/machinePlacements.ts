@@ -87,7 +87,15 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
       },
     ],
   },
-  "juoh": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "juoh": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    relatedReadings: [
+      {
+        href: "/articles/juoh-se-sns-topic",
+        label: "公式試打動画にサバチャン突入音への声も｜超サバのレインボー演出には称賛",
+      },
+    ],
+  },
   "hihouden": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "nangoku-sodachi-special": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "yoshimune": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },

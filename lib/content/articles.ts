@@ -35,6 +35,15 @@ export const ARTICLE_CATEGORY_INFO: Record<
 // 本文は各記事の app/articles/<slug>/page.tsx に独立して存在し、ここでは一覧表示用のメタデータだけを管理する。
 export const articles: ArticleMeta[] = [
   {
+    slug: "juoh-se-sns-topic",
+    title: "スマスロ獣王、公式試打動画にサバチャン突入音への声も｜超サバのレインボー演出には称賛",
+    description:
+      "サミーが2026年9月18日に公開したスマスロ獣王の最速解説動画・デジタル小冊子をきっかけに、Xでは「サバチャン突入時のSEが気になる」という声と、超サバのレインボー演出を評価する声の両方が上がっています。10月5日の導入前に、現時点で分かっている内容と話題の反応を整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-09-27",
+    heroImage: "/images/articles/juoh-se-sns-topic.png",
+  },
+  {
     slug: "rio-tojyo-magicbird2-sns-topic",
     title: "東城りおさん来店でファン対応整理券が配布終了｜マジックバード2に多くのファン",
     description:
