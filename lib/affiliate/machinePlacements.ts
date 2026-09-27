@@ -19,6 +19,10 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     originalWorkOfferIds: ["bookwalkerMonkeyTurn", "mangazenkanMonkeyTurn30"],
     relatedReadings: [
       {
+        href: "/articles/monkey-turn-red-news",
+        label: "新台ニュース：モンキーターンRED始動！「王道から挑戦へ」",
+      },
+      {
         href: "/articles/monkey-turn-v-ex-item-rate",
         label: "激走チャージEXアイテムとは？弱レア役からの獲得率に設定差",
       },
@@ -65,8 +69,24 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "okidoki-black": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "okidoki-gold-30": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "okidoki-gorgeous-30": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
-  "iza-bancho": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
-  "banchou-3": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "iza-bancho": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    relatedReadings: [
+      {
+        href: "/articles/bancho-banzuke-news",
+        label: "新台ニュース：番長番付、2026年12月導入予定｜ティザーPV・V図柄",
+      },
+    ],
+  },
+  "banchou-3": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    relatedReadings: [
+      {
+        href: "/articles/bancho-banzuke-news",
+        label: "新台ニュース：番長番付、2026年12月導入予定｜ティザーPV・V図柄",
+      },
+    ],
+  },
   "juoh": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "hihouden": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "nangoku-sodachi-special": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
@@ -188,6 +208,12 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "basilisk-kizuna-2-tenzen-black": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerBasilisk"],
+    relatedReadings: [
+      {
+        href: "/articles/basilisk-4-news",
+        label: "新台ニュース：バジリスクⅣ、2026年12月導入予定｜「胎動の刻」「死合」",
+      },
+    ],
   },
   "goblin-slayer-2": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
