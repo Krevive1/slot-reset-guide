@@ -35,6 +35,24 @@ export const ARTICLE_CATEGORY_INFO: Record<
 // 本文は各記事の app/articles/<slug>/page.tsx に独立して存在し、ここでは一覧表示用のメタデータだけを管理する。
 export const articles: ArticleMeta[] = [
   {
+    slug: "vegasvegas-cm-apology-sns-topic",
+    title: "「ベガスベガス！」連呼でXトレンド入り｜ボクシング配信CMに視聴者困惑、企業が異例の謝罪",
+    description:
+      "2026年9月27日のボクシング世界戦Prime Video配信で、パチンコホール「ベガスベガス」のCMがラウンド間に何度も流れ、Xで「ベガスベガス」がトレンド入りしました。視聴者の反応と、企業側の謝罪までの経緯を整理しています。",
+    category: "petit-news",
+    publishedAt: "2026-09-28",
+    heroImage: "/images/articles/vegasvegas-cm-apology-sns-topic.png",
+  },
+  {
+    slug: "daipan-official-response-sns-topic",
+    title: "台パン注意への公式Xの返信が話題｜強い表現に賛否、ホール公式アカウントの言葉選びを考える",
+    description:
+      "「台パン（台を叩く行為）を黙認しているのか」というXでの質問に対し、あるホールの公式アカウントがかなり強い言葉を使って回答し、賛否の反応が広がっています。何が起きたのか、現時点で確認できている内容を整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-09-28",
+    heroImage: "/images/articles/daipan-official-response-sns-topic.png",
+  },
+  {
     slug: "juoh-se-sns-topic",
     title: "スマスロ獣王、公式試打動画にサバチャン突入音への声も｜超サバのレインボー演出には称賛",
     description:
