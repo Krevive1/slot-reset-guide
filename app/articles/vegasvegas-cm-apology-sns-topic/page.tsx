@@ -5,6 +5,7 @@ import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
+import TweetEmbed from "@/components/site/TweetEmbed";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
@@ -92,10 +93,20 @@ export default function VegasvegasCmApologySnsTopicPage() {
           Xでは「さすがにしつこい」「もうええて…」「ベガスベガス、あの連呼は嫌いになるわw」といった声のほか、「ベガスベガスが面白すぎた」「すごい広告効果」「これは戦略的には正解」など、ネタとして楽しむ反応も見られました。
           試合の採点そのものに注目していた視聴者からは「ベガスはええから採点を！」という声も上がっています。
         </p>
+        <TweetEmbed
+          tweetUrl="https://x.com/J3D_D2/status/2104205561525133735"
+          authorName="J3D"
+        />
 
         <h2>企業側が「誠に申し訳ございませんでした」と異例の謝罪</h2>
         <p>
-          ENCOUNTの報道によると、こうしたSNS上の反応を受けてか、ベガスベガスを運営する企業は公式X上で「誠に申し訳ございませんでした こんなはずじゃなかったんです…」と謝罪する投稿を行いました。
+          こうしたSNS上の反応を受けてか、ベガスベガスを運営する企業の公式Xアカウント（@VegasVegas_Corp）は、試合当日中に次のような投稿を行いました。
+        </p>
+        <TweetEmbed
+          tweetUrl="https://x.com/VegasVegas_Corp/status/2104170476130243023"
+          authorName="VEGAS VEGAS CORPORATE"
+        />
+        <p>
           同社はパチンコチェーン「ベガスベガス」の運営などを手がける、東京に本社を置く企業です。
         </p>
         <p className="section-note">
@@ -166,9 +177,18 @@ export default function VegasvegasCmApologySnsTopicPage() {
 
         <h2>参考情報</h2>
         <p className="section-note">
-          本記事は、以下の報道記事を参考に作成しました。
+          本記事は、以下のXポスト・報道記事を参考に作成しました。埋め込みポストの内容は各投稿者・アカウント自身の発言であり、本記事の見解ではありません。
         </p>
         <ul>
+          <li>
+            <a
+              href="https://x.com/VegasVegas_Corp/status/2104170476130243023"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              VEGAS VEGAS CORPORATE（公式アカウントの謝罪投稿）
+            </a>
+          </li>
           <li>
             <a
               href="https://www.nikkansports.com/battle/boxing/news/202609270001934.html"

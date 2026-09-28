@@ -5,6 +5,7 @@ import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
+import TweetEmbed from "@/components/site/TweetEmbed";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
@@ -77,10 +78,7 @@ export default function DaipanOfficialResponseSnsTopicPage() {
           これに対する公式アカウントの返信の言葉選びが強かったことから、X上で賛否の反応が広がっています。
         </p>
         <p>
-          <strong>
-            本記事では、実際に使われた表現をそのまま引用・掲載することは避けています。
-          </strong>
-          台パンという迷惑行為への対応そのものと、公式アカウントの言葉選びという2つの論点を分けて、現時点で確認できている内容を整理します。
+          台パンという迷惑行為への対応そのものと、公式アカウントの言葉選びという2つの論点を分けて、実際の投稿とあわせて現時点で確認できている内容を整理します。
         </p>
 
         <h2>「台パンを黙認しているのか」という投稿に、公式が返信</h2>
@@ -88,15 +86,33 @@ export default function DaipanOfficialResponseSnsTopicPage() {
           発端は、利用者から寄せられた「朝イチ以降、時間帯によっては台パンが黙認されているように感じる」という趣旨の投稿でした。
           これに対しホールの公式アカウントは、台パンを黙認しているわけではないこと、遠くのスタッフからは気付きにくい場合があること、酷いときは離れたスタッフにも申し出てほしいことなどを説明しました。
         </p>
+        <TweetEmbed
+          tweetUrl="https://x.com/akiba_island/status/2103776377195696168"
+          authorName="アイランド秋葉原店"
+        />
         <p className="section-note">
-          この返信の中で、台パンをする利用者を指す表現として、差別的な意味合いを持つ強い言葉が使われました。台パンという迷惑行為そのものへの注意喚起の内容は妥当なものですが、その表現方法について、公式アカウントとして適切だったのかという点でX上の反応が分かれています。
+          この返信の中で、台パンをする利用者を指す表現として、差別的な意味合いを持つ強い言葉が使われています。台パンという迷惑行為そのものへの注意喚起の内容は妥当なものですが、その表現方法について、公式アカウントとして適切だったのかという点でX上の反応が分かれています。
         </p>
 
         <h2>Xの反応：言葉の強さを面白がる声、対応そのものを支持する声</h2>
         <p>
-          この投稿への反応としては、「言葉強くて草」「台パンする奴は客じゃないという強いメッセージ性を感じる」「店が客のことをそこまで言うのが逆に好き、このスタンスを貫いてほしい」など、公式の対応そのものを支持したり、面白がったりする声が目立ちます。
-          一方で、公式アカウントとしての言葉選びとしては強すぎるのではないか、という見方も見られます。
+          この投稿への反応としては、対応そのものを支持したり、言葉の強さを面白がったりする声が目立ちます。
         </p>
+        <TweetEmbed
+          tweetUrl="https://x.com/gakemeron/status/2103793497480573097"
+          authorName="猫"
+        />
+        <TweetEmbed
+          tweetUrl="https://x.com/mubech08/status/2103809489036251578"
+          authorName="むべ太郎"
+        />
+        <p>
+          一方で、次の投稿のように、対応の趣旨には同意しつつも言葉選びの強さそのものに触れる声も見られます。
+        </p>
+        <TweetEmbed
+          tweetUrl="https://x.com/Gifu_uo0/status/2103801502439813177"
+          authorName="じふ꒷꒦✧"
+        />
         <p>
           台パンは他の利用者の迷惑になるだけでなく、遊技機の故障の原因にもなる行為です。今回の件は、迷惑行為への注意喚起という内容自体への賛否というより、「公式アカウントがどこまで踏み込んだ表現を使ってよいか」という言葉選びの部分に反応が集まっている、という整理が実態に近いと考えられます。
         </p>
@@ -164,9 +180,18 @@ export default function DaipanOfficialResponseSnsTopicPage() {
 
         <h2>参考情報</h2>
         <p className="section-note">
-          本記事は、以下のまとめ記事を参考に作成しました。元投稿には差別的な意味合いを持つ表現が含まれるため、当サイトでは直接引用していません。
+          本記事は、以下のXポスト・まとめ記事を参考に作成しました。埋め込みポストの内容は各投稿者・アカウント自身の発言であり、本記事の見解ではありません。
         </p>
         <ul>
+          <li>
+            <a
+              href="https://x.com/akiba_island/status/2103776377195696168"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              アイランド秋葉原店（公式アカウントの返信）
+            </a>
+          </li>
           <li>
             <a
               href="https://pachinkopachisro.com/archives/60072560.html"
