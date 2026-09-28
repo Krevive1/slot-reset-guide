@@ -17,6 +17,7 @@ const description =
 const url = `${SITE_URL}/articles/tokyo-ghoul-arima-judgment-reigu-research`;
 const heroImage = "/images/articles/tokyo-ghoul-arima-judgment-reigu-research.png";
 const publishedAt = "2026-09-04";
+const updatedAt = "2026-09-28";
 
 export const metadata: Metadata = {
   title,
@@ -59,7 +60,7 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
 
       <div className="article">
         <h1 className="page-title">{title}</h1>
-        <p className="updated-at">公開日：{publishedAt}</p>
+        <p className="updated-at">公開日：{publishedAt} / 更新日：{updatedAt}</p>
 
         <div className="thumbnail">
           <Image
@@ -105,6 +106,16 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
         <p>
           X上では、有馬貴将ジャッジメント失敗後に長期間当選が伸びたとする実戦報告が複数見られます。返信欄では、設定6が確定していた台でも似たような挙動があったとする体験談も寄せられており、
           単純な「低設定だから当たらない」では説明しきれないケースがあるという指摘もあります。
+        </p>
+
+        <h2>追記（2026-09-28）：新しい実戦報告</h2>
+        <p>
+          2026年9月26日、noteで公開された設定5以上確定実戦の記録に、「有利区間で+4000枚付近まで伸びた後、約3000枚を吸い込んだ」という展開が紹介されています。
+          投稿者自身も「冷遇？」と感じたと記しており、当サイトの重い区間を抜けた後は再び当選が伸びる展開に転じています。
+        </p>
+        <p className="section-note">
+          ただし、この報告で重い展開が始まったのは<strong>有馬貴将ジャッジメントに成功し、獲得した裏ATを短時間で終えた（駆け抜けた）直後</strong>であり、本記事で扱ってきた「有馬貴将ジャッジメント<strong>失敗</strong>後の冷遇」説とはトリガーが異なる可能性があります。
+          両者に共通する仕組みがあるのかは、この1件の報告だけでは判断できません。「有馬J失敗後の冷遇説」を裏付ける追加証拠として扱うのではなく、東京喰種には有馬J失敗以外にも「重くなる区間」を示唆する報告があるという、別角度の情報として紹介します。
         </p>
 
         <h2>反対意見・例外</h2>
@@ -188,6 +199,18 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
         <p className="section-note">
           「約2000G冷遇説」については、X（旧Twitter）上の複数の実戦報告を参照しました。メーカー公式の解析情報ではなく、確度が確認できていない非公式情報である点にご注意ください。
         </p>
+        <ul>
+          <li>
+            <a
+              href="https://note.com/y_l/n/n7752342e559b"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              LSY（note）：東京喰種 設定5以上実戦｜+4000枚からほぼ全のまれ
+            </a>
+            （2026-09-26公開、個人の実戦記録であり公式解析ではありません）
+          </li>
+        </ul>
 
         <ShareButtons url={url} title={title} />
         <LineCta />
