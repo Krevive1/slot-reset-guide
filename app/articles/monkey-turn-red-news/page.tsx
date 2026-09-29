@@ -5,6 +5,7 @@ import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
+import TweetEmbed from "@/components/site/TweetEmbed";
 import Comments from "@/components/machine/Comments";
 import WanchankunComment from "@/components/machine/WanchankunComment";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
@@ -89,6 +90,10 @@ export default function MonkeyTurnRedNewsPage() {
         <p>
           2026年9月29日、SNS上で「LモンキーターンRED」の筐体画像が公開され話題になっています。複数の業界系アカウントで同一の筐体画像が共有されており、赤いフレームと下パネルが特徴的なデザインです。画像とあわせて「JAC IN」に関連するとみられる新要素を示唆する表記も確認できます。
         </p>
+        <TweetEmbed
+          tweetUrl="https://x.com/divo_x_central/status/2104751386634461261"
+          authorName="島国★購買部"
+        />
         <p>
           導入時期については、業界系アカウントの間で「2027年1月11日」「2027年1月12日」など、2027年1月中旬とする情報が出ていますが、投稿によって日付に若干のズレがあり、メーカーからの正式な発表ではありません。正式な導入日は未確定として、引き続き続報を待つ必要があります。
         </p>
@@ -250,6 +255,15 @@ export default function MonkeyTurnRedNewsPage() {
                 rel="noopener noreferrer nofollow"
               >
                 山佐PR情報局 公式X（特報映像・一次ソース）
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/divo_x_central/status/2104751386634461261"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                島国★購買部（2026年9月29日、筐体画像の投稿）
               </a>
             </li>
             <li>
