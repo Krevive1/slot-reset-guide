@@ -5,6 +5,7 @@ import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
+import TweetEmbed from "@/components/site/TweetEmbed";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
@@ -85,6 +86,10 @@ export default function KanojoOkarishimasuRegMizugiPatternPage() {
           </a>
           ）が、「REGULAR BONUS中の演出③」と題した記事を公開しました。内容は次の通りです。
         </p>
+        <TweetEmbed
+          tweetUrl="https://x.com/OFFICIAL_KOBORE/status/2104420839034630492"
+          authorName="【公式】SANKYO開発こぼれ話"
+        />
         <ul>
           <li>REGULAR BONUS消化中は、ベル2回ごとにキャラが切り替わる</li>
           <li>水着キャラが出現するタイミングでは「何かが濃厚」という示唆表現あり</li>
