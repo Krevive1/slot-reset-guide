@@ -35,6 +35,15 @@ export const ARTICLE_CATEGORY_INFO: Record<
 // 本文は各記事の app/articles/<slug>/page.tsx に独立して存在し、ここでは一覧表示用のメタデータだけを管理する。
 export const articles: ArticleMeta[] = [
   {
+    slug: "kanojo-okarishimasu-reg-mizugi-pattern",
+    title: "L彼女、お借りします、REGULAR BONUS中の「水着キャラ」出現に公式が言及｜1〜5人目のどこで出るかがポイント",
+    description:
+      "パチスロ『彼女、お借りします』のSANKYO公式「開発こぼれ話」で、REGULAR BONUS中に水着キャラが出現するタイミングが重要というヒントと、2〜5人目全てが水着キャラになるスペシャルパターンの存在が明かされました。公式が公開した内容を整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-09-29",
+    heroImage: "/images/articles/kanojo-okarishimasu-reg-mizugi-pattern.png",
+  },
+  {
     slug: "vegasvegas-cm-apology-sns-topic",
     title: "「ベガスベガス！」連呼でXトレンド入り｜ボクシング配信CMに視聴者困惑、企業が異例の謝罪",
     description:
@@ -170,7 +179,7 @@ export const articles: ArticleMeta[] = [
       "山佐ネクストの新台『モンキーターンRED』特報が公開され、2026年9月15日にはセブンリーグ名義で型式検定も通過しました。『王道から挑戦へ』『JAC IN』など気になるキーワードと、現時点で分かっていること・まだ未確定なことを整理して紹介します。",
     category: "new-machine-news",
     publishedAt: "2026-08-22",
-    updatedAt: "2026-09-20",
+    updatedAt: "2026-09-29",
     heroImage: "/images/articles/monkey-turn-red-news.jpg",
   },
   {
