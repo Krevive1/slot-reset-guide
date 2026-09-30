@@ -62,6 +62,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "スイカ・チェリー・ベルなどの小役成立回数を手持ちで数えられるカウンターです。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   noiseCancellingEarphones: {
     id: "amazon-noise-cancelling-earphones",
@@ -73,6 +74,7 @@ export const affiliateOffers = {
     ctaLabel: "Amazonで探す",
     disclosure: "広告",
     isActive: true,
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   mobileBatteryCable: {
     id: "amazon-mobile-battery-cable",
@@ -85,6 +87,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "朝一からの長時間実戦でスマホの電池が切れそうなときに。ケーブル内蔵タイプなら荷物も増えにくいです。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   aSlot: {
     id: "a8-a-slot",
@@ -172,6 +175,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "遠征を伴う実践の宿・ホテル予約に使えるサービスです。",
+    imageSrc: "/images/ads/jalan-banner.png",
   },
   bookwalkerMonkeyTurn: {
     id: "bookwalker-monkey-turn",
@@ -184,6 +188,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『モンキーターン』（河合克敏）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   mangazenkanMonkeyTurn30: {
     id: "mangazenkan-monkey-turn-30",
@@ -196,6 +201,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『モンキーターン』の全30巻セットです。",
+    imageSrc: "/images/products/mangazenkan-tokyo-ghoul-banner.jpg",
   },
   bookwalkerSaki: {
     id: "bookwalker-saki",
@@ -208,6 +214,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『咲-Saki-』（小林立）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   mangazenkanSaki27: {
     id: "mangazenkan-saki-27",
@@ -220,6 +227,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『咲-Saki-』の全27巻セットです。",
+    imageSrc: "/images/products/mangazenkan-tokyo-ghoul-banner.jpg",
   },
   bookwalkerKoukaku: {
     id: "bookwalker-koukaku",
@@ -232,6 +240,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『攻殻機動隊』（士郎正宗）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerBakemonogatari: {
     id: "bookwalker-bakemonogatari",
@@ -244,6 +253,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作小説『化物語』（西尾維新）を含む＜物語＞シリーズを電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerLycorisRecoil: {
     id: "bookwalker-lycoris-recoil",
@@ -256,6 +266,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "アニメ『リコリス・リコイル』のコミカライズ版を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerHokutoNoKen: {
     id: "bookwalker-hokuto-no-ken",
@@ -268,6 +279,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『北斗の拳』（武論尊・原哲夫）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   amazonGundamSeed: {
     id: "amazon-gundam-seed",
@@ -280,6 +292,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "アニメ『機動戦士ガンダムSEED』の関連作品をAmazonで確認できます。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   bookwalkerGundamUC: {
     id: "bookwalker-gundam-uc",
@@ -292,6 +305,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作小説『機動戦士ガンダムUC』（福井晴敏）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerTokyoRevengers: {
     id: "bookwalker-tokyo-revengers",
@@ -304,6 +318,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『東京卍リベンジャーズ』（和久井健）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerOnePunchMan: {
     id: "bookwalker-one-punch-man",
@@ -316,6 +331,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『ワンパンマン』（ONE・村田雄介）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerKanojoOkarishimasu: {
     id: "bookwalker-kanojo-okarishimasu",
@@ -328,6 +344,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『彼女、お借りします』（宮島礼吏）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   mangazenkanKanojoOkarishimasu45: {
     id: "mangazenkan-kanojo-okarishimasu-45",
@@ -340,6 +357,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『彼女、お借りします』の最新刊までのセットです。",
+    imageSrc: "/images/products/mangazenkan-tokyo-ghoul-banner.jpg",
   },
   bookwalkerGoldenKamuy: {
     id: "bookwalker-golden-kamuy",
@@ -352,6 +370,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『ゴールデンカムイ』（野田サトル）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerKaiji: {
     id: "bookwalker-kaiji",
@@ -364,6 +383,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『賭博黙示録カイジ』（福本伸行）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerKinnikuman: {
     id: "bookwalker-kinnikuman",
@@ -376,6 +396,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『キン肉マン』（ゆでたまご）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerHanmaBaki: {
     id: "bookwalker-hanma-baki",
@@ -388,6 +409,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『範馬刃牙』（板垣恵介）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerKarakuriCircus: {
     id: "bookwalker-karakuri-circus",
@@ -400,6 +422,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『からくりサーカス』（藤田和日郎）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerKyokouSuiri: {
     id: "bookwalker-kyokou-suiri",
@@ -412,6 +435,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『虚構推理』（城平京/片瀬茶柴）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerKaguyaSama: {
     id: "bookwalker-kaguya-sama",
@@ -424,6 +448,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『かぐや様は告らせたい』（赤坂アカ）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   mangazenkanKaguyaSama28: {
     id: "mangazenkan-kaguya-sama-28",
@@ -436,6 +461,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『かぐや様は告らせたい』の全28巻セットです。",
+    imageSrc: "/images/products/mangazenkan-tokyo-ghoul-banner.jpg",
   },
   bookwalkerShamanKing: {
     id: "bookwalker-shaman-king",
@@ -448,6 +474,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『SHAMAN KING』（武井宏之）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerMushokuTensei: {
     id: "bookwalker-mushoku-tensei",
@@ -460,6 +487,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作小説『無職転生 ～異世界行ったら本気だす～』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerBasilisk: {
     id: "bookwalker-basilisk",
@@ -472,6 +500,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『バジリスク～甲賀忍法帖～』（山田風太郎/せがわまさき）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerGoblinSlayer: {
     id: "bookwalker-goblin-slayer",
@@ -484,6 +513,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『ゴブリンスレイヤー』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   amazonGodzilla: {
     id: "amazon-godzilla",
@@ -496,6 +526,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "映画『ゴジラ』シリーズの関連作品をAmazonで確認できます。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   amazonTekken: {
     id: "amazon-tekken",
@@ -508,6 +539,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "格闘ゲーム『鉄拳』シリーズをAmazonで確認できます。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   bookwalkerCodeGeass: {
     id: "bookwalker-code-geass",
@@ -520,6 +552,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『コードギアス 復活のルルーシュ』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerDumbbell: {
     id: "bookwalker-dumbbell",
@@ -532,6 +565,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『ダンベル何キロ持てる？』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerFireForce: {
     id: "bookwalker-fire-force",
@@ -544,6 +578,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『炎炎ノ消防隊』（大久保篤）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerGarei: {
     id: "bookwalker-garei",
@@ -556,6 +591,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『喰霊』（瀬川はじめ）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   amazonGodEater: {
     id: "amazon-god-eater",
@@ -568,6 +604,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "ゲーム『GOD EATER』シリーズの関連作品をAmazonで確認できます。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   amazonBiohazard: {
     id: "amazon-biohazard",
@@ -580,6 +617,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "ゲーム『バイオハザード』シリーズの関連作品をAmazonで確認できます。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   amazonMonsterHunter: {
     id: "amazon-monster-hunter",
@@ -592,6 +630,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "ゲーム『モンスターハンターライズ』をAmazonで確認できます。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   amazonDevilMayCry5: {
     id: "amazon-devil-may-cry-5",
@@ -604,6 +643,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "ゲーム『デビル メイ クライ 5』をAmazonで確認できます。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   amazonGirlsPanzer: {
     id: "amazon-girls-panzer",
@@ -616,6 +656,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "アニメ『ガールズ&パンツァー 最終章』のBlu-rayをAmazonで確認できます。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   amazonBirdieWing: {
     id: "amazon-birdie-wing",
@@ -628,6 +669,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "アニメ『BIRDIE WING』のBlu-rayをAmazonで確認できます。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   bookwalkerBofuri: {
     id: "bookwalker-bofuri",
@@ -640,6 +682,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『痛いのは嫌なので防御力に極振りしたいと思います。』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerBandori: {
     id: "bookwalker-bandori",
@@ -652,6 +695,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミック版『BanG Dream! バンドリ!』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerAzurLane: {
     id: "bookwalker-azur-lane",
@@ -664,6 +708,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ『アズールレーン びそくぜんしんっ！』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerMagiaRecord: {
     id: "bookwalker-magia-record",
@@ -676,6 +721,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "『マギアレコード 魔法少女まどか☆マギカ外伝』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   amazonMillionLive: {
     id: "amazon-million-live",
@@ -688,6 +734,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "『アイドルマスター ミリオンライブ！』の関連作品をAmazonで確認できます。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   amazonTaktOp: {
     id: "amazon-takt-op",
@@ -700,6 +747,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "アニメ『タクトオーパス』の関連作品をAmazonで確認できます。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   bookwalkerArifureta: {
     id: "bookwalker-arifureta",
@@ -712,6 +760,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『ありふれた職業で世界最強』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerSymphogear: {
     id: "bookwalker-symphogear",
@@ -724,6 +773,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『戦姫絶唱シンフォギア』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerKabaneri: {
     id: "bookwalker-kabaneri",
@@ -736,6 +786,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『甲鉄城のカバネリ』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerLupin: {
     id: "bookwalker-lupin",
@@ -748,6 +799,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『ルパン三世』（モンキー・パンチ）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerInitialD: {
     id: "bookwalker-initial-d",
@@ -760,6 +812,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『頭文字D』（しげの秀一）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerNanatsuNoMaken: {
     id: "bookwalker-nanatsu-no-maken",
@@ -772,6 +825,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『七つの魔剣が支配する』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerTenseiKen: {
     id: "bookwalker-tensei-ken",
@@ -784,6 +838,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『転生したら剣でした』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerTenseiOujo: {
     id: "bookwalker-tensei-oujo",
@@ -796,6 +851,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『転生王女と天才令嬢の魔法革命』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerRezero: {
     id: "bookwalker-rezero",
@@ -808,6 +864,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作小説『Re:ゼロから始める異世界生活』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerSeishunButaYaro: {
     id: "bookwalker-seishun-buta-yaro",
@@ -820,6 +877,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『青春ブタ野郎はバニーガール先輩の夢を見ない』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerSeiya: {
     id: "bookwalker-seiya",
@@ -832,6 +890,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『聖闘士星矢』（車田正美）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerIkkiTousen: {
     id: "bookwalker-ikki-tousen",
@@ -844,6 +903,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『一騎当千／真・一騎当千』（塩崎雄二）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   amazonOnimusha: {
     id: "amazon-onimusha",
@@ -856,6 +916,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "ゲーム『鬼武者』シリーズをAmazonで確認できます。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   bookwalkerValvrave: {
     id: "bookwalker-valvrave",
@@ -868,6 +929,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『革命機ヴァルヴレイヴ 裏切りの烙印』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerToaruIndex: {
     id: "bookwalker-toaru-index",
@@ -880,6 +942,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『とある魔術の禁書目録』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerToaruRailgun: {
     id: "bookwalker-toaru-railgun",
@@ -892,6 +955,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『とある科学の超電磁砲』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerToLoveRu: {
     id: "bookwalker-to-love-ru",
@@ -904,6 +968,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『To LOVEる―とらぶる―ダークネス』（矢吹健太朗）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerDarlingFranxx: {
     id: "bookwalker-darling-franxx",
@@ -916,6 +981,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『ダーリン・イン・ザ・フランキス』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerWatashiNoShiawase: {
     id: "bookwalker-watashi-no-shiawase",
@@ -928,6 +994,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『わたしの幸せな結婚』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerYokoso: {
     id: "bookwalker-yokoso",
@@ -940,6 +1007,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『ようこそ実力至上主義の教室へ』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerZombielandSaga: {
     id: "bookwalker-zombieland-saga",
@@ -952,6 +1020,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『ゾンビランドサガ サガ覚醒編』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerAkudamaDrive: {
     id: "bookwalker-akudama-drive",
@@ -964,6 +1033,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『アクダマドライブ』を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   amazonDunbine: {
     id: "amazon-dunbine",
@@ -976,6 +1046,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "アニメ『聖戦士ダンバイン』の関連作品をAmazonで確認できます。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   bookwalkerJashinChan: {
     id: "bookwalker-jashin-chan",
@@ -988,6 +1059,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『邪神ちゃんドロップキック』（ユキヲ）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerJormungand: {
     id: "bookwalker-jormungand",
@@ -1000,6 +1072,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『ヨルムンガンド』（高橋慶太郎）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerMierukoChan: {
     id: "bookwalker-mieruko-chan",
@@ -1012,6 +1085,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『見える子ちゃん』（泉朝樹）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerParipiKoumei: {
     id: "bookwalker-paripi-koumei",
@@ -1024,6 +1098,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『パリピ孔明』（四葉夕卜/小川亮）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   amazonShinHokutoMusou: {
     id: "amazon-shin-hokuto-musou",
@@ -1036,6 +1111,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "ゲーム『真・北斗無双』をAmazonで確認できます。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   bookwalkerSAO: {
     id: "bookwalker-sao",
@@ -1048,6 +1124,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作小説『ソードアート・オンライン』（川原礫）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   bookwalkerUltraman: {
     id: "bookwalker-ultraman",
@@ -1060,6 +1137,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "コミカライズ版『ULTRAMAN』（清水栄一/下口智裕）を電子書籍で確認できます。",
+    imageSrc: "/images/products/bookwalker-tokyo-ghoul-banner.jpg",
   },
   jinsScreen: {
     id: "amazon-jins-screen",
@@ -1075,6 +1153,7 @@ export const affiliateOffers = {
     // for the replacement common プチニュース boxes.
     isActive: false,
     description: "長時間実戦で台の光が気になる人に。液晶やランプの明るさが気になるときに使いやすい、ブルーライトカットタイプのメガネです。",
+    imageSrc: "/images/ads/amazon-goods-banner.png",
   },
   amazonFoodDrink: {
     id: "amazon-food-drink",
@@ -1117,6 +1196,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "映画・海外ドラマ・スポーツ・アニメなど幅広いジャンルが楽しめる動画配信サービスです。",
+    imageSrc: "/images/ads/wowow-banner.png",
   },
   dmmBooksTokyoGhoul: {
     id: "dmm-books-tokyo-ghoul",
@@ -1129,6 +1209,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "『東京喰種トーキョーグール』を電子書籍で確認できます。",
+    imageSrc: "/images/ads/dmm-books-banner.png",
   },
   dmmBooksMonkeyTurn: {
     id: "dmm-books-monkey-turn",
@@ -1141,6 +1222,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『モンキーターン』（河合克敏）を電子書籍で確認できます。",
+    imageSrc: "/images/ads/dmm-books-banner.png",
   },
   dmmBooksSaki: {
     id: "dmm-books-saki",
@@ -1153,6 +1235,7 @@ export const affiliateOffers = {
     disclosure: "広告",
     isActive: true,
     description: "原作漫画『咲-Saki-』（小林立）を電子書籍で確認できます。",
+    imageSrc: "/images/ads/dmm-books-banner.png",
   },
 } as const satisfies Record<string, AffiliateOffer>;
 
