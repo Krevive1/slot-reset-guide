@@ -356,6 +356,19 @@ section h2,
   margin: 0;
 }
 
+.asaichi-check {
+  border-left: 6px solid #e08a2c;
+  background: #fff7ef;
+}
+
+.asaichi-check h2 {
+  margin-top: 0;
+}
+
+.asaichi-check p {
+  margin-bottom: 0;
+}
+
 .wanchankun-comment {
   display: flex;
   align-items: flex-start;

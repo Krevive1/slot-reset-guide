@@ -156,6 +156,13 @@ export const MachineSchema = z.object({
   // Optional one-line mascot comment shown in a speech bubble after the
   // quit-timing section. Opt-in per machine; omitted machines render nothing.
   wanchankunComment: z.string().optional(),
+  // Optional "朝一チェック" verdict shown near the top of the page, right
+  // after quickFacts. Unlike quickFacts (which lists facts) or
+  // wanchankunComment (a short aside), this is the site's own synthesized
+  // answer to "結局、朝一でどう判断するか" -- written only once enough
+  // sections (resetInfo/morningTarget/quitTiming) exist to support a real
+  // conclusion. Opt-in per machine; omitted machines render nothing.
+  asaichiCheck: z.string().optional(),
   // Optional machine-specific sources shown alongside the site-wide list in
   // ReferenceSources (e.g. a maker's official dev-trivia page, or the exact
   // analysis article a section was sourced from). Omitted machines show only
