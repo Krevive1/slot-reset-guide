@@ -15,7 +15,7 @@ export type MachineAffiliatePlacement = {
 // Array order is the display order on the machine page.
 export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacement> = {
   "monkey-turn-v": {
-    offerIds: ["soundcoreLiberty4", "kachikachiKun"],
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerMonkeyTurn", "mangazenkanMonkeyTurn30", "dmmBooksMonkeyTurn"],
     relatedReadings: [
       {
