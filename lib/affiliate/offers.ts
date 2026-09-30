@@ -1102,6 +1102,58 @@ export const affiliateOffers = {
     description: "待ち時間や移動中に。オリジナル番組やアニメ・映画が見放題のABEMAプレミアムです。",
     imageSrc: "/images/ads/abema-premium-banner.png",
   },
+  // WOWOWオンデマンドはA8側に商品リンク作成機能がなく、案件指定の固定リンク
+  // （トップLP相当）のみ提供される。特定タイトルの配信有無を確認する手段が
+  // ないため、個別作品名を名指しせず「映画・海外ドラマ・アニメ配信」という
+  // サービス一般の案内としてのみ使用する（2026-09-30、ChatGPT相談を踏まえた判断）。
+  wowowOnDemand: {
+    id: "a8-wowow-on-demand",
+    provider: "A8.net",
+    programName: "【映画・スポーツ・海外ドラマみるなら】WOWOWオンデマンド",
+    offerType: "vod",
+    serviceName: "WOWOWオンデマンド",
+    href: "https://px.a8.net/svt/ejp?a8mat=4BCE3K+9A075E+5DFW+5YRHE",
+    ctaLabel: "WOWOWオンデマンドを見る",
+    disclosure: "広告",
+    isActive: true,
+    description: "映画・海外ドラマ・スポーツ・アニメなど幅広いジャンルが楽しめる動画配信サービスです。",
+  },
+  dmmBooksTokyoGhoul: {
+    id: "dmm-books-tokyo-ghoul",
+    provider: "A8.net",
+    programName: "国内最大級の品揃え！【DMMブックス】",
+    offerType: "ebook",
+    serviceName: "DMMブックス",
+    href: "https://px.a8.net/svt/ejp?a8mat=4B8DGU+8AVMGI+6HW+3YVLR6&a8ejpredirect=https%3A%2F%2Fbook.dmm.com%2Fsearch%2F%3Fsearchstr%3D%E6%9D%B1%E4%BA%AC%E5%96%B0%E7%A8%AE",
+    ctaLabel: "DMMブックスで東京喰種を確認する",
+    disclosure: "広告",
+    isActive: true,
+    description: "『東京喰種トーキョーグール』を電子書籍で確認できます。",
+  },
+  dmmBooksMonkeyTurn: {
+    id: "dmm-books-monkey-turn",
+    provider: "A8.net",
+    programName: "国内最大級の品揃え！【DMMブックス】",
+    offerType: "ebook",
+    serviceName: "DMMブックス",
+    href: "https://px.a8.net/svt/ejp?a8mat=4B8DGU+8AVMGI+6HW+3YVLR6&a8ejpredirect=https%3A%2F%2Fbook.dmm.com%2Fsearch%2F%3Fsearchstr%3D%E3%83%A2%E3%83%B3%E3%82%AD%E3%83%BC%E3%82%BF%E3%83%BC%E3%83%B3",
+    ctaLabel: "DMMブックスでモンキーターンを確認する",
+    disclosure: "広告",
+    isActive: true,
+    description: "原作漫画『モンキーターン』（河合克敏）を電子書籍で確認できます。",
+  },
+  dmmBooksSaki: {
+    id: "dmm-books-saki",
+    provider: "A8.net",
+    programName: "国内最大級の品揃え！【DMMブックス】",
+    offerType: "ebook",
+    serviceName: "DMMブックス",
+    href: "https://px.a8.net/svt/ejp?a8mat=4B8DGU+8AVMGI+6HW+3YVLR6&a8ejpredirect=https%3A%2F%2Fbook.dmm.com%2Fsearch%2F%3Fsearchstr%3D%E5%92%B2-Saki-",
+    ctaLabel: "DMMブックスで咲-Saki-を確認する",
+    disclosure: "広告",
+    isActive: true,
+    description: "原作漫画『咲-Saki-』（小林立）を電子書籍で確認できます。",
+  },
 } as const satisfies Record<string, AffiliateOffer>;
 
 export type AffiliateOfferId = keyof typeof affiliateOffers;

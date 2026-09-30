@@ -16,7 +16,7 @@ export type MachineAffiliatePlacement = {
 export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacement> = {
   "monkey-turn-v": {
     offerIds: ["soundcoreLiberty4", "kachikachiKun"],
-    originalWorkOfferIds: ["bookwalkerMonkeyTurn", "mangazenkanMonkeyTurn30"],
+    originalWorkOfferIds: ["bookwalkerMonkeyTurn", "mangazenkanMonkeyTurn30", "dmmBooksMonkeyTurn"],
     relatedReadings: [
       {
         href: "/articles/monkey-turn-red-news",
@@ -33,8 +33,8 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     ],
   },
   "tokyo-ghoul": {
-    offerIds: ["soundcoreLiberty4"],
-    originalWorkOfferIds: ["bookwalkerTokyoGhoul", "mangazenkanTokyoGhoul30", "rentaTokyoGhoul"],
+    offerIds: ["soundcoreLiberty4", "wowowOnDemand"],
+    originalWorkOfferIds: ["bookwalkerTokyoGhoul", "mangazenkanTokyoGhoul30", "rentaTokyoGhoul", "dmmBooksTokyoGhoul"],
     relatedReadings: [
       {
         href: "/articles/tokyo-ghoul-arima-judgment-reigu-research",
@@ -118,7 +118,7 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   // machine page + original-work box only where a source work exists).
   "saki-choujou-kessen": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
-    originalWorkOfferIds: ["bookwalkerSaki", "mangazenkanSaki27"],
+    originalWorkOfferIds: ["bookwalkerSaki", "mangazenkanSaki27", "dmmBooksSaki"],
   },
   "koukaku-kidoutai-sac-2045": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
@@ -129,7 +129,7 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     originalWorkOfferIds: ["bookwalkerBakemonogatari"],
   },
   "lycoris-recoil": {
-    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "wowowOnDemand"],
     originalWorkOfferIds: ["bookwalkerLycorisRecoil"],
     relatedReadings: [
       {
