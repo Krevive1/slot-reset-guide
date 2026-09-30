@@ -63,8 +63,6 @@ export const metadata: Metadata = {
 export default function TokyoGhoulMangaReadingOrderPage() {
   const bookwalkerOffer = getActiveAffiliateOffer("bookwalkerTokyoGhoul");
   const mangazenkanOffer = getActiveAffiliateOffer("mangazenkanTokyoGhoul30");
-  const rakutenOffer = getActiveAffiliateOffer("rakutenTokyoGhoul30");
-  const yahooOffer = getActiveAffiliateOffer("yahooTokyoGhoul30");
   const rentaOffer = getActiveAffiliateOffer("rentaTokyoGhoul");
   const articleJsonLd = {
     ...buildGenericArticleJsonLd({ headline: title, description, url }),
@@ -231,44 +229,6 @@ export default function TokyoGhoulMangaReadingOrderPage() {
         <p>
           紙で本編をまとめる場合は、無印14巻と:re16巻の合計30巻が基準です。漫画全巻ドットコムでは、確認時点で本編全30冊セットの取扱いを確認しました。
         </p>
-        <p>
-          楽天市場やYahoo!ショッピングにも新品・中古の商品がありますが、価格・在庫・送料は変動します。レンタル落ち、DVD、収納箱、資料集、関連書籍込みのセットを本編30巻と間違えないよう、商品名と内訳を確認してください。
-        </p>
-
-        <h2>楽天市場・Yahoo!ショッピングでも比較できる</h2>
-        <p>販売店や商品の状態を比較したい場合は、検索結果から「無印14巻＋:re16巻」の本編全30巻であることを確認してください。</p>
-        <div className="product-box-grid">
-          {rakutenOffer && (
-            <AffiliateProductBox
-              provider={rakutenOffer.provider}
-              name={rakutenOffer.serviceName}
-              note="検索結果には関連商品も含まれます。本編全30巻か、商品内訳を確認してください。"
-              ctaLabel={rakutenOffer.ctaLabel}
-              ctaHref={rakutenOffer.href}
-              imageSrc={rakutenOffer.imageSrc}
-              disclosure={rakutenOffer.disclosure}
-              offerType={rakutenOffer.offerType}
-              serviceName={rakutenOffer.serviceName}
-              placement="conclusion"
-              affiliateProgram={rakutenOffer.programName}
-            />
-          )}
-          {yahooOffer && (
-            <AffiliateProductBox
-              provider={yahooOffer.provider}
-              name={yahooOffer.serviceName}
-              note="検索結果には関連商品も含まれます。本編全30巻か、商品内訳を確認してください。"
-              ctaLabel={yahooOffer.ctaLabel}
-              ctaHref={yahooOffer.href}
-              imageSrc={yahooOffer.imageSrc}
-              disclosure={yahooOffer.disclosure}
-              offerType={yahooOffer.offerType}
-              serviceName={yahooOffer.serviceName}
-              placement="conclusion"
-              affiliateProgram={yahooOffer.programName}
-            />
-          )}
-        </div>
 
         <h2>よくある質問</h2>
         <div className="machine-faq-list">
