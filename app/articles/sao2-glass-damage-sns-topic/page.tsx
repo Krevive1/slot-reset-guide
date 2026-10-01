@@ -12,8 +12,7 @@ import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/json
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
 
-const title =
-  "スマスロSAO2、筐体ガラス破損が再びXで話題｜「まさかヘカートIIで台破壊？」役物原因説も浮上";
+const title = "今回は「牙狼剣」ではなく「ヘカートII」で台破壊";
 const description =
   "スマスロ『ソードアート・オンラインⅡ』の筐体ガラスが割られた写真がXに投稿され、表示回数480万回超の反響に。8月にも2件の同様の破損が話題になっており、「また？」という反応が広がっています。誰が・なぜ割ったのかは明らかになっていません。";
 const url = `${SITE_URL}/articles/sao2-glass-damage-sns-topic`;
