@@ -35,6 +35,24 @@ export const ARTICLE_CATEGORY_INFO: Record<
 // 本文は各記事の app/articles/<slug>/page.tsx に独立して存在し、ここでは一覧表示用のメタデータだけを管理する。
 export const articles: ArticleMeta[] = [
   {
+    slug: "haiena-kitsui-sns-topic",
+    title: "「ハイエナきつくない？」Xで立ち回り議論｜朝一リセット狙い・設定狙いへ移る声も",
+    description:
+      "「ハイエナキツない？」という投稿をきっかけに、X上で実戦勢による立ち回りの議論が広がっています。エナが厳しくなったという声、情報格差が縮まったことが原因という分析、朝一リセット狙い・設定狙いへ軸足を移す声などを整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-10-01",
+    heroImage: "/images/articles/haiena-kitsui-sns-topic.png",
+  },
+  {
+    slug: "sao2-glass-damage-sns-topic",
+    title: "スマスロSAO2、筐体ガラス破損が再びXで話題｜「まさかヘカートIIで台パン？」役物原因説も浮上",
+    description:
+      "スマスロ『ソードアート・オンラインⅡ』の筐体ガラスが割られた写真がXに投稿され、表示回数480万回超の反響に。8月にも2件の同様の破損が話題になっており、「また？」という反応が広がっています。誰が・なぜ割ったのかは明らかになっていません。",
+    category: "petit-news",
+    publishedAt: "2026-10-01",
+    heroImage: "/images/articles/sao2-glass-damage-sns-topic.png",
+  },
+  {
     slug: "kanojo-okarishimasu-reg-mizugi-pattern",
     title: "L彼女、お借りします、REGULAR BONUS中の「水着キャラ」出現に公式が言及｜1〜5人目のどこで出るかがポイント",
     description:
