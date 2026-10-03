@@ -35,6 +35,24 @@ export const ARTICLE_CATEGORY_INFO: Record<
 // 本文は各記事の app/articles/<slug>/page.tsx に独立して存在し、ここでは一覧表示用のメタデータだけを管理する。
 export const articles: ArticleMeta[] = [
   {
+    slug: "juoh-tenjo-setting-change-sns-topic",
+    title: "スマスロ獣王、設定変更で天井は599G＋αに短縮｜導入2日前、分かっていること整理",
+    description:
+      "2026年10月5日導入のスマスロ獣王は、通常時の天井が999G＋α、設定変更時は599G＋αに短縮されサバ連に突入するまで継続するとちょんぼりすたが掲載しています。Xでも「新台期間は拾えそう」との声が出ています。導入前の情報を整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-10-03",
+    heroImage: "/images/articles/juoh-se-sns-topic.png",
+  },
+  {
+    slug: "symphogear5-teaser-rumor-sns-topic",
+    title: "シンフォギア5の超先行映像が話題｜約1/399の噂に賛否、公式で分かったことと噂を整理",
+    description:
+      "SANKYOが2026年9月30日に「戦姫絶唱シンフォギア」シリーズ最新作の超先行映像を公開し、「5W」の検定通過も伝えられました。10月にはXで約1/399・デカヘソなどの噂に賛否が出ています。公式で分かったことと噂の段階のものを分けて整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-10-03",
+    heroImage: "/images/machines/senki-zesshou-symphogear.jpg",
+  },
+  {
     slug: "haiena-kitsui-sns-topic",
     title: "「ハイエナきつくない？」Xで立ち回り議論｜朝一リセット狙い・設定狙いへ移る声も",
     description:

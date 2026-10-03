@@ -91,6 +91,10 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     relatedReadings: [
       {
+        href: "/articles/juoh-tenjo-setting-change-sns-topic",
+        label: "設定変更で天井は599G＋αに短縮｜導入2日前、分かっていること整理",
+      },
+      {
         href: "/articles/juoh-se-sns-topic",
         label: "公式試打動画にサバチャン突入音への声も｜超サバのレインボー演出には称賛",
       },

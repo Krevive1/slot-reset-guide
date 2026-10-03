@@ -50,6 +50,8 @@ const staticEntries: SitemapEntry[] = [
   { path: "/articles/kanojo-okarishimasu-reg-mizugi-pattern", lastModified: "2026-09-29", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/sao2-glass-damage-sns-topic", lastModified: "2026-10-01", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/haiena-kitsui-sns-topic", lastModified: "2026-10-01", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/articles/juoh-tenjo-setting-change-sns-topic", lastModified: "2026-10-03", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/articles/symphogear5-teaser-rumor-sns-topic", lastModified: "2026-10-03", changeFrequency: "monthly", priority: 0.5 },
   { path: "/beginner", changeFrequency: "monthly", priority: 0.5 },
   { path: "/line", changeFrequency: "monthly", priority: 0.4 },
   { path: "/line/checklist", changeFrequency: "monthly", priority: 0.5 },
