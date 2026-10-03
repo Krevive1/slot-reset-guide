@@ -13,12 +13,13 @@ import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
 
 const title =
-  "ウマ娘のパチスロ化を巡る情報がSNSで話題に｜「Lウマ娘 プリティーダービー」が保通協通過との投稿";
+  "ウマ娘のパチスロ・パチンコ化を巡る情報がSNSで話題に｜「Lウマ娘 プリティーダービー」が保通協通過、京楽産業.で2027年1月導入との投稿";
 const description =
-  "「ウマ娘 プリティーダービー」のパチスロ化を巡る情報がSNSで話題に。「Lウマ娘 プリティーダービー（仮名）」が保通協を通過したとの投稿が拡散されていますが、現時点で公式発表は確認されていません。SNSでは賛否両論の声が上がっています。";
+  "「ウマ娘 プリティーダービー」のパチスロ・パチンコ化を巡る情報がSNSで話題に。「Lウマ娘 プリティーダービー（仮名）」が保通協を通過し、京楽産業.から2027年1月に導入との投稿が拡散されていますが、公式発表は確認されていません（2026年10月4日時点）。パチンコ版の噂や賛否の声も整理しました。";
 const url = `${SITE_URL}/articles/uma-musume-pachislot-sns-topic`;
 const heroImage = "/images/articles/uma-musume-pachislot-sns-topic.png";
 const publishedAt = "2026-09-18";
+const updatedAt = "2026-10-04";
 
 export const metadata: Metadata = {
   title,
@@ -61,7 +62,7 @@ export default function UmaMusumePachisloSnsTopicPage() {
 
       <div className="article">
         <h1 className="page-title">{title}</h1>
-        <p className="updated-at">公開日：{publishedAt}</p>
+        <p className="updated-at">公開日：{publishedAt}　更新日：{updatedAt}</p>
 
         <div className="thumbnail">
           <Image
@@ -115,6 +116,32 @@ export default function UmaMusumePachisloSnsTopicPage() {
           このように、今回の情報を巡っては「ウマ娘をパチスロで遊びたい」という声だけでなく、パチスロというジャンルそのものへの抵抗感を示す声もあり、反応は分かれています。
         </p>
 
+        <h2>よくある疑問：パチスロ？パチンコ？いつ導入？</h2>
+        <p>
+          検索でもよく見られる疑問を、現時点でX上の投稿から分かっている範囲で整理します。いずれも公式発表ではなく、投稿者個人の情報・噂です。
+        </p>
+        <ul>
+          <li>
+            <strong>パチスロとパチンコ、どちらが出るの？</strong>
+            …投稿では、パチスロ版「Lウマ娘 プリティーダービー（仮名）」が保通協を通過したとされ、パチンコ版は「2027年3月以降に販売予定との噂」と紹介されています。
+          </li>
+          <li>
+            <strong>どこのメーカーが出すの？</strong>
+            …投稿では、販売は京楽産業.とされています。
+          </li>
+          <li>
+            <strong>いつ導入されるの？</strong>
+            …投稿では、パチスロ版は2027年1月導入予定、10月に特別先行展示会が予定されているとの情報も添えられています。
+          </li>
+          <li>
+            <strong>公式発表はあった？</strong>
+            …2026年10月4日時点で、公式サイト等による正式発表は確認できていません。
+          </li>
+        </ul>
+        <p className="section-note">
+          「保通協通過」「導入時期」は、いずれも投稿者が入手したとする情報です。正式発表で内容が変わる可能性があるため、確定事項として受け取らないようご注意ください。続報や公式発表が確認でき次第、本記事を更新します。
+        </p>
+
         <h2>現時点で確認できていること・まだ確認できていないこと</h2>
         <div className="article-table-wrap">
           <table>
@@ -127,7 +154,7 @@ export default function UmaMusumePachisloSnsTopicPage() {
             <tbody>
               <tr>
                 <td>確認できていること</td>
-                <td>X上で「Lウマ娘 プリティーダービー（仮名）」が保通協を通過したとする投稿があること（投稿日：2026年9月16日、投稿では京楽産業.が2027年1月導入予定、パチンコ版は2027年3月以降との噂と紹介）</td>
+                <td>X上で「Lウマ娘 プリティーダービー（仮名）」が保通協を通過したとする投稿があること（投稿日：2026年9月16日、投稿では京楽産業.が2027年1月導入予定、パチンコ版は2027年3月以降との噂と紹介）。2026年10月4日時点でも、公式からの正式発表は確認できていない</td>
               </tr>
               <tr>
                 <td>確認できていないこと</td>
@@ -172,6 +199,10 @@ export default function UmaMusumePachisloSnsTopicPage() {
             <Link href="/beginner">朝一リセットとは？初心者向け解説</Link>
             で整理しています。
           </p>
+          <ul>
+            <li><Link href="/articles/petit-news">プチニュース一覧（SNSで話題の最新情報）</Link></li>
+            <li><Link href="/articles/new-machine-news">注目の新台NEWS一覧</Link></li>
+          </ul>
         </div>
 
         <h2>参考情報</h2>
