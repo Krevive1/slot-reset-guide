@@ -268,12 +268,6 @@ const machinesBySlug: Record<string, ArticleMachine> = {
     summary: "ボーナス間天井短縮とスルー回数短縮を確認したい機種です。",
     point: "ボーナス間ゲーム数とスルー回数を確認します。",
   },
-  "taikai4-with-sonoko": {
-    slug: "taikai4-with-sonoko",
-    name: "大海物語4 with すーぱーそに子",
-    summary: "朝一リセット狙いの対象としては慎重に扱いたい機種です。",
-    point: "通常の遊技性と朝一向きかどうかを分けて見ます。",
-  },
   "tekken-6": {
     slug: "tekken-6",
     name: "スマスロ鉄拳6",
@@ -721,7 +715,6 @@ const categories = [
       "okidoki-black",
       "okidoki-gorgeous-30",
       "salaryman-banchou-2",
-      "taikai4-with-sonoko",
       "yoshimune",
     ],
   },

@@ -106,7 +106,6 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "shinuchi-yoshimune": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "super-rio-ace-2": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "million-god-kamigami-no-kiseki": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
-  "taikai4-with-sonoko": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "tacoslot": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "yabachiba": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "yajikita-dochuki-mairu": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },

@@ -134,12 +134,6 @@ const categories: { title: string; description: string; machines: CarefulMachine
         reason: "モード移行や初期ポイントの確認が中心になります。",
         point: "超人パワー、モード示唆、前兆の位置を確認します。",
       },
-      {
-        slug: "taikai4-with-sonoko",
-        name: "大海物語4 with すーぱーそに子",
-        reason: "朝一リセット狙いの対象としては慎重に扱いたい機種です。",
-        point: "通常の遊技性と朝一向きかどうかを分けて確認します。",
-      },
     ],
   },
   {

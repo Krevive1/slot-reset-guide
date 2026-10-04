@@ -8,6 +8,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/machines/taikai4-with-sonoko",
+        destination: "/machines",
+        permanent: true,
+      },
+      {
         source: "/:path*",
         has: [
           {
