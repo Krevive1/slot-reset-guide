@@ -92,7 +92,7 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     relatedReadings: [
       {
         href: "/articles/juoh-tenjo-setting-change-sns-topic",
-        label: "設定変更で天井は599G＋αに短縮｜導入2日前、分かっていること整理",
+        label: "設定変更で天井は599G＋αに短縮｜導入日に分かっていること整理",
       },
       {
         href: "/articles/juoh-se-sns-topic",
