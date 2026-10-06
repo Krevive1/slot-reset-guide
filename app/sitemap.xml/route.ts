@@ -35,7 +35,7 @@ const staticEntries: SitemapEntry[] = [
   { path: "/articles/basilisk-4-news", lastModified: "2026-08-22", changeFrequency: "weekly", priority: 0.5 },
   { path: "/articles/bancho-banzuke-news", lastModified: "2026-09-04", changeFrequency: "weekly", priority: 0.5 },
   { path: "/articles/monkey-turn-v-ex-item-rate", lastModified: "2026-09-04", changeFrequency: "monthly", priority: 0.5 },
-  { path: "/articles/tokyo-ghoul-arima-judgment-reigu-research", lastModified: "2026-09-04", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/articles/tokyo-ghoul-arima-judgment-reigu-research", lastModified: "2026-10-07", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/mieruko-chan-cz-rate-setting-diff", lastModified: "2026-09-10", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/lycoris-recoil-sns-topic", lastModified: "2026-09-15", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/uma-musume-pachislot-sns-topic", lastModified: "2026-10-04", changeFrequency: "monthly", priority: 0.5 },

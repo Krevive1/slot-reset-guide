@@ -38,7 +38,7 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     relatedReadings: [
       {
         href: "/articles/tokyo-ghoul-arima-judgment-reigu-research",
-        label: "『有馬J失敗後は約2000G冷遇』説を調査｜実戦報告に傾向はある？",
+        label: "『有馬ジャッジメント失敗後は約2000G冷遇』説を調査｜実戦報告に傾向はある？",
       },
       {
         href: "/articles/tokyo-ghoul-trophy-misugoshi",

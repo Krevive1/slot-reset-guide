@@ -7,17 +7,45 @@ import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import StickyBottomBanner from "@/components/site/StickyBottomBanner";
-import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
+import { buildBreadcrumbJsonLd, buildFaqJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
 
-const title = "スマスロ東京喰種『有馬J失敗後は約2000G冷遇』説を調査｜実戦報告に傾向はある？";
+const title = "スマスロ東京喰種『有馬ジャッジメント失敗後は約2000G冷遇』説を調査｜実戦報告に傾向はある？";
 const description =
   "スマスロ東京喰種で話題になっている「有利区間切断後、有馬貴将ジャッジメント失敗後は約2000Gの冷遇に入る」という説について、公開情報とX上の複数の実戦報告をもとに調査しました。確定情報・観測されている傾向・未確定事項を分けて整理しています。";
 const url = `${SITE_URL}/articles/tokyo-ghoul-arima-judgment-reigu-research`;
 const heroImage = "/images/articles/tokyo-ghoul-arima-judgment-reigu-research.png";
 const publishedAt = "2026-09-04";
-const updatedAt = "2026-09-28";
+const updatedAt = "2026-10-07";
+
+const faq = [
+  {
+    question: "有馬ジャッジメント失敗後は冷遇される？",
+    answer:
+      "解析情報として確定しているのは、失敗後はAT引き戻し抽選が行われない代わりに天国移行濃厚となり、100G+αでCZ（レミニセンス／大喰いの利世）当選が濃厚になる、という内容です。「約2000Gの冷遇に入る」という説は未確定で、X上の実戦報告が複数あるという段階です。",
+  },
+  {
+    question: "「約2000G冷遇」説は本当？",
+    answer:
+      "確定とは言えません。約2000Gという具体的な数値について、集計データやサンプル数を示した検証は確認できておらず、メーカー公式の解析による裏付けもありません。同じ条件で早めに当選したという報告も一部あります。",
+  },
+  {
+    question: "有利区間切断後は冷遇になる？",
+    answer:
+      "有利区間切断のタイミングと有馬貴将ジャッジメント失敗が重なった場合に、その後しばらく当選が伸びたとする実戦報告が複数見られます。ただし非公式の実戦報告であり、必ず冷遇に入ると言い切れる情報ではありません。",
+  },
+  {
+    question: "有馬ジャッジメント失敗後のやめどきは？",
+    answer:
+      "機種ページでは、失敗後は天国移行濃厚で100G+αでのCZ当選が濃厚とされているため、そこまでフォローするという考え方を紹介しています。「約2000G冷遇」という未確定の数値だけを根拠にヤメ時を判断しないよう注意してください。",
+  },
+  {
+    question: "この説はメーカーの公式情報？",
+    answer:
+      "いいえ。公開されている解析情報とX上の実戦報告をもとに調査・整理した内容であり、メーカー公式の情報ではありません。新しい情報が確認できた場合は、本記事と機種ページを更新します。",
+  },
+];
 
 export const metadata: Metadata = {
   title,
@@ -42,6 +70,7 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
   const rentaOffer = getActiveAffiliateOffer("rentaTokyoGhoul");
   const vodOffer = getActiveAffiliateOffer("abemaPremium");
   const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
+  const faqJsonLd = buildFaqJsonLd(faq);
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: SITE_URL },
     { name: title, url },
@@ -51,6 +80,7 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
     <article>
       <JsonLd data={articleJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
+      {faqJsonLd && <JsonLd data={faqJsonLd} />}
       <Breadcrumbs
         items={[
           { name: "トップ", href: "/" },
@@ -80,6 +110,15 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
           先に結論を言うと、<strong>「約2000Gの冷遇が確定している」とまでは言えません</strong>。賛否があり、そうした傾向を示す実戦報告が複数見られる、という段階の情報です。
           この記事はユーザー自身が実機検証した記録ではなく、公開情報の調査・整理を目的としています。
         </p>
+
+        <div className="article-link-box">
+          <p><strong>この記事の要点</strong></p>
+          <ul>
+            <li>確定情報：有馬ジャッジメント失敗後は引き戻し抽選なし・天国移行濃厚・100G+αでCZ当選濃厚</li>
+            <li>説の内容：有利区間切断と重なると「約2000G」の冷遇に入る（実戦報告ベース、未確定）</li>
+            <li>現状：傾向を示す報告は複数あるが、数値の根拠・公式の裏付けは確認できていない</li>
+          </ul>
+        </div>
 
         <h2>有利区間・有利区間切断とは</h2>
         <p>
@@ -158,6 +197,18 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
           今後さらに情報が積み重なれば、より確度の高い判断材料になる可能性があります。当サイトでも継続して情報を確認し、確度が上がった場合は機種ページを更新します。
         </p>
 
+        <h2>よくある疑問（FAQ）</h2>
+        <dl>
+          {faq.map((item) => (
+            <div key={item.question}>
+              <dt>
+                <strong>{item.question}</strong>
+              </dt>
+              <dd>{item.answer}</dd>
+            </div>
+          ))}
+        </dl>
+
         <h2>責任ある遊技について</h2>
         <p>
           今回の内容はあくまで公開情報とX上の実戦報告をもとにした調査であり、遊技を強くおすすめするものではありません。
@@ -190,6 +241,7 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
             で詳しく解説しています。原作を確認したい方は、上記のRentaでも読めます。
           </p>
           <ul>
+            <li><Link href="/machines/juoh">スマスロ獣王の機種ページ（10月5日導入・天井と設定変更時の恩恵）</Link></li>
             <li><Link href="/beginner">朝一リセットとは？初心者向け解説</Link></li>
             <li><Link href="/guides/yougo-shu">天井・CZ・有利区間とは？パチスロ用語集</Link></li>
           </ul>

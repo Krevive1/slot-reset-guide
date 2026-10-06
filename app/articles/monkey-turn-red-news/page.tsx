@@ -245,6 +245,23 @@ export default function MonkeyTurnRedNewsPage() {
         </div>
         <StickyBottomBanner offer={vodOffer} />
 
+        <div className="article-link-box" aria-label="10月5日導入の新台">
+          <p>
+            2026年10月5日に導入された新台の機種ページです。山佐ネクストの新台は「パリピ孔明」で、朝一・リセット恩恵や天井の情報をまとめています。
+          </p>
+          <ul>
+            <li>
+              <Link href="/machines/juoh">スマスロ獣王（サミー）の機種ページ</Link>
+            </li>
+            <li>
+              <Link href="/machines/paripi-koumei">スマスロパリピ孔明（山佐ネクスト）の機種ページ</Link>
+            </li>
+            <li>
+              <Link href="/machines/tensei-oujo-to-tensai-reijou">L転生王女と天才令嬢の魔法革命（オリンピアエステート）の機種ページ</Link>
+            </li>
+          </ul>
+        </div>
+
         <div className="article-link-box" aria-label="参考情報">
           <p>本記事の作成にあたり、以下の情報を参考にしました。</p>
           <ul>
