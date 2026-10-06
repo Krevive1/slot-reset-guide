@@ -91,6 +91,10 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     relatedReadings: [
       {
+        href: "/articles/juoh-0through-100g-zone-sns-topic",
+        label: "「0スルーの100Gゾーン狙い」がXで話題｜57万表示の投稿に「サバ連後のみ」と補足も",
+      },
+      {
         href: "/articles/juoh-tenjo-setting-change-sns-topic",
         label: "設定変更で天井は599G＋αに短縮｜導入日に分かっていること整理",
       },
@@ -253,6 +257,12 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "garei-zero-re": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerGarei"],
+    relatedReadings: [
+      {
+        href: "/articles/garei-zero-re-junbichu-sns-topic",
+        label: "「準備中のメダル減り」にXで賛否｜「昔のART機はこんなもの」の擁護と「REGがマイナス」の不満",
+      },
+    ],
   },
   "god-eater-resurrection": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],

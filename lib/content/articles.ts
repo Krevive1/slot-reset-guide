@@ -35,6 +35,24 @@ export const ARTICLE_CATEGORY_INFO: Record<
 // 本文は各記事の app/articles/<slug>/page.tsx に独立して存在し、ここでは一覧表示用のメタデータだけを管理する。
 export const articles: ArticleMeta[] = [
   {
+    slug: "juoh-0through-100g-zone-sns-topic",
+    title: "スマスロ獣王「0スルーの100Gゾーン狙い」がXで話題｜57万表示の投稿に「朝は強くない」「サバ連後のみ」と補足も",
+    description:
+      "2026年10月6日、スマスロ獣王の「0スルーの100Gゾーン狙い」を高く評価する投稿がXで約57万表示を集めました。同じ投稿者は「朝はまったく強くない」「サバ連後のみ」「出玉次第で性能が変わる」と補足しています。投稿内容と反応を、個人の見立てとして整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-10-07",
+    heroImage: "/images/articles/juoh-0through-100g-zone-sns-topic.png",
+  },
+  {
+    slug: "garei-zero-re-junbichu-sns-topic",
+    title: "喰霊-零-Reの「準備中のメダル減り」にXで賛否｜「昔のART機はこんなもの」の擁護と「REGがマイナス」の不満",
+    description:
+      "2026年8月17日導入の「Lパチスロ 喰霊‐零‐Re」で、ART準備中にメダルが減る点についてXで賛否が広がっています。「むかしのART機はほとんどそう」と擁護する投稿は約29万表示。「準備中の減りは少し異常」「REGがマイナスボーナス」という不満の声も含め、投稿内容を整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-10-07",
+    heroImage: "/images/articles/garei-zero-re-junbichu-sns-topic.png",
+  },
+  {
     slug: "juoh-tenjo-setting-change-sns-topic",
     title: "スマスロ獣王、設定変更で天井は599G＋αに短縮｜導入日に分かっていること整理",
     description:
