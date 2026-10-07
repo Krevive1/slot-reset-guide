@@ -5,6 +5,7 @@
   "updatedAt": "2026-07-30T16:45:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
+    "maker": {"slug": "daito", "name": "大都技研"},
     "series": {
       "slug": "banchou",
       "name": "番長シリーズ"

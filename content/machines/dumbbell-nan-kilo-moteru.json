@@ -4,6 +4,7 @@
   "updatedAt": "2026-07-29T00:00:00+09:00",
   "publishedAt": "2026-07-13T10:50:00+09:00",
   "spec": {
+    "maker": {"slug": "sankyo", "name": "SANKYO"},
     "overview": "摂取カロリー10000kcal到達ごとにCZ抽選を行う機種。CZ間天井は750G+αまたは10万kcal、AT間天井は1500G+αで、設定変更後はAT間天井が1000G+αへ短縮される。",
     "releaseDate": "2024-12-16"
   },

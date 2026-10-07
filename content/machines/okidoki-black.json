@@ -5,6 +5,7 @@
   "updatedAt": "2026-07-29T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
+    "maker": {"slug": "universal-bros", "name": "ユニバーサルブロス"},
     "series": {
       "slug": "okidoki",
       "name": "沖ドキ!シリーズ"

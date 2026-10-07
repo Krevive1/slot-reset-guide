@@ -5,6 +5,7 @@
   "updatedAt": "2026-07-06T09:00:00+09:00",
   "publishedAt": "2026-07-06T09:00:00+09:00",
   "spec": {
+    "maker": {"slug": "sankyo", "name": "SANKYO"},
     "releaseDate": "2026-04-20",
     "overview": "CZ間天井800G+α・AT間天井1400G+αの機種。設定変更時はCZ間400G+α・AT間1000G+αに短縮され、ゲーム数の加算もある。"
   },

@@ -4,6 +4,7 @@
   "updatedAt": "2026-07-13T09:30:00+09:00",
   "publishedAt": "2026-07-13T09:30:00+09:00",
   "spec": {
+    "maker": {"slug": "sankyo", "name": "SANKYO"},
     "overview": "通常AT間天井最大1000G（968G+前兆）の機種。設定変更後は天井が最大700G（668G+前兆）に短縮される。",
     "releaseDate": "2025-02-03"
   },

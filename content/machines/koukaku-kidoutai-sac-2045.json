@@ -4,6 +4,7 @@
   "updatedAt": "2026-07-12T09:00:00+09:00",
   "publishedAt": "2026-07-12T09:00:00+09:00",
   "spec": {
+    "maker": {"slug": "sammy", "name": "サミー"},
     "overview": "通常CZ天井550G+α・AT間天井999Gの機種。設定変更時はCZ天井350G+α・AT間天井699Gに短縮される。",
     "releaseDate": "2026-02-02"
   },
