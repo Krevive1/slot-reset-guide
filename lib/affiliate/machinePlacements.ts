@@ -281,6 +281,10 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["amazonMonsterHunter"],
   },
+  "monster-hunter-rise-sunbreak": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    originalWorkOfferIds: ["amazonMonsterHunter"],
+  },
   "devil-may-cry-5-stylish-tribe": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["amazonDevilMayCry5"],
