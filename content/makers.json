@@ -11,5 +11,10 @@
   { "slug": "sankyo", "name": "SANKYO" },
   { "slug": "sunthree", "name": "サンスリー" },
   { "slug": "universal-bros", "name": "ユニバーサルブロス" },
-  { "slug": "yamasa", "name": "山佐" }
+  { "slug": "yamasa", "name": "山佐" },
+  { "slug": "daito", "name": "大都技研" },
+  { "slug": "enta", "name": "エンターライズ" },
+  { "slug": "konami", "name": "コナミアミューズメント" },
+  { "slug": "newgin", "name": "ニューギン" },
+  { "slug": "spiky", "name": "スパイキー" }
 ]
