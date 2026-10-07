@@ -4,6 +4,7 @@
   "updatedAt": "2026-07-26T20:00:00+09:00",
   "publishedAt": "2026-07-13T00:15:00+09:00",
   "spec": {
+    "maker": {"slug": "sankyo", "name": "SANKYO"},
     "overview": "通常ボーナス間天井最大約1100G+α・REG後天井900G+αの機種。設定変更後の天井は800G+αとなる。",
     "releaseDate": "2024-09-02"
   },
