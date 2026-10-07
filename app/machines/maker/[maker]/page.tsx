@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getMachinesByMaker, sortMachinesByPopularity } from "@/lib/content/machines";
 import { getAllMakers, getMakerBySlug } from "@/lib/content/refs";
 import MachineCard from "@/components/machine/MachineCard";
+import MachineGroupGuide, { MachineGroupFooter } from "@/components/machine/MachineGroupGuide";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import { SITE_URL } from "@/lib/site";
 
@@ -47,6 +48,7 @@ export default async function MakerPage({
         ]}
       />
       <h1 className="page-title">{maker.name}の機種一覧</h1>
+      <MachineGroupGuide kind="maker" slug={maker.slug} name={maker.name} machines={machines} />
       {machines.length > 0 ? (
         <div className="cards">
           {machines.map((machine) => (
@@ -56,6 +58,7 @@ export default async function MakerPage({
       ) : (
         <p>現在このメーカーの公開中の機種ページはありません。</p>
       )}
+      <MachineGroupFooter />
     </>
   );
 }
