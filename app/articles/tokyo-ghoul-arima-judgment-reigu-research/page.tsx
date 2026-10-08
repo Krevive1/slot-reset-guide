@@ -17,7 +17,7 @@ const description =
 const url = `${SITE_URL}/articles/tokyo-ghoul-arima-judgment-reigu-research`;
 const heroImage = "/images/articles/tokyo-ghoul-arima-judgment-reigu-research.png";
 const publishedAt = "2026-09-04";
-const updatedAt = "2026-10-07";
+const updatedAt = "2026-10-08";
 
 const faq = [
   {
@@ -39,6 +39,16 @@ const faq = [
     question: "有馬ジャッジメント失敗後のやめどきは？",
     answer:
       "機種ページでは、失敗後は天国移行濃厚で100G+αでのCZ当選が濃厚とされているため、そこまでフォローするという考え方を紹介しています。「約2000G冷遇」という未確定の数値だけを根拠にヤメ時を判断しないよう注意してください。",
+  },
+  {
+    question: "「有馬後 冷遇」「有馬失敗後 冷遇」とは何のこと？",
+    answer:
+      "どちらも、スマスロ東京喰種のAT終了時に発生する有馬貴将ジャッジメント（有馬J）の後に、当選が伸びにくくなるのではないか、という話題を指す言い方です。本記事では「有馬J失敗後」と、有利区間切断が重なった場合の「約2000G冷遇説」を中心に整理しています。確定しているのは、失敗後は天国移行濃厚で100G+αのCZ当選が濃厚になるという解析情報までです。",
+  },
+  {
+    question: "有馬ジャッジメントに成功した後に駆け抜けた場合も重くなる？",
+    answer:
+      "成功後に獲得した裏ATを短時間で終えた直後に、重い展開が続いたという実戦報告が1件確認できています（2026-09-28追記のnote）。ただし1件のみで、有馬J失敗後の冷遇説と同じ仕組みかどうかは判断できません。確定情報ではないため、参考程度にご覧ください。",
   },
   {
     question: "この説はメーカーの公式情報？",
@@ -109,6 +119,11 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
         <p>
           先に結論を言うと、<strong>「約2000Gの冷遇が確定している」とまでは言えません</strong>。賛否があり、そうした傾向を示す実戦報告が複数見られる、という段階の情報です。
           この記事はユーザー自身が実機検証した記録ではなく、公開情報の調査・整理を目的としています。
+        </p>
+
+        <p className="section-note">
+          検索では「有馬後 冷遇」「有馬失敗後 冷遇」「有馬J後」などと呼ばれることもありますが、いずれも同じ話題（有馬貴将ジャッジメント後の当選の伸びにくさ）を指しています。
+          本記事では、確定している解析情報と、X上の実戦報告に基づく傾向を分けて説明します。
         </p>
 
         <div className="article-link-box">
@@ -241,6 +256,7 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
             で詳しく解説しています。原作を確認したい方は、上記のRentaでも読めます。
           </p>
           <ul>
+            <li><Link href="/articles/tokyo-ghoul-manga-reading-order">東京喰種の漫画はどこから読む？原作の読む順番</Link></li>
             <li><Link href="/machines/juoh">スマスロ獣王の機種ページ（10月5日導入・天井と設定変更時の恩恵）</Link></li>
             <li><Link href="/beginner">朝一リセットとは？初心者向け解説</Link></li>
             <li><Link href="/guides/yougo-shu">天井・CZ・有利区間とは？パチスロ用語集</Link></li>
