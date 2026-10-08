@@ -35,6 +35,24 @@ export const ARTICLE_CATEGORY_INFO: Record<
 // 本文は各記事の app/articles/<slug>/page.tsx に独立して存在し、ここでは一覧表示用のメタデータだけを管理する。
 export const articles: ArticleMeta[] = [
   {
+    slug: "sankyo-monogatari-senkou-eizou-sns-topic",
+    title: "Lパチスロ もののがたり先行映像が話題｜「からくり×ヴヴヴ？」との声も、スペック情報は未確認",
+    description:
+      "SANKYOは2026年10月7日、新台「Lパチスロ もののがたり」の先行映像を公開しました。Xではホールアカウントが「純増7枚」「からくり×ヴヴヴ的」などと投稿して25万表示を集めています。公式で確認できていることと、SNS上の未確認情報を分けて整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-10-09",
+    heroImage: "/images/articles/sankyo-monogatari-senkou-eizou-sns-topic.png",
+  },
+  {
+    slug: "monster-hunter-sunbreak-hyouka-wareru-sns-topic",
+    title: "モンハンサンブレイクはなぜ評価が割れる？通常時CZへの不満と万枚実戦をXの投稿から整理",
+    description:
+      "2026年10月5日に導入されたスマスロ モンハンサンブレイクについて、Xでは通常時のCZやゲーム性に厳しい声が目立つ一方、設定5で約1.3万枚を回収したという報告も出ています。評価が分かれている理由を、複数の投稿をもとに個人の感想として整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-10-09",
+    heroImage: "/images/articles/monster-hunter-sunbreak-hyouka-wareru-sns-topic.png",
+  },
+  {
     slug: "juoh-0through-100g-zone-sns-topic",
     title: "スマスロ獣王「0スルーの100Gゾーン狙い」がXで話題｜57万表示の投稿に「朝は強くない」「サバ連後のみ」と補足も",
     description:

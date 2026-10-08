@@ -284,6 +284,12 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "monster-hunter-rise-sunbreak": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["amazonMonsterHunter"],
+    relatedReadings: [
+      {
+        href: "/articles/monster-hunter-sunbreak-hyouka-wareru-sns-topic",
+        label: "モンハンサンブレイクはなぜ評価が割れる？通常時CZへの不満と万枚実戦をXの投稿から整理",
+      },
+    ],
   },
   "devil-may-cry-5-stylish-tribe": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
