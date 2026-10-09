@@ -60,7 +60,16 @@
       "周期・前兆・示唆を確認し、到達恩恵や期待値の追加解析を待って判断してください"
     ]
   },
-  "referenceVideos": [],
+  "referenceVideos": [
+    {
+      "youtubeVideoId": "dwxnQpMdeQU",
+      "channelName": "社不燦々【朝イチニキ】",
+      "channelUrl": "https://www.youtube.com/@syafu_sansan",
+      "title": "【スマスロモグモグ風林火山 大海戦の巻】1週間モグモグ風林火山の朝イチリセット生活したら果たして収支はどうなる？",
+      "summary": "社不燦々【朝イチニキ】様による、スマスロモグモグ風林火山 大海戦の巻を1週間朝イチから実戦検証した動画です。",
+      "originalAnalysis": "1週間の朝イチ実戦検証動画です。実戦上の挙動・収支を確認できますが、解析上の確定仕様ではなく、あくまで実戦記録の一例です。動画結果だけでリセット恩恵や期待値を断定しないでください。"
+    }
+  ],
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [
