@@ -160,13 +160,13 @@ export default async function MachinePage({
       <CeilingZoneInfo ceilingZoneInfo={machine.ceilingZoneInfo} tone={isComingSoon ? "caution" : "basic"} />
       <QuitTiming quitTiming={machine.quitTiming} tone={isComingSoon ? "pending" : "neutral"} />
       <WanchankunComment comment={machine.wanchankunComment} />
+      <ReferenceVideoSection videos={machine.referenceVideos} />
       <MachineAffiliateSection slug={machine.slug} />
       <MachineFaq faq={machine.faq} />
       {machine.status === "coming-soon" && <UpdateHistorySection updateHistory={machine.comingSoon} />}
       <RelatedReading slug={machine.slug} />
       <MachineOriginalWorkSection slug={machine.slug} />
       <AdSlot slot="in-article" />
-      <ReferenceVideoSection videos={machine.referenceVideos} />
       <PracticeRecordSection records={machine.practiceRecords} />
       <Comments slug={machine.slug} title={machine.name} />
       <ShareButtons url={url} title={machine.name} />
