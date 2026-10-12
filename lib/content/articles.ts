@@ -35,6 +35,15 @@ export const ARTICLE_CATEGORY_INFO: Record<
 // 本文は各記事の app/articles/<slug>/page.tsx に独立して存在し、ここでは一覧表示用のメタデータだけを管理する。
 export const articles: ArticleMeta[] = [
   {
+    slug: "juoh-setting6-sinking-sns-topic",
+    title: "獣王「設定6でも大きく沈む」実戦報告が話題｜“冷遇”説はどこまで確認できる？",
+    description:
+      "2026年10月11〜12日、スマスロ獣王の設定6とする実戦報告がXで約37万〜42万表示を集めました。「逆万枚」「7〜8000ゲームの冷遇」といった投稿者の表現と、確認できていること・できていないことを、個人の報告として整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-10-12",
+    heroImage: "/images/articles/juoh-setting6-sinking-sns-topic.png",
+  },
+  {
     slug: "sankyo-monogatari-senkou-eizou-sns-topic",
     title: "Lパチスロ もののがたり先行映像が話題｜「からくり×ヴヴヴ？」との声も、スペック情報は未確認",
     description:
