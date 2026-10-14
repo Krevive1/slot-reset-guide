@@ -170,7 +170,11 @@ export default function HaienaKitsuiSnsTopicPage() {
           <p>
             朝一リセット・リセット恩恵の基礎については、
             <Link href="/beginner">朝一リセットとは？初心者向け解説</Link>
-            で整理しています。
+            で整理しています。朝一リセット狙いに移る場合は、
+            <Link href="/guides/how-to-check-hall-reset-pattern">その店はリセットしている？ホールの傾向を調べる5つの方法</Link>
+            や、
+            <Link href="/machines">機種一覧</Link>
+            の各機種の恩恵・判別方法もあわせて確認できます。
           </p>
         </div>
 

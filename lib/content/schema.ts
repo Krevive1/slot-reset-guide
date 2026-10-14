@@ -163,6 +163,18 @@ export const MachineSchema = z.object({
   // sections (resetInfo/morningTarget/quitTiming) exist to support a real
   // conclusion. Opt-in per machine; omitted machines render nothing.
   asaichiCheck: z.string().optional(),
+  // Optional editorial-judgment blocks shown right after the quit-timing
+  // section ("ワンチャンくんの判断"). Each block is machine-specific prose
+  // (what to check first, who should avoid 0G play, source discrepancies);
+  // write only the blocks that genuinely apply -- never copy one template.
+  originalView: z
+    .array(
+      z.object({
+        heading: z.string(),
+        body: z.string(),
+      }),
+    )
+    .optional(),
   // Optional machine-specific sources shown alongside the site-wide list in
   // ReferenceSources (e.g. a maker's official dev-trivia page, or the exact
   // analysis article a section was sourced from). Omitted machines show only
