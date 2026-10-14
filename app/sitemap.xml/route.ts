@@ -38,7 +38,7 @@ const staticEntries: SitemapEntry[] = [
   { path: "/articles/tokyo-ghoul-arima-judgment-reigu-research", lastModified: "2026-10-07", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/mieruko-chan-cz-rate-setting-diff", lastModified: "2026-09-10", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/lycoris-recoil-sns-topic", lastModified: "2026-09-15", changeFrequency: "monthly", priority: 0.5 },
-  { path: "/articles/uma-musume-pachislot-sns-topic", lastModified: "2026-10-04", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/articles/uma-musume-pachislot-sns-topic", lastModified: "2026-10-15", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/lycoris-recoil-yuuri-giri-himitsu-sns-topic", lastModified: "2026-09-24", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/juoh-se-sns-topic", lastModified: "2026-09-27", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/daipan-official-response-sns-topic", lastModified: "2026-09-28", changeFrequency: "monthly", priority: 0.5 },
