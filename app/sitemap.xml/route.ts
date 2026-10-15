@@ -31,7 +31,7 @@ const staticEntries: SitemapEntry[] = [
   { path: "/articles/soundcore-liberty-4-hall-noise-column", lastModified: "2026-07-24", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/monkey-paramount-neighbor-column", lastModified: "2026-07-28", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/tokyo-ghoul-jiro-8586-column", lastModified: "2026-08-03", changeFrequency: "monthly", priority: 0.5 },
-  { path: "/articles/monkey-turn-red-news", lastModified: "2026-09-29", changeFrequency: "weekly", priority: 0.5 },
+  { path: "/articles/monkey-turn-red-news", lastModified: "2026-10-15", changeFrequency: "weekly", priority: 0.5 },
   { path: "/articles/basilisk-4-news", lastModified: "2026-08-22", changeFrequency: "weekly", priority: 0.5 },
   { path: "/articles/bancho-banzuke-news", lastModified: "2026-09-04", changeFrequency: "weekly", priority: 0.5 },
   { path: "/articles/monkey-turn-v-ex-item-rate", lastModified: "2026-09-04", changeFrequency: "monthly", priority: 0.5 },

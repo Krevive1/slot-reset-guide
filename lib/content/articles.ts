@@ -258,10 +258,10 @@ export const articles: ArticleMeta[] = [
     slug: "monkey-turn-red-news",
     title: "モンキーターンRED始動！「王道から挑戦へ」新作で今わかっていること｜山佐ネクスト新台ニュース",
     description:
-      "山佐ネクストの新台『モンキーターンRED』特報が公開され、2026年9月15日にはセブンリーグ名義で型式検定も通過しました。『王道から挑戦へ』『JAC IN』など気になるキーワードと、現時点で分かっていること・まだ未確定なことを整理して紹介します。",
+      "スマスロ「モンキーターンRED」の最新情報を整理。山佐公式ティザーPVの紹介や展示会参加者の投稿をもとに、導入時期・AT情報・未確定情報を分けて、随時更新しています。",
     category: "new-machine-news",
     publishedAt: "2026-08-22",
-    updatedAt: "2026-09-29",
+    updatedAt: "2026-10-15",
     heroImage: "/images/articles/monkey-turn-red-news.jpg",
   },
   {
