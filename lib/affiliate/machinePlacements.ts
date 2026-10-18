@@ -91,6 +91,10 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     relatedReadings: [
       {
+        href: "/articles/juoh-setting6-sinking-sns-topic",
+        label: "「設定6でも大きく沈む」実戦報告が話題｜“冷遇”説はどこまで確認できる？",
+      },
+      {
         href: "/articles/juoh-0through-100g-zone-sns-topic",
         label: "「0スルーの100Gゾーン狙い」がXで話題｜57万表示の投稿に「サバ連後のみ」と補足も",
       },
