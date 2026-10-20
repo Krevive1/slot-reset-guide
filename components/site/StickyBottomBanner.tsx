@@ -5,6 +5,11 @@ import Image from "next/image";
 import AffiliateLink from "./AffiliateLink";
 import type { AffiliateOffer } from "@/lib/affiliate/offers";
 
+// Temporarily disabled (2026-10-20) while the AdSense re-review is pending, to
+// avoid any "obtrusive fixed ad" concern on mobile. Set to true to restore the
+// bottom-fixed affiliate banner on the pages that render this component.
+const STICKY_BANNER_ENABLED = false;
+
 type StickyBottomBannerProps = {
   offer: AffiliateOffer | null;
 };
@@ -12,7 +17,7 @@ type StickyBottomBannerProps = {
 export default function StickyBottomBanner({ offer }: StickyBottomBannerProps) {
   const [dismissed, setDismissed] = useState(false);
 
-  if (!offer || !offer.imageSrc || dismissed) {
+  if (!STICKY_BANNER_ENABLED || !offer || !offer.imageSrc || dismissed) {
     return null;
   }
 
