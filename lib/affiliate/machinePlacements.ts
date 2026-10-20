@@ -284,6 +284,12 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "monster-hunter-rise": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["amazonMonsterHunter"],
+    relatedReadings: [
+      {
+        href: "/machines/monster-hunter-rise-sunbreak",
+        label: "別機種：スマスロ モンスターハンターライズ：サンブレイクの朝イチ・リセット恩恵はこちら",
+      },
+    ],
   },
   "monster-hunter-rise-sunbreak": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
