@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Machine } from "@/lib/content/schema";
 import { TOC_IDS } from "@/lib/content/toc";
 
@@ -35,7 +36,9 @@ export default function ReferenceSources({
         ))}
       </ul>
       <p className="section-note">
-        各情報を確認し、当サイト用に要約・整理しています。
+        各情報を確認し、当サイト用に要約・整理しています。確認の方針は
+        <Link href="/editorial-policy">情報確認・記事作成ポリシー</Link>
+        をご覧ください。
       </p>
     </section>
   );

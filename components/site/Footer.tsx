@@ -13,6 +13,7 @@ export default function Footer() {
           <a href={X_OFFICIAL_URL} target="_blank" rel="noopener noreferrer">
             X（旧Twitter）
           </a>
+          <Link href="/editorial-policy">情報確認・記事作成ポリシー</Link>
           <Link href="/disclaimer">免責事項</Link>
           <Link href="/privacy">プライバシーポリシー</Link>
         </nav>
