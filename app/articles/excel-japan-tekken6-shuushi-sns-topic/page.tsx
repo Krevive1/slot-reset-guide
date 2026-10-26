@@ -15,7 +15,7 @@ const description =
   "エクセルジャパン班長のまるこーさんが2026年10月25日、スマスロ鉄拳6の収支として件数58,508件・収支97,802,144円・機械割104.130%をXに投稿しました。本人が公開した数値と、確認できていること・できていないこと、当サイトの鉄拳6の狙い目との関係を整理しました。";
 const slug = "excel-japan-tekken6-shuushi-sns-topic";
 const url = `${SITE_URL}/articles/${slug}`;
-const heroImage = "/images/machines/tekken-6.jpg";
+const heroImage = "/images/articles/excel-japan-tekken6-shuushi-sns-topic.png";
 const publishedAt = "2026-10-27";
 
 export const metadata: Metadata = {
