@@ -245,6 +245,12 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "tekken-6": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["amazonTekken"],
+    relatedReadings: [
+      {
+        href: "/articles/excel-japan-tekken6-shuushi-sns-topic",
+        label: "話題：エクセルジャパン班長が鉄拳6の収支を公開（本人報告の数値を整理）",
+      },
+    ],
   },
   "code-geass-fukkatsu-no-lelouch": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],

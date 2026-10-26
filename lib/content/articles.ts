@@ -35,6 +35,15 @@ export const ARTICLE_CATEGORY_INFO: Record<
 // 本文は各記事の app/articles/<slug>/page.tsx に独立して存在し、ここでは一覧表示用のメタデータだけを管理する。
 export const articles: ArticleMeta[] = [
   {
+    slug: "excel-japan-tekken6-shuushi-sns-topic",
+    title: "エクセルジャパン班長が鉄拳6の収支を公開｜58,508件・約9,780万円と本人が報告",
+    description:
+      "エクセルジャパン班長のまるこーさんが2026年10月25日、スマスロ鉄拳6の収支として件数58,508件・収支97,802,144円・機械割104.130%をXに投稿しました。本人が公開した数値と、確認できていること・できていないこと、当サイトの鉄拳6の狙い目との関係を整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-10-27",
+    heroImage: "/images/machines/tekken-6.jpg",
+  },
+  {
     slug: "juoh-setting6-sinking-sns-topic",
     title: "獣王「設定6でも大きく沈む」実戦報告が話題｜“冷遇”説はどこまで確認できる？",
     description:
