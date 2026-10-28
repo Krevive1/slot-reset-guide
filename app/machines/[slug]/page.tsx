@@ -152,6 +152,7 @@ export default async function MachinePage({
         heroImage={machine.heroImage}
         name={machine.name}
         sizes="(max-width: 720px) calc(100vw - 32px), 960px"
+        quality={58}
       />
 
       <MachineSpec spec={machine.spec} />

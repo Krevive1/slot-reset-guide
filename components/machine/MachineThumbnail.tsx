@@ -4,10 +4,12 @@ export default function MachineThumbnail({
   heroImage,
   name,
   sizes = "(max-width: 720px) calc(100vw - 64px), 216px",
+  quality = 65,
 }: {
   heroImage?: string;
   name: string;
   sizes?: string;
+  quality?: number;
 }) {
   if (!heroImage) {
     return (
@@ -23,7 +25,7 @@ export default function MachineThumbnail({
         alt={name}
         fill
         sizes={sizes}
-        quality={65}
+        quality={quality}
         style={{ objectFit: "cover" }}
       />
     </div>
