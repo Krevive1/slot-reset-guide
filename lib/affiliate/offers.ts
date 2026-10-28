@@ -1127,7 +1127,7 @@ export const affiliateOffers = {
     href: buildAmazonSearchUrl("コーヒー 飲料 詰め合わせ"),
     ctaLabel: "Amazonで探す",
     disclosure: "広告",
-    isActive: true,
+    isActive: false,
     description: "朝からホールに行く日の食事・間食に。人気の食品・飲料をAmazonでチェックできます。",
     imageSrc: "/images/ads/amazon-food-drink-banner.png",
   },
