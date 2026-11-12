@@ -15,11 +15,11 @@ import { SITE_URL } from "@/lib/site";
 const title =
   "ウマ娘のパチスロ化｜京楽産業.が「ぱちスロ ウマ娘 プリティーダービー」を発表、2027年導入予定・専用筐体は3種のパネル";
 const description =
-  "京楽産業.が10月14日に「ぱちスロ ウマ娘 プリティーダービー」を発表しました。2027年導入予定、専用の新設計筐体（パネル3種）、育成型ATの内容を整理。天井・設定変更時の挙動・機械割は未発表です。導入月やパチンコ版はSNS上の情報で、公式には確認できていません（2026年10月31日時点）。9月以降のSNSの反応も残しています。";
+  "京楽産業.が10月14日に「ぱちスロ ウマ娘 プリティーダービー」を発表しました。2027年導入予定、専用の新設計筐体（パネル3種）、育成型ATの内容を整理。天井・設定変更時の挙動・機械割は未発表です。導入月やパチンコ版はSNS上の情報で、公式には確認できていません（2026年11月12日時点）。筐体画像も掲載しています。9月以降のSNSの反応も残しています。";
 const url = `${SITE_URL}/articles/uma-musume-pachislot-sns-topic`;
-const heroImage = "/images/articles/uma-musume-pachislot-sns-topic.png";
+const heroImage = "/images/articles/uma-musume-pachislot-cabinet.jpg";
 const publishedAt = "2026-09-18";
-const updatedAt = "2026-10-31";
+const updatedAt = "2026-11-12";
 
 export const metadata: Metadata = {
   title,
@@ -67,7 +67,7 @@ export default function UmaMusumePachisloSnsTopicPage() {
         <div className="thumbnail">
           <Image
             src={heroImage}
-            alt="ウマ娘のパチスロ化を巡る話題のイメージ"
+            alt="ぱちスロ ウマ娘 プリティーダービーの専用筐体（白基調）の画像をもとにしたイメージ"
             fill
             sizes="(max-width: 720px) 100vw, 720px"
             style={{ objectFit: "cover" }}
@@ -82,6 +82,18 @@ export default function UmaMusumePachisloSnsTopicPage() {
         <p>
           その後、10月14日に京楽産業.が「ぱちスロ ウマ娘 プリティーダービー」を正式に発表しました（2026年10月31日追記）。
           この記事では、まず公式発表で確認できた内容を整理し、そのうえで9月以降のSNS上の情報と反応を、時系列のまま残しています。
+        </p>
+        <p>
+          2026年11月12日時点では、
+          <a
+            href="https://p-town.dmm.com/machines/5128"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            DMMぱちタウンの機種ページ
+          </a>
+          に、専用筐体の画像が掲載されています（同ページでは導入開始日は「未定」、機械割は「掲載準備中」の表示）。
+          筐体は白を基調とし、液晶まわりはピンクの装飾、下パネルにはキャラクターのイラストが描かれています。冒頭のサムネイルは、この筐体画像をもとに作成したイメージです。
         </p>
 
         <h2>公式発表：10月14日に「ぱちスロ ウマ娘 プリティーダービー」が発表</h2>
@@ -128,6 +140,10 @@ export default function UmaMusumePachisloSnsTopicPage() {
               <tr>
                 <td>搭載スペック</td>
                 <td>ROM容量は最大640Gbit。ゲーム性は、育成した内容でAT性能が変わる「育成型AT」</td>
+              </tr>
+              <tr>
+                <td>AT名（ちょんぼりすたのみ）</td>
+                <td>ステータス成長型AT「ウイニングロード」、上位AT「ドリームレース」（継続レース5勝＝有馬記念勝利で突入とされています）。単独媒体の情報で、公式発表では確認できていません</td>
               </tr>
               <tr>
                 <td>PV</td>
@@ -200,7 +216,7 @@ export default function UmaMusumePachisloSnsTopicPage() {
 
         <h2>よくある疑問：パチスロ？パチンコ？いつ導入？</h2>
         <p>
-          検索でもよく見られる疑問を、公式発表で確認できた内容と、SNS上の情報に分けて整理します（2026年10月31日時点）。
+          検索でもよく見られる疑問を、公式発表で確認できた内容と、SNS上の情報に分けて整理します（2026年11月12日時点）。
         </p>
         <ul>
           <li>
