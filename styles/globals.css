@@ -36,6 +36,8 @@ body {
   line-height: 1.8;
   color: #222;
   background: #f6f7f9;
+  /* Safety net: never let an over-wide element (e.g. an auto-placed ad) widen the page on mobile. */
+  overflow-x: clip;
 }
 
 a {
@@ -284,12 +286,12 @@ section h2,
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
 }
 
 .top-news-cards {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .card {
@@ -655,7 +657,7 @@ section h2,
 
 .share-buttons-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -698,7 +700,7 @@ section h2,
 
 @media (max-width: 480px) {
   .share-buttons-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1496,11 +1498,11 @@ footer {
   }
 
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .coming-soon-section--compact .cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
   }
 
@@ -1556,11 +1558,11 @@ footer {
   }
 
   .article-machine-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .product-box-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .practice-record table {
