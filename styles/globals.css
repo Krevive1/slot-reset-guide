@@ -811,6 +811,16 @@ footer {
   gap: 14px;
 }
 
+.product-more {
+  margin-top: 14px;
+}
+
+.product-more summary {
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
 .product-box-grid--single {
   grid-template-columns: minmax(0, 1fr);
   max-width: 320px;

@@ -9,12 +9,17 @@ export type MachineAffiliatePlacement = {
   offerIds?: AffiliateOfferId[];
   originalWorkOfferIds?: AffiliateOfferId[];
   relatedReadings?: RelatedReadingItem[];
+  // Trial (2026-11-13): show only the first N offers; the rest go into a collapsed list.
+  gearFeaturedCount?: number;
+  originalWorkFeaturedCount?: number;
 };
 
 // Only explicitly listed slugs receive affiliate products or extra reading.
 // Array order is the display order on the machine page.
 export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacement> = {
   "monkey-turn-v": {
+    gearFeaturedCount: 1,
+    originalWorkFeaturedCount: 2,
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerMonkeyTurn", "mangazenkanMonkeyTurn30", "dmmBooksMonkeyTurn"],
     relatedReadings: [
@@ -33,6 +38,8 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     ],
   },
   "tokyo-ghoul": {
+    gearFeaturedCount: 1,
+    originalWorkFeaturedCount: 2,
     offerIds: ["soundcoreLiberty4", "wowowOnDemand"],
     originalWorkOfferIds: ["bookwalkerTokyoGhoul", "mangazenkanTokyoGhoul30", "rentaTokyoGhoul", "dmmBooksTokyoGhoul"],
     relatedReadings: [
@@ -179,6 +186,8 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     originalWorkOfferIds: ["bookwalkerOnePunchMan"],
   },
   "kanojo-okarishimasu": {
+    gearFeaturedCount: 1,
+    originalWorkFeaturedCount: 2,
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerKanojoOkarishimasu", "mangazenkanKanojoOkarishimasu45"],
   },

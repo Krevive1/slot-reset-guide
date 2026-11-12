@@ -1,4 +1,4 @@
-import AffiliateProductBox from "@/components/site/AffiliateProductBox";
+import AffiliateOfferList from "@/components/site/AffiliateOfferList";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { machineAffiliatePlacements } from "@/lib/affiliate/machinePlacements";
 
@@ -13,24 +13,7 @@ export default function MachineOriginalWorkSection({ slug }: { slug: string }) {
   return (
     <section className="card" aria-labelledby="machine-original-work-heading">
       <h2 id="machine-original-work-heading">この台の原作・関連作品を楽しむ</h2>
-      <div className="product-box-grid">
-        {offers.map((offer) => (
-          <AffiliateProductBox
-            key={offer.id}
-            provider={offer.provider}
-            name={offer.serviceName}
-            note={offer.description ?? "詳細はリンク先でご確認ください。"}
-            ctaLabel={offer.ctaLabel}
-            ctaHref={offer.href}
-            imageSrc={offer.imageSrc}
-            disclosure={offer.disclosure}
-            offerType={offer.offerType}
-            serviceName={offer.serviceName}
-            placement="machine_related"
-            affiliateProgram={offer.programName}
-          />
-        ))}
-      </div>
+      <AffiliateOfferList offers={offers} featuredCount={machineAffiliatePlacements[slug]?.originalWorkFeaturedCount} />
     </section>
   );
 }
