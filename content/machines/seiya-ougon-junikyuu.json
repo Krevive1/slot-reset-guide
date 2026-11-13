@@ -2,7 +2,7 @@
   "slug": "seiya-ougon-junikyuu",
   "name": "L聖闘士星矢 黄金十二宮",
   "status": "published",
-  "updatedAt": "2026-11-12T12:00:00+09:00",
+  "updatedAt": "2026-11-14T12:00:00+09:00",
   "publishedAt": "2026-11-12T12:00:00+09:00",
   "heroImage": "/images/machines/seiya-ougon-junikyuu.jpg",
   "asaichiCheck": "天井は、AT間最大1200G・CZ間最大600G+αで、設定変更時はAT間900G・CZ間300G+αに短縮されます（1geki.jp・ちょんぼりすたで一致）。朝一の時点で分かるのは、この天井短縮の有無だけで、打ち出しゲーム数の目安や金額期待値は両媒体とも記載がなく、当サイトでも試算していません。設定変更が確認できない限り、通常の天井（AT間1200G・CZ間600G+α）を基準に考えるのが無難です。",
@@ -61,7 +61,16 @@
       "CZ失敗後の恩恵は、1geki.jp・ちょんぼりすたのいずれも調査中とされています"
     ]
   },
-  "referenceVideos": [],
+  "referenceVideos": [
+    {
+      "youtubeVideoId": "p2zuUJzUdQE",
+      "channelName": "社不燦々【朝イチニキ】",
+      "channelUrl": "https://www.youtube.com/@syafu_sansan",
+      "title": "1週間星矢の朝イチリセット生活したら果たして収支はどうなる？【スマスロ 聖闘士星矢 黄金十二宮】",
+      "summary": "社不燦々【朝イチニキ】様による、スマスロ 聖闘士星矢 黄金十二宮を1週間、朝イチリセット狙いで実戦検証した動画です（2026年11月12日公開）。概要欄では、投稿者の個人的な評価として、朝イチの強さを星3つ、面白さを星2つとし、「得意機種認定です」とコメントしています。",
+      "originalAnalysis": "1週間の朝イチ実戦検証動画です。1人の投稿者による一定期間の結果であり、解析情報上の確定仕様ではありません。機種の性能としては一般化せず、実戦記録の一例としてご覧ください。"
+    }
+  ],
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [
