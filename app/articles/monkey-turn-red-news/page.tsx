@@ -10,6 +10,7 @@ import Comments from "@/components/machine/Comments";
 import WanchankunComment from "@/components/machine/WanchankunComment";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import StickyBottomBanner from "@/components/site/StickyBottomBanner";
+import ArticleRelatedLinks from "@/components/site/ArticleRelatedLinks";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
@@ -467,6 +468,15 @@ export default function MonkeyTurnRedNewsPage() {
           </ul>
         </div>
 
+        <ArticleRelatedLinks
+          links={[
+            { href: "/machines/monkey-turn-v", label: "スマスロ モンキーターンV｜朝イチ・リセット恩恵と天井" },
+            { href: "/articles/monkey-turn-v-5mai-yaku", label: "モンキーターンV 5枚役の解説" },
+            { href: "/machines/paripi-koumei", label: "スマスロ パリピ孔明｜リセット恩恵・朝イチ打ち出し目安" },
+            { href: "/machines/tokyo-ghoul", label: "スマスロ 東京喰種｜朝一・リセット恩恵" },
+            { href: "/machines", label: "朝イチ・リセット恩恵がわかる機種一覧" },
+          ]}
+        />
         <ShareButtons url={url} title={title} />
         <Comments slug="monkey-turn-red-news" title={title} />
         <LineCta />

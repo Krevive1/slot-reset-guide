@@ -7,6 +7,7 @@ import LineCta from "@/components/site/LineCta";
 import ShareButtons from "@/components/site/ShareButtons";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import StickyBottomBanner from "@/components/site/StickyBottomBanner";
+import ArticleRelatedLinks from "@/components/site/ArticleRelatedLinks";
 import { buildBreadcrumbJsonLd, buildFaqJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
@@ -280,6 +281,14 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
           </li>
         </ul>
 
+        <ArticleRelatedLinks
+          links={[
+            { href: "/machines/tokyo-ghoul", label: "スマスロ 東京喰種｜朝一・リセット恩恵と天井" },
+            { href: "/machines/paripi-koumei", label: "スマスロ パリピ孔明｜リセット恩恵・朝イチ打ち出し目安" },
+            { href: "/machines/juoh", label: "スマスロ獣王｜天井・設定変更時の恩恵・やめどき" },
+            { href: "/machines", label: "朝イチ・リセット恩恵がわかる機種一覧" },
+          ]}
+        />
         <ShareButtons url={url} title={title} />
         <LineCta />
       </div>

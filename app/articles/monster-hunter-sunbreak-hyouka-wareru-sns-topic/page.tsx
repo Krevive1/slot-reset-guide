@@ -8,6 +8,7 @@ import ShareButtons from "@/components/site/ShareButtons";
 import TweetEmbed from "@/components/site/TweetEmbed";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import StickyBottomBanner from "@/components/site/StickyBottomBanner";
+import ArticleRelatedLinks from "@/components/site/ArticleRelatedLinks";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
@@ -248,6 +249,14 @@ export default function MonsterHunterSunbreakHyoukaWareruSnsTopicPage() {
           </li>
         </ul>
 
+        <ArticleRelatedLinks
+          links={[
+            { href: "/machines/monster-hunter-rise-sunbreak", label: "スマスロ モンスターハンターライズ サンブレイク｜機種ページ" },
+            { href: "/machines/paripi-koumei", label: "スマスロ パリピ孔明｜リセット恩恵・朝イチ打ち出し目安" },
+            { href: "/machines/tokyo-ghoul", label: "スマスロ 東京喰種｜朝一・リセット恩恵" },
+            { href: "/machines", label: "朝イチ・リセット恩恵がわかる機種一覧" },
+          ]}
+        />
         <ShareButtons url={url} title={title} />
         <LineCta />
       </div>

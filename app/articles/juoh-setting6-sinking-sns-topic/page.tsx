@@ -8,6 +8,7 @@ import ShareButtons from "@/components/site/ShareButtons";
 import TweetEmbed from "@/components/site/TweetEmbed";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import StickyBottomBanner from "@/components/site/StickyBottomBanner";
+import ArticleRelatedLinks from "@/components/site/ArticleRelatedLinks";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
@@ -236,6 +237,15 @@ export default function JuohSetting6SinkingSnsTopicPage() {
           </li>
         </ul>
 
+        <ArticleRelatedLinks
+          links={[
+            { href: "/machines/juoh", label: "スマスロ獣王｜天井・設定変更時の恩恵・やめどき" },
+            { href: "/articles/juoh-tenjo-setting-change-sns-topic", label: "獣王、設定変更で天井は599G＋αに短縮｜分かっていること整理" },
+            { href: "/articles/juoh-0through-100g-zone-sns-topic", label: "獣王の0スルー・100Gゾーンの話題まとめ" },
+            { href: "/machines/tokyo-ghoul", label: "スマスロ 東京喰種｜朝一・リセット恩恵" },
+            { href: "/machines", label: "朝イチ・リセット恩恵がわかる機種一覧" },
+          ]}
+        />
         <ShareButtons url={url} title={title} />
         <LineCta />
       </div>
