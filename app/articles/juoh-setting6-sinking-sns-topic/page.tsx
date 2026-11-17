@@ -9,18 +9,19 @@ import TweetEmbed from "@/components/site/TweetEmbed";
 import AffiliateProductBox from "@/components/site/AffiliateProductBox";
 import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import ArticleRelatedLinks from "@/components/site/ArticleRelatedLinks";
-import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
+import { buildBreadcrumbJsonLd, buildFaqJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
 
 const title =
   "獣王「設定6でも大きく沈む」実戦報告が話題｜“冷遇”説はどこまで確認できる？";
 const description =
-  "2026年10月11〜12日、スマスロ獣王の設定6とする実戦報告がXで約37万〜42万表示を集めました。「逆万枚」「7〜8000ゲームの冷遇」といった投稿者の表現と、確認できていること・できていないことを、個人の報告として整理しました。";
+  "スマスロ獣王の設定6とする実戦報告（逆万枚・7〜8000ゲームの冷遇）がXで話題に。ちょんぼりすた・なな徹では冷遇区間の記載は確認できず（11/17時点）、設定別の初当り確率・機械割と合わせて、個人の報告と確認できる情報を分けて整理します。";
 const slug = "juoh-setting6-sinking-sns-topic";
 const url = `${SITE_URL}/articles/${slug}`;
 const heroImage = `/images/articles/${slug}.png`;
 const publishedAt = "2026-10-12";
+const updatedAt = "2026-11-17";
 
 export const metadata: Metadata = {
   title,
@@ -41,10 +42,38 @@ export const metadata: Metadata = {
   },
 };
 
+const faqItems = [
+  {
+    question: "獣王の設定6でも大きく沈むことはありますか？",
+    answer:
+      "設定は抽選確率を決めるもので、設定6でも短期間や1台のデータでは大きく沈むことがあり得ます。2026年10月に話題になった設定6とする実戦報告は、投稿者個人の報告で、仕様として確認された内容ではありません。",
+  },
+  {
+    question: "獣王に「冷遇区間」「冷遇モード」はありますか？",
+    answer:
+      "2026年11月17日時点で確認したちょんぼりすた・なな徹では、「冷遇区間」「冷遇モード」といった名称や仕様の記載は確認できませんでした。これは冷遇が存在しないと断定するものではなく、解析情報としては確認できていないという整理です。",
+  },
+  {
+    question: "獣王の設定6の機械割は何％ですか？",
+    answer:
+      "ちょんぼりすた・なな徹では、設定1が97.8％、設定2が98.7％、設定4が105.6％、設定5が108.6％、設定6が114.3％と掲載されています（設定3はありません）。メーカー公式の確定情報ではありません。",
+  },
+  {
+    question: "獣王は設定変更で天井が短縮されますか？",
+    answer:
+      "ちょんぼりすた・なな徹の掲載では、通常999Gの天井が設定変更時に599Gへ短縮され、サバ連に突入するまで継続するとされています。詳しくは機種ページをご覧ください。",
+  },
+];
+
 export default function JuohSetting6SinkingSnsTopicPage() {
   const foodOffer = getActiveAffiliateOffer("amazonFoodDrink");
   const vodOffer = getActiveAffiliateOffer("abemaPremium");
-  const articleJsonLd = buildGenericArticleJsonLd({ headline: title, description, url });
+  const articleJsonLd = {
+    ...buildGenericArticleJsonLd({ headline: title, description, url }),
+    datePublished: publishedAt,
+    dateModified: updatedAt,
+  };
+  const faqJsonLd = buildFaqJsonLd(faqItems);
   const breadcrumbJsonLd = buildBreadcrumbJsonLd([
     { name: "トップ", url: SITE_URL },
     { name: title, url },
@@ -54,11 +83,12 @@ export default function JuohSetting6SinkingSnsTopicPage() {
     <article>
       <JsonLd data={articleJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
+      {faqJsonLd && <JsonLd data={faqJsonLd} />}
       <Breadcrumbs items={[{ name: "トップ", href: "/" }, { name: title, href: `/articles/${slug}` }]} />
 
       <div className="article">
         <h1 className="page-title">{title}</h1>
-        <p className="updated-at">公開日：{publishedAt}</p>
+        <p className="updated-at">公開日：{publishedAt}　更新日：{updatedAt}</p>
 
         <div className="thumbnail">
           <Image
@@ -80,6 +110,42 @@ export default function JuohSetting6SinkingSnsTopicPage() {
           </strong>
           本稿では、投稿内容と反応、そして当サイトで確認できている獣王の設定差の情報を分けて整理します。
         </p>
+
+        <h2>結論：解析媒体では「冷遇区間」の記載は確認できず、現時点では個人報告の域（2026年11月17日時点）</h2>
+        <ul>
+          <li>ちょんぼりすた（11/16更新）・なな徹（11/13掲載、11/17更新）では、獣王に「冷遇区間」「冷遇モード」といった名称や仕様の記載は確認できませんでした。</li>
+          <li>ただし、これは「冷遇が存在しない」と断定するものではありません。現時点で解析情報として確認できていない、という整理です。</li>
+          <li>設定6でも短期間・1台のデータでは大きく沈むことはあり得ます。話題になった2件は、投稿者個人の実戦報告です。</li>
+        </ul>
+
+        <h2>獣王の設定別スペック早見表</h2>
+        <div className="article-table-wrap">
+          <table>
+            <thead>
+              <tr><th>設定</th><th>初当り確率（SC）</th><th>機械割</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>設定1</td><td>1/326.5</td><td>97.8％</td></tr>
+              <tr><td>設定2</td><td>1/321.6</td><td>98.7％</td></tr>
+              <tr><td>設定4</td><td>1/295.8</td><td>105.6％</td></tr>
+              <tr><td>設定5</td><td>1/287.6</td><td>108.6％</td></tr>
+              <tr><td>設定6</td><td>1/279.7</td><td>114.3％</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="section-note">
+          ちょんぼりすた・なな徹の掲載値です（設定3はありません）。メーカー公式の確定情報ではありません。機械割は長期的な理論値で、短期の結果を保証するものではありません。
+        </p>
+
+        <h2>よくある質問</h2>
+        <h3>設定6でも大きく沈むことはありますか？</h3>
+        <p>設定は抽選確率を決めるもので、設定6でも短期間や1台のデータでは大きく沈むことがあり得ます。2026年10月に話題になった実戦報告は、投稿者個人の報告で、仕様として確認された内容ではありません。</p>
+        <h3>獣王に「冷遇区間」「冷遇モード」はありますか？</h3>
+        <p>11月17日時点で確認したちょんぼりすた・なな徹では、そうした名称や仕様の記載は確認できませんでした。冷遇が存在しないと断定するものではなく、解析情報としては確認できていないという整理です。</p>
+        <h3>設定6の機械割は何％ですか？</h3>
+        <p>上の表のとおり、ちょんぼりすた・なな徹では設定6が114.3％と掲載されています。</p>
+        <h3>設定変更で天井は短縮されますか？</h3>
+        <p>ちょんぼりすた・なな徹の掲載では、通常999Gの天井が設定変更時に599Gへ短縮され、サバ連に突入するまで継続するとされています。詳しくは<Link href="/machines/juoh">スマスロ獣王の機種ページ</Link>で整理しています。</p>
 
         <h2>「設定6で逆万枚」「7〜8000ゲームの冷遇」とする2つの投稿</h2>
         <p>
@@ -146,7 +212,7 @@ export default function JuohSetting6SinkingSnsTopicPage() {
         </p>
         <ul>
           <li>初当り確率は、設定1が1/326.5、設定6が1/279.7とされています。</li>
-          <li>謎高確の確率は、設定6が設定1の倍以上とされています。</li>
+          <li>謎高確は、設定1が約1/1000とされ、設定6は設定1の倍以上の可能性があるとされています（ちょんぼりすたでは推測表記のため、確定情報としては扱っていません）。</li>
           <li>百の位が偶数のゲーム数（200G・400Gなど）では、SC高確への移行率が高設定ほど高いとされています。</li>
           <li>初回SC終了時のサミートロフィーは、虹色が設定6濃厚、キリン柄が設定5以上濃厚とされています。</li>
         </ul>
@@ -157,7 +223,7 @@ export default function JuohSetting6SinkingSnsTopicPage() {
         <h2>「冷遇」という言葉はどこまで使える？</h2>
         <p>
           投稿者は「冷遇」という言葉を使っていますが、これは投稿者の表現です。
-          獣王について、設定6の台を長く冷遇する仕様があるという情報は、メーカー・解析サイトのいずれでも、当サイトでは確認できていません。
+          獣王について、設定6の台を長く冷遇する仕様があるという情報は、2026年11月17日時点で確認したメーカー公式・解析サイト（ちょんぼりすた・なな徹・すろぱちくえすと）のいずれにも見当たりません。ただし、「存在しない」と断定するものではなく、現時点で確認できていないという意味です。
           今回の報告が仕様に基づくものか、偶然の偏りかは、今後の実戦データの蓄積を待つ必要があります。
         </p>
 

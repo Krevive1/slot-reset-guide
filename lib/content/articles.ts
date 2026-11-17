@@ -47,9 +47,10 @@ export const articles: ArticleMeta[] = [
     slug: "juoh-setting6-sinking-sns-topic",
     title: "獣王「設定6でも大きく沈む」実戦報告が話題｜“冷遇”説はどこまで確認できる？",
     description:
-      "2026年10月11〜12日、スマスロ獣王の設定6とする実戦報告がXで約37万〜42万表示を集めました。「逆万枚」「7〜8000ゲームの冷遇」といった投稿者の表現と、確認できていること・できていないことを、個人の報告として整理しました。",
+      "スマスロ獣王の設定6とする実戦報告（逆万枚・7〜8000ゲームの冷遇）がXで話題に。ちょんぼりすた・なな徹では冷遇区間の記載は確認できず（11/17時点）、設定別の初当り確率・機械割と合わせて、個人の報告と確認できる情報を分けて整理します。",
     category: "petit-news",
     publishedAt: "2026-10-12",
+    updatedAt: "2026-11-17",
     heroImage: "/images/articles/juoh-setting6-sinking-sns-topic.png",
   },
   {
