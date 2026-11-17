@@ -265,12 +265,12 @@ export const articles: ArticleMeta[] = [
   },
   {
     slug: "monkey-turn-red-news",
-    title: "モンキーターンRED始動！「王道から挑戦へ」新作で今わかっていること｜山佐ネクスト新台ニュース",
+    title: "モンキーターンRED 導入日はいつ？2027年1月12日予定｜AT確率・機械割・ゲームフロー｜山佐ネクスト新台ニュース",
     description:
-      "スマスロ「モンキーターンRED」の最新情報を整理。山佐公式ティザーPVの紹介や展示会参加者の投稿をもとに、導入時期・AT情報・未確定情報を分けて、随時更新しています。",
+      "スマスロ「モンキーターンRED」の導入日（2027年1月12日予定、媒体で表記差あり）・AT確率・機械割・純増・ゲームフローを早見表で整理。天井・朝イチは調査中です。",
     category: "new-machine-news",
     publishedAt: "2026-08-22",
-    updatedAt: "2026-10-15",
+    updatedAt: "2026-11-17",
     heroImage: "/images/articles/monkey-turn-red-news.jpg",
   },
   {

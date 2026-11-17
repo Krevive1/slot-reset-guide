@@ -25,7 +25,7 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     relatedReadings: [
       {
         href: "/articles/monkey-turn-red-news",
-        label: "新台ニュース：モンキーターンRED始動！「王道から挑戦へ」",
+        label: "次作「スマスロ モンキーターンRED」の導入日（1/12予定）・AT確率・機械割・ゲームフロー",
       },
       {
         href: "/articles/monkey-turn-v-ex-item-rate",
