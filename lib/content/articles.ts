@@ -265,6 +265,16 @@ export const articles: ArticleMeta[] = [
     heroImage: "/images/articles/bancho-banzuke-news.png",
   },
   {
+    slug: "new-slot-schedule-dec-jan",
+    title: "スロット新台 12月・1月導入スケジュール｜12/7・12/21・1/12の機種一覧【11月20日時点】",
+    description:
+      "2026年12月7日・12月21日、2027年1月12日に導入予定のスロット新台を日程別に一覧化。公表されている機械割と合わせて整理します。導入日は予定です。",
+    category: "new-machine-news",
+    publishedAt: "2026-11-20",
+    updatedAt: "2026-11-20",
+    heroImage: "/images/articles/bancho-banzuke-news.png",
+  },
+  {
     slug: "monkey-turn-red-news",
     title: "モンキーターンRED 導入日はいつ？2027年1月12日予定｜AT確率・機械割・ゲームフロー｜山佐ネクスト新台ニュース",
     description:
