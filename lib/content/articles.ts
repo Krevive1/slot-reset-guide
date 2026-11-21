@@ -275,6 +275,15 @@ export const articles: ArticleMeta[] = [
     heroImage: "/images/articles/bancho-banzuke-news.png",
   },
   {
+    slug: "zenmen-kinen-pachinko-25ten-sns-topic",
+    title: "全面禁煙のパチンコ店は5743店中25店？Xの集計が話題｜全国一律の全面禁煙は決まったのか",
+    description:
+      "「全面禁煙のパチンコ店は全国に25店舗くらいしかない模様」というXの投稿と「5743店中わずか25店」とするまとめ投稿が話題になっています。集計の注意点と、喫煙環境を巡る現時点の動きを整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-11-21",
+    heroImage: "/images/articles/zenmen-kinen-pachinko-25ten-sns-topic.png",
+  },
+  {
     slug: "monkey-turn-red-news",
     title: "モンキーターンRED 導入日はいつ？2027年1月12日予定｜AT確率・機械割・ゲームフロー｜山佐ネクスト新台ニュース",
     description:
