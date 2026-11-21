@@ -94,8 +94,14 @@ export default function ExcelJapanTekken6ShuushiSnsTopicPage() {
         <h2>まとめ記事とX上の反応</h2>
         <p>
           この投稿は、パーラーフルスロットルが10月26日にまとめ記事として取り上げています。
-          引用した投稿者からは、鉄拳6を見送ったことを悔やむ声や、リセット後の狙い方についての感想が出ています。
-          一方で、記事のコメント欄には「確かに美味しかったが、今はもう同じとは限らない」という趣旨の意見も見られます。
+          まとめ記事に引用されたポストでは、鉄拳6を見送ったことを悔やむ声や、リセット後の狙い方についての感想が出ています。
+        </p>
+        <TweetEmbed
+          tweetUrl="https://x.com/returns91038765/status/2114339750832443730"
+          authorName="ブラックカネコンreturns"
+        />
+        <p>
+          一方で、まとめ記事のコメント欄には「確かに美味しかったが、今はもう同じとは限らない」という趣旨の意見も見られます。
           いずれも個人の感想で、機種の評価を示すものではありません。
         </p>
 
@@ -184,6 +190,15 @@ export default function ExcelJapanTekken6ShuushiSnsTopicPage() {
               rel="noopener noreferrer nofollow"
             >
               まるこー＠エクセルジャパン班長（「鉄拳6 収支公開」の投稿）
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/returns91038765/status/2114339750832443730"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              ブラックカネコンreturns（鉄拳6を見送った感想の投稿）
             </a>
           </li>
           <li>

@@ -91,9 +91,21 @@ export default function VegasvegasCmApologySnsTopicPage() {
           日刊スポーツによると、わずか1分ほどのラウンド間インターバルにこのCMがほかのCMを挟まずに連続で流れたため、視聴者の間で「刷り込みがえぐい」といった声が広がりました。
         </p>
         <p>
-          Xでは「さすがにしつこい」「もうええて…」「ベガスベガス、あの連呼は嫌いになるわw」といった声のほか、「ベガスベガスが面白すぎた」「すごい広告効果」「これは戦略的には正解」など、ネタとして楽しむ反応も見られました。
-          試合の採点そのものに注目していた視聴者からは「ベガスはええから採点を！」という声も上がっています。
+          ENCOUNTは、Xの反応として「さすがにしつこい」「もうええて…」「ベガスベガス、あの連呼は嫌いになるわw」といった声のほか、「ベガスベガスが面白すぎた」「すごい広告効果」「これは戦略的には正解」など、ネタとして楽しむ反応も見られたと紹介しています。
+          試合の採点そのものに注目していた視聴者からは「ベガスはええから採点を！」という声も上がっていると伝えられています（いずれも報道記事内の紹介で、本記事で個別の投稿を確認できたものは下に埋め込んでいます）。
         </p>
+        <TweetEmbed
+          tweetUrl="https://x.com/stu2025re/status/2104200480490651971"
+          authorName="パンダ🐼佐藤"
+        />
+        <TweetEmbed
+          tweetUrl="https://x.com/monster_ogawa/status/2104134099745349822"
+          authorName="小川 🥊"
+        />
+        <TweetEmbed
+          tweetUrl="https://x.com/k_m_hiro/status/2104136401323454476"
+          authorName="ごりら"
+        />
         <TweetEmbed
           tweetUrl="https://x.com/J3D_D2/status/2104205561525133735"
           authorName="J3D"
@@ -188,6 +200,33 @@ export default function VegasvegasCmApologySnsTopicPage() {
               rel="noopener noreferrer nofollow"
             >
               VEGAS VEGAS CORPORATE（公式アカウントの謝罪投稿）
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/stu2025re/status/2104200480490651971"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              パンダ🐼佐藤（Xの投稿）
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/monster_ogawa/status/2104134099745349822"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              小川 🥊（Xの投稿）
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/k_m_hiro/status/2104136401323454476"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              ごりら（Xの投稿）
             </a>
           </li>
           <li>
