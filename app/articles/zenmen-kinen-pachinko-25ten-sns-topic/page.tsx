@@ -136,7 +136,13 @@ export default function ZenmenKinenPachinko25tenSnsTopicPage() {
           一方で、会議では「予防原則を適用して紙巻きたばこと同じ扱いにすべき」という厳しい意見も出たと伝えられています。
         </p>
         <p>
-          Xでも「全面禁煙になる議論がまた再燃しているそうで、結果的に全面禁煙はまだ決定ではなく延期になったみたい」という趣旨の投稿が見られました。
+          Xでも、全面禁煙になる議論が再燃しているものの、まだ決定ではなく延期になったようだという投稿が見られました。
+        </p>
+        <TweetEmbed
+          tweetUrl="https://x.com/CIqs6q/status/2122357050986619204"
+          authorName="CIRO@エクセルジャパン班長"
+        />
+        <p>
           2026年11月時点で、パチンコ店が全国一律で全面禁煙になることが決まったという報道は、本記事では確認できていません。
         </p>
         <p className="section-note">
@@ -210,6 +216,15 @@ export default function ZenmenKinenPachinko25tenSnsTopicPage() {
               rel="noopener noreferrer nofollow"
             >
               パーラーフルスロットル（Xの投稿）
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://x.com/CIqs6q/status/2122357050986619204"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+            >
+              CIRO@エクセルジャパン班長（Xの投稿）
             </a>
           </li>
           <li>
