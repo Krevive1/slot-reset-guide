@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "Lリコリス・リコイルで「間違い探し」が話題｜別機種パーツらしき個体・高稼働の声も";
@@ -138,12 +139,12 @@ export default function LycorisRecoilSnsTopicPage() {
           </table>
         </div>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          今回はゲーム性の解析情報ではありませんが、導入直後の注目度の高さがうかがえる話題として紹介しました。
-          原因については、メーカーからの公式な情報が出るまで断定しません。続報が入り次第、このページを更新します。
-        </p>
-
+        <WanchankunComment>
+          <p>
+            今回はゲーム性の解析情報ではありませんが、導入直後の注目度の高さがうかがえる話題として紹介しました。
+            原因については、メーカーからの公式な情報が出るまで断定しません。続報が入り次第、このページを更新します。
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
             {bookOffer && (
               <AffiliateProductBox

@@ -10,6 +10,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title = "L見える子ちゃん、弱レア役CZに最大3倍差｜終了画面にも設定4以上・設定6濃厚パターン";
 const description =
@@ -147,13 +148,13 @@ export default function MierukoChanCzRateSettingDiffPage() {
           両サイトで同一内容が掲載されていますが、元データや調査経路が独立しているかまでは確認できていません。
         </p>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          弱レア役からのCZ当選率の差は、単独の看破要素というより、終了画面の示唆など他の情報と組み合わせて使う追加材料と捉えるのがよさそうです。
-          特に終了画面の強めの示唆（紫エフェクト・最高示唆2種）は、成立すれば実戦上の価値が高い情報です。
-          新しい判別要素や詳細な数値が判明した場合は、このページを更新します。
-        </p>
-
+        <WanchankunComment>
+          <p>
+            弱レア役からのCZ当選率の差は、単独の看破要素というより、終了画面の示唆など他の情報と組み合わせて使う追加材料と捉えるのがよさそうです。
+            特に終了画面の強めの示唆（紫エフェクト・最高示唆2種）は、成立すれば実戦上の価値が高い情報です。
+            新しい判別要素や詳細な数値が判明した場合は、このページを更新します。
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
             {foodOffer && (
               <AffiliateProductBox

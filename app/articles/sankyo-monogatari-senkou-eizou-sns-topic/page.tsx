@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "Lパチスロ もののがたり先行映像が話題｜「からくり×ヴヴヴ？」との声も、スペック情報は未確認";
@@ -163,15 +164,15 @@ export default function SankyoMonogatariSenkouEizouSnsTopicPage() {
           </table>
         </div>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          SANKYOの新台は、先行映像が出た段階でも反応が大きいワン🐶 ただ、今出ているのは映像と、ホールのアカウントの投稿くらいで、正式なスペックはこれからだよ。
-          数字を見て期待しすぎず、メーカーの発表を待つのがよさそうだワン。
-        </p>
-        <p>
-          みんなは、もののがたりの先行映像を見て、期待してる？ それとも様子見？
-        </p>
-
+        <WanchankunComment>
+          <p>
+            SANKYOの新台は、先行映像が出た段階でも反応が大きいワン🐶 ただ、今出ているのは映像と、ホールのアカウントの投稿くらいで、正式なスペックはこれからだよ。
+            数字を見て期待しすぎず、メーカーの発表を待つのがよさそうだワン。
+          </p>
+          <p>
+            みんなは、もののがたりの先行映像を見て、期待してる？ それとも様子見？
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
             <AffiliateProductBox

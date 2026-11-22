@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "スマスロ獣王「0スルーの100Gゾーン狙い」がXで話題｜57万表示の投稿に「朝は強くない」「サバ連後のみ」と補足も";
@@ -158,15 +159,14 @@ export default function Juoh0through100gZoneSnsTopicPage() {
           </table>
         </div>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          獣王は導入されたばかりで、いろいろな狙い目の話が出てくる時期だワン🐶 ただ、今回の100Gゾーン狙いは「朝イチ」ではなく「サバ連後」の話で、しかも出玉次第で変わると本人も補足しているよ。数字だけを見て飛びつかず、条件をよく確認するのが大事だと思うワン。
-        </p>
-        <p>
-          みんなは、獣王のサバ連後の100Gゾーン、狙ってる？それとも様子見？
-        </p>
-
-
+        <WanchankunComment>
+          <p>
+            獣王は導入されたばかりで、いろいろな狙い目の話が出てくる時期だワン🐶 ただ、今回の100Gゾーン狙いは「朝イチ」ではなく「サバ連後」の話で、しかも出玉次第で変わると本人も補足しているよ。数字だけを見て飛びつかず、条件をよく確認するのが大事だと思うワン。
+          </p>
+          <p>
+            みんなは、獣王のサバ連後の100Gゾーン、狙ってる？それとも様子見？
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
             <AffiliateProductBox

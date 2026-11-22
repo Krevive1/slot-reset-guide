@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "スマスロ獣王、設定変更で天井は599G＋αに短縮｜導入日に分かっていること整理";
@@ -130,14 +131,14 @@ export default function JuohTenjoSettingChangeSnsTopicPage() {
           </table>
         </div>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          設定変更で天井が599G＋αに短縮されるなら、新台期間の朝一は気になるところだワン🐶 ただ、導入後に情報が更新されることもあるから、最新の解析をチェックしながら立ち回ってね。
-        </p>
-        <p>
-          みんなは、獣王の初日、朝イチから狙ってみる？それとも様子見する？
-        </p>
-
+        <WanchankunComment>
+          <p>
+            設定変更で天井が599G＋αに短縮されるなら、新台期間の朝一は気になるところだワン🐶 ただ、導入後に情報が更新されることもあるから、最新の解析をチェックしながら立ち回ってね。
+          </p>
+          <p>
+            みんなは、獣王の初日、朝イチから狙ってみる？それとも様子見する？
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
             <AffiliateProductBox

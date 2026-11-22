@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "Lリコリス・リコイル「有利切りの秘密」を公式が公開｜条件は6つ、明確に分かるのは2つだけ";
@@ -112,16 +113,16 @@ export default function LycorisRecoilYuuriGiriHimitsuSnsTopicPage() {
           詳しい用語の定義（「有利切り」の指す範囲など）は、続報が入り次第、このページで補足します。
         </p>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          6パターンもあるのに、実戦で分かるのは2つだけって聞くと「じゃあ他の4つは指標にできないの？」って思っちゃうワン🐶
-          でも逆に言えば、この2パターンに当たったら「ここでリセットされたんだな」と分かる場面があるってことだから、覚えておいて損はなさそうだね。
-        </p>
-        <p>
-          リコリス・リコイルはこれで機種ページの情報とはまた別に、公式発信の話題が続いているワン。
-          みんなは実戦中、この2パターンのどちらかに遭遇したことはあるかな？もし気づいたことがあれば教えてほしいワン。
-        </p>
-
+        <WanchankunComment>
+          <p>
+            6パターンもあるのに、実戦で分かるのは2つだけって聞くと「じゃあ他の4つは指標にできないの？」って思っちゃうワン🐶
+            でも逆に言えば、この2パターンに当たったら「ここでリセットされたんだな」と分かる場面があるってことだから、覚えておいて損はなさそうだね。
+          </p>
+          <p>
+            リコリス・リコイルはこれで機種ページの情報とはまた別に、公式発信の話題が続いているワン。
+            みんなは実戦中、この2パターンのどちらかに遭遇したことはあるかな？もし気づいたことがあれば教えてほしいワン。
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {bookOffer && (
             <AffiliateProductBox

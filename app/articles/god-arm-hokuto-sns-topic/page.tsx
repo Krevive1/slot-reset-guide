@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "「ゴッドアーム」問題でSNS議論拡大｜演者による「他人の台への関与」を巡り意見分かれる";
@@ -146,16 +147,16 @@ export default function GodArmHokutoSnsTopicPage() {
           </table>
         </div>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          今回の「ゴッドアーム問題」は、単純に「演者が他人の台を打っていいのか」という話だけではなく、演者による“応援”と、遊技そのものへの“関与”をどこで線引きするのかという問題として見ると分かりやすいでしょう。
-          実際、SNS上でも「代行遊技として問題視するべき」という方向の意見だけでなく、「どこまでを禁止するのか」「遊技結果への影響をどう判断するのか」といった疑問の声も出ています。
-        </p>
-        <p>
-          一方で、今回の騒動を受けて、ほくと氏が「ゴッドエール」という新しい形へ切り替えたことは確認できます。当サイトでもほくと氏の実戦動画を拝見していますが、引きの強さや、今回のような状況に対して「ゴッドエール」へ切り替える対応力は印象的でした。
-          ただし、記事としては特定の行為が正しい・間違っていると結論づけるのではなく、今後、演者によるファンの遊技への関与について業界でどのような線引きがされていくのかを見ていきたいところです。
-        </p>
-
+        <WanchankunComment>
+          <p>
+            今回の「ゴッドアーム問題」は、単純に「演者が他人の台を打っていいのか」という話だけではなく、演者による“応援”と、遊技そのものへの“関与”をどこで線引きするのかという問題として見ると分かりやすいでしょう。
+            実際、SNS上でも「代行遊技として問題視するべき」という方向の意見だけでなく、「どこまでを禁止するのか」「遊技結果への影響をどう判断するのか」といった疑問の声も出ています。
+          </p>
+          <p>
+            一方で、今回の騒動を受けて、ほくと氏が「ゴッドエール」という新しい形へ切り替えたことは確認できます。当サイトでもほくと氏の実戦動画を拝見していますが、引きの強さや、今回のような状況に対して「ゴッドエール」へ切り替える対応力は印象的でした。
+            ただし、記事としては特定の行為が正しい・間違っていると結論づけるのではなく、今後、演者によるファンの遊技への関与について業界でどのような線引きがされていくのかを見ていきたいところです。
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
             {foodOffer && (
               <AffiliateProductBox

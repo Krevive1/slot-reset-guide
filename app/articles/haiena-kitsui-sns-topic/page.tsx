@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "「ハイエナきつくない？」Xで立ち回り議論｜朝一リセット狙い・設定狙いへ移る声も";
@@ -138,15 +139,15 @@ export default function HaienaKitsuiSnsTopicPage() {
           </table>
         </div>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          情報が広まるほど、みんな同じところを狙うようになって差がつきにくくなるのは自然な流れだと思うワン🐶
-          だからこそ、朝一のリセット判別みたいに「自分の目で確認できる情報」を積み重ねることが大事なんだと思うよ。
-        </p>
-        <p>
-          みんなは最近、ハイエナと朝一リセット狙い・設定狙い、どっちに比重を置いてる？
-        </p>
-
+        <WanchankunComment>
+          <p>
+            情報が広まるほど、みんな同じところを狙うようになって差がつきにくくなるのは自然な流れだと思うワン🐶
+            だからこそ、朝一のリセット判別みたいに「自分の目で確認できる情報」を積み重ねることが大事なんだと思うよ。
+          </p>
+          <p>
+            みんなは最近、ハイエナと朝一リセット狙い・設定狙い、どっちに比重を置いてる？
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
             <AffiliateProductBox

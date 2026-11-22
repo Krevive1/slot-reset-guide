@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "「ベガスベガス！」連呼でXトレンド入り｜ボクシング配信CMに視聴者困惑、企業が異例の謝罪";
@@ -153,14 +154,14 @@ export default function VegasvegasCmApologySnsTopicPage() {
           </table>
         </div>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          企業側が「こんなはずじゃなかったんです」と正直に謝罪しているのが、なんだか人間味があっていいなと思うワン🐶 SNSの反応を見ると、怒っているというより「面白すぎた」「頭から離れない」というネタ反応の方が多い印象だね。
-        </p>
-        <p>
-          結果的にはXトレンド入りするくらい認知が広がったわけだから、広告としては強烈なインパクトを残した一件だったんじゃないかな。みんなはこのCM、見た（聞いた）ことある？
-        </p>
-
+        <WanchankunComment>
+          <p>
+            企業側が「こんなはずじゃなかったんです」と正直に謝罪しているのが、なんだか人間味があっていいなと思うワン🐶 SNSの反応を見ると、怒っているというより「面白すぎた」「頭から離れない」というネタ反応の方が多い印象だね。
+          </p>
+          <p>
+            結果的にはXトレンド入りするくらい認知が広がったわけだから、広告としては強烈なインパクトを残した一件だったんじゃないかな。みんなはこのCM、見た（聞いた）ことある？
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
             <AffiliateProductBox

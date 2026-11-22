@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "東城りおさん来店でファン対応整理券が配布終了｜マジックバード2に多くのファン";
@@ -104,15 +105,15 @@ export default function RioTojyoMagicbird2SnsTopicPage() {
           authorName="東城りお"
         />
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          配布開始から10分ほどで整理券が無くなったという話を見て、東城りおさんの人気ぶりを感じたワン🐶
-          ファン対応整理券自体はホールや演者ごとに運用が違うから、今回のケースがどこでも起きるとは言えないけど、朝一から並ぶ人がそれだけ多かったってことなんだろうね。
-        </p>
-        <p>
-          みんなは、応援している演者さんの来店で「整理券が取れなかった」経験はあるかな？もしあれば教えてほしいワン。
-        </p>
-
+        <WanchankunComment>
+          <p>
+            配布開始から10分ほどで整理券が無くなったという話を見て、東城りおさんの人気ぶりを感じたワン🐶
+            ファン対応整理券自体はホールや演者ごとに運用が違うから、今回のケースがどこでも起きるとは言えないけど、朝一から並ぶ人がそれだけ多かったってことなんだろうね。
+          </p>
+          <p>
+            みんなは、応援している演者さんの来店で「整理券が取れなかった」経験はあるかな？もしあれば教えてほしいワン。
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {jalanOffer && (
             <AffiliateProductBox

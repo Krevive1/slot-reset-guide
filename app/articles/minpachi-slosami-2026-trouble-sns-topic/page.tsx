@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "「みんパチ・スロサミ2026」で物販・くじにアクセス集中｜SNSでは長時間待機の声も";
@@ -142,15 +143,15 @@ export default function MinpachiSlosami2026TroubleSnsTopicPage() {
           </table>
         </div>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          350台超の試打が用意される業界最大級のファンイベントだけに、楽しみにしていた人ほど物販・くじの混乱は残念だったと思うワン🐶
-          ただ、SNSを見る限り「現場スタッフは悪くない」「試打自体は楽しかった」という声も多く、イベントそのものが失敗だったというより、物販・くじの運営面に課題が集中していたという印象だね。
-        </p>
-        <p>
-          来年以降も開催されるなら、今回の反省が運営方法に活かされるといいワン。皆さんはこうした大型ファンイベントの物販・抽選、どんな方式なら混乱が少なくなると思う？
-        </p>
-
+        <WanchankunComment>
+          <p>
+            350台超の試打が用意される業界最大級のファンイベントだけに、楽しみにしていた人ほど物販・くじの混乱は残念だったと思うワン🐶
+            ただ、SNSを見る限り「現場スタッフは悪くない」「試打自体は楽しかった」という声も多く、イベントそのものが失敗だったというより、物販・くじの運営面に課題が集中していたという印象だね。
+          </p>
+          <p>
+            来年以降も開催されるなら、今回の反省が運営方法に活かされるといいワン。皆さんはこうした大型ファンイベントの物販・抽選、どんな方式なら混乱が少なくなると思う？
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
             <AffiliateProductBox

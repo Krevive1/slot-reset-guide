@@ -8,6 +8,7 @@ import ShareButtons from "@/components/site/ShareButtons";
 import TweetEmbed from "@/components/site/TweetEmbed";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "エクセルジャパン班長が鉄拳6の収支を公開｜58,508件・約9,780万円と本人が報告";
@@ -161,15 +162,15 @@ export default function ExcelJapanTekken6ShuushiSnsTopicPage() {
           をご覧ください。
         </p>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          大きな数字は目を引くけれど、いちばん大事なのは「どの条件の台を、どこまで追った結果なのか」だと思うワン🐶
-          元の集計条件が分からないまま、同じ数字を狙うのは危ないんだワン。
-        </p>
-        <p>
-          みんなは、期待値表の数字と実戦の結果が違ったとき、どっちを信じて動く？
-        </p>
-
+        <WanchankunComment>
+          <p>
+            大きな数字は目を引くけれど、いちばん大事なのは「どの条件の台を、どこまで追った結果なのか」だと思うワン🐶
+            元の集計条件が分からないまま、同じ数字を狙うのは危ないんだワン。
+          </p>
+          <p>
+            みんなは、期待値表の数字と実戦の結果が違ったとき、どっちを信じて動く？
+          </p>
+        </WanchankunComment>
         <div className="article-link-box">
           <p>
             朝一リセット・リセット恩恵の基礎については、

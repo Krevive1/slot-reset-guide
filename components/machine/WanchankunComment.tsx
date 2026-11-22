@@ -1,10 +1,18 @@
 import Image from "next/image";
+import type { ReactNode } from "react";
 
-// Optional, per-machine mascot comment shown as a speech bubble after the
-// quit-timing section. Opt-in per machine (like quickFacts) -- machines
-// without a comment render nothing and the page looks exactly as before.
-export default function WanchankunComment({ comment }: { comment?: string }) {
-  if (!comment) return null;
+// Mascot comment shown as a speech bubble ("ワンチャンくんから一言").
+// - Machine pages / news articles: pass a plain string via `comment`.
+// - Petit-news articles: pass the paragraphs as `children`.
+// Machines/articles without a comment render nothing.
+export default function WanchankunComment({
+  comment,
+  children,
+}: {
+  comment?: string;
+  children?: ReactNode;
+}) {
+  if (!comment && !children) return null;
 
   return (
     <section className="wanchankun-comment" aria-label="ワンチャンくんから一言">
@@ -18,7 +26,11 @@ export default function WanchankunComment({ comment }: { comment?: string }) {
       </div>
       <div className="wanchankun-comment-bubble">
         <p className="wanchankun-comment-label">ワンチャンくんから一言</p>
-        <p className="wanchankun-comment-text">{comment}</p>
+        {comment ? (
+          <p className="wanchankun-comment-text">{comment}</p>
+        ) : (
+          <div className="wanchankun-comment-text">{children}</div>
+        )}
       </div>
     </section>
   );

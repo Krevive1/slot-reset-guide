@@ -438,6 +438,14 @@ section h2,
   margin: 0;
 }
 
+.wanchankun-comment-text p {
+  margin: 0 0 8px;
+}
+
+.wanchankun-comment-text p:last-child {
+  margin-bottom: 0;
+}
+
 /* Meaningful color-coding for machine detail page sections (InfoHighlight).
    Tone is chosen from structured data (e.g. machine.status), never from
    matching words in the section's own text. Kept intentionally soft --

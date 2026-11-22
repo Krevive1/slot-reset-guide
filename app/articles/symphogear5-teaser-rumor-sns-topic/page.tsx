@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "シンフォギア5の超先行映像が話題｜約1/399の噂に賛否、公式で分かったことと噂を整理";
@@ -147,14 +148,14 @@ export default function Symphogear5TeaserRumorSnsTopicPage() {
           </table>
         </div>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          10年ぶりの新作だから、みんなの期待も不安も大きいんだワン🐶 でも、今出ている数字は噂の段階だから、正式なスペックが出るまでは決めつけずに待つのがよさそうだよ。
-        </p>
-        <p>
-          みんなは、シンフォギア5にどんなスペックを期待する？
-        </p>
-
+        <WanchankunComment>
+          <p>
+            10年ぶりの新作だから、みんなの期待も不安も大きいんだワン🐶 でも、今出ている数字は噂の段階だから、正式なスペックが出るまでは決めつけずに待つのがよさそうだよ。
+          </p>
+          <p>
+            みんなは、シンフォギア5にどんなスペックを期待する？
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
             <AffiliateProductBox

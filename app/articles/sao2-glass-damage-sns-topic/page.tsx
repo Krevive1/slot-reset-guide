@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title = "今回は「牙狼剣」ではなく「ヘカートII」で台破壊";
 const description =
@@ -148,15 +149,15 @@ export default function Sao2GlassDamageSnsTopicPage() {
           </table>
         </div>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          同じ機種でガラス破損が繰り返し話題になると、「また？」って気になっちゃうワン🐶
-          役物ネタは面白いけど、実際に台パンだった場合は洒落にならない賠償額になるから、どんなに苛立っても手を出さないのが一番だよ。
-        </p>
-        <p>
-          みんなは、こういう破損ネタを見てどう思う？役物原因説、信じる？
-        </p>
-
+        <WanchankunComment>
+          <p>
+            同じ機種でガラス破損が繰り返し話題になると、「また？」って気になっちゃうワン🐶
+            役物ネタは面白いけど、実際に台パンだった場合は洒落にならない賠償額になるから、どんなに苛立っても手を出さないのが一番だよ。
+          </p>
+          <p>
+            みんなは、こういう破損ネタを見てどう思う？役物原因説、信じる？
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
             <AffiliateProductBox

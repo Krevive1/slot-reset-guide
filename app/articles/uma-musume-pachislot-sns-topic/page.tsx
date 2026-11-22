@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "スマスロ ウマ娘 導入日はいつ？2027年導入予定｜京楽「ぱちスロ ウマ娘」筐体3種・育成型AT・最新情報";
@@ -262,16 +263,16 @@ export default function UmaMusumePachisloSnsTopicPage() {
           </table>
         </div>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          9月の投稿で出ていた内容のうち、京楽産業.によるパチスロ化と「2027年導入予定」は、10月14日の公式発表で裏づけられました。専用筐体とパネル3種も、公式の発表内容です。
-          一方、導入月やパチンコ版の話は、まだ公式に確認できていません。
-        </p>
-        <p>
-          朝一リセットや天井、やめどきなど、ホールで使う情報は、現時点では何も出ていません。これらは機種の仕様が公開されてから整理するものなので、天井や設定変更の数字が出回っても、公式や複数の解析媒体で確認できるまでは、確定情報として扱わないほうがよいでしょう。
-          SNSの反応も、「パチスロ化してほしくない」という意見と「競馬を題材とした作品なのだから不自然ではない」という意見に分かれていました。今後のスペック発表や導入日の続報は、確認でき次第、この記事に反映します。
-        </p>
-
+        <WanchankunComment>
+          <p>
+            9月の投稿で出ていた内容のうち、京楽産業.によるパチスロ化と「2027年導入予定」は、10月14日の公式発表で裏づけられました。専用筐体とパネル3種も、公式の発表内容です。
+            一方、導入月やパチンコ版の話は、まだ公式に確認できていません。
+          </p>
+          <p>
+            朝一リセットや天井、やめどきなど、ホールで使う情報は、現時点では何も出ていません。これらは機種の仕様が公開されてから整理するものなので、天井や設定変更の数字が出回っても、公式や複数の解析媒体で確認できるまでは、確定情報として扱わないほうがよいでしょう。
+            SNSの反応も、「パチスロ化してほしくない」という意見と「競馬を題材とした作品なのだから不自然ではない」という意見に分かれていました。今後のスペック発表や導入日の続報は、確認でき次第、この記事に反映します。
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
             {foodOffer && (
               <AffiliateProductBox

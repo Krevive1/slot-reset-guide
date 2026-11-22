@@ -12,6 +12,7 @@ import ArticleRelatedLinks from "@/components/site/ArticleRelatedLinks";
 import { buildBreadcrumbJsonLd, buildFaqJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "獣王「設定6でも大きく沈む」実戦報告が話題｜“冷遇”説はどこまで確認できる？";
@@ -227,15 +228,15 @@ export default function JuohSetting6SinkingSnsTopicPage() {
           今回の報告が仕様に基づくものか、偶然の偏りかは、今後の実戦データの蓄積を待つ必要があります。
         </p>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          設定6でも荒い実戦報告が出ているのは、ちょっと気になる話題だワン🐶 ただ、これだけで「設定6は冷遇される台」とは言えないと思うよ。
-          1台のデータや、投稿者の画像だけで決めつけず、これから集まる実戦データを待ちたいワン。
-        </p>
-        <p>
-          みんなは、高設定でもこのくらい荒れる展開、アリだと思う？それとも、ちょっと厳しい？
-        </p>
-
+        <WanchankunComment>
+          <p>
+            設定6でも荒い実戦報告が出ているのは、ちょっと気になる話題だワン🐶 ただ、これだけで「設定6は冷遇される台」とは言えないと思うよ。
+            1台のデータや、投稿者の画像だけで決めつけず、これから集まる実戦データを待ちたいワン。
+          </p>
+          <p>
+            みんなは、高設定でもこのくらい荒れる展開、アリだと思う？それとも、ちょっと厳しい？
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
             <AffiliateProductBox

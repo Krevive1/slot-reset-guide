@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "喰霊-零-Reの「準備中のメダル減り」にXで賛否｜「昔のART機はこんなもの」の擁護と「REGがマイナス」の不満";
@@ -132,15 +133,14 @@ export default function GareiZeroReJunbichuSnsTopicPage() {
           </table>
         </div>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          準備中にメダルが減るのは、昔のART機を打ってきた人には見慣れた感覚かもしれないけど、最近の機種に慣れているとびっくりするワン🐶 ただ、減る枚数は人によって体感が違うみたいだから、一つの投稿だけで決めつけない方がよさそうだね。
-        </p>
-        <p>
-          みんなは、喰霊の準備中の減り、どう感じる？昔のART機はこんなものだった？
-        </p>
-
-
+        <WanchankunComment>
+          <p>
+            準備中にメダルが減るのは、昔のART機を打ってきた人には見慣れた感覚かもしれないけど、最近の機種に慣れているとびっくりするワン🐶 ただ、減る枚数は人によって体感が違うみたいだから、一つの投稿だけで決めつけない方がよさそうだね。
+          </p>
+          <p>
+            みんなは、喰霊の準備中の減り、どう感じる？昔のART機はこんなものだった？
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
             <AffiliateProductBox

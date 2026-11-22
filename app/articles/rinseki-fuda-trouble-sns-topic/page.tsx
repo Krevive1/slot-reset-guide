@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "「離席札を置かずに席を立ったら…」ホールでの台確保トラブル投稿がXで話題に";
@@ -109,16 +110,16 @@ export default function RinsekiFudaTroubleSnsTopicPage() {
           店舗の判断基準は貼り紙やスタッフへの確認でしか分からないことが多いため、長時間離席する場合や不安がある場合は、離席札の有無にかかわらず一声スタッフにかけておくのが無難と言えそうです。
         </p>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          今回の投稿を見て、「離席札を置く」というひと手間の大切さを改めて感じたワン🐶
-          私物を置いておくだけでは確保の意思が伝わらないこともあるみたいだから、少しの離席でも離席札やスタッフへの一声を忘れないようにしたいところだね。
-        </p>
-        <p>
-          ただ、店舗によってルールの運用は違うだろうから、この投稿だけで「絶対にこうすべき」と決めつけることはできないワン。
-          皆さんは、台に私物を忘れて戻ったら別の人に打たれていた…という経験はあるかな？もし同じ場面に遭遇したら、あなたならどうしますか？
-        </p>
-
+        <WanchankunComment>
+          <p>
+            今回の投稿を見て、「離席札を置く」というひと手間の大切さを改めて感じたワン🐶
+            私物を置いておくだけでは確保の意思が伝わらないこともあるみたいだから、少しの離席でも離席札やスタッフへの一声を忘れないようにしたいところだね。
+          </p>
+          <p>
+            ただ、店舗によってルールの運用は違うだろうから、この投稿だけで「絶対にこうすべき」と決めつけることはできないワン。
+            皆さんは、台に私物を忘れて戻ったら別の人に打たれていた…という経験はあるかな？もし同じ場面に遭遇したら、あなたならどうしますか？
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
             <AffiliateProductBox

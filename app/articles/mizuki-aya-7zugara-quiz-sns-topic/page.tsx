@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "水樹あやさんの「7図柄クイズ」がXで話題｜本人は「モニターが遠くて見えなかった」と説明";
@@ -166,16 +167,16 @@ export default function MizukiAya7zugaraQuizSnsTopicPage() {
           上記はXの投稿に基づく整理です。誰かの知識や姿勢を評価するものではなく、見え方や状況は放送の映像・スタジオの環境によっても変わります。
         </p>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          7図柄って、慣れていても画面が小さいと意外と分からなくなるよね🐶
-          今回は、見え方の事情を本人たちが説明していて、受け止め方も人それぞれだワン。
-          番組側の演出も含めて、ひとつの場面だけで誰かを決めつけないようにしたいところだね。
-        </p>
-        <p>
-          みんなは、7図柄クイズって何問くらい答えられそう？ 遠くのモニターだったら、自信あるかな？
-        </p>
-
+        <WanchankunComment>
+          <p>
+            7図柄って、慣れていても画面が小さいと意外と分からなくなるよね🐶
+            今回は、見え方の事情を本人たちが説明していて、受け止め方も人それぞれだワン。
+            番組側の演出も含めて、ひとつの場面だけで誰かを決めつけないようにしたいところだね。
+          </p>
+          <p>
+            みんなは、7図柄クイズって何問くらい答えられそう？ 遠くのモニターだったら、自信あるかな？
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
             <AffiliateProductBox

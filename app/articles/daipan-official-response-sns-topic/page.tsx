@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "台パン注意への公式Xの返信が話題｜強い表現に賛否、ホール公式アカウントの言葉選びを考える";
@@ -143,14 +144,14 @@ export default function DaipanOfficialResponseSnsTopicPage() {
           </table>
         </div>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          台パンは台の故障にもつながる迷惑行為だから、注意すること自体は当然だと思うワン🐶 ただ、公式アカウントの発信は不特定多数の目に触れるものだから、内容がどれだけ正しくても、言葉選び次第で受け取られ方が変わってしまうのは難しいところだね。
-        </p>
-        <p>
-          今回は「対応は正しいけど言葉が強い」という反応が多かった印象。みんなは、ホールの公式アカウントってどこまで踏み込んだ発信をしていいと思う？
-        </p>
-
+        <WanchankunComment>
+          <p>
+            台パンは台の故障にもつながる迷惑行為だから、注意すること自体は当然だと思うワン🐶 ただ、公式アカウントの発信は不特定多数の目に触れるものだから、内容がどれだけ正しくても、言葉選び次第で受け取られ方が変わってしまうのは難しいところだね。
+          </p>
+          <p>
+            今回は「対応は正しいけど言葉が強い」という反応が多かった印象。みんなは、ホールの公式アカウントってどこまで踏み込んだ発信をしていいと思う？
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
             <AffiliateProductBox

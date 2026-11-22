@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "スマスロ獣王、公式試打動画にサバチャン突入音への声も｜超サバのレインボー演出には称賛";
@@ -137,14 +138,14 @@ export default function JuohSeSnsTopicPage() {
           </table>
         </div>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          導入前の公式解説動画にこれだけ反応が集まるのは、注目度の高さの裏返しだと思うワン🐶 演出音の好みは人それぞれだから、賛否が分かれるのは新台ではよくあることだね。
-        </p>
-        <p>
-          10月5日の導入後、実際にホールで打った人の感想がどう変わっていくか気になるワン。みんなは試打動画のSE、どう感じた？
-        </p>
-
+        <WanchankunComment>
+          <p>
+            導入前の公式解説動画にこれだけ反応が集まるのは、注目度の高さの裏返しだと思うワン🐶 演出音の好みは人それぞれだから、賛否が分かれるのは新台ではよくあることだね。
+          </p>
+          <p>
+            10月5日の導入後、実際にホールで打った人の感想がどう変わっていくか気になるワン。みんなは試打動画のSE、どう感じた？
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
             <AffiliateProductBox

@@ -12,6 +12,7 @@ import ArticleRelatedLinks from "@/components/site/ArticleRelatedLinks";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "モンハンサンブレイクはなぜ評価が割れる？通常時CZへの不満と万枚実戦をXの投稿から整理";
@@ -174,15 +175,15 @@ export default function MonsterHunterSunbreakHyoukaWareruSnsTopicPage() {
           </table>
         </div>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          サンブレイクは導入からまだ数日で、評価が大きく割れている台だワン🐶 厳しい声は通常時のCZに集まっていて、出玉が出ない台と決まったわけではないところがポイントだと思うよ。
-          数字や点数だけを見て決めつけず、自分の目で状況を確かめるのが大事だワン。
-        </p>
-        <p>
-          みんなは、サンブレイクの通常時やCZ、どう感じてる？ 打った人の感想を教えてほしいワン！
-        </p>
-
+        <WanchankunComment>
+          <p>
+            サンブレイクは導入からまだ数日で、評価が大きく割れている台だワン🐶 厳しい声は通常時のCZに集まっていて、出玉が出ない台と決まったわけではないところがポイントだと思うよ。
+            数字や点数だけを見て決めつけず、自分の目で状況を確かめるのが大事だワン。
+          </p>
+          <p>
+            みんなは、サンブレイクの通常時やCZ、どう感じてる？ 打った人の感想を教えてほしいワン！
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {gameOffer && (
             <AffiliateProductBox

@@ -11,6 +11,7 @@ import StickyBottomBanner from "@/components/site/StickyBottomBanner";
 import { buildBreadcrumbJsonLd, buildGenericArticleJsonLd } from "@/lib/seo/jsonld";
 import { getActiveAffiliateOffer } from "@/lib/affiliate/offers";
 import { SITE_URL } from "@/lib/site";
+import WanchankunComment from "@/components/machine/WanchankunComment";
 
 const title =
   "全面禁煙のパチンコ店は5743店中25店？Xの集計が話題｜全国一律の全面禁煙は決まったのか";
@@ -159,15 +160,15 @@ export default function ZenmenKinenPachinko25tenSnsTopicPage() {
           <li>「パチ屋は一服する場所」という、喫煙とセットで楽しんできた人の声</li>
         </ul>
 
-        <h2>ワンチャンくんの見解</h2>
-        <p>
-          たばこを吸う人にとっても吸わない人にとっても大事な話題だから、数字ひとつでこれだけ反応が広がるんだね🐶
-          ただ、今回の「25店」は集計方法がはっきりしないので、「そういう集計が話題になっている」くらいに受け止めておくのがよさそうだワン。
-        </p>
-        <p>
-          もし全国一律の全面禁煙になったら、みんなのホール選びや打つ時間は変わりそう？ それとも、あまり変わらないかな？
-        </p>
-
+        <WanchankunComment>
+          <p>
+            たばこを吸う人にとっても吸わない人にとっても大事な話題だから、数字ひとつでこれだけ反応が広がるんだね🐶
+            ただ、今回の「25店」は集計方法がはっきりしないので、「そういう集計が話題になっている」くらいに受け止めておくのがよさそうだワン。
+          </p>
+          <p>
+            もし全国一律の全面禁煙になったら、みんなのホール選びや打つ時間は変わりそう？ それとも、あまり変わらないかな？
+          </p>
+        </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
             <AffiliateProductBox
