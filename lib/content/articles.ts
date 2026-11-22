@@ -275,6 +275,15 @@ export const articles: ArticleMeta[] = [
     heroImage: "/images/articles/bancho-banzuke-news.png",
   },
   {
+    slug: "mizuki-aya-7zugara-quiz-sns-topic",
+    title: "水樹あやさんの「7図柄クイズ」がXで話題｜本人は「モニターが遠くて見えなかった」と説明",
+    description:
+      "ABEMA「パーラーカチ盛り」の7図柄当てクイズを巡り、X上で批判と擁護の声が広がっています。何が起きたのか、本人と寺井一択さんの説明、SNSの反応を中立的に整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-11-22",
+    heroImage: "/images/articles/mizuki-aya-7zugara-quiz-sns-topic.png",
+  },
+  {
     slug: "zenmen-kinen-pachinko-25ten-sns-topic",
     title: "全面禁煙のパチンコ店は5743店中25店？Xの集計が話題｜全国一律の全面禁煙は決まったのか",
     description:

@@ -34,6 +34,7 @@ const staticEntries: SitemapEntry[] = [
   { path: "/articles/monkey-turn-red-news", lastModified: "2026-11-17", changeFrequency: "weekly", priority: 0.5 },
   { path: "/articles/basilisk-4-news", lastModified: "2026-08-22", changeFrequency: "weekly", priority: 0.5 },
   { path: "/articles/new-slot-schedule-dec-jan", lastModified: "2026-11-20", changeFrequency: "weekly", priority: 0.5 },
+  { path: "/articles/mizuki-aya-7zugara-quiz-sns-topic", lastModified: "2026-11-22", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/zenmen-kinen-pachinko-25ten-sns-topic", lastModified: "2026-11-21", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/bancho-banzuke-news", lastModified: "2026-09-04", changeFrequency: "weekly", priority: 0.5 },
   { path: "/articles/monkey-turn-v-ex-item-rate", lastModified: "2026-09-04", changeFrequency: "monthly", priority: 0.5 },
