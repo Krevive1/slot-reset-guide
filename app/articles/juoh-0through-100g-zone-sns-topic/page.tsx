@@ -160,12 +160,12 @@ export default function Juoh0through100gZoneSnsTopicPage() {
         </div>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             獣王は導入されたばかりで、いろいろな狙い目の話が出てくる時期だワン🐶 ただ、今回の100Gゾーン狙いは「朝イチ」ではなく「サバ連後」の話で、しかも出玉次第で変わると本人も補足しているよ。数字だけを見て飛びつかず、条件をよく確認するのが大事だと思うワン。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             みんなは、獣王のサバ連後の100Gゾーン、狙ってる？それとも様子見？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (

@@ -176,13 +176,13 @@ export default function MonsterHunterSunbreakHyoukaWareruSnsTopicPage() {
         </div>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             サンブレイクは導入からまだ数日で、評価が大きく割れている台だワン🐶 厳しい声は通常時のCZに集まっていて、出玉が出ない台と決まったわけではないところがポイントだと思うよ。
             数字や点数だけを見て決めつけず、自分の目で状況を確かめるのが大事だワン。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             みんなは、サンブレイクの通常時やCZ、どう感じてる？ 打った人の感想を教えてほしいワン！
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {gameOffer && (

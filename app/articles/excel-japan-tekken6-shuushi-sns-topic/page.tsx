@@ -163,13 +163,13 @@ export default function ExcelJapanTekken6ShuushiSnsTopicPage() {
         </p>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             大きな数字は目を引くけれど、いちばん大事なのは「どの条件の台を、どこまで追った結果なのか」だと思うワン🐶
             元の集計条件が分からないまま、同じ数字を狙うのは危ないんだワン。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             みんなは、期待値表の数字と実戦の結果が違ったとき、どっちを信じて動く？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="article-link-box">
           <p>

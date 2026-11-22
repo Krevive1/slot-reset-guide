@@ -139,12 +139,12 @@ export default function JuohSeSnsTopicPage() {
         </div>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             導入前の公式解説動画にこれだけ反応が集まるのは、注目度の高さの裏返しだと思うワン🐶 演出音の好みは人それぞれだから、賛否が分かれるのは新台ではよくあることだね。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             10月5日の導入後、実際にホールで打った人の感想がどう変わっていくか気になるワン。みんなは試打動画のSE、どう感じた？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (

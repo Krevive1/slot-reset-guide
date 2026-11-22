@@ -111,14 +111,14 @@ export default function RinsekiFudaTroubleSnsTopicPage() {
         </p>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             今回の投稿を見て、「離席札を置く」というひと手間の大切さを改めて感じたワン🐶
             私物を置いておくだけでは確保の意思が伝わらないこともあるみたいだから、少しの離席でも離席札やスタッフへの一声を忘れないようにしたいところだね。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             ただ、店舗によってルールの運用は違うだろうから、この投稿だけで「絶対にこうすべき」と決めつけることはできないワン。
             皆さんは、台に私物を忘れて戻ったら別の人に打たれていた…という経験はあるかな？もし同じ場面に遭遇したら、あなたならどうしますか？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (

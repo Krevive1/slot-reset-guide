@@ -134,12 +134,12 @@ export default function GareiZeroReJunbichuSnsTopicPage() {
         </div>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             準備中にメダルが減るのは、昔のART機を打ってきた人には見慣れた感覚かもしれないけど、最近の機種に慣れているとびっくりするワン🐶 ただ、減る枚数は人によって体感が違うみたいだから、一つの投稿だけで決めつけない方がよさそうだね。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             みんなは、喰霊の準備中の減り、どう感じる？昔のART機はこんなものだった？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (

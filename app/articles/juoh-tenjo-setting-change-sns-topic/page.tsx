@@ -132,12 +132,12 @@ export default function JuohTenjoSettingChangeSnsTopicPage() {
         </div>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             設定変更で天井が599G＋αに短縮されるなら、新台期間の朝一は気になるところだワン🐶 ただ、導入後に情報が更新されることもあるから、最新の解析をチェックしながら立ち回ってね。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             みんなは、獣王の初日、朝イチから狙ってみる？それとも様子見する？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (

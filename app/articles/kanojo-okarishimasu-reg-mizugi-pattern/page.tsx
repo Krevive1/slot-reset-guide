@@ -128,13 +128,13 @@ export default function KanojoOkarishimasuRegMizugiPatternPage() {
         </div>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             公式から直接、演出のヒントが小出しに公開されるのは実戦する側としてもありがたいワン🐶
             ただ「何かが濃厚」という部分がまだぼかされているから、設定差なのか他の恩恵なのか、現時点では決めつけない方がよさそうだね。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             SANKYO「開発こぼれ話」では日替わりで新しい小ネタが公開されているみたいだから、続報が出たらこのページも更新するワン。実戦で水着キャラの出現タイミングを意識してみた方は、ぜひ体感を教えてください。
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (

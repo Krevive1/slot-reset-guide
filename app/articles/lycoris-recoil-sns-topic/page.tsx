@@ -140,10 +140,10 @@ export default function LycorisRecoilSnsTopicPage() {
         </div>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             今回はゲーム性の解析情報ではありませんが、導入直後の注目度の高さがうかがえる話題として紹介しました。
             原因については、メーカーからの公式な情報が出るまで断定しません。続報が入り次第、このページを更新します。
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
             {bookOffer && (

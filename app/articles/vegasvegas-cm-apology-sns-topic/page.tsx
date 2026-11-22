@@ -155,12 +155,12 @@ export default function VegasvegasCmApologySnsTopicPage() {
         </div>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             企業側が「こんなはずじゃなかったんです」と正直に謝罪しているのが、なんだか人間味があっていいなと思うワン🐶 SNSの反応を見ると、怒っているというより「面白すぎた」「頭から離れない」というネタ反応の方が多い印象だね。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             結果的にはXトレンド入りするくらい認知が広がったわけだから、広告としては強烈なインパクトを残した一件だったんじゃないかな。みんなはこのCM、見た（聞いた）ことある？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (

@@ -149,12 +149,12 @@ export default function Symphogear5TeaserRumorSnsTopicPage() {
         </div>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             10年ぶりの新作だから、みんなの期待も不安も大きいんだワン🐶 でも、今出ている数字は噂の段階だから、正式なスペックが出るまでは決めつけずに待つのがよさそうだよ。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             みんなは、シンフォギア5にどんなスペックを期待する？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (

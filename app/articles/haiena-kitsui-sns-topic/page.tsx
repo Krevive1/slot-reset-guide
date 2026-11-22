@@ -140,13 +140,13 @@ export default function HaienaKitsuiSnsTopicPage() {
         </div>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             情報が広まるほど、みんな同じところを狙うようになって差がつきにくくなるのは自然な流れだと思うワン🐶
             だからこそ、朝一のリセット判別みたいに「自分の目で確認できる情報」を積み重ねることが大事なんだと思うよ。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             みんなは最近、ハイエナと朝一リセット狙い・設定狙い、どっちに比重を置いてる？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (

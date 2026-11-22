@@ -145,12 +145,12 @@ export default function DaipanOfficialResponseSnsTopicPage() {
         </div>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             台パンは台の故障にもつながる迷惑行為だから、注意すること自体は当然だと思うワン🐶 ただ、公式アカウントの発信は不特定多数の目に触れるものだから、内容がどれだけ正しくても、言葉選び次第で受け取られ方が変わってしまうのは難しいところだね。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             今回は「対応は正しいけど言葉が強い」という反応が多かった印象。みんなは、ホールの公式アカウントってどこまで踏み込んだ発信をしていいと思う？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (

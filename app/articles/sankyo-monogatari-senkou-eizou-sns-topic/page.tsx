@@ -165,13 +165,13 @@ export default function SankyoMonogatariSenkouEizouSnsTopicPage() {
         </div>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             SANKYOの新台は、先行映像が出た段階でも反応が大きいワン🐶 ただ、今出ているのは映像と、ホールのアカウントの投稿くらいで、正式なスペックはこれからだよ。
             数字を見て期待しすぎず、メーカーの発表を待つのがよさそうだワン。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             みんなは、もののがたりの先行映像を見て、期待してる？ それとも様子見？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (

@@ -150,13 +150,13 @@ export default function Sao2GlassDamageSnsTopicPage() {
         </div>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             同じ機種でガラス破損が繰り返し話題になると、「また？」って気になっちゃうワン🐶
             役物ネタは面白いけど、実際に台パンだった場合は洒落にならない賠償額になるから、どんなに苛立っても手を出さないのが一番だよ。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             みんなは、こういう破損ネタを見てどう思う？役物原因説、信じる？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (

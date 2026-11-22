@@ -144,13 +144,13 @@ export default function MinpachiSlosami2026TroubleSnsTopicPage() {
         </div>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             350台超の試打が用意される業界最大級のファンイベントだけに、楽しみにしていた人ほど物販・くじの混乱は残念だったと思うワン🐶
             ただ、SNSを見る限り「現場スタッフは悪くない」「試打自体は楽しかった」という声も多く、イベントそのものが失敗だったというより、物販・くじの運営面に課題が集中していたという印象だね。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             来年以降も開催されるなら、今回の反省が運営方法に活かされるといいワン。皆さんはこうした大型ファンイベントの物販・抽選、どんな方式なら混乱が少なくなると思う？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (

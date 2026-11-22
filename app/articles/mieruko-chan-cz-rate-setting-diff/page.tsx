@@ -149,11 +149,11 @@ export default function MierukoChanCzRateSettingDiffPage() {
         </p>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             弱レア役からのCZ当選率の差は、単独の看破要素というより、終了画面の示唆など他の情報と組み合わせて使う追加材料と捉えるのがよさそうです。
             特に終了画面の強めの示唆（紫エフェクト・最高示唆2種）は、成立すれば実戦上の価値が高い情報です。
             新しい判別要素や詳細な数値が判明した場合は、このページを更新します。
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
             {foodOffer && (

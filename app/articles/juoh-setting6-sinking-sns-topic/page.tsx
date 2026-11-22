@@ -229,13 +229,13 @@ export default function JuohSetting6SinkingSnsTopicPage() {
         </p>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             設定6でも荒い実戦報告が出ているのは、ちょっと気になる話題だワン🐶 ただ、これだけで「設定6は冷遇される台」とは言えないと思うよ。
             1台のデータや、投稿者の画像だけで決めつけず、これから集まる実戦データを待ちたいワン。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             みんなは、高設定でもこのくらい荒れる展開、アリだと思う？それとも、ちょっと厳しい？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (

@@ -106,13 +106,13 @@ export default function RioTojyoMagicbird2SnsTopicPage() {
         />
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             配布開始から10分ほどで整理券が無くなったという話を見て、東城りおさんの人気ぶりを感じたワン🐶
             ファン対応整理券自体はホールや演者ごとに運用が違うから、今回のケースがどこでも起きるとは言えないけど、朝一から並ぶ人がそれだけ多かったってことなんだろうね。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             みんなは、応援している演者さんの来店で「整理券が取れなかった」経験はあるかな？もしあれば教えてほしいワン。
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {jalanOffer && (

@@ -428,6 +428,7 @@ section h2,
 }
 
 .wanchankun-comment-label {
+  display: block;
   margin: 0 0 4px;
   font-size: 12px;
   font-weight: 700;
@@ -435,14 +436,16 @@ section h2,
 }
 
 .wanchankun-comment-text {
+  display: block;
   margin: 0;
 }
 
-.wanchankun-comment-text p {
+.wanchankun-comment-para {
+  display: block;
   margin: 0 0 8px;
 }
 
-.wanchankun-comment-text p:last-child {
+.wanchankun-comment-para:last-child {
   margin-bottom: 0;
 }
 

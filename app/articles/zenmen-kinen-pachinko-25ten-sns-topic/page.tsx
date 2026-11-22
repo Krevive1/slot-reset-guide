@@ -161,13 +161,13 @@ export default function ZenmenKinenPachinko25tenSnsTopicPage() {
         </ul>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             たばこを吸う人にとっても吸わない人にとっても大事な話題だから、数字ひとつでこれだけ反応が広がるんだね🐶
             ただ、今回の「25店」は集計方法がはっきりしないので、「そういう集計が話題になっている」くらいに受け止めておくのがよさそうだワン。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             もし全国一律の全面禁煙になったら、みんなのホール選びや打つ時間は変わりそう？ それとも、あまり変わらないかな？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (

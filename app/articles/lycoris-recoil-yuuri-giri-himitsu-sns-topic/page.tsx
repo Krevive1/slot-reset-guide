@@ -114,14 +114,14 @@ export default function LycorisRecoilYuuriGiriHimitsuSnsTopicPage() {
         </p>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             6パターンもあるのに、実戦で分かるのは2つだけって聞くと「じゃあ他の4つは指標にできないの？」って思っちゃうワン🐶
             でも逆に言えば、この2パターンに当たったら「ここでリセットされたんだな」と分かる場面があるってことだから、覚えておいて損はなさそうだね。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             リコリス・リコイルはこれで機種ページの情報とはまた別に、公式発信の話題が続いているワン。
             みんなは実戦中、この2パターンのどちらかに遭遇したことはあるかな？もし気づいたことがあれば教えてほしいワン。
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {bookOffer && (

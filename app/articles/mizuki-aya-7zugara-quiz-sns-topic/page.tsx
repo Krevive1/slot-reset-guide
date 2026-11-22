@@ -168,14 +168,14 @@ export default function MizukiAya7zugaraQuizSnsTopicPage() {
         </p>
 
         <WanchankunComment>
-          <p>
+          <span className="wanchankun-comment-para">
             7図柄って、慣れていても画面が小さいと意外と分からなくなるよね🐶
             今回は、見え方の事情を本人たちが説明していて、受け止め方も人それぞれだワン。
             番組側の演出も含めて、ひとつの場面だけで誰かを決めつけないようにしたいところだね。
-          </p>
-          <p>
+          </span>
+          <span className="wanchankun-comment-para">
             みんなは、7図柄クイズって何問くらい答えられそう？ 遠くのモニターだったら、自信あるかな？
-          </p>
+          </span>
         </WanchankunComment>
         <div className="product-box-grid product-box-grid--single">
           {foodOffer && (
