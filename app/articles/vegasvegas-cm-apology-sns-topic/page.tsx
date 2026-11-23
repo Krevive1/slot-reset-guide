@@ -66,7 +66,7 @@ export default function VegasvegasCmApologySnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="ボクシング配信CM連呼騒動のイメージ"
             fill

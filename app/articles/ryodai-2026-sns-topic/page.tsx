@@ -65,7 +65,7 @@ export default function Ryodai2026SnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="2026年の良台は？という話題でスロット台とトロフィーが並ぶイメージ"
             fill

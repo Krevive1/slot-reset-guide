@@ -61,7 +61,7 @@ export default function ExcelJapanTekken6ShuushiSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="スマスロ鉄拳6の収支公開が話題になっているイメージ"
             fill

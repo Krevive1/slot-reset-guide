@@ -15,7 +15,7 @@ const title = "スマスロ北斗の拳で隣に音量MAXの男が座った話�
 const description =
   "スマスロ北斗の拳で音量MAXと大きな貧乏ゆすりの隣人に遭遇し、自分も奇妙な方法で対抗してしまった実体験コラムです。";
 const url = `${SITE_URL}/articles/hokuto-loud-neighbor-column`;
-const heroImage = "/images/articles/hokuto-loud-neighbor-column.jpg";
+const heroImage = "/images/articles/hokuto-loud-neighbor-column.webp";
 const publishedAt = "2026-07-21";
 
 export const metadata: Metadata = {
@@ -58,7 +58,7 @@ export default function HokutoLoudNeighborColumnPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="スロット台を挟んで貧乏ゆすりと両足バタバタで対抗する2人のイラスト"
             fill

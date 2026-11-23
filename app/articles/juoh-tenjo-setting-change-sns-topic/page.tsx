@@ -60,7 +60,7 @@ export default function JuohTenjoSettingChangeSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="スマスロ獣王の天井・設定変更に関する話題のイメージ"
             fill

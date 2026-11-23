@@ -18,7 +18,7 @@ const title =
 const description =
   "京楽産業.が10月14日に「ぱちスロ ウマ娘 プリティーダービー」を発表しました。導入日は2027年予定（月・日付は未発表）、専用の新設計筐体（パネル3種）、育成型ATの内容を整理。天井・設定変更時の挙動・機械割は未発表です。導入月やパチンコ版はSNS上の情報で、公式には確認できていません（2026年11月12日時点）。筐体画像も掲載しています。9月以降のSNSの反応も残しています。";
 const url = `${SITE_URL}/articles/uma-musume-pachislot-sns-topic`;
-const heroImage = "/images/articles/uma-musume-pachislot-cabinet.jpg";
+const heroImage = "/images/articles/uma-musume-pachislot-cabinet.webp";
 const publishedAt = "2026-09-18";
 const updatedAt = "2026-11-12";
 
@@ -66,7 +66,7 @@ export default function UmaMusumePachisloSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}　更新日：{updatedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="ぱちスロ ウマ娘 プリティーダービーの専用筐体（白基調）の画像をもとにしたイメージ"
             fill

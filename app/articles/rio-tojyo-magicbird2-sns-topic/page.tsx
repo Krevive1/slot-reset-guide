@@ -66,7 +66,7 @@ export default function RioTojyoMagicbird2SnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="東城りおさんの来店が話題になったことのイメージ"
             fill

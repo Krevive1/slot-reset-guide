@@ -16,7 +16,7 @@ const title =
 const description =
   "パチスロホールで隣台がうるさいときの騒音対策を、Soundcore Liberty 4の実体験をもとに解説。爆音は消えなくても、耳への負担はかなり和らぎました。";
 const url = `${SITE_URL}/articles/soundcore-liberty-4-hall-noise-column`;
-const heroImage = "/images/articles/soundcore-liberty-4-hall-noise-column.jpg";
+const heroImage = "/images/articles/soundcore-liberty-4-hall-noise-column.webp";
 const publishedAt = "2026-07-24";
 
 export const metadata: Metadata = {
@@ -63,7 +63,7 @@ export default function SoundcoreLiberty4HallNoiseColumnPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt={`ワンチャンくんコラム「${title}」のアイキャッチ`}
             fill

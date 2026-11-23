@@ -65,7 +65,7 @@ export default function DaipanOfficialResponseSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="台パン注意への公式回答を巡るSNSの話題のイメージ"
             fill

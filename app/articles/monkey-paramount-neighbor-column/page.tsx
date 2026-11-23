@@ -13,7 +13,7 @@ const title = "隣のパラマウント打ちに「表出ろ」と言われた�
 const description =
   "スマスロモンキーターンVを打っていたら、右隣で「パラマウントベッド打ち」をしていた男に「表出ろ」と言われた実体験コラムです。もめた相手の正体が判明するまでの顛末をまとめました。";
 const url = `${SITE_URL}/articles/monkey-paramount-neighbor-column`;
-const heroImage = "/images/articles/monkey-paramount-neighbor-column.jpg";
+const heroImage = "/images/articles/monkey-paramount-neighbor-column.webp";
 const publishedAt = "2026-07-28";
 
 export const metadata: Metadata = {
@@ -55,7 +55,7 @@ export default function MonkeyParamountNeighborColumnPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="ワンチャンくんコラム「隣のパラマウント打ちに『表出ろ』と言われた結果、まさかの正体が判明した」のアイキャッチ"
             fill

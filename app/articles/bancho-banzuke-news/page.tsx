@@ -65,7 +65,7 @@ export default function BanchoBanzukeNewsPage() {
         </p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="押忍！番長番付のティザーPVイメージ"
             fill

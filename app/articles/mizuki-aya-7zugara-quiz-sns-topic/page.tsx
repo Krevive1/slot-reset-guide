@@ -65,7 +65,7 @@ export default function MizukiAya7zugaraQuizSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="7図柄クイズとモニターが遠くて見えなかったという説明が話題のイメージ"
             fill

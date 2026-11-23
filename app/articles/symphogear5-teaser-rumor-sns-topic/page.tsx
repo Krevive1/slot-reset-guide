@@ -60,7 +60,7 @@ export default function Symphogear5TeaserRumorSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="パチンコ戦姫絶唱シンフォギア最新作を巡る話題のイメージ"
             fill

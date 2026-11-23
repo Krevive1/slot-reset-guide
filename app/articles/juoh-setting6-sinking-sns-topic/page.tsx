@@ -92,7 +92,7 @@ export default function JuohSetting6SinkingSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}　更新日：{updatedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="スマスロ獣王の設定6の実戦報告を巡るSNSの話題のイメージ"
             fill

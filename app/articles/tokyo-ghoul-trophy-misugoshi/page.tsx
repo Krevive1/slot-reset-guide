@@ -13,7 +13,7 @@ const title = "スマスロ東京喰種 実践記録｜トロフィーを確認�
 const description =
   "2026年7月7日、大型イベントでスマスロ東京喰種に着席。左隣の設定6確定演出とトロフィー出現がありながら、色を確認しないまま消化してしまい、お小遣い5万円を使い切った実践記録です。反省点を正直にまとめています。";
 const url = `${SITE_URL}/articles/tokyo-ghoul-trophy-misugoshi`;
-const heroImage = "/images/articles/tokyo-ghoul-trophy-misugoshi.jpg";
+const heroImage = "/images/articles/tokyo-ghoul-trophy-misugoshi.webp";
 const publishedAt = "2026-07-19";
 
 export const metadata: Metadata = {
@@ -55,7 +55,7 @@ export default function TokyoGhoulTrophyMisugoshiArticlePage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image src={heroImage} alt="東京喰種の台に噛みつくワンチャンくん" fill sizes="(max-width: 720px) 100vw, 720px" style={{ objectFit: "cover" }} />
+          <Image unoptimized src={heroImage} alt="東京喰種の台に噛みつくワンチャンくん" fill sizes="(max-width: 720px) 100vw, 720px" style={{ objectFit: "cover" }} />
         </div>
 
         <h2>抽選70番、朝一から並んだ7月7日</h2>

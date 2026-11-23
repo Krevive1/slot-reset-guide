@@ -66,7 +66,7 @@ export default function GodArmHokutoSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="ゴッドアーム問題を巡るSNSの話題のイメージ"
             fill

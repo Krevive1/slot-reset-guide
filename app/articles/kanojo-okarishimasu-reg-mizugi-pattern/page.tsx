@@ -65,7 +65,7 @@ export default function KanojoOkarishimasuRegMizugiPatternPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="彼女、お借りしますのREGULAR BONUS中の水着キャラ出現パターンのイメージ"
             fill

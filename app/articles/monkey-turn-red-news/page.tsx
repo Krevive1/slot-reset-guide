@@ -20,7 +20,7 @@ const title =
 const description =
   "スマスロ「モンキーターンRED」の導入日（2027年1月12日予定・DMMぱちタウン／なな徹掲載、ちょんぼりすたは1月上旬、メーカー公式は2027年1月予定）・AT確率・機械割・純増・ゲームフローを早見表で整理。天井・朝イチは調査中。";
 const url = `${SITE_URL}/articles/monkey-turn-red-news`;
-const heroImage = "/images/articles/monkey-turn-red-news.jpg";
+const heroImage = "/images/articles/monkey-turn-red-news.webp";
 const publishedAt = "2026-08-22";
 const updatedAt = "2026-11-17";
 
@@ -80,7 +80,7 @@ export default function MonkeyTurnRedNewsPage() {
         </p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="モンキーターンRED新作ニュース記事のオリジナルサムネイル"
             fill

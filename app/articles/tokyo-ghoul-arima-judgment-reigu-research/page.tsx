@@ -104,7 +104,7 @@ export default function TokyoGhoulArimaJudgmentReiguResearchPage() {
         <p className="updated-at">公開日：{publishedAt} / 更新日：{updatedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="東京喰種『有馬J失敗後は約2000G冷遇』説のイメージ"
             fill

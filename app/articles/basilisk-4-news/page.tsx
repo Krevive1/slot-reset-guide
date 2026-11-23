@@ -18,7 +18,7 @@ const title =
 const description =
   "ユニバーサルエンターテインメントが2026年9月7日、スマスロ バジリスク～甲賀忍法帖～Ⅳを正式発表。2026年12月導入予定、新ゲームフロー「胎動の刻」・最終血戦「死合」・バジリスクタイムの2パート構成継承など、公式発表で判明した内容と、まだ未確定な仕様を整理します。";
 const url = `${SITE_URL}/articles/basilisk-4-news`;
-const heroImage = "/images/articles/basilisk-4-news.jpg";
+const heroImage = "/images/articles/basilisk-4-news.webp";
 const publishedAt = "2026-08-22";
 const updatedAt = "2026-11-14";
 
@@ -67,7 +67,7 @@ export default function Basilisk4NewsPage() {
         </p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="バジリスクⅣ検定通過ニュース記事のオリジナルサムネイル"
             fill

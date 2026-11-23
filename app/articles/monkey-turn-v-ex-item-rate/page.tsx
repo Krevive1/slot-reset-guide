@@ -67,7 +67,7 @@ export default function MonkeyTurnVExItemRateArticlePage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="モンキーターンVの激走チャージEXアイテムのイメージ"
             fill

@@ -60,7 +60,7 @@ export default function LycorisRecoilSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="スマスロ リコリス・リコイルのイメージ"
             fill

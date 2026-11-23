@@ -60,7 +60,7 @@ export default function GareiZeroReJunbichuSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="喰霊-零-Reの準備中のメダルの減りを巡るSNSの話題のイメージ"
             fill

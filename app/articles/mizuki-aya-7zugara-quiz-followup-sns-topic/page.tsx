@@ -65,7 +65,7 @@ export default function MizukiAya7zugaraQuizFollowupSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="7図柄クイズの続報として公式アカウントのプリンの投稿が話題のイメージ"
             fill

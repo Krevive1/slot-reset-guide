@@ -65,7 +65,7 @@ export default function NewSlotScheduleDecJanPage() {
         </p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="12月・1月導入予定のスロット新台スケジュール"
             fill

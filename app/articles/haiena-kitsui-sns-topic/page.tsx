@@ -65,7 +65,7 @@ export default function HaienaKitsuiSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="ハイエナが厳しくなったというSNSの話題のイメージ"
             fill

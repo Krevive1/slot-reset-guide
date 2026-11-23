@@ -61,7 +61,7 @@ export default function MonsterHunterSunbreakHyoukaWareruSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="スマスロ モンハンサンブレイクの評価を巡るSNSの話題のイメージ"
             fill

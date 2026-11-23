@@ -66,7 +66,7 @@ export default function MinpachiSlosami2026TroubleSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="みんパチ・スロサミ2026の物販混雑を巡るSNSの話題のイメージ"
             fill

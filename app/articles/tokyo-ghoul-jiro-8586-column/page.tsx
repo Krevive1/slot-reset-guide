@@ -15,7 +15,7 @@ const title = "二郎系ラーメンを食べに遠征したら、東京喰種�
 const description =
   "ジャグラーで少し勝って帰るはずが、東京喰種の周りをグールグール5周。乗り打ちで最終8586枚となった二郎系ラーメン遠征の実践記録です。";
 const url = `${SITE_URL}/articles/tokyo-ghoul-jiro-8586-column`;
-const heroImage = "/images/articles/tokyo-ghoul-jiro-8586-column.jpg";
+const heroImage = "/images/articles/tokyo-ghoul-jiro-8586-column.webp";
 const publishedAt = "2026-08-03";
 
 export const metadata: Metadata = {
@@ -52,7 +52,7 @@ function ArticlePhoto({
 }) {
   return (
     <figure style={{ margin: "24px 0" }}>
-      <Image
+      <Image unoptimized
         src={src}
         alt={alt}
         width={width}
@@ -88,7 +88,7 @@ export default function TokyoGhoulJiro8586ColumnPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="二郎系ラーメンを食べに遠征したら東京喰種で8586枚出た実践記録"
             fill
@@ -105,7 +105,7 @@ export default function TokyoGhoulJiro8586ColumnPage() {
         <p>なぜなら、このあと書く内容だけを読むと、誰も信じてくれないからです。</p>
 
         <ArticlePhoto
-          src="/images/articles/tokyo-ghoul-jiro-8586-01-ramen.jpg"
+          src="/images/articles/tokyo-ghoul-jiro-8586-01-ramen.webp"
           alt="二郎系ラーメン旅で食べたラーメン"
           caption="この時点では、まだラーメン旅でした。"
           width={1600}
@@ -174,7 +174,7 @@ export default function TokyoGhoulJiro8586ColumnPage() {
         <p><strong>4000枚出た後の550Gハマり台</strong>が空いたのです。</p>
 
         <ArticlePhoto
-          src="/images/articles/tokyo-ghoul-jiro-8586-02-before-play.jpg"
+          src="/images/articles/tokyo-ghoul-jiro-8586-02-before-play.webp"
           alt="AT間550Gを確認して着席した東京喰種"
           caption="筐体表示は193G。詳細画面ではAT間550Gを確認して着席。"
           width={1600}
@@ -262,7 +262,7 @@ export default function TokyoGhoulJiro8586ColumnPage() {
         <p>10％を引きました。</p>
 
         <ArticlePhoto
-          src="/images/articles/tokyo-ghoul-jiro-8586-03-arima-entry.jpg"
+          src="/images/articles/tokyo-ghoul-jiro-8586-03-arima-entry.webp"
           alt="東京喰種のAT中に発生した有馬乱入"
           caption="5戦目で有馬乱入。こりゃもろたで工藤！"
           width={1535}
@@ -293,7 +293,7 @@ export default function TokyoGhoulJiro8586ColumnPage() {
         <p><strong>隻眼の梟。</strong></p>
 
         <ArticlePhoto
-          src="/images/articles/tokyo-ghoul-jiro-8586-04-owl.jpg"
+          src="/images/articles/tokyo-ghoul-jiro-8586-04-owl.webp"
           alt="初めて当選した隻眼の梟"
           caption="初めての隻眼の梟。初対面の支給額は300枚でした。"
           width={1600}
@@ -315,7 +315,7 @@ export default function TokyoGhoulJiro8586ColumnPage() {
         <p>ATは<strong>2513枚</strong>で終了。</p>
 
         <ArticlePhoto
-          src="/images/articles/tokyo-ghoul-jiro-8586-05-2513.jpg"
+          src="/images/articles/tokyo-ghoul-jiro-8586-05-2513.webp"
           alt="最初のAT終了時に獲得した2513枚"
           caption="最初のATは2513枚。ここから有馬ジャッジメントへ。"
           width={1600}
@@ -343,7 +343,7 @@ export default function TokyoGhoulJiro8586ColumnPage() {
         <p><strong>1確です。</strong></p>
 
         <ArticlePhoto
-          src="/images/articles/tokyo-ghoul-jiro-8586-06-arima-judgement.jpg"
+          src="/images/articles/tokyo-ghoul-jiro-8586-06-arima-judgement.webp"
           alt="有馬ジャッジメント最終ゲームのスイカ"
           caption="最終ゲームでスイカ。私、有馬ジャッジメントは得意なのでございます。"
           width={1600}
@@ -377,7 +377,7 @@ export default function TokyoGhoulJiro8586ColumnPage() {
         <p>ここは<strong>1000枚</strong>でした。</p>
 
         <ArticlePhoto
-          src="/images/articles/tokyo-ghoul-jiro-8586-07-super-bites.jpg"
+          src="/images/articles/tokyo-ghoul-jiro-8586-07-super-bites.webp"
           alt="不利益を成功させて突入した超BITES"
           caption="不利益を通して超BITESへ。名前は不利益、結果は利益。"
           width={1179}
@@ -404,7 +404,7 @@ export default function TokyoGhoulJiro8586ColumnPage() {
         <p><strong>これ、全く同じ状況なんです。</strong></p>
 
         <ArticlePhoto
-          src="/images/articles/tokyo-ghoul-jiro-8586-08-watermelon.jpg"
+          src="/images/articles/tokyo-ghoul-jiro-8586-08-watermelon.webp"
           alt="有馬ジャッジメント準備中に停止したスイカ"
           caption="有馬さんが、スイカを剥いて待ってくれていました。"
           width={1600}
@@ -430,7 +430,7 @@ export default function TokyoGhoulJiro8586ColumnPage() {
         <p>確定チェリーでした。</p>
 
         <ArticlePhoto
-          src="/images/articles/tokyo-ghoul-jiro-8586-09-confirmed-cherry.jpg"
+          src="/images/articles/tokyo-ghoul-jiro-8586-09-confirmed-cherry.webp"
           alt="残り枚数が少ない場面で成立した確定チェリー"
           caption="終了寸前の確定チェリー。ドラマティックパッスロ。"
           width={1600}
@@ -499,7 +499,7 @@ export default function TokyoGhoulJiro8586ColumnPage() {
         <p>最終結果は、<strong>8586枚</strong>。</p>
 
         <ArticlePhoto
-          src="/images/articles/tokyo-ghoul-jiro-8586-10-result.jpg"
+          src="/images/articles/tokyo-ghoul-jiro-8586-10-result.webp"
           alt="東京喰種の最終獲得枚数8586枚"
           caption="万枚は見えました。見えていただけでした。最終8586枚。"
           width={1600}

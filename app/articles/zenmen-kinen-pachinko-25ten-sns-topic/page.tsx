@@ -65,7 +65,7 @@ export default function ZenmenKinenPachinko25tenSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="全面禁煙のパチンコ店は5743店中25店という集計が話題のイメージ"
             fill

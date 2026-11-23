@@ -318,7 +318,7 @@ export const articles: ArticleMeta[] = [
     category: "new-machine-news",
     publishedAt: "2026-08-22",
     updatedAt: "2026-11-17",
-    heroImage: "/images/articles/monkey-turn-red-news.jpg",
+    heroImage: "/images/articles/monkey-turn-red-news.webp",
   },
   {
     slug: "basilisk-4-news",
@@ -329,7 +329,7 @@ export const articles: ArticleMeta[] = [
     category: "new-machine-news",
     publishedAt: "2026-08-22",
     updatedAt: "2026-09-11",
-    heroImage: "/images/articles/basilisk-4-news.jpg",
+    heroImage: "/images/articles/basilisk-4-news.webp",
   },
   {
     slug: "tokyo-ghoul-jiro-8586-column",
@@ -338,7 +338,7 @@ export const articles: ArticleMeta[] = [
       "ジャグラーで少し勝って帰るはずが、東京喰種の周りをグールグール5周。乗り打ちで最終8586枚となった二郎系ラーメン遠征の実践記録です。",
     category: "column",
     publishedAt: "2026-08-03",
-    heroImage: "/images/articles/tokyo-ghoul-jiro-8586-column.jpg",
+    heroImage: "/images/articles/tokyo-ghoul-jiro-8586-column.webp",
   },
   {
     slug: "monkey-paramount-neighbor-column",
@@ -347,7 +347,7 @@ export const articles: ArticleMeta[] = [
       "スマスロモンキーターンVを打っていたら、右隣で「パラマウントベッド打ち」をしていた男に「表出ろ」と言われた実体験コラムです。もめた相手の正体が判明するまでの顛末をまとめました。",
     category: "column",
     publishedAt: "2026-07-28",
-    heroImage: "/images/articles/monkey-paramount-neighbor-column.jpg",
+    heroImage: "/images/articles/monkey-paramount-neighbor-column.webp",
   },
   {
     slug: "soundcore-liberty-4-hall-noise-column",
@@ -356,7 +356,7 @@ export const articles: ArticleMeta[] = [
       "パチスロホールで隣台がうるさいときの騒音対策を、Soundcore Liberty 4の実体験をもとに解説。爆音は消えなくても、耳への負担はかなり和らぎました。",
     category: "column",
     publishedAt: "2026-07-24",
-    heroImage: "/images/articles/soundcore-liberty-4-hall-noise-column.jpg",
+    heroImage: "/images/articles/soundcore-liberty-4-hall-noise-column.webp",
   },
   {
     slug: "hokuto-loud-neighbor-column",
@@ -365,7 +365,7 @@ export const articles: ArticleMeta[] = [
       "スマスロ北斗の拳で音量MAXと大きな貧乏ゆすりの隣人に遭遇し、自分も奇妙な方法で対抗してしまった実体験コラムです。",
     category: "column",
     publishedAt: "2026-07-21",
-    heroImage: "/images/articles/hokuto-loud-neighbor-column.jpg",
+    heroImage: "/images/articles/hokuto-loud-neighbor-column.webp",
   },
   {
     slug: "tokyo-ghoul-trophy-misugoshi",
@@ -374,7 +374,7 @@ export const articles: ArticleMeta[] = [
       "2026年7月7日、大型イベントでスマスロ東京喰種に着席。左隣の設定6確定演出とトロフィー出現がありながら、色を確認しないまま消化してしまい、お小遣い5万円を使い切った実践記録です。反省点を正直にまとめています。",
     category: "column",
     publishedAt: "2026-07-19",
-    heroImage: "/images/articles/tokyo-ghoul-trophy-misugoshi.jpg",
+    heroImage: "/images/articles/tokyo-ghoul-trophy-misugoshi.webp",
   },
 ];
 

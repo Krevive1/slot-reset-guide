@@ -60,7 +60,7 @@ export default function SankyoMonogatariSenkouEizouSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="Lパチスロ もののがたり先行映像を巡るSNSの話題のイメージ"
             fill

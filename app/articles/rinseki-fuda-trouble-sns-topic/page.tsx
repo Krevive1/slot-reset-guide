@@ -66,7 +66,7 @@ export default function RinsekiFudaTroubleSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="ホールでの台確保トラブルを巡るSNSの話題のイメージ"
             fill

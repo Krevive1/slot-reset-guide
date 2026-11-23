@@ -64,7 +64,7 @@ export default function Sao2GlassDamageSnsTopicPage() {
         <p className="updated-at">公開日：{publishedAt}</p>
 
         <div className="thumbnail">
-          <Image
+          <Image unoptimized
             src={heroImage}
             alt="スマスロSAO2の筐体ガラス破損を巡るSNSの話題のイメージ"
             fill
