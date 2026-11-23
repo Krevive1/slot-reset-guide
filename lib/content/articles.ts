@@ -275,6 +275,15 @@ export const articles: ArticleMeta[] = [
     heroImage: "/images/articles/bancho-banzuke-news.png",
   },
   {
+    slug: "mizuki-aya-7zugara-quiz-followup-sns-topic",
+    title: "水樹あやさんの7図柄クイズ【続報】公式アカウントが「あれは…、プリン？」と投稿｜本人は「人の炎上したやつで遊ぶんじゃねぇ」と返信",
+    description:
+      "水樹あやさんの7図柄当てクイズを巡る話題の続報です。11月22日、公式アカウントが「あれは…、プリン？」と投稿し、本人が引用して返信しました。何が投稿され、SNSでどう受け止められたかを中立的に整理します。",
+    category: "petit-news",
+    publishedAt: "2026-11-23",
+    heroImage: "/images/articles/mizuki-aya-7zugara-quiz-followup-sns-topic.png",
+  },
+  {
     slug: "mizuki-aya-7zugara-quiz-sns-topic",
     title: "水樹あやさんの「7図柄クイズ」がXで話題｜本人は「モニターが遠くて見えなかった」と説明",
     description:

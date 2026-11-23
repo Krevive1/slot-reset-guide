@@ -82,6 +82,15 @@ export default function MizukiAya7zugaraQuizSnsTopicPage() {
           今回は、何が起きたのか、本人たちの説明、SNSの反応を、特定の誰かを評価・断定しない形で整理します。
         </p>
 
+        <div className="article-link-box">
+          <p>
+            <strong>続報：</strong>
+            <Link href="/articles/mizuki-aya-7zugara-quiz-followup-sns-topic">
+              水樹あやさんの7図柄クイズ【続報】公式アカウントが「あれは…、プリン？」と投稿
+            </Link>
+          </p>
+        </div>
+
         <h2>何が話題になっているのか</h2>
         <p>
           マルハンタイムズの公式アカウントは放送後の11月20日、7図柄当てクイズの場面をまとめた動画を「珍解答続出で7図柄当てクイズがまさかの大喜利大会に!?」という文面でXに投稿しました。
