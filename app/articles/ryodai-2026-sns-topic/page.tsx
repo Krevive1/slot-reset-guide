@@ -195,6 +195,20 @@ export default function Ryodai2026SnsTopicPage() {
           </p>
         </div>
 
+        <h2>この記事で挙がった機種のページ</h2>
+        <p className="section-note">
+          朝イチのリセット情報や天井・設定変更の情報は、各機種ページにまとめています。
+        </p>
+        <ul>
+          <li><Link href="/machines/sengoku-otome-5">L戦国乙女5</Link></li>
+          <li><Link href="/machines/maho-akogarete">L魔法少女にあこがれて</Link></li>
+          <li><Link href="/machines/world-dai-star">スロット ワールドダイスター</Link></li>
+          <li><Link href="/machines/jashin-chan-dropkick">L邪神ちゃんドロップキック</Link></li>
+          <li><Link href="/machines/sword-art-online-2">スロット ソードアート・オンラインII</Link></li>
+          <li><Link href="/machines/shinuchi-yoshimune">L真打吉宗</Link></li>
+          <li><Link href="/machines/toaru-majutsu-no-index-2">スマスロ とある魔術の禁書目録2</Link></li>
+        </ul>
+
         <h2>参考情報</h2>
         <p className="section-note">
           本記事は、以下のXポスト・紹介記事を参考に作成しました。埋め込みポストの内容は各投稿者・アカウント自身の発言であり、本記事の見解ではありません。

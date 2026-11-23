@@ -118,7 +118,15 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "hihouden": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "nangoku-sodachi-special": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "yoshimune": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
-  "shinuchi-yoshimune": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
+  "shinuchi-yoshimune": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
+    relatedReadings: [
+      {
+        href: "/articles/ryodai-2026-sns-topic",
+        label: "「2026年の良台は？」がXで話題｜挙がった機種と賛否を整理",
+      },
+    ],
+  },
   "super-rio-ace-2": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "million-god-kamigami-no-kiseki": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
   "tacoslot": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable"] },
@@ -422,6 +430,12 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "toaru-majutsu-no-index-2": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerToaruIndex"],
+    relatedReadings: [
+      {
+        href: "/articles/ryodai-2026-sns-topic",
+        label: "「2026年の良台は？」がXで話題｜挙がった機種と賛否を整理",
+      },
+    ],
   },
   "toaru-kagaku-no-railgun-2": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
@@ -463,6 +477,12 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "jashin-chan-dropkick": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerJashinChan"],
+    relatedReadings: [
+      {
+        href: "/articles/ryodai-2026-sns-topic",
+        label: "「2026年の良台は？」がXで話題｜挙がった機種と賛否を整理",
+      },
+    ],
   },
   "jormungand": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
@@ -489,6 +509,12 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "sword-art-online-2": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
     originalWorkOfferIds: ["bookwalkerSAO"],
+    relatedReadings: [
+      {
+        href: "/articles/ryodai-2026-sns-topic",
+        label: "「2026年の良台は？」がXで話題｜挙がった機種と賛否を整理",
+      },
+    ],
   },
   "ultraman-saishuu-kessen": {
     offerIds: ["soundcoreLiberty4", "mobileBatteryCable"],
@@ -505,7 +531,31 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
   "super-bin-musume": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "jinsScreen"] },
   "super-black-jack": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "jinsScreen"] },
   "sengoku-collection-6": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "jinsScreen"] },
-  "sengoku-otome-5": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "jinsScreen"] },
-  "world-dai-star": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "jinsScreen"] },
+  "sengoku-otome-5": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "jinsScreen"],
+    relatedReadings: [
+      {
+        href: "/articles/ryodai-2026-sns-topic",
+        label: "「2026年の良台は？」がXで話題｜挙がった機種と賛否を整理",
+      },
+    ],
+  },
+  "world-dai-star": {
+    offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "jinsScreen"],
+    relatedReadings: [
+      {
+        href: "/articles/ryodai-2026-sns-topic",
+        label: "「2026年の良台は？」がXで話題｜挙がった機種と賛否を整理",
+      },
+    ],
+  },
   "salaryman-banchou-2": { offerIds: ["soundcoreLiberty4", "mobileBatteryCable", "jinsScreen"] },
+  "maho-akogarete": {
+    relatedReadings: [
+      {
+        href: "/articles/ryodai-2026-sns-topic",
+        label: "「2026年の良台は？」がXで話題｜挙がった機種と賛否を整理",
+      },
+    ],
+  },
 };
