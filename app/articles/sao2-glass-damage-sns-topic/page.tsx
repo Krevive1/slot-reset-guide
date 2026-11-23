@@ -17,7 +17,7 @@ const title = "今回は「牙狼剣」ではなく「ヘカートII」で台破
 const description =
   "スマスロ『ソードアート・オンラインⅡ』の筐体ガラスが割られた写真がXに投稿され、表示回数480万回超の反響に。8月にも2件の同様の破損が話題になっており、「また？」という反応が広がっています。誰が・なぜ割ったのかは明らかになっていません。";
 const url = `${SITE_URL}/articles/sao2-glass-damage-sns-topic`;
-const heroImage = "/images/articles/sao2-glass-damage-sns-topic.png";
+const heroImage = "/images/articles/sao2-glass-damage-sns-topic.webp";
 const publishedAt = "2026-10-01";
 
 export const metadata: Metadata = {

@@ -18,7 +18,7 @@ const title =
 const description =
   "パチスロ来店演者「ゴッドアームほくと」氏を巡り、ファンから応援を頼まれた際に台へ関与する「ゴッドアーム」がSNSで話題に。代行遊技にあたるのではとの指摘や業界人の異なる意見が相次ぎ、その後は台に触れず声援を送る「ゴッドエール」へ移行しています。";
 const url = `${SITE_URL}/articles/god-arm-hokuto-sns-topic`;
-const heroImage = "/images/articles/god-arm-hokuto-sns-topic.png";
+const heroImage = "/images/articles/god-arm-hokuto-sns-topic.webp";
 const publishedAt = "2026-09-18";
 
 export const metadata: Metadata = {

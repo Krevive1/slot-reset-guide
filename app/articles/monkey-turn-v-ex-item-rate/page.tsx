@@ -15,7 +15,7 @@ const title = "モンキーターンVの激走チャージEXアイテムとは�
 const description =
   "スマスロモンキーターンVの激走チャージ中に成立するレア役から、EXアイテムを獲得できるかどうかに設定差があるとされています。ボート・弱チェリーなど弱レア役からの獲得率を中心に、非公式に流通している設定別参考値を整理しました。";
 const url = `${SITE_URL}/articles/monkey-turn-v-ex-item-rate`;
-const heroImage = "/images/articles/monkey-turn-v-ex-item-rate.png";
+const heroImage = "/images/articles/monkey-turn-v-ex-item-rate.webp";
 const publishedAt = "2026-09-04";
 
 export const metadata: Metadata = {

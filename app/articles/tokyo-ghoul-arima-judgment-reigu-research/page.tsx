@@ -16,7 +16,7 @@ const title = "スマスロ東京喰種『有馬ジャッジメント失敗後�
 const description =
   "スマスロ東京喰種で話題になっている「有利区間切断後、有馬貴将ジャッジメント失敗後は約2000Gの冷遇に入る」という説について、公開情報とX上の複数の実戦報告をもとに調査しました。確定情報・観測されている傾向・未確定事項を分けて整理しています。";
 const url = `${SITE_URL}/articles/tokyo-ghoul-arima-judgment-reigu-research`;
-const heroImage = "/images/articles/tokyo-ghoul-arima-judgment-reigu-research.png";
+const heroImage = "/images/articles/tokyo-ghoul-arima-judgment-reigu-research.webp";
 const publishedAt = "2026-09-04";
 const updatedAt = "2026-10-08";
 

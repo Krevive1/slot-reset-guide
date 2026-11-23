@@ -16,7 +16,7 @@ const title = "L見える子ちゃん、弱レア役CZに最大3倍差｜終了�
 const description =
   "パチスロ見える子ちゃんで、通常時の弱レア役からのCZ当選率に設定1と設定6で3倍の差があるとする解析情報を、すろぱちくえすと・一撃の両サイトで確認しました。ボーナス終了画面の設定示唆パターンとあわせて、確認できていること・まだ確認できていないことを整理しました。";
 const url = `${SITE_URL}/articles/mieruko-chan-cz-rate-setting-diff`;
-const heroImage = "/images/articles/mieruko-chan-cz-rate-setting-diff.png";
+const heroImage = "/images/articles/mieruko-chan-cz-rate-setting-diff.webp";
 const publishedAt = "2026-09-10";
 
 export const metadata: Metadata = {

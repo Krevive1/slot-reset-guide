@@ -19,7 +19,7 @@ const title =
 const description =
   "2026年10月5日に導入されたスマスロ モンハンサンブレイクについて、Xでは通常時のCZやゲーム性に厳しい声が目立つ一方、設定5で約1.3万枚を回収したという報告も出ています。評価が分かれている理由を、複数の投稿をもとに個人の感想として整理しました。";
 const url = `${SITE_URL}/articles/monster-hunter-sunbreak-hyouka-wareru-sns-topic`;
-const heroImage = "/images/articles/monster-hunter-sunbreak-hyouka-wareru-sns-topic.png";
+const heroImage = "/images/articles/monster-hunter-sunbreak-hyouka-wareru-sns-topic.webp";
 const publishedAt = "2026-10-09";
 
 export const metadata: Metadata = {

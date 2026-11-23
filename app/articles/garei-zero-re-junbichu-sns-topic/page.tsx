@@ -18,7 +18,7 @@ const title =
 const description =
   "2026年8月17日導入の「Lパチスロ 喰霊‐零‐Re」で、ART準備中にメダルが減る点についてXで賛否が広がっています。「むかしのART機はほとんどそう」と擁護する投稿は約29万表示。「準備中の減りは少し異常」「REGがマイナスボーナス」という不満の声も含め、投稿内容を整理しました。";
 const url = `${SITE_URL}/articles/garei-zero-re-junbichu-sns-topic`;
-const heroImage = "/images/articles/garei-zero-re-junbichu-sns-topic.png";
+const heroImage = "/images/articles/garei-zero-re-junbichu-sns-topic.webp";
 const publishedAt = "2026-10-07";
 
 export const metadata: Metadata = {

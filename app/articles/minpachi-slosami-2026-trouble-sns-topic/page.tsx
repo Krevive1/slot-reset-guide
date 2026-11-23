@@ -18,7 +18,7 @@ const title =
 const description =
   "業界公式のファン感謝祭「みんパチ・スロサミ2026」（2026年9月22日開催）で、物販・くじコーナーにアクセスが集中し、主催側が新規整列とくじコーナーを一時中止しました。現地参加者のSNS投稿と、公式が案内した内容を整理しました。";
 const url = `${SITE_URL}/articles/minpachi-slosami-2026-trouble-sns-topic`;
-const heroImage = "/images/articles/minpachi-slosami-2026-trouble-sns-topic.png";
+const heroImage = "/images/articles/minpachi-slosami-2026-trouble-sns-topic.webp";
 const publishedAt = "2026-09-23";
 
 export const metadata: Metadata = {

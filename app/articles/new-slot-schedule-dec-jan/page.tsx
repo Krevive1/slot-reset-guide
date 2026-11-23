@@ -16,7 +16,7 @@ const title = "スロット新台 12月・1月導入スケジュール｜12/7・
 const description =
   "2026年12月7日・12月21日、2027年1月12日に導入予定のスロット新台を日程別に一覧化。ゼーガペインETR・ツインエンジェル2・番長番付・バジリスクⅣ・モンキーターンREDなど、公表されている機械割と合わせて整理します。導入日は予定です。";
 const url = `${SITE_URL}/articles/new-slot-schedule-dec-jan`;
-const heroImage = "/images/articles/bancho-banzuke-news.png";
+const heroImage = "/images/articles/bancho-banzuke-news.webp";
 const publishedAt = "2026-11-20";
 const updatedAt = "2026-11-20";
 

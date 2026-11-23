@@ -18,7 +18,7 @@ const title =
 const description =
   "麻雀プロの東城りおさんが大阪・マジックバード2に来店した際、ファン対応整理券が早い時間に配布終了したとの投稿がXで話題になっています。当日の投稿内容を整理しました。";
 const url = `${SITE_URL}/articles/rio-tojyo-magicbird2-sns-topic`;
-const heroImage = "/images/articles/rio-tojyo-magicbird2-sns-topic.png";
+const heroImage = "/images/articles/rio-tojyo-magicbird2-sns-topic.webp";
 const publishedAt = "2026-09-24";
 
 export const metadata: Metadata = {

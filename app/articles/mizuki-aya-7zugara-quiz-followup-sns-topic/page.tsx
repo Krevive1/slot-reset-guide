@@ -18,7 +18,7 @@ const title =
 const description =
   "水樹あやさんの7図柄当てクイズを巡る話題の続報です。11月22日、公式アカウントが「あれは…、プリン？」と投稿し、本人が引用して返信しました。何が投稿され、SNSでどう受け止められたかを中立的に整理します。";
 const url = `${SITE_URL}/articles/mizuki-aya-7zugara-quiz-followup-sns-topic`;
-const heroImage = "/images/articles/mizuki-aya-7zugara-quiz-followup-sns-topic.png";
+const heroImage = "/images/articles/mizuki-aya-7zugara-quiz-followup-sns-topic.webp";
 const publishedAt = "2026-11-23";
 
 export const metadata: Metadata = {

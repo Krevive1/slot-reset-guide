@@ -18,7 +18,7 @@ const title =
 const description =
   "パチスロ『彼女、お借りします』のSANKYO公式「開発こぼれ話」で、REGULAR BONUS中に水着キャラが出現するタイミングが重要というヒントと、2〜5人目全てが水着キャラになるスペシャルパターンの存在が明かされました。公式が公開した内容を整理しました。";
 const url = `${SITE_URL}/articles/kanojo-okarishimasu-reg-mizugi-pattern`;
-const heroImage = "/images/articles/kanojo-okarishimasu-reg-mizugi-pattern.png";
+const heroImage = "/images/articles/kanojo-okarishimasu-reg-mizugi-pattern.webp";
 const publishedAt = "2026-09-29";
 
 export const metadata: Metadata = {

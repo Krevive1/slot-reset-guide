@@ -18,7 +18,7 @@ const title =
 const description =
   "ABEMA「パーラーカチ盛り」の7図柄当てクイズを巡り、X上で批判と擁護の声が広がっています。何が起きたのか、本人と寺井一択さんの説明、SNSの反応を中立的に整理しました。";
 const url = `${SITE_URL}/articles/mizuki-aya-7zugara-quiz-sns-topic`;
-const heroImage = "/images/articles/mizuki-aya-7zugara-quiz-sns-topic.png";
+const heroImage = "/images/articles/mizuki-aya-7zugara-quiz-sns-topic.webp";
 const publishedAt = "2026-11-22";
 
 export const metadata: Metadata = {

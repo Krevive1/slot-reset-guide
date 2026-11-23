@@ -18,7 +18,7 @@ const title =
 const description =
   "パチンコホールで「離席札を置かずに席を立った人」と「その後に座った人」がもめたという体験談投稿がXで話題になっています。台の確保はどこまで有効なのか、投稿内容と一般的な考え方を整理しました。";
 const url = `${SITE_URL}/articles/rinseki-fuda-trouble-sns-topic`;
-const heroImage = "/images/articles/rinseki-fuda-trouble-sns-topic.png";
+const heroImage = "/images/articles/rinseki-fuda-trouble-sns-topic.webp";
 const publishedAt = "2026-09-21";
 
 export const metadata: Metadata = {

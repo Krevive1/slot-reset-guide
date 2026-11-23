@@ -26,6 +26,9 @@ export default function MachineThumbnail({
         fill
         sizes={sizes}
         quality={quality}
+        // Article thumbnails are pre-shrunk (640px webp, ~70KB): serve directly and
+        // avoid the Vercel image-optimization quota (402 -> broken thumbnails).
+        unoptimized={heroImage.startsWith("/images/articles/")}
         style={{ objectFit: "cover" }}
       />
     </div>

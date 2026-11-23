@@ -18,7 +18,7 @@ const title =
 const description =
   "2026年9月27日のボクシング世界戦Prime Video配信で、パチンコホール「ベガスベガス」のCMがラウンド間に何度も流れ、Xで「ベガスベガス」がトレンド入りしました。視聴者の反応と、企業側の謝罪までの経緯を整理しています。";
 const url = `${SITE_URL}/articles/vegasvegas-cm-apology-sns-topic`;
-const heroImage = "/images/articles/vegasvegas-cm-apology-sns-topic.png";
+const heroImage = "/images/articles/vegasvegas-cm-apology-sns-topic.webp";
 const publishedAt = "2026-09-28";
 
 export const metadata: Metadata = {

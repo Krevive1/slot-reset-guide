@@ -18,7 +18,7 @@ const title =
 const description =
   "2026年10月6日、スマスロ獣王の「0スルーの100Gゾーン狙い」を高く評価する投稿がXで約57万表示を集めました。同じ投稿者は「朝はまったく強くない」「サバ連後のみ」「出玉次第で性能が変わる」と補足しています。投稿内容と反応を、個人の見立てとして整理しました。";
 const url = `${SITE_URL}/articles/juoh-0through-100g-zone-sns-topic`;
-const heroImage = "/images/articles/juoh-0through-100g-zone-sns-topic.png";
+const heroImage = "/images/articles/juoh-0through-100g-zone-sns-topic.webp";
 const publishedAt = "2026-10-07";
 
 export const metadata: Metadata = {

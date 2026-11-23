@@ -41,7 +41,7 @@ export const articles: ArticleMeta[] = [
       "エクセルジャパン班長のまるこーさんが2026年10月25日、スマスロ鉄拳6の収支として件数58,508件・収支97,802,144円・機械割104.130%をXに投稿しました。本人が公開した数値と、確認できていること・できていないこと、当サイトの鉄拳6の狙い目との関係を整理しました。",
     category: "petit-news",
     publishedAt: "2026-10-27",
-    heroImage: "/images/articles/excel-japan-tekken6-shuushi-sns-topic.png",
+    heroImage: "/images/articles/excel-japan-tekken6-shuushi-sns-topic.webp",
   },
   {
     slug: "juoh-setting6-sinking-sns-topic",
@@ -51,7 +51,7 @@ export const articles: ArticleMeta[] = [
     category: "petit-news",
     publishedAt: "2026-10-12",
     updatedAt: "2026-11-17",
-    heroImage: "/images/articles/juoh-setting6-sinking-sns-topic.png",
+    heroImage: "/images/articles/juoh-setting6-sinking-sns-topic.webp",
   },
   {
     slug: "sankyo-monogatari-senkou-eizou-sns-topic",
@@ -60,7 +60,7 @@ export const articles: ArticleMeta[] = [
       "SANKYOは2026年10月7日、新台「Lパチスロ もののがたり」の先行映像を公開しました。Xではホールアカウントが「純増7枚」「からくり×ヴヴヴ的」などと投稿して25万表示を集めています。公式で確認できていることと、SNS上の未確認情報を分けて整理しました。",
     category: "petit-news",
     publishedAt: "2026-10-09",
-    heroImage: "/images/articles/sankyo-monogatari-senkou-eizou-sns-topic.png",
+    heroImage: "/images/articles/sankyo-monogatari-senkou-eizou-sns-topic.webp",
   },
   {
     slug: "monster-hunter-sunbreak-hyouka-wareru-sns-topic",
@@ -69,7 +69,7 @@ export const articles: ArticleMeta[] = [
       "2026年10月5日に導入されたスマスロ モンハンサンブレイクについて、Xでは通常時のCZやゲーム性に厳しい声が目立つ一方、設定5で約1.3万枚を回収したという報告も出ています。評価が分かれている理由を、複数の投稿をもとに個人の感想として整理しました。",
     category: "petit-news",
     publishedAt: "2026-10-09",
-    heroImage: "/images/articles/monster-hunter-sunbreak-hyouka-wareru-sns-topic.png",
+    heroImage: "/images/articles/monster-hunter-sunbreak-hyouka-wareru-sns-topic.webp",
   },
   {
     slug: "juoh-0through-100g-zone-sns-topic",
@@ -78,7 +78,7 @@ export const articles: ArticleMeta[] = [
       "2026年10月6日、スマスロ獣王の「0スルーの100Gゾーン狙い」を高く評価する投稿がXで約57万表示を集めました。同じ投稿者は「朝はまったく強くない」「サバ連後のみ」「出玉次第で性能が変わる」と補足しています。投稿内容と反応を、個人の見立てとして整理しました。",
     category: "petit-news",
     publishedAt: "2026-10-07",
-    heroImage: "/images/articles/juoh-0through-100g-zone-sns-topic.png",
+    heroImage: "/images/articles/juoh-0through-100g-zone-sns-topic.webp",
   },
   {
     slug: "garei-zero-re-junbichu-sns-topic",
@@ -87,7 +87,7 @@ export const articles: ArticleMeta[] = [
       "2026年8月17日導入の「Lパチスロ 喰霊‐零‐Re」で、ART準備中にメダルが減る点についてXで賛否が広がっています。「むかしのART機はほとんどそう」と擁護する投稿は約29万表示。「準備中の減りは少し異常」「REGがマイナスボーナス」という不満の声も含め、投稿内容を整理しました。",
     category: "petit-news",
     publishedAt: "2026-10-07",
-    heroImage: "/images/articles/garei-zero-re-junbichu-sns-topic.png",
+    heroImage: "/images/articles/garei-zero-re-junbichu-sns-topic.webp",
   },
   {
     slug: "juoh-tenjo-setting-change-sns-topic",
@@ -96,7 +96,7 @@ export const articles: ArticleMeta[] = [
       "2026年10月5日導入のスマスロ獣王は、通常時の天井が999G＋α、設定変更時は599G＋αに短縮されサバ連に突入するまで継続するとちょんぼりすたが掲載しています。Xでも「新台期間は拾えそう」との声が出ています。導入日時点の情報を整理しました。",
     category: "petit-news",
     publishedAt: "2026-10-03",
-    heroImage: "/images/articles/juoh-se-sns-topic.png",
+    heroImage: "/images/articles/juoh-se-sns-topic.webp",
   },
   {
     slug: "symphogear5-teaser-rumor-sns-topic",
@@ -114,7 +114,7 @@ export const articles: ArticleMeta[] = [
       "「ハイエナキツない？」という投稿をきっかけに、X上で実戦勢による立ち回りの議論が広がっています。エナが厳しくなったという声、情報格差が縮まったことが原因という分析、朝一リセット狙い・設定狙いへ軸足を移す声などを整理しました。",
     category: "petit-news",
     publishedAt: "2026-10-01",
-    heroImage: "/images/articles/haiena-kitsui-sns-topic.png",
+    heroImage: "/images/articles/haiena-kitsui-sns-topic.webp",
   },
   {
     slug: "sao2-glass-damage-sns-topic",
@@ -123,7 +123,7 @@ export const articles: ArticleMeta[] = [
       "スマスロ『ソードアート・オンラインⅡ』の筐体ガラスが割られた写真がXに投稿され、表示回数480万回超の反響に。8月にも2件の同様の破損が話題になっており、「また？」という反応が広がっています。誰が・なぜ割ったのかは明らかになっていません。",
     category: "petit-news",
     publishedAt: "2026-10-01",
-    heroImage: "/images/articles/sao2-glass-damage-sns-topic.png",
+    heroImage: "/images/articles/sao2-glass-damage-sns-topic.webp",
   },
   {
     slug: "kanojo-okarishimasu-reg-mizugi-pattern",
@@ -132,7 +132,7 @@ export const articles: ArticleMeta[] = [
       "パチスロ『彼女、お借りします』のSANKYO公式「開発こぼれ話」で、REGULAR BONUS中に水着キャラが出現するタイミングが重要というヒントと、2〜5人目全てが水着キャラになるスペシャルパターンの存在が明かされました。公式が公開した内容を整理しました。",
     category: "petit-news",
     publishedAt: "2026-09-29",
-    heroImage: "/images/articles/kanojo-okarishimasu-reg-mizugi-pattern.png",
+    heroImage: "/images/articles/kanojo-okarishimasu-reg-mizugi-pattern.webp",
   },
   {
     slug: "vegasvegas-cm-apology-sns-topic",
@@ -141,7 +141,7 @@ export const articles: ArticleMeta[] = [
       "2026年9月27日のボクシング世界戦Prime Video配信で、パチンコホール「ベガスベガス」のCMがラウンド間に何度も流れ、Xで「ベガスベガス」がトレンド入りしました。視聴者の反応と、企業側の謝罪までの経緯を整理しています。",
     category: "petit-news",
     publishedAt: "2026-09-28",
-    heroImage: "/images/articles/vegasvegas-cm-apology-sns-topic.png",
+    heroImage: "/images/articles/vegasvegas-cm-apology-sns-topic.webp",
   },
   {
     slug: "daipan-official-response-sns-topic",
@@ -150,7 +150,7 @@ export const articles: ArticleMeta[] = [
       "「台パン（台を叩く行為）を黙認しているのか」というXでの質問に対し、あるホールの公式アカウントがかなり強い言葉を使って回答し、賛否の反応が広がっています。何が起きたのか、現時点で確認できている内容を整理しました。",
     category: "petit-news",
     publishedAt: "2026-09-28",
-    heroImage: "/images/articles/daipan-official-response-sns-topic.png",
+    heroImage: "/images/articles/daipan-official-response-sns-topic.webp",
   },
   {
     slug: "juoh-se-sns-topic",
@@ -159,7 +159,7 @@ export const articles: ArticleMeta[] = [
       "サミーが2026年9月18日に公開したスマスロ獣王の最速解説動画・デジタル小冊子をきっかけに、Xでは「サバチャン突入時のSEが気になる」という声と、超サバのレインボー演出を評価する声の両方が上がっています。10月5日の導入前に、現時点で分かっている内容と話題の反応を整理しました。",
     category: "petit-news",
     publishedAt: "2026-09-27",
-    heroImage: "/images/articles/juoh-se-sns-topic.png",
+    heroImage: "/images/articles/juoh-se-sns-topic.webp",
   },
   {
     slug: "rio-tojyo-magicbird2-sns-topic",
@@ -168,7 +168,7 @@ export const articles: ArticleMeta[] = [
       "麻雀プロの東城りおさんが大阪・マジックバード2に来店した際、ファン対応整理券が早い時間に配布終了したとの投稿がXで話題になっています。当日の投稿内容を整理しました。",
     category: "petit-news",
     publishedAt: "2026-09-24",
-    heroImage: "/images/articles/rio-tojyo-magicbird2-sns-topic.png",
+    heroImage: "/images/articles/rio-tojyo-magicbird2-sns-topic.webp",
   },
   {
     slug: "lycoris-recoil-yuuri-giri-himitsu-sns-topic",
@@ -177,7 +177,7 @@ export const articles: ArticleMeta[] = [
       "サミー開発ボイスが「リコスロ3DAYS」企画の一環として、スマスロ リコリス・リコイルの有利区間リセット（通称：有利切り）の条件を公式に公開しました。条件は6パターンあるとされ、実戦上プレイヤーが明確に判別できるのは2パターンのみと紹介されています。公式投稿の内容を整理しました。",
     category: "petit-news",
     publishedAt: "2026-09-24",
-    heroImage: "/images/articles/lycoris-recoil-yuuri-giri-himitsu-sns-topic.png",
+    heroImage: "/images/articles/lycoris-recoil-yuuri-giri-himitsu-sns-topic.webp",
   },
   {
     slug: "minpachi-slosami-2026-trouble-sns-topic",
@@ -186,7 +186,7 @@ export const articles: ArticleMeta[] = [
       "業界公式のファン感謝祭「みんパチ・スロサミ2026」（2026年9月22日開催）で、物販・くじコーナーにアクセスが集中し、主催側が新規整列とくじコーナーを一時中止しました。現地参加者のSNS投稿と、公式が案内した内容を整理しました。",
     category: "petit-news",
     publishedAt: "2026-09-23",
-    heroImage: "/images/articles/minpachi-slosami-2026-trouble-sns-topic.png",
+    heroImage: "/images/articles/minpachi-slosami-2026-trouble-sns-topic.webp",
   },
   {
     slug: "rinseki-fuda-trouble-sns-topic",
@@ -195,7 +195,7 @@ export const articles: ArticleMeta[] = [
       "パチンコホールで「離席札を置かずに席を立った人」と「その後に座った人」がもめたという体験談投稿がXで話題になっています。台の確保はどこまで有効なのか、投稿内容と一般的な考え方を整理しました。",
     category: "petit-news",
     publishedAt: "2026-09-21",
-    heroImage: "/images/articles/rinseki-fuda-trouble-sns-topic.png",
+    heroImage: "/images/articles/rinseki-fuda-trouble-sns-topic.webp",
   },
   {
     slug: "uma-musume-pachislot-sns-topic",
@@ -206,7 +206,7 @@ export const articles: ArticleMeta[] = [
     category: "petit-news",
     publishedAt: "2026-09-18",
     updatedAt: "2026-10-31",
-    heroImage: "/images/articles/uma-musume-pachislot-sns-topic.png",
+    heroImage: "/images/articles/uma-musume-pachislot-sns-topic.webp",
   },
   {
     slug: "god-arm-hokuto-sns-topic",
@@ -215,7 +215,7 @@ export const articles: ArticleMeta[] = [
       "パチスロ来店演者「ゴッドアームほくと」氏を巡り、ファンから応援を頼まれた際に台へ関与する「ゴッドアーム」がSNSで話題に。代行遊技にあたるのではとの指摘や業界人の異なる意見が相次ぎ、その後は台に触れず声援を送る「ゴッドエール」へ移行しています。",
     category: "petit-news",
     publishedAt: "2026-09-18",
-    heroImage: "/images/articles/god-arm-hokuto-sns-topic.png",
+    heroImage: "/images/articles/god-arm-hokuto-sns-topic.webp",
   },
   {
     slug: "lycoris-recoil-sns-topic",
@@ -224,7 +224,7 @@ export const articles: ArticleMeta[] = [
       "2026年9月7日導入のスマスロ リコリス・リコイルで、他機種のパーツが付いているように見える個体の投稿がXで拡散し「間違い探し」として話題になっています。話題になっている投稿と、現時点で確認できていることを整理しました。",
     category: "petit-news",
     publishedAt: "2026-09-15",
-    heroImage: "/images/articles/lycoris-recoil-sns-topic.png",
+    heroImage: "/images/articles/lycoris-recoil-sns-topic.webp",
   },
   {
     slug: "mieruko-chan-cz-rate-setting-diff",
@@ -233,7 +233,7 @@ export const articles: ArticleMeta[] = [
       "パチスロ見える子ちゃんで、通常時の弱レア役からのCZ当選率に設定1と設定6で3倍の差があるとする解析情報を、すろぱちくえすと・一撃の両サイトで確認しました。ボーナス終了画面の設定示唆パターンとあわせて、確認できていること・まだ確認できていないことを整理しました。",
     category: "petit-news",
     publishedAt: "2026-09-10",
-    heroImage: "/images/articles/mieruko-chan-cz-rate-setting-diff.png",
+    heroImage: "/images/articles/mieruko-chan-cz-rate-setting-diff.webp",
   },
   {
     slug: "monkey-turn-v-ex-item-rate",
@@ -242,7 +242,7 @@ export const articles: ArticleMeta[] = [
       "スマスロモンキーターンVの激走チャージ中に成立するレア役から、EXアイテムを獲得できるかどうかに設定差があるとされています。ボート・弱チェリーなど弱レア役からの獲得率を中心に、非公式に流通している設定別参考値を整理しました。",
     category: "petit-news",
     publishedAt: "2026-09-04",
-    heroImage: "/images/articles/monkey-turn-v-ex-item-rate.png",
+    heroImage: "/images/articles/monkey-turn-v-ex-item-rate.webp",
   },
   {
     slug: "tokyo-ghoul-arima-judgment-reigu-research",
@@ -252,7 +252,7 @@ export const articles: ArticleMeta[] = [
     category: "petit-news",
     publishedAt: "2026-09-04",
     updatedAt: "2026-10-07",
-    heroImage: "/images/articles/tokyo-ghoul-arima-judgment-reigu-research.png",
+    heroImage: "/images/articles/tokyo-ghoul-arima-judgment-reigu-research.webp",
   },
   {
     slug: "bancho-banzuke-news",
@@ -262,7 +262,7 @@ export const articles: ArticleMeta[] = [
     category: "new-machine-news",
     publishedAt: "2026-09-04",
     updatedAt: "2026-09-04",
-    heroImage: "/images/articles/bancho-banzuke-news.png",
+    heroImage: "/images/articles/bancho-banzuke-news.webp",
   },
   {
     slug: "new-slot-schedule-dec-jan",
@@ -272,7 +272,7 @@ export const articles: ArticleMeta[] = [
     category: "new-machine-news",
     publishedAt: "2026-11-20",
     updatedAt: "2026-11-20",
-    heroImage: "/images/articles/bancho-banzuke-news.png",
+    heroImage: "/images/articles/bancho-banzuke-news.webp",
   },
   {
     slug: "ryodai-2026-sns-topic",
@@ -281,7 +281,7 @@ export const articles: ArticleMeta[] = [
       "パチンコ・パチスロ.comの「2026年に出た良台は？」という投稿に、返信で多くの機種名が挙がっています。どの機種がよく名前を挙げられ、どんな賛否があったかを、特定の機種を評価・断定しない形で整理しました。",
     category: "petit-news",
     publishedAt: "2026-11-23",
-    heroImage: "/images/articles/ryodai-2026-sns-topic.png",
+    heroImage: "/images/articles/ryodai-2026-sns-topic.webp",
   },
   {
     slug: "mizuki-aya-7zugara-quiz-followup-sns-topic",
@@ -290,7 +290,7 @@ export const articles: ArticleMeta[] = [
       "水樹あやさんの7図柄当てクイズを巡る話題の続報です。11月22日、公式アカウントが「あれは…、プリン？」と投稿し、本人が引用して返信しました。何が投稿され、SNSでどう受け止められたかを中立的に整理します。",
     category: "petit-news",
     publishedAt: "2026-11-23",
-    heroImage: "/images/articles/mizuki-aya-7zugara-quiz-followup-sns-topic.png",
+    heroImage: "/images/articles/mizuki-aya-7zugara-quiz-followup-sns-topic.webp",
   },
   {
     slug: "mizuki-aya-7zugara-quiz-sns-topic",
@@ -299,7 +299,7 @@ export const articles: ArticleMeta[] = [
       "ABEMA「パーラーカチ盛り」の7図柄当てクイズを巡り、X上で批判と擁護の声が広がっています。何が起きたのか、本人と寺井一択さんの説明、SNSの反応を中立的に整理しました。",
     category: "petit-news",
     publishedAt: "2026-11-22",
-    heroImage: "/images/articles/mizuki-aya-7zugara-quiz-sns-topic.png",
+    heroImage: "/images/articles/mizuki-aya-7zugara-quiz-sns-topic.webp",
   },
   {
     slug: "zenmen-kinen-pachinko-25ten-sns-topic",
@@ -308,7 +308,7 @@ export const articles: ArticleMeta[] = [
       "「全面禁煙のパチンコ店は全国に25店舗くらいしかない模様」というXの投稿と「5743店中わずか25店」とするまとめ投稿が話題になっています。集計の注意点と、喫煙環境を巡る現時点の動きを整理しました。",
     category: "petit-news",
     publishedAt: "2026-11-21",
-    heroImage: "/images/articles/zenmen-kinen-pachinko-25ten-sns-topic.png",
+    heroImage: "/images/articles/zenmen-kinen-pachinko-25ten-sns-topic.webp",
   },
   {
     slug: "monkey-turn-red-news",

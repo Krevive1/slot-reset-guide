@@ -18,7 +18,7 @@ const title =
 const description =
   "パチンコ・パチスロ.comの「2026年に出た良台は？」という投稿に、返信で多くの機種名が挙がっています。どの機種がよく名前を挙げられ、どんな賛否があったかを、特定の機種を評価・断定しない形で整理しました。";
 const url = `${SITE_URL}/articles/ryodai-2026-sns-topic`;
-const heroImage = "/images/articles/ryodai-2026-sns-topic.png";
+const heroImage = "/images/articles/ryodai-2026-sns-topic.webp";
 const publishedAt = "2026-11-23";
 
 export const metadata: Metadata = {

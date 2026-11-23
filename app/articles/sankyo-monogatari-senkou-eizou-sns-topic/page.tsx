@@ -18,7 +18,7 @@ const title =
 const description =
   "SANKYOは2026年10月7日、新台「Lパチスロ もののがたり」の先行映像を公開しました。Xではホールアカウントが「純増7枚」「からくり×ヴヴヴ的」などと投稿して25万表示を集めています。公式で確認できていることと、SNS上の未確認情報を分けて整理しました。";
 const url = `${SITE_URL}/articles/sankyo-monogatari-senkou-eizou-sns-topic`;
-const heroImage = "/images/articles/sankyo-monogatari-senkou-eizou-sns-topic.png";
+const heroImage = "/images/articles/sankyo-monogatari-senkou-eizou-sns-topic.webp";
 const publishedAt = "2026-10-09";
 
 export const metadata: Metadata = {

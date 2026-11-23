@@ -16,7 +16,7 @@ const title = "スマスロ『押忍！番長番付』導入日はいつ？2026�
 const description =
   "大都技研の番長シリーズ最新作『押忍！番長番付』のティザーPVが公開されました。2026年12月7日導入予定、V図柄採用など、現時点で分かっていること・まだ分かっていないことを整理してまとめます。続報が入り次第、随時更新します。";
 const url = `${SITE_URL}/articles/bancho-banzuke-news`;
-const heroImage = "/images/articles/bancho-banzuke-news.png";
+const heroImage = "/images/articles/bancho-banzuke-news.webp";
 const publishedAt = "2026-09-04";
 const updatedAt = "2026-09-04";
 

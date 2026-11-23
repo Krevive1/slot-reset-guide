@@ -18,7 +18,7 @@ const title =
 const description =
   "「台パン（台を叩く行為）を黙認しているのか」というXでの質問に対し、あるホールの公式アカウントがかなり強い言葉を使って回答し、賛否の反応が広がっています。何が起きたのか、現時点で確認できている内容を整理しました。";
 const url = `${SITE_URL}/articles/daipan-official-response-sns-topic`;
-const heroImage = "/images/articles/daipan-official-response-sns-topic.png";
+const heroImage = "/images/articles/daipan-official-response-sns-topic.webp";
 const publishedAt = "2026-09-28";
 
 export const metadata: Metadata = {

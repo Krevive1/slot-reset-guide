@@ -18,7 +18,7 @@ const title =
 const description =
   "2026年10月5日導入のスマスロ獣王は、通常時の天井が999G＋α、設定変更時は599G＋αに短縮されサバ連に突入するまで継続するとちょんぼりすたが掲載しています。Xでも「新台期間は拾えそう」との声が出ています。導入日時点の情報を整理しました。";
 const url = `${SITE_URL}/articles/juoh-tenjo-setting-change-sns-topic`;
-const heroImage = "/images/articles/juoh-se-sns-topic.png";
+const heroImage = "/images/articles/juoh-se-sns-topic.webp";
 const publishedAt = "2026-10-03";
 
 export const metadata: Metadata = {

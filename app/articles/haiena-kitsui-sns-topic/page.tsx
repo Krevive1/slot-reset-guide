@@ -18,7 +18,7 @@ const title =
 const description =
   "「ハイエナキツない？」という投稿をきっかけに、X上で実戦勢による立ち回りの議論が広がっています。エナが厳しくなったという声、情報格差が縮まったことが原因という分析、朝一リセット狙い・設定狙いへ軸足を移す声などを整理しました。";
 const url = `${SITE_URL}/articles/haiena-kitsui-sns-topic`;
-const heroImage = "/images/articles/haiena-kitsui-sns-topic.png";
+const heroImage = "/images/articles/haiena-kitsui-sns-topic.webp";
 const publishedAt = "2026-10-01";
 
 export const metadata: Metadata = {

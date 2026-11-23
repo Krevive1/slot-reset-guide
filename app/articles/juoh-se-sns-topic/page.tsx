@@ -18,7 +18,7 @@ const title =
 const description =
   "サミーが2026年9月18日に公開したスマスロ獣王の最速解説動画・デジタル小冊子をきっかけに、Xでは「サバチャン突入時のSEが気になる」という声と、超サバのレインボー演出を評価する声の両方が上がっています。10月5日の導入前に、現時点で分かっている内容と話題の反応を整理しました。";
 const url = `${SITE_URL}/articles/juoh-se-sns-topic`;
-const heroImage = "/images/articles/juoh-se-sns-topic.png";
+const heroImage = "/images/articles/juoh-se-sns-topic.webp";
 const publishedAt = "2026-09-27";
 
 export const metadata: Metadata = {
