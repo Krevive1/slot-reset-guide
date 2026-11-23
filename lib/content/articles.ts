@@ -275,6 +275,15 @@ export const articles: ArticleMeta[] = [
     heroImage: "/images/articles/bancho-banzuke-news.png",
   },
   {
+    slug: "ryodai-2026-sns-topic",
+    title: "「2026年の良台は？」がXで話題｜戦国乙女5・SAO2・真打吉宗など、挙がった機種と賛否を整理",
+    description:
+      "パチンコ・パチスロ.comの「2026年に出た良台は？」という投稿に、返信で多くの機種名が挙がっています。どの機種がよく名前を挙げられ、どんな賛否があったかを、特定の機種を評価・断定しない形で整理しました。",
+    category: "petit-news",
+    publishedAt: "2026-11-23",
+    heroImage: "/images/articles/ryodai-2026-sns-topic.png",
+  },
+  {
     slug: "mizuki-aya-7zugara-quiz-followup-sns-topic",
     title: "水樹あやさんの7図柄クイズ【続報】公式アカウントが「あれは…、プリン？」と投稿｜本人は「人の炎上したやつで遊ぶんじゃねぇ」と返信",
     description:
