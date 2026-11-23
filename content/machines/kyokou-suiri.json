@@ -67,7 +67,7 @@
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [],
-  "heroImage": "/images/machines/kyokou-suiri.jpg",
+  "heroImage": "/images/machines/kyokou-suiri.webp",
   "originalView": [
     {"heading": "短縮は「300G固定」ではない", "body": "設定変更時の天井は、700G（約93.8%）または300G（約6.3%）への振り分けとされています。300Gになる前提で動かず、700Gになる場合のほうが大半である点を踏まえて判断します。"},
     {"heading": "ボーナス後は虚構連モードを見る", "body": "ボーナス終了後は虚構連モードへ移行し、転落するまで継続します。ショートでも約56%のループ率があるとされるため、通常時へ戻るまではヤメません。CZ失敗後は引き戻し抽選があり、前兆の結果まで確認します。"},

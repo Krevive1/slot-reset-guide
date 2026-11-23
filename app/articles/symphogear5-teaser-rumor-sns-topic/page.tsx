@@ -18,7 +18,7 @@ const title =
 const description =
   "SANKYOが2026年9月30日に「戦姫絶唱シンフォギア」シリーズ最新作の超先行映像を公開し、「5W」の検定通過も伝えられました。10月にはXで約1/399・デカヘソなどの噂に賛否が出ています。公式で分かったことと噂の段階のものを分けて整理しました。";
 const url = `${SITE_URL}/articles/symphogear5-teaser-rumor-sns-topic`;
-const heroImage = "/images/machines/senki-zesshou-symphogear.jpg";
+const heroImage = "/images/machines/senki-zesshou-symphogear.webp";
 const publishedAt = "2026-10-03";
 
 export const metadata: Metadata = {

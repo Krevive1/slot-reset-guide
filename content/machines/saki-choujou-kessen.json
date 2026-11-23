@@ -91,7 +91,7 @@
   "practiceRecords": [],
   "relatedMachines": [],
   "faq": [],
-  "heroImage": "/images/machines/saki-choujou-kessen.jpg",
+  "heroImage": "/images/machines/saki-choujou-kessen.webp",
   "originalView": [
     {"heading": "天井は3種類ある", "body": "ゲーム数天井は通常最大1000G+α（AT駆け抜け後800G+α、設定変更後最大600G+α）です。ほかに、CZを6回失敗した後の7回目で当選する天井と、8周期目（南4局）で当該周期のCZに当選する周期天井があります。"},
     {"heading": "設定変更で短縮されるもの", "body": "設定変更後に短縮されるのは、ゲーム数天井です。CZ失敗回数による天井と周期の天井は別の仕組みで、設定変更後は周期ポイントがランダムに減算された状態から始まるとされます（解析情報）。"},

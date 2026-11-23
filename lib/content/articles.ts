@@ -105,7 +105,7 @@ export const articles: ArticleMeta[] = [
       "SANKYOが2026年9月30日に「戦姫絶唱シンフォギア」シリーズ最新作の超先行映像を公開し、「5W」の検定通過も伝えられました。10月にはXで約1/399・デカヘソなどの噂に賛否が出ています。公式で分かったことと噂の段階のものを分けて整理しました。",
     category: "petit-news",
     publishedAt: "2026-10-03",
-    heroImage: "/images/machines/senki-zesshou-symphogear.jpg",
+    heroImage: "/images/machines/senki-zesshou-symphogear.webp",
   },
   {
     slug: "haiena-kitsui-sns-topic",

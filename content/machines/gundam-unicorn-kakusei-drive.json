@@ -106,7 +106,7 @@
       "answer": "上位AT終了後（覚醒の光失敗後）はスタンバイレベルMAXを引き継いだまま通常時に戻り、1回目のリプレイでCZ以上当選が濃厚とされているため、即ヤメは厳禁です。"
     }
   ],
-  "heroImage": "/images/machines/gundam-unicorn-kakusei-drive.jpg",
+  "heroImage": "/images/machines/gundam-unicorn-kakusei-drive.webp",
   "originalView": [
     {"heading": "天井が2つ、どちらも短縮される", "body": "CZ間天井は800G+αから400G+αへ、AT間天井は1400G+αから1000G+αへ短縮され、ゲーム数の加算もあります。実ゲーム数と液晶表示で基準が異なる点に注意します。"},
     {"heading": "上位AT後の「覚醒の光」失敗", "body": "上位AT終了後は上位CZ「覚醒の光」に移行し、失敗した場合はスタンバイレベルMAXを引き継いだまま通常時へ戻ります。この場合、1回目のリプレイでCZ以上に当選するとされているため、失敗直後の即ヤメは避けます。"},

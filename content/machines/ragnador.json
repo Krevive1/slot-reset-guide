@@ -4,7 +4,7 @@
   "status": "published",
   "updatedAt": "2026-11-12T15:00:00+09:00",
   "publishedAt": "2026-11-12T15:00:00+09:00",
-  "heroImage": "/images/machines/ragnador.jpg",
+  "heroImage": "/images/machines/ragnador.webp",
   "asaichiCheck": "設定変更時にAT間天井が999G+αから500G+αへ短縮される点は、1geki.jp・ちょんぼりすたの2媒体で数値が一致しており、確度は高めです。一方、CZ間天井（500G+α）は設定変更時にリセットされるとされていますが（1geki.jpのみ）、短縮されるかどうかは明記がありません。設定判別の材料も単独媒体の推測情報にとどまり、朝一の狙い目・金額期待値はいずれの媒体も未公開です。朝一は、AT間の残りゲーム数を軸に考え、リセット判別自体はまだ材料が乏しい点に注意してください。",
   "quickFacts": {
     "title": "ラグナドールの朝イチ・天井を30秒で確認",
