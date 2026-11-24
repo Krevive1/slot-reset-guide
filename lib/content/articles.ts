@@ -275,6 +275,15 @@ export const articles: ArticleMeta[] = [
     heroImage: "/images/articles/bancho-banzuke-news.webp",
   },
   {
+    slug: "tokyo-ghoul-2nd-anniversary-panel-sns-topic",
+    title: "L東京喰種「2nd ANNIVERSARY MODEL」発表｜2027年1月25日から登場予定、パネル違いにSNSで賛否",
+    description:
+      "スパイキー・クロスアルファブランド公式が、L東京喰種の導入2周年記念パネル「2nd ANNIVERSARY MODEL」を発表しました。2027年1月25日から全国のホールに登場予定です。新機種ではなくパネル違いであることと、Xで出た賛否の声を中立的に整理します。",
+    category: "petit-news",
+    publishedAt: "2026-11-25",
+    heroImage: "/images/articles/tokyo-ghoul-2nd-anniversary-panel-sns-topic.webp",
+  },
+  {
     slug: "senran-kagura-burst-tension-sns-topic",
     title: "「LBパチスロ閃乱カグラ Burst Tension」PV公開｜オーイズミBT機第3弾、2027年2月導入予定",
     description:
