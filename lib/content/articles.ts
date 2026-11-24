@@ -275,6 +275,15 @@ export const articles: ArticleMeta[] = [
     heroImage: "/images/articles/bancho-banzuke-news.webp",
   },
   {
+    slug: "senran-kagura-burst-tension-sns-topic",
+    title: "「LBパチスロ閃乱カグラ Burst Tension」PV公開｜オーイズミBT機第3弾、2027年2月導入予定",
+    description:
+      "オーイズミ公式が「LBパチスロ閃乱カグラ Burst Tension」のプロモーションムービーを公開しました。BT機第三弾で、導入は2027年2月予定と発表されています。公式の発表内容とXでの反響を、確認できた範囲で整理します。",
+    category: "petit-news",
+    publishedAt: "2026-11-24",
+    heroImage: "/images/articles/senran-kagura-burst-tension-sns-topic.webp",
+  },
+  {
     slug: "ryodai-2026-sns-topic",
     title: "「2026年の良台は？」がXで話題｜戦国乙女5・SAO2・真打吉宗など、挙がった機種と賛否を整理",
     description:
