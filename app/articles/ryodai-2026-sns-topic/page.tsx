@@ -209,6 +209,38 @@ export default function Ryodai2026SnsTopicPage() {
           <li><Link href="/machines/toaru-majutsu-no-index-2">スマスロ とある魔術の禁書目録2</Link></li>
         </ul>
 
+        <h2>補足：P-WORLDアワード2026 パチスロ部門のノミネート機種</h2>
+        <p className="section-note">
+          P-WORLDが2026年11月13日に投票受付を開始した「パチンコ＆パチスロアワード2026」では、
+          2025年11月1日〜2026年10月31日にリリースされた機種の中から、P-WORLDが独自に選んだパチスロ10機種がノミネートされています。
+          投票期間は2026年11月30日まで、結果発表は12月16日の予定です（いずれも公式ページの記載）。
+          以下はリリース順の一覧で、順位や優劣を示すものではありません。
+        </p>
+        <ul>
+          <li><Link href="/machines/valvrave-2">Lパチスロ 革命機ヴァルヴレイヴ2</Link></li>
+          <li><Link href="/machines/hokuto-no-ken-tensei-2">スマスロ 北斗の拳 転生の章2</Link></li>
+          <li><Link href="/machines/kabaneri-kaimon-kessen">スマスロ 甲鉄城のカバネリ 海門決戦</Link></li>
+          <li><Link href="/machines/shinuchi-yoshimune">真打 吉宗</Link></li>
+          <li><Link href="/machines/million-god-kamigami-no-kiseki">スマスロ ミリオンゴッド-神々の軌跡-</Link></li>
+          <li><Link href="/machines/sengoku-otome-5">L戦国乙女5 業火を穿つ宿焔の双刃</Link></li>
+          <li><Link href="/machines/sword-art-online-2">スロット ソードアート・オンラインII</Link></li>
+          <li>Lパチスロ 喰霊-零-Re</li>
+          <li>スマスロ タコスロ</li>
+          <li>マイジャグラーVI</li>
+        </ul>
+        <p className="section-note">
+          上記の一部は、本記事でXの投稿から名前が挙がった機種と重なります。
+          投票は各自の評価によるもので、本記事の見解ではありません。最新の情報は
+          <a
+            href="https://www.p-world.co.jp/award/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+          >
+            P-WORLD公式ページ
+          </a>
+          をご確認ください。
+        </p>
+
         <h2>参考情報</h2>
         <p className="section-note">
           本記事は、以下のXポスト・紹介記事を参考に作成しました。埋め込みポストの内容は各投稿者・アカウント自身の発言であり、本記事の見解ではありません。
