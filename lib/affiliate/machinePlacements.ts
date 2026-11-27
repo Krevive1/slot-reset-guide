@@ -65,6 +65,10 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
         href: "/articles/hokuto-loud-neighbor-column",
         label: "隣に音量MAXの男が座った話｜収支は負けたが謎の勝負には勝った",
       },
+      {
+        href: "/articles/hokuto-gekito-teaser-sns-topic",
+        label: "「スマスロ 北斗の拳 激闘」超ティザー映像公開｜2027年3月導入予定",
+      },
     ],
   },
   "street-fighter-6": {

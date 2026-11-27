@@ -275,6 +275,15 @@ export const articles: ArticleMeta[] = [
     heroImage: "/images/articles/bancho-banzuke-news.webp",
   },
   {
+    slug: "hokuto-gekito-teaser-sns-topic",
+    title: "「スマスロ 北斗の拳 激闘」超ティザー映像公開｜2027年3月導入予定、適合の速報にSNSで反響",
+    description:
+      "サミーが2026年11月26日、「スマスロ 北斗の拳 激闘」の超ティザー映像を公開しました。公式YouTubeの概要欄では2027年3月導入予定とされています。公式で確認できることと、まだ発表されていないこと、Xの反響を整理します。",
+    category: "petit-news",
+    publishedAt: "2026-11-27",
+    heroImage: "/images/articles/hokuto-gekito-teaser-sns-topic.webp",
+  },
+  {
     slug: "tokyo-ghoul-2nd-anniversary-panel-sns-topic",
     title: "L東京喰種「2nd ANNIVERSARY MODEL」発表｜2027年1月25日から登場予定、パネル違いにSNSで賛否",
     description:
