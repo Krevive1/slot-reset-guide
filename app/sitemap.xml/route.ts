@@ -35,6 +35,7 @@ const staticEntries: SitemapEntry[] = [
   { path: "/articles/basilisk-4-news", lastModified: "2026-08-22", changeFrequency: "weekly", priority: 0.5 },
   { path: "/articles/new-slot-schedule-dec-jan", lastModified: "2026-11-20", changeFrequency: "weekly", priority: 0.5 },
   { path: "/articles/hokuto-gekito-teaser-sns-topic", lastModified: "2026-11-27", changeFrequency: "monthly", priority: 0.5 },
+  { path: "/articles/spiky-bites-teaser-sns-topic", lastModified: "2026-11-28", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/tokyo-ghoul-2nd-anniversary-panel-sns-topic", lastModified: "2026-11-25", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/senran-kagura-burst-tension-sns-topic", lastModified: "2026-11-25", changeFrequency: "monthly", priority: 0.5 },
   { path: "/articles/ryodai-2026-sns-topic", lastModified: "2026-11-23", changeFrequency: "monthly", priority: 0.5 },

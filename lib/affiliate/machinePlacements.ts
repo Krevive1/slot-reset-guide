@@ -44,6 +44,10 @@ export const machineAffiliatePlacements: Record<string, MachineAffiliatePlacemen
     originalWorkOfferIds: ["bookwalkerTokyoGhoul", "mangazenkanTokyoGhoul30", "rentaTokyoGhoul", "dmmBooksTokyoGhoul"],
     relatedReadings: [
       {
+        href: "/articles/spiky-bites-teaser-sns-topic",
+        label: "スパイキーが新機種の特報映像を公開｜「BITES」「魔王降臨」に“東京喰種2？”の声",
+      },
+      {
         href: "/articles/tokyo-ghoul-arima-judgment-reigu-research",
         label: "『有馬ジャッジメント失敗後は約2000G冷遇』説を調査｜実戦報告に傾向はある？",
       },

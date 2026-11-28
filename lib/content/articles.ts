@@ -275,6 +275,15 @@ export const articles: ArticleMeta[] = [
     heroImage: "/images/articles/bancho-banzuke-news.webp",
   },
   {
+    slug: "spiky-bites-teaser-sns-topic",
+    title: "スパイキーが新機種の特報映像を公開｜「BITES」「ついに魔王降臨」に“東京喰種2？”とSNSで予想が過熱",
+    description:
+      "スパイキー・クロスアルファブランド公式が2026年11月27日、機種名を伏せたパチスロ最新機種の特報映像を公開しました。映像には「BITES」「2年の時を越え正統進化」「ついに魔王降臨」などの文字が登場し、Xでは東京喰種の続編ではないかという予想が広がっています。公式で確認できることと、まだ発表されていないことを分けて整理します。",
+    category: "petit-news",
+    publishedAt: "2026-11-28",
+    heroImage: "/images/articles/spiky-bites-teaser-sns-topic.webp",
+  },
+  {
     slug: "hokuto-gekito-teaser-sns-topic",
     title: "「スマスロ 北斗の拳 激闘」超ティザー映像公開｜2027年3月導入予定、適合の速報にSNSで反響",
     description:
